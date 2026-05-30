@@ -8,4 +8,86 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: BSData/publish-catpkg@v1.1.1
+
+    - name: Generate release assets
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO: ${{ github.repository }}
+        TAG: ${{ github.event.release.tag_name }}
+        RELEASE_NAME: ${{ github.event.release.name }}
+      run: |
+        set -e
+
+        # Gather all catalogue and game system files
+        FILES=$(find . -maxdepth 1 \( -name "*.cat" -o -name "*.gst" \) | sort)
+
+        # Build dataIndexEntries for the BSI
+        ENTRIES=""
+        REPO_FILES_JSON=""
+        for f in $FILES; do
+          fname=$(basename "$f")
+          # Read id and name from file
+          fid=$(grep -o 'id="[^"]*"' "$f" | head -1 | sed 's/id="//;s/"//')
+          fname_attr=$(grep -o 'name="[^"]*"' "$f" | head -1 | sed 's/name="//;s/"//')
+          rev=$(grep -o 'revision="[^"]*"' "$f" | head -1 | sed 's/revision="//;s/"//')
+          bsver=$(grep -o 'battleScribeVersion="[^"]*"' "$f" | head -1 | sed 's/battleScribeVersion="//;s/"//')
+          if echo "$f" | grep -q "\.gst$"; then
+            dtype="gameSystem"
+          else
+            dtype="catalogue"
+          fi
+          encoded=$(python3 -c "import urllib.parse; print(urllib.parse.quote('$fname'))")
+          raw_url="https://raw.githubusercontent.com/${REPO}/main/${encoded}"
+          ENTRIES="${ENTRIES}    <dataIndexEntry filePath=\"${fname}\" dataType=\"${dtype}\" dataId=\"${fid}\" dataName=\"${fname_attr}\" dataBattleScribeVersion=\"${bsver}\" dataRevision=\"${rev}\"/>\n"
+          REPO_FILES_JSON="${REPO_FILES_JSON}    {\"id\":\"${fid}\",\"name\":\"${fname_attr}\",\"type\":\"${dtype}\",\"revision\":${rev:-0},\"battleScribeVersion\":\"${bsver}\",\"fileUrl\":\"${raw_url}\"},"
+        done
+
+        BSI_URL="https://github.com/${REPO}/releases/latest/download/NewRecruit.latest.bsi"
+        CATPKG_URL="https://github.com/${REPO}/releases/latest/download/NewRecruit.catpkg.json"
+
+        # Generate BSI XML
+        cat > index.xml << EOF
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataIndex battleScribeVersion="2.03" name="No Figure Left Behind [NFLB]" indexUrl="${BSI_URL}" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+  <dataIndexEntries>
+$(echo -e "$ENTRIES")  </dataIndexEntries>
+</dataIndex>
+EOF
+
+        # Zip to .bsi
+        zip NewRecruit.latest.bsi index.xml
+
+        # Generate catpkg.json
+        REPO_FILES_JSON="${REPO_FILES_JSON%,}"
+        NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        cat > NewRecruit.catpkg.json << EOF
+{
+  "\$schema": "https://raw.githubusercontent.com/BSData/schemas/master/src/catpkg.schema.json",
+  "name": "No Figure Left Behind [NFLB]",
+  "description": "WH40K 10th Edition with NFLB homebrew units and detachments",
+  "battleScribeVersion": "2.03",
+  "version": "${TAG}",
+  "lastUpdated": "${NOW}",
+  "lastUpdateDescription": "${RELEASE_NAME}",
+  "indexUrl": "${BSI_URL}",
+  "repositoryUrl": "${CATPKG_URL}",
+  "githubUrl": "https://github.com/${REPO}",
+  "feedUrl": "https://github.com/${REPO}/releases.atom",
+  "bugTrackerUrl": "https://github.com/${REPO}/issues",
+  "repositoryFiles": [
+${REPO_FILES_JSON}
+  ]
+}
+EOF
+
+        echo "Generated assets:"
+        ls -lh NewRecruit.latest.bsi NewRecruit.catpkg.json
+
+    - name: Upload assets to release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh release upload "${{ github.event.release.tag_name }}" \
+          NewRecruit.latest.bsi \
+          NewRecruit.catpkg.json \
+          --clobber
