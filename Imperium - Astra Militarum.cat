@@ -6,7 +6,7 @@
   <entryLinks>
     <entryLink import="true" name="Infantry Platoon [NFLB]" hidden="false" id="nflb-el-platoon" type="selectionEntry" targetId="nflb-se-platoon">
       <categoryLinks>
-        <categoryLink id="nflb-cl-el-troops" name="Troops" hidden="false" targetId="3d52-fccf-a302-troops" primary="true"/>
+        <categoryLink id="nflb-cl-el-troops" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="’Iron Hand’ Straken [Legends]" hidden="false" type="selectionEntry" id="f38c-6b5-d8d3-32db" targetId="913f-3cb6-fb80-7f6a"/>
@@ -936,17 +936,17 @@
         <publicationLink id="nflb-pl-platoon" targetId="nflb-pub-main"/>
       </publicationLinks>
       <categoryLinks>
-        <categoryLink id="nflb-cl-plat-troops" name="Troops" hidden="false" targetId="3d52-fccf-a302-troops" primary="true"/>
+        <categoryLink id="nflb-cl-plat-troops" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="true"/>
         <categoryLink id="nflb-cl-plat-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
-        <categoryLink id="nflb-cl-plat-imp" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
-        <categoryLink id="nflb-cl-plat-inf" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="nflb-cl-plat-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink id="nflb-cl-plat-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink id="nflb-il-coc" name="Chain of Command" hidden="false" targetId="nflb-prof-ability-coc" type="profile"/>
         <infoLink id="nflb-il-won" name="Weight of Numbers" hidden="false" targetId="nflb-prof-ability-won" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry id="nflb-se-pcs" name="Platoon Command Squad" hidden="false" collective="false" import="true" type="unit">
@@ -954,19 +954,19 @@
             <publicationLink id="nflb-pl-pcs" targetId="nflb-pub-main"/>
           </publicationLinks>
           <categoryLinks>
-            <categoryLink id="nflb-cl-pcs-inf" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+            <categoryLink id="nflb-cl-pcs-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
             <categoryLink id="nflb-cl-pcs-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
-            <categoryLink id="nflb-cl-pcs-imp" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+            <categoryLink id="nflb-cl-pcs-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile id="nflb-prof-pcs-unit" name="Platoon Command Squad" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="nflb-prof-pcs-unit" name="Platoon Command Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e17-haar">6"</characteristic>
-                <characteristic name="T" typeId="e7f0-1278-9c28-bval">3</characteristic>
-                <characteristic name="SV" typeId="fb84-60a0-99b4-sval">5+</characteristic>
-                <characteristic name="W" typeId="a hit-3412-9bc3-wval">1</characteristic>
-                <characteristic name="LD" typeId="2661-7f7e-dc44-lval">6+</characteristic>
-                <characteristic name="OC" typeId="99ef-cbc6-1793-oval">2</characteristic>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -978,13 +978,13 @@
               <infoLinks>
                 <infoLink id="nflb-il-pcs-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
               </infoLinks>
-              <costs><cost name="pts" typeId="points" value="0"/></costs>
+              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
             </selectionEntry>
             <selectionEntry id="nflb-se-pcs-ccw" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="nflb-il-pcs-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
               </infoLinks>
-              <costs><cost name="pts" typeId="points" value="0"/></costs>
+              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -992,7 +992,7 @@
             <constraint id="nflb-con-pcs-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="nflb-se-is" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
@@ -1000,19 +1000,19 @@
             <publicationLink id="nflb-pl-is" targetId="nflb-pub-main"/>
           </publicationLinks>
           <categoryLinks>
-            <categoryLink id="nflb-cl-is-inf" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+            <categoryLink id="nflb-cl-is-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
             <categoryLink id="nflb-cl-is-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
-            <categoryLink id="nflb-cl-is-imp" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+            <categoryLink id="nflb-cl-is-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile id="nflb-prof-is-unit" name="Infantry Squad" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+            <profile id="nflb-prof-is-unit" name="Infantry Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
               <characteristics>
-                <characteristic name="M" typeId="0bdf-a96e-9e17-haar">6"</characteristic>
-                <characteristic name="T" typeId="e7f0-1278-9c28-bval">3</characteristic>
-                <characteristic name="SV" typeId="fb84-60a0-99b4-sval">5+</characteristic>
-                <characteristic name="W" typeId="a hit-3412-9bc3-wval">1</characteristic>
-                <characteristic name="LD" typeId="2661-7f7e-dc44-lval">7+</characteristic>
-                <characteristic name="OC" typeId="99ef-cbc6-1793-oval">2</characteristic>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1021,19 +1021,19 @@
               <infoLinks>
                 <infoLink id="nflb-il-is-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
               </infoLinks>
-              <costs><cost name="pts" typeId="points" value="0"/></costs>
+              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
             </selectionEntry>
             <selectionEntry id="nflb-se-is-frag" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="nflb-il-is-fg" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
               </infoLinks>
-              <costs><cost name="pts" typeId="points" value="0"/></costs>
+              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
             </selectionEntry>
             <selectionEntry id="nflb-se-is-krak" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="nflb-il-is-kg" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
               </infoLinks>
-              <costs><cost name="pts" typeId="points" value="0"/></costs>
+              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1041,81 +1041,81 @@
             <constraint id="nflb-con-is-max" type="max" value="5" field="selections" scope="parent" shared="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="55"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="nflb-prof-ability-coc" name="Chain of Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1bbe49" typeName="Ability">
+    <profile id="nflb-prof-ability-coc" name="Chain of Command" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this Platoon contains a Platoon Command Squad, Infantry Squads within 6" of it may use the Platoon Command Squad's Leadership characteristic instead of their own. If the Platoon Command Squad is destroyed, Infantry Squads in this Platoon lose this ability for the rest of the battle.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this Platoon contains a Platoon Command Squad, Infantry Squads within 6" of it may use the Platoon Command Squad's Leadership characteristic instead of their own. If the Platoon Command Squad is destroyed, Infantry Squads in this Platoon lose this ability for the rest of the battle.</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-ability-won" name="Weight of Numbers" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1bbe49" typeName="Ability">
+    <profile id="nflb-prof-ability-won" name="Weight of Numbers" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made against an Infantry Squad in this Platoon, if that unit contains 6 or more models, subtract 1 from the Wound roll.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is made against an Infantry Squad in this Platoon, if that unit contains 6 or more models, subtract 1 from the Wound roll.</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-ability-orders" name="Issue Orders" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1bbe49" typeName="Ability">
+    <profile id="nflb-prof-ability-orders" name="Issue Orders" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Command phase, the Platoon Commander may issue one of the following orders to one Infantry Squad within 6": MOVE MOVE MOVE (that unit may make a Normal Move of up to 3" immediately), TAKE AIM (that unit's ranged weapons gain [LETHAL HITS] until the end of the turn), or GET DOWN (that unit gains a 6+ invulnerable save until the start of your next Command phase).</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, the Platoon Commander may issue one of the following orders to one Infantry Squad within 6": MOVE MOVE MOVE (that unit may make a Normal Move of up to 3" immediately), TAKE AIM (that unit's ranged weapons gain [LETHAL HITS] until the end of the turn), or GET DOWN (that unit gains a 6+ invulnerable save until the start of your next Command phase).</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-lasgun" name="Lasgun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3f5ce" typeName="Weapon">
+    <profile id="nflb-prof-lasgun" name="Lasgun" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e4fe1d0a8">24"</characteristic>
-        <characteristic name="A" typeId="de14-g33f-c33f-atks">1</characteristic>
-        <characteristic name="BS" typeId="fc32-7721-5c1c-bsval">4+</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-sval">3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-apval">0</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d6-dmgval">1</characteristic>
-        <characteristic name="Keywords" typeId="ability-keywords-id">[RAPID FIRE 1]</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[RAPID FIRE 1]</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-laspistol" name="Laspistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3f5ce" typeName="Weapon">
+    <profile id="nflb-prof-laspistol" name="Laspistol" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e4fe1d0a8">12"</characteristic>
-        <characteristic name="A" typeId="de14-g33f-c33f-atks">1</characteristic>
-        <characteristic name="BS" typeId="fc32-7721-5c1c-bsval">4+</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-sval">3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-apval">0</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d6-dmgval">1</characteristic>
-        <characteristic name="Keywords" typeId="ability-keywords-id">[PISTOL]</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[PISTOL]</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-ccw" name="Close Combat Weapon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3f5ce" typeName="Weapon">
+    <profile id="nflb-prof-ccw" name="Close Combat Weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e4fe1d0a8">Melee</characteristic>
-        <characteristic name="A" typeId="de14-g33f-c33f-atks">1</characteristic>
-        <characteristic name="BS" typeId="fc32-7721-5c1c-bsval">4+</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-sval">3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-apval">0</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d6-dmgval">1</characteristic>
-        <characteristic name="Keywords" typeId="ability-keywords-id">-</characteristic>
+        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-frag" name="Frag Grenade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3f5ce" typeName="Weapon">
+    <profile id="nflb-prof-frag" name="Frag Grenade" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e4fe1d0a8">6"</characteristic>
-        <characteristic name="A" typeId="de14-g33f-c33f-atks">D6</characteristic>
-        <characteristic name="BS" typeId="fc32-7721-5c1c-bsval">4+</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-sval">3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-apval">0</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d6-dmgval">1</characteristic>
-        <characteristic name="Keywords" typeId="ability-keywords-id">[BLAST]</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">6"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[BLAST]</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-krak" name="Krak Grenade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3f5ce" typeName="Weapon">
+    <profile id="nflb-prof-krak" name="Krak Grenade" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e4fe1d0a8">6"</characteristic>
-        <characteristic name="A" typeId="de14-g33f-c33f-atks">1</characteristic>
-        <characteristic name="BS" typeId="fc32-7721-5c1c-bsval">4+</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-sval">6</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-apval">-1</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d6-dmgval">D3</characteristic>
-        <characteristic name="Keywords" typeId="ability-keywords-id">-</characteristic>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">6"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
