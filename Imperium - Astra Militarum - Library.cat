@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="200" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="195" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -710,14 +710,9 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="3d50-3e3b-d054-beef">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="928a-771a-cf53-7d70">
               <repeats>
@@ -969,14 +964,9 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="72bf-3ffa-565b-88d2">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="b123-03b0-a56c-84e2">
               <repeats>
@@ -1187,14 +1177,9 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="c300-c2dd-a42d-c691">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="0c32-1989-31d5-d1a3">
               <repeats>
@@ -4865,14 +4850,9 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="4c48-a43c-e081-9b20">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="9c8d-eb4b-c90d-1310">
               <repeats>
@@ -6189,14 +6169,9 @@
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="20c8-a18b-0b26-1e21">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="7504-0f61-9150-92ac">
               <repeats>
@@ -11985,14 +11960,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="94f3-58aa-5e5c-1e14">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="1e1c-6edd-330a-e00a">
               <repeats>
@@ -12373,14 +12343,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="ba90-3a49-8f48-b486">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="ee22-a2dd-cb84-87a7">
               <repeats>
@@ -12600,14 +12565,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="dc5c-1ace-db26-4a93">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="5c92-7216-d349-47cc">
               <repeats>
@@ -18758,14 +18718,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="4c22-641d-4b2e-a881">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="b585-f832-5e40-4209">
               <repeats>
@@ -19047,14 +19002,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="a814-55f8-afdc-4385">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="2519-9b38-d299-41e7">
               <repeats>
@@ -19328,14 +19278,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="44ed-3b77-78fd-bb19">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="91d4-6cd0-ada0-c602">
               <repeats>
@@ -19608,14 +19553,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="8ad6-b70b-bea5-0104">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="4ee4-16c4-e1e2-11ac">
               <repeats>
@@ -20489,14 +20429,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="dbab-6bb9-41d3-1d1d">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="055a-07bd-2a85-55b0">
               <repeats>
@@ -21339,14 +21274,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="5b8e-8b7f-02ce-41dd">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="f1c7-de14-8195-6ef2">
               <repeats>
@@ -21494,14 +21424,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="17d5-c7f7-19a0-72ce">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="1d73-a8b0-821a-eb44">
               <repeats>
@@ -23083,14 +23008,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="a12d-d116-f2e7-c3e1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="d183-134d-9308-c067">
               <repeats>
@@ -23378,14 +23298,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="5eb9-901d-b3aa-2d3e">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="74c4-63c3-7445-804e">
               <repeats>
@@ -24272,14 +24187,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="5abc-2793-cb2c-f70c">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="2f89-783c-c574-c9f2">
               <repeats>
@@ -25315,7 +25225,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <categoryLink targetId="4780-be29-8c52-1d20" id="befa-f8b9-b702-16a" primary="false" name="Squadron"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="505-5443-c9d2-9157" primary="false" name="Smoke"/>
         <categoryLink targetId="fa45-57e-930e-602b" id="7ffa-983b-f2df-6dfc" primary="false" name="Faction: Astra Militarum"/>
-        <categoryLink name="Regiment" hidden="false" id="642e-9e38-852f-2ba9" targetId="c8a1-fef-5569-61c9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="559f-6d10-b176-c5b6" hidden="false" sortIndex="2">
@@ -29015,14 +28924,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <modifierGroup type="and">
           <modifiers>
             <modifier type="set" value="6" field="7ffe-2478-41fe-8dac">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" childName="Character"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="2" field="c147-6995-f419-7756">
               <repeats>
@@ -35649,15 +35553,15 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
         <profile name="Counterstrategist" typeId="aecc-a2a4-54d6-841b" typeName="Hero of Hades Hive" hidden="false" id="6cdd-cc41-84bf-2873">
           <characteristics>
-            <characteristic name="Description" typeId="8c8a-dbca-6a03-6124">At the end of your opponent’s Movement phase, you can select one enemy unit that was set up or ended a move within 9&quot; of this model, and one friendly **^^Regiment^^** unit within 6&quot; of and visible to this model that has not made a Normal move or been targeted with the Fire Overwatch Stratagem this phase. That **^^Regiment^^**unit can then either:
+            <characteristic name="Description" typeId="8c8a-dbca-6a03-6124">At the end of your opponent’s Movement phase, you can select one enemy unit that was set up or ended a move within 12&quot; of this model’s unit, and one friendly **^^Regiment^^** unit within 6&quot; of and visible to this model. That **^^Regiment^^**unit can then either:
 - Make a Normal move of up to D6&quot;.
-- Shoot at that enemy unit, but only if it is an eligible target. Until the end of the phase, each time a model in that unit makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit, irrespective of the attacking weapon’s Ballistic Skill or any modifiers.
-- Make a Surge move. To do so, roll one D6: models in that unit move a number of inches up to the result, but that unit must end that move as close as possible to the closest enemy unit (excluding **^^Aircraft^^**). When doing so, those models can be moved within Engagement Range of that enemy unit. That unit cannot make a Surge move while it is Battle‑shocked or within Engagement Range of one or more enemy units, and can only make one Surge move per phase.</characteristic>
+- Shoot at that enemy unit, but only if it is an eligible target.
+- Declare a charge against that enemy unit, but only if it is within 12&quot; of that **^^Regiment^^** unit (note that even if this charge is successful, the charging unit does not receive any Charge Bonus this turn).</characteristic>
           </characteristics>
         </profile>
         <profile name="Decisive Command" typeId="aecc-a2a4-54d6-841b" typeName="Hero of Hades Hive" hidden="false" id="198f-5dab-db07-14e3">
           <characteristics>
-            <characteristic name="Description" typeId="8c8a-dbca-6a03-6124">The next Order issued by this model can be issued to one eligible friendly unit within 12&quot; of this model; if this is the first Order issued by a unit from your army this Command phase, that Order affects not only that eligible unit, but every other eligible friendly unit within 6&quot; of that eligible unit.</characteristic>
+            <characteristic name="Description" typeId="8c8a-dbca-6a03-6124">The next Order issued by this model can be issued to one eligible friendly unit within 12&quot; of this model; if this is the first Order issued by a unit from your army this phase, that Order affects not only that eligible unit, but every other eligible friendly unit within 6&quot; of that eligible unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -35804,7 +35708,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <categoryLink name="Vehicle" hidden="false" id="7356-b561-0546-625b" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Squadron" hidden="false" id="5268-628a-8b7b-5f21" targetId="4780-be29-8c52-1d20" primary="false"/>
         <categoryLink name="Commissar Graves" hidden="false" id="9540-aec9-b62d-059f" targetId="b207-2651-7723-66ef" primary="false"/>
-        <categoryLink name="Character" hidden="false" id="2503-8bf3-68f4-4dcc" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
@@ -35861,8 +35764,8 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Prefectus heavy stubber" hidden="false" id="aa20-b4c9-2dfe-b208">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7007-ddd2-f976-b42f"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a10d-9a85-e959-81c3"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7007-ddd2-f976-b42f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a10d-9a85-e959-81c3"/>
           </constraints>
           <infoLinks>
             <infoLink name="Rapid Fire" hidden="false" type="rule" id="028a-c2e0-913a-368f" targetId="c5c8-8b58-b8b6-7786"/>
@@ -36011,9 +35914,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="f434-af72-30ec-98af" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" sortIndex="2"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commissar Graves on Foot" hidden="false" id="d624-2be1-87a3-41ca">
       <categoryLinks>
@@ -36068,7 +35968,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </profile>
         <profile name="Brutal Disciplinarian" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9f27-84f9-4821-be2a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** (excluding units that only contain one model) unit that is Battle‑shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is no longer Battle‑shocked.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per phase, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** (excluding units that only contain one model) unit that is Battle‑shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is no longer Battle‑shocked.</characteristic>
           </characteristics>
         </profile>
         <profile name="Orders" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="0698-788e-c536-625b">
@@ -36081,6 +35981,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 - **^^Cadian Shock Troops^^**
 - **^^Catachan Jungle Fighters^^**
+- **^^Command Squad^^**
 - **^^Death Korps of Krieg^^**
 - **^^Kasrkin^^**
 - **^^Krieg Combat Engineers^^**
@@ -36474,9 +36375,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="25e7-2198-beee-014e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="bb19-0828-e633-a38e">
+                        <selectionEntry type="upgrade" import="true" name="Heavy lascannon" hidden="false" id="bb19-0828-e633-a38e">
                           <profiles>
-                            <profile name="Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6244-46df-f7a8-50ed">
+                            <profile name="Heavy lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6244-46df-f7a8-50ed">
                               <characteristics>
                                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
                                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
@@ -36486,7 +36387,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
                                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
                               </characteristics>
-                              <comment>Assault variant</comment>
                             </profile>
                           </profiles>
                           <infoLinks>
@@ -36718,525 +36618,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cadian Recon Squad" hidden="false" id="05de-5701-33a0-b23d">
-      <modifiers>
-        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3bdf-a114-5035-c6ac" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="fa45-57e-930e-602b" id="30f3-caf6-17ca-7b7c" primary="false" name="Faction: Astra Militarum"/>
-        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="b08b-e200-b6d8-4b06" primary="false" name="Imperium"/>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="afac-d695-45c5-3d2a" primary="true" name="Infantry"/>
-        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e6ad-19c7-cd71-7582" primary="false" name="Grenades"/>
-        <categoryLink targetId="c8a1-fef-5569-61c9" id="3289-0509-6d4c-efd4" primary="false" name="Regiment"/>
-        <categoryLink name="Smoke" hidden="false" id="b66f-2050-33db-0ebb" targetId="6df-937-16bc-8c1a" primary="false"/>
-        <categoryLink name="Cadian Recon Squad" hidden="false" id="a0cc-dd0d-d59f-b347" targetId="5583-8ab1-47c0-4ebe" primary="false"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="328c-583d-8757-dec4" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="cddc-ffea-ddf8-45d8" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9aab-949a-d477-aada" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="22e2-20de-2628-546d" includeChildSelections="true"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Recon Sergeant" id="6e51-a9bb-fbf9-2a28" hidden="false" sortIndex="3">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Recon Sergeant" hidden="false" id="fb08-33aa-4e60-f68f">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f8a-db50-8025-3328" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22e6-864f-9391-9247" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink targetId="995d-958a-c43b-b0e3" id="3d30-695a-4325-e675" type="profile" name="Cadian Recon Squad" hidden="false">
-                  <modifiers>
-                    <modifier type="set" value="Recon Sergeant" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink targetId="0c40-6f94-5c9b-e1d3" id="dbd1-223a-4c74-dc3e" type="selectionEntry" name="Lasgun" hidden="false" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd5c-85a7-0354-1c1c" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="245d-b4d1-6045-2668" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d11-ae85-5f16-af21" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink targetId="8fe1-438f-f00a-ef5c" id="d3ab-9836-d263-b67e" type="selectionEntry" name="Close combat weapon" hidden="false" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4959-ae0f-2d3e-8d76" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c526-10c5-b769-9dd2" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="3c80-e0fe-96e4-ba3c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="9 Recon Troopers" id="0a00-3698-4654-c3b4" hidden="false" defaultSelectionEntryId="734a-440e-b3d7-1c3a" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Recon Trooper w/ Lasgun" hidden="false" id="734a-440e-b3d7-1c3a">
-              <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8348-6e13-4a25-8e5e" includeChildSelections="false"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8d56-b444-b05b-165e" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Cadian Recon Squad" id="b4eb-85d9-5c6c-b92f" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                  <modifiers>
-                    <modifier type="set" value="Recon Trooper" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Lasgun" hidden="false" id="9d98-19a6-f917-8035" targetId="0c40-6f94-5c9b-e1d3" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb89-4020-0f0f-a941" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e4-cb26-6cfb-3164" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="9999-b236-fe11-a24b" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bad-5e57-2ab9-7a64" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5e5-3b93-37bf-b9e1" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Recon Trooper w/ Autostubber" hidden="false" id="bb86-4c51-03f9-5806">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f07-ce37-015b-b1bc" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Cadian Recon Squad" id="2a92-443e-32c0-8e68" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                  <modifiers>
-                    <modifier type="set" value="Recon Trooper" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="e7a8-91c8-8c93-0700" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="931a-df83-6ea5-dfe4" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="036c-91f6-1c6e-f532" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autostubber" hidden="false" id="c583-00fa-af4c-4302">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0252-19d6-7173-f89e" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1f9-b477-9233-9e36" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Autostubber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1f96-94be-0337-beca">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Rapid Fire" id="8d0a-d5b2-192f-1c80" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Recon Trooper w/ Vox-caster" hidden="false" id="e6f8-e0d4-25d6-123a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f99e-1756-4cfe-982a" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Cadian Recon Squad" id="99d5-c45e-f2b3-7974" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                  <modifiers>
-                    <modifier type="set" value="Recon Trooper" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Lasgun" hidden="false" id="31e4-3638-2d02-a1ce" targetId="0c40-6f94-5c9b-e1d3" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56cf-859f-ff03-49fd" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e2-8699-614c-63e4" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="e249-d897-e2e3-2ccb" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44f1-b81e-1b4c-c14e" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="697b-761c-8bcf-e99f" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Vox-caster" hidden="false" id="b8b3-af3a-18fa-982f">
-                  <profiles>
-                    <profile name="Vox-caster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0571-e9fb-16df-0ca4">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target the bearer’s unit with a Stratagem, roll one D6, adding 1 to the result if there are one or more friendly **^^Officer^^** models within 6&quot;: on a 5+, you gain 1CP.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b559-f45d-56bd-9186" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e72-b275-34d9-0874" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Vox-relay beacon" hidden="false" id="8347-5328-93c7-e2e2">
-                  <profiles>
-                    <profile name="Vox-relay beacon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bf3d-47db-5ae4-29ee">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, you can set up one Vox‑relay Beacon token for this unit anywhere on the battlefield that is not in your opponent’s deployment zone. While a friendly **^^Astra Militarum Regiment^^** unit is within 6&quot; of that token, **^^Officer^^** units from your army can issue orders to that **^^Regiment^^** unit as if the **^^Officer^^** unit was within 6&quot; of it. At the end of every phase, If an enemy unit is within 1&quot; of a Vox‑relay Beacon token you set up, that token is removed from the battlefield.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="269a-6de8-9f11-7458" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b97e-65a9-7dae-b3f3" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Recon Trooper w/ Long-las" hidden="false" id="0e86-93ae-7e93-9ca0">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="168b-be04-4b6f-45e9" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Cadian Recon Squad" id="2cb3-5d38-60da-7b5b" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                  <modifiers>
-                    <modifier type="set" value="Recon Trooper" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Long-las" hidden="false" id="c62d-9a0c-2526-6c7e" targetId="7efa-b0a3-9454-b1a8" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77e8-47f6-77b8-c684" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ada-df0d-8590-7513" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="fa9b-6b81-6e3d-a7ca" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08a8-c07c-97ba-5845" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f991-6fe9-5b6b-cc61" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <modifiers>
-                <modifier type="set" value="1" field="168b-be04-4b6f-45e9">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6805-e14f-c1bc-b8e3" shared="true" childName="Weapons Team"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="Cannot have 2 Recon Troopers equipped with Long-las and also a Weapons Team in the unit." field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6805-e14f-c1bc-b8e3" shared="true" childName="Weapons Team"/>
-                        <condition type="atLeast" value="2" field="selections" scope="parent" childId="0e86-93ae-7e93-9ca0" shared="true" childName="Recon Trooper w/ Long-las"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Weapons Team" hidden="false" id="6805-e14f-c1bc-b8e3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="802f-5280-9e44-a3eb" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Recon Trooper w/ Missile launcher" hidden="false" id="4b10-bc1c-678d-6292">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ae-f079-e7de-9ada" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc33-6ab4-412b-10b9" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Cadian Recon Squad" id="a53a-cd30-501d-eb6b" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                      <modifiers>
-                        <modifier type="set" value="Recon Trooper" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Missile launcher" hidden="false" id="978f-1b39-65f1-550f" targetId="fc7a-6cff-c0e5-3b96" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="093e-2e73-f021-7c99" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45b5-e083-7f13-c7bc" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="de65-8047-fe27-ac6d" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c7c-9d71-4ebf-0347" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf43-499f-434c-77c6" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="37c9-6034-d90a-6bef" targetId="1211-ef94-5ea9-6a50" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8446-3ec0-528b-8cc7" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4415-8174-4f35-7314" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Recon Trooper w/ Laspistol" hidden="false" id="74b1-4d53-1117-f988">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32d1-d2d9-6cfc-78db" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e28-9679-7dd2-cbfa" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Cadian Recon Squad" id="e5b6-0441-b56a-8bc6" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                      <modifiers>
-                        <modifier type="set" value="Recon Trooper" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="17e5-dee4-3db2-154c" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fde6-b070-84c0-7e08" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93d4-3eec-e170-f683" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="6cbe-3a1c-9ff8-924d" targetId="1211-ef94-5ea9-6a50" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1604-f1cc-45c4-28aa" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c7-9b55-afdb-c6ab" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="b698-2196-078e-5bcb-min" includeChildSelections="false" automatic="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b698-2196-078e-5bcb-max" includeChildSelections="false" automatic="false"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Special Weapon" id="6fa1-68a2-5dbc-e90e" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Recon Trooper w/ Plasma gun" hidden="false" id="b83c-2ec7-2c55-833f">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9cc-d1cc-4e80-a1a4" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Cadian Recon Squad" id="d3fc-ffe5-3007-85b9" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                      <modifiers>
-                        <modifier type="set" value="Recon Trooper" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma gun" hidden="false" id="3304-b222-05fd-ac28" targetId="8e6c-4de8-8cec-ddde" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0855-4c55-1076-aec9" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="644f-060a-6d05-9154" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="cc76-f6c9-6aa6-57d2" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d562-a36d-934d-8b40" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d96-00c7-6a37-7b0f" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Recon Trooper w/ Meltagun" hidden="false" id="3299-06e6-45fa-e8a3">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1faf-f007-39a0-27bf" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Cadian Recon Squad" id="faa0-8235-fd3e-8bc1" hidden="false" targetId="995d-958a-c43b-b0e3" type="profile">
-                      <modifiers>
-                        <modifier type="set" value="Recon Trooper" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Meltagun" hidden="false" id="1ccd-cd5c-4c9f-dcff" targetId="15ea-693b-24ef-effc" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1b4-cc7f-79b8-23e9" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b473-8411-d839-44f6" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="d424-60fb-5a43-dd39" targetId="8fe1-438f-f00a-ef5c" type="selectionEntry" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f24-a6cd-b0ea-deb1" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b1b-ae50-8a9f-1532" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="094a-bd4f-65b5-7efd" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <modifiers>
-            <modifier type="set" value="8" field="b698-2196-078e-5bcb-min">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6805-e14f-c1bc-b8e3" shared="true" childName="Weapons Team" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="8" field="b698-2196-078e-5bcb-max">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6805-e14f-c1bc-b8e3" shared="true" childName="Weapons Team" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <profiles>
-        <profile name="Independent Operatives" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="182f-d6c9-866c-6a32">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Order is issued to this unit, that Order affects this unit until a new Order is issued to this unit, or until this unit becomes Battle‑shocked, or until the battle ends (whichever happens first).</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Stealth" id="140c-b441-a21d-49ea" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
-        <infoLink name="Infiltrators" id="41ed-bba4-4704-ada3" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="ad5a-93b5-d993-e25f" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
-        <entryLink import="true" name="Warlord" hidden="false" id="d5d1-4ac1-4e65-77ab" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="6" field="cddc-ffea-ddf8-45d8">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="9aab-949a-d477-aada">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="2" field="22e2-20de-2628-546d">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="1" field="cddc-ffea-ddf8-45d8">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="d0de-45ce-e737-b6be" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Battle-ready)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Blooded)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Battle-hardened)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Heroic)" field="name">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="append" value="(Legendary)" field="name">
-              <conditions>
-                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Crusade modifiers</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <comment>Boarding Actions modifiers</comment>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="0c40-6f94-5c9b-e1d3" collective="true">
-      <profiles>
-        <profile name="Lasgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9b01-ea93-8022-25ec">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Assault" id="72d8-08c6-a344-ba39" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-        <infoLink name="Rapid Fire" id="f6d1-ff46-f9bd-9b23" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-      </infoLinks>
-      <comment>Assault variant</comment>
-    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Aegis Defence Line" hidden="false" id="a56a-23f-9ea1-d8ee"/>
@@ -37385,7 +36766,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
     <categoryEntry name="Commissar Graves on Foot" id="7313-5061-65c3-7330" hidden="false"/>
     <categoryEntry name="Hippogriff AFV" id="c849-8bc8-df52-bb5c" hidden="false"/>
     <categoryEntry name="Centaur RSV" id="182e-9752-56ae-cd7d" hidden="false"/>
-    <categoryEntry name="Cadian Recon Squad" id="5583-8ab1-47c0-4ebe" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Damaged: 1-4 Wounds Remaining" hidden="false" id="a626-b90a-cf43-68b4" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -37617,16 +36997,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
         <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Cadian Recon Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="995d-958a-c43b-b0e3">
-      <characteristics>
-        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -37931,6 +37301,64 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mechanised Strike Force [NFLB]" hidden="false" id="nflb-det-am-msf">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Mechanised Doctrine" id="nflb-rule-am-msf-doctrine" hidden="false">
+              <description>While a friendly **^^Astra Militarum^^** **^^Infantry^^** unit is embarked in a friendly **^^Astra Militarum^^** **^^Transport^^**, that unit adds 1 to its Objective Control characteristic.
+
+In addition, each time a friendly **^^Astra Militarum^^** **^^Infantry^^** unit disembarks from a **^^Transport^^** during your turn, until the end of that turn, ranged attacks made by models in that unit with the **[HEAVY]** ability are made at the firing model&apos;s full Ballistic Skill.</description>
+            </rule>
+            <rule name="Mechanised Spearhead — 1CP" id="nflb-rule-am-msf-strat1" hidden="false">
+              <description>Mechanised Strike Force — Strategic Ploy Stratagem
+
+WHEN: Pre-game, after both armies have Deployed but before the first turn begins. Use once per battle.
+TARGET: One friendly **^^Astra Militarum^^** **^^Transport^^** unit and its embarked unit.
+EFFECT: Redeploy that Transport (and its embarked unit) anywhere on the battlefield wholly within 18&quot; of any battlefield edge and more than 9&quot; from any enemy unit.</description>
+            </rule>
+            <rule name="Open Hatches! — 1CP" id="nflb-rule-am-msf-strat2" hidden="false">
+              <description>Mechanised Strike Force — Battle Tactic Stratagem
+
+WHEN: Your Shooting phase, just after a friendly **^^Transport^^**&apos;s embarked unit is selected to shoot using Firing Deck.
+TARGET: That embarked unit.
+EFFECT: Until the end of the phase, increase the Transport&apos;s Firing Deck characteristic by 2. The embarked unit may also re-roll Wound rolls of 1 from these Firing Deck attacks.</description>
+            </rule>
+            <rule name="Treads Forward! — 1CP" id="nflb-rule-am-msf-strat3" hidden="false">
+              <description>Mechanised Strike Force — Strategic Ploy Stratagem
+
+WHEN: Your Movement phase, just before a friendly **^^Astra Militarum^^** **^^Transport^^** is selected to move.
+TARGET: That Transport.
+EFFECT: Add 3&quot; to that Transport&apos;s Move characteristic until the end of the phase. In addition, if the Transport Advances this Movement phase, models embarked in it may still disembark this turn (in your Movement phase, after the Transport has moved).</description>
+            </rule>
+            <rule name="Disembark and Fire! — 1CP" id="nflb-rule-am-msf-strat4" hidden="false">
+              <description>Mechanised Strike Force — Battle Tactic Stratagem
+
+WHEN: Your Shooting phase, after a friendly **^^Astra Militarum^^** **^^Infantry^^** unit that disembarked this turn is selected to shoot.
+TARGET: That **^^Astra Militarum^^** **^^Infantry^^** unit.
+EFFECT: Until the end of the phase, that unit&apos;s ranged attacks with the **[HEAVY]** ability gain the **[SUSTAINED HITS 1]** ability.</description>
+            </rule>
+            <rule name="Hull-Down Defense — 1CP" id="nflb-rule-am-msf-strat5" hidden="false">
+              <description>Mechanised Strike Force — Strategic Ploy Stratagem
+
+WHEN: Start of your opponent&apos;s Shooting phase, just after a friendly **^^Astra Militarum^^** **^^Transport^^** has been selected as the target of one or more attacks.
+TARGET: That Transport.
+EFFECT: Until the end of the phase, ranged attacks targeting that Transport are subject to -1 to the Wound roll, and the Transport has the Feel No Pain 5+ ability.</description>
+            </rule>
+            <rule name="Smokescreen Surge — 1CP" id="nflb-rule-am-msf-strat6" hidden="false">
+              <description>Mechanised Strike Force — Strategic Ploy Stratagem
+
+WHEN: End of your Movement phase.
+TARGET: All friendly **^^Astra Militarum^^** **^^Transport^^** units on the battlefield.
+EFFECT: Until the start of your next turn, those Transports gain the Stealth ability and the Benefit of Cover. (Cannot be used by a Transport that Advanced this turn.)</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -38388,7 +37816,7 @@ Each time an **^^Officer^^** model in this unit issues an Order, that Order can 
               <profiles>
                 <profile name="Bold Leadership" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b47c-7f4b-73b1-ac71">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Officer^^** model only. If you control an objective marker at the end of your Command phase, and the bearer&apos;s unit (or any **^^Transport^^** it is embarked within) is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Officer^^** model only. If you control an objective marker at the end of your Command phase, and the bearer&apos;s unit (or any **^^Transport^^** it is embarked within) is within range of that objective marker, that objective marker remains under you control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -39386,14 +38814,11 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b7ec-7ec3-eabc-e48c" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
-                <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-                <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exemplary Officer" hidden="false" id="0691-f2dc-f688-bbe2">
@@ -39414,7 +38839,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="77ff-dc99-29c2-ddeb" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -39469,6 +38894,84 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62fe-d7d2-bb25-069a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mechanised Strike Force Enhancements [NFLB]" hidden="false" id="nflb-enh-am-msf-group">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="nflb-det-am-msf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Track Commander [NFLB]" hidden="false" id="nflb-enh-am-msf-track">
+              <profiles>
+                <profile name="Track Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="nflb-prof-enh-am-msf-track">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Officer^^** model only. While the bearer is embarked in a **^^Transport^^**, that Transport&apos;s ranged weapons are made at BS 3+ (instead of BS 4+), and the Transport&apos;s unit can re-roll Hit rolls of 1 against the closest visible enemy unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="nflb-con-enh-am-msf-track-p"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="nflb-con-enh-am-msf-track-r" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran Crewman [NFLB]" hidden="false" id="nflb-enh-am-msf-crew">
+              <profiles>
+                <profile name="Veteran Crewman" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="nflb-prof-enh-am-msf-crew">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Officer^^** model only. While the bearer is embarked in a **^^Transport^^**, that Transport adds 1&quot; to its Move characteristic, and the first failed save (other than against a Mortal Wound) the Transport makes each battle round is automatically passed instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="nflb-con-enh-am-msf-crew-p"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="nflb-con-enh-am-msf-crew-r" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master Vox [NFLB]" hidden="false" id="nflb-enh-am-msf-vox">
+              <profiles>
+                <profile name="Master Vox" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="nflb-prof-enh-am-msf-vox">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Officer^^** model only. The bearer can issue Orders to any friendly **^^Astra Militarum^^** unit on the battlefield (instead of being limited to range or the normal Order-target restrictions). In addition, the bearer issues 1 additional Order per Command phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="nflb-con-enh-am-msf-vox-p"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="nflb-con-enh-am-msf-vox-r" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron-Hardened Hull [NFLB]" hidden="false" id="nflb-enh-am-msf-hull">
+              <profiles>
+                <profile name="Iron-Hardened Hull" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="nflb-prof-enh-am-msf-hull">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Officer^^** model only. While the bearer is embarked in a **^^Transport^^**, that Transport&apos;s Toughness characteristic is increased by 1, and the Transport has a 5+ Feel No Pain against Mortal Wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="nflb-con-enh-am-msf-hull-p"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="nflb-con-enh-am-msf-hull-r" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="nflb-con-enh-am-msf-max"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -39620,21 +39123,9 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d87-e63a-9e98-9f5e"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="7b2f-1a9b-4188-dd21" targetId="af85-b936-7f-430c">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="2ed1-f591-1e25-9012" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="5a2e-1423-5585-54bb" targetId="51a8-ffe2-928f-3f50">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="7452-4e46-cefa-134c" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Heavy flamer" hidden="false" type="selectionEntry" id="e73c-c3e7-9241-5226" targetId="6fef-cbbd-be33-44a4">
-              <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a59b-6415-2b68-5125" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-              </entryLinks>
-            </entryLink>
+            <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="7b2f-1a9b-4188-dd21" targetId="af85-b936-7f-430c"/>
+            <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="5a2e-1423-5585-54bb" targetId="51a8-ffe2-928f-3f50"/>
+            <entryLink import="true" name="Heavy flamer" hidden="false" type="selectionEntry" id="e73c-c3e7-9241-5226" targetId="6fef-cbbd-be33-44a4"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sponsons" hidden="false" id="f1ca-2268-cdd2-5ec8" sortIndex="3" defaultSelectionEntryId="none">
@@ -39649,9 +39140,6 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c0b2-e1b6-5ffb-bed7"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="83e9-e6b7-fcfd-8f12"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="d0f9-02b3-5afb-87de" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -39662,9 +39150,6 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c0b2-e1b6-5ffb-bed7"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="83e9-e6b7-fcfd-8f12"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="4867-87e0-fbd4-3ddc" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -39675,9 +39160,6 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c0b2-e1b6-5ffb-bed7"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="83e9-e6b7-fcfd-8f12"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="7e98-cf70-a5e9-dd6e" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -39688,9 +39170,6 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4c4f-3bf2-b759-5af7" includeChildSelections="true"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2a3-ec51-afcf-4cf5" includeChildSelections="true"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3181-d76e-10eb-90b4" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -39711,9 +39190,6 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3921-3141-563c-cf5"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Weapon Upgrades" hidden="false" id="7aea-7381-9a85-5651" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
-          </entryLinks>
         </entryLink>
       </entryLinks>
       <comment>Leman Russ</comment>
@@ -39724,12 +39200,12 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
           <entryLinks>
             <entryLink import="true" name="Heavy bolter" hidden="false" id="26ab-fd5e-f1ff-fb2a" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
               <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3e05-a4c9-d3b4-eb73" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="5b17-6e30-b4e1-adc8" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="0a2f-9e50-20d9-289f" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
               <entryLinks>
-                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="fea1-e22b-dc92-5385" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="0531-8a07-1f7a-bd55" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -39745,7 +39221,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c16-7204-75d2-bf5f"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Weapon Upgrades" hidden="false" id="2183-0e70-19ad-cf08" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+            <entryLink import="true" name="Weapon Modifications" hidden="false" id="052d-b265-911d-8bad" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -39763,7 +39239,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c1d-0a4d-18de-206a"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3e4d-cc7f-a1f2-580f" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="cd71-3027-85de-0384" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
@@ -39776,7 +39252,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f312-9163-8ce5-f49d"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="50b4-adf3-f3a3-96b9" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="50b4-adf3-f3a3-96b9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
@@ -39800,7 +39276,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6332-6177-b95c-75ea"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="328f-c59c-303f-4c83" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7d7d-0505-2fff-f482" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Twin heavy bolter" hidden="false" id="ebbe-351e-e4a0-ee00" type="selectionEntry" targetId="d5d2-be01-7a54-78c3">
@@ -39809,7 +39285,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a6d2-1f91-4a97-6f06"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="79af-45b5-f4d2-3c7a" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb2e-b1bf-78c4-f9c6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
@@ -39822,7 +39298,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6185-be95-8a87-6674"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3e53-4553-aaaa-0826" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="b9d0-0a0b-bb09-7f78" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Twin heavy flamer" hidden="false" id="db8b-afc9-111e-ad51" type="selectionEntry" targetId="2be6-c17b-c2d2-fdf2">
@@ -39831,7 +39307,7 @@ In the Declare Battle Formations step, the bearer can be attached to an **^^Ogr
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c10-39dd-76fc-eec5"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="949a-38d4-229d-3f1a" type="selectionEntryGroup" targetId="7c41-04ac-762f-878c"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ea17-f7d3-5077-d926" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
               </entryLinks>
