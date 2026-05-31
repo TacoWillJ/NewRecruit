@@ -1174,16 +1174,17 @@
           <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="25"/></costs>
         </selectionEntry>
 
-        <!-- B — Infantry Squads: 2-5, each with independent wargear choices -->
-        <selectionEntry id="nflb-se-is" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
-          <publicationLinks><publicationLink id="nflb-pl-is" targetId="nflb-pub-main"/></publicationLinks>
+        <!-- B — Infantry Squads 1-5 (squads 1 and 2 mandatory, 3-5 optional); each independently configured with optional Chimera -->
+        <!-- B1 — Infantry Squad 1 (mandatory) -->
+        <selectionEntry id="nflb-se-is1" name="Infantry Squad 1" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks><publicationLink id="nflb-pl-is1" targetId="nflb-pub-main"/></publicationLinks>
           <categoryLinks>
-            <categoryLink id="nflb-cl-is-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-            <categoryLink id="nflb-cl-is-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
-            <categoryLink id="nflb-cl-is-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+            <categoryLink id="nflb-cl-is1-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-is1-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-is1-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile id="nflb-prof-is-unit" name="Infantry Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+            <profile id="nflb-prof-is1-unit" name="Infantry Squad 1" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
@@ -1195,160 +1196,927 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="nflb-il-is-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
-            <infoLink id="nflb-il-is-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+            <infoLink id="nflb-il-is1-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is1-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <!-- Sergeant sidearm -->
-            <selectionEntryGroup id="nflb-seg-is-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is-laspistol">
+            <selectionEntryGroup id="nflb-seg-is1-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is1-laspistol">
               <constraints>
-                <constraint id="nflb-con-is-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
-                <constraint id="nflb-con-is-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="nflb-se-is-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
+                <selectionEntry id="nflb-se-is1-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
                   <infoLinks>
-                    <infoLink id="nflb-il-is-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
-                    <infoLink id="nflb-il-is-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+                    <infoLink id="nflb-il-is1-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+                    <infoLink id="nflb-il-is1-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
                   </infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <!-- Sergeant melee -->
-            <selectionEntryGroup id="nflb-seg-is-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is-chainsword">
+            <selectionEntryGroup id="nflb-seg-is1-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is1-chainsword">
               <constraints>
-                <constraint id="nflb-con-is-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
-                <constraint id="nflb-con-is-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="nflb-se-is-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <!-- Special Weapon (0-1) -->
-            <selectionEntryGroup id="nflb-seg-is-sw" name="Special Weapon" hidden="false">
+            <selectionEntryGroup id="nflb-seg-is1-sw" name="Special Weapon" hidden="false">
               <constraints>
-                <constraint id="nflb-con-is-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
-                <constraint id="nflb-con-is-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="nflb-se-is-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
+                <selectionEntry id="nflb-se-is1-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
                   <infoLinks>
-                    <infoLink id="nflb-il-is-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
-                    <infoLink id="nflb-il-is-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
+                    <infoLink id="nflb-il-is1-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
+                    <infoLink id="nflb-il-is1-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
                   </infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
+                <selectionEntry id="nflb-se-is1-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
                   <infoLinks>
-                    <infoLink id="nflb-il-is-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
-                    <infoLink id="nflb-il-is-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
+                    <infoLink id="nflb-il-is1-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
+                    <infoLink id="nflb-il-is1-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
                   </infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <!-- Heavy Weapon Team (0-1) -->
-            <selectionEntryGroup id="nflb-seg-is-hw" name="Heavy Weapon Team" hidden="false">
+            <selectionEntryGroup id="nflb-seg-is1-hw" name="Heavy Weapon Team" hidden="false">
               <constraints>
-                <constraint id="nflb-con-is-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
-                <constraint id="nflb-con-is-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="nflb-se-is-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
+                <selectionEntry id="nflb-se-is1-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
                   <infoLinks>
-                    <infoLink id="nflb-il-is-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
-                    <infoLink id="nflb-il-is-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
+                    <infoLink id="nflb-il-is1-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
+                    <infoLink id="nflb-il-is1-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
                   </infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <!-- Specialist (0-1) -->
-            <selectionEntryGroup id="nflb-seg-is-spec" name="Specialist" hidden="false">
+            <selectionEntryGroup id="nflb-seg-is1-spec" name="Specialist" hidden="false">
               <constraints>
-                <constraint id="nflb-con-is-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
-                <constraint id="nflb-con-is-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="nflb-se-is-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
                 </selectionEntry>
-                <selectionEntry id="nflb-se-is-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
-                  <infoLinks><infoLink id="nflb-il-is-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
+                <selectionEntry id="nflb-se-is1-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is1-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
                   <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1 per squad) -->
+            <selectionEntryGroup id="nflb-seg-is1-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is1-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is1-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is1-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is1-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint id="nflb-con-is-min" type="min" value="2" field="selections" scope="parent" shared="true"/>
-            <constraint id="nflb-con-is-max" type="max" value="5" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is1-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is1-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="60"/></costs>
+        </selectionEntry>
+        <!-- B2 — Infantry Squad 2 (mandatory) -->
+        <selectionEntry id="nflb-se-is2" name="Infantry Squad 2" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks><publicationLink id="nflb-pl-is2" targetId="nflb-pub-main"/></publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-is2-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-is2-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-is2-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-is2-unit" name="Infantry Squad 2" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-is2-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is2-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <!-- Sergeant sidearm -->
+            <selectionEntryGroup id="nflb-seg-is2-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is2-laspistol">
+              <constraints>
+                <constraint id="nflb-con-is2-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is2-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+                    <infoLink id="nflb-il-is2-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Sergeant melee -->
+            <selectionEntryGroup id="nflb-seg-is2-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is2-chainsword">
+              <constraints>
+                <constraint id="nflb-con-is2-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Special Weapon (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is2-sw" name="Special Weapon" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is2-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is2-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
+                    <infoLink id="nflb-il-is2-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is2-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
+                    <infoLink id="nflb-il-is2-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Heavy Weapon Team (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is2-hw" name="Heavy Weapon Team" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is2-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is2-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
+                    <infoLink id="nflb-il-is2-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Specialist (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is2-spec" name="Specialist" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is2-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is2-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is2-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1 per squad) -->
+            <selectionEntryGroup id="nflb-seg-is2-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is2-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is2-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is2-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is2-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint id="nflb-con-is2-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is2-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="60"/></costs>
+        </selectionEntry>
+        <!-- B3 — Infantry Squad 3 (optional) -->
+        <selectionEntry id="nflb-se-is3" name="Infantry Squad 3" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks><publicationLink id="nflb-pl-is3" targetId="nflb-pub-main"/></publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-is3-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-is3-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-is3-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-is3-unit" name="Infantry Squad 3" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-is3-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is3-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <!-- Sergeant sidearm -->
+            <selectionEntryGroup id="nflb-seg-is3-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is3-laspistol">
+              <constraints>
+                <constraint id="nflb-con-is3-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is3-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+                    <infoLink id="nflb-il-is3-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Sergeant melee -->
+            <selectionEntryGroup id="nflb-seg-is3-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is3-chainsword">
+              <constraints>
+                <constraint id="nflb-con-is3-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Special Weapon (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is3-sw" name="Special Weapon" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is3-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is3-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
+                    <infoLink id="nflb-il-is3-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is3-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
+                    <infoLink id="nflb-il-is3-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Heavy Weapon Team (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is3-hw" name="Heavy Weapon Team" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is3-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is3-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
+                    <infoLink id="nflb-il-is3-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Specialist (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is3-spec" name="Specialist" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is3-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is3-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is3-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1 per squad) -->
+            <selectionEntryGroup id="nflb-seg-is3-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is3-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is3-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is3-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is3-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint id="nflb-con-is3-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is3-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="60"/></costs>
+        </selectionEntry>
+        <!-- B4 — Infantry Squad 4 (optional) -->
+        <selectionEntry id="nflb-se-is4" name="Infantry Squad 4" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks><publicationLink id="nflb-pl-is4" targetId="nflb-pub-main"/></publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-is4-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-is4-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-is4-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-is4-unit" name="Infantry Squad 4" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-is4-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is4-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <!-- Sergeant sidearm -->
+            <selectionEntryGroup id="nflb-seg-is4-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is4-laspistol">
+              <constraints>
+                <constraint id="nflb-con-is4-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is4-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+                    <infoLink id="nflb-il-is4-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Sergeant melee -->
+            <selectionEntryGroup id="nflb-seg-is4-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is4-chainsword">
+              <constraints>
+                <constraint id="nflb-con-is4-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Special Weapon (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is4-sw" name="Special Weapon" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is4-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is4-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
+                    <infoLink id="nflb-il-is4-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is4-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
+                    <infoLink id="nflb-il-is4-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Heavy Weapon Team (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is4-hw" name="Heavy Weapon Team" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is4-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is4-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
+                    <infoLink id="nflb-il-is4-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Specialist (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is4-spec" name="Specialist" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is4-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is4-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is4-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1 per squad) -->
+            <selectionEntryGroup id="nflb-seg-is4-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is4-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is4-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is4-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is4-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint id="nflb-con-is4-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is4-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="60"/></costs>
+        </selectionEntry>
+        <!-- B5 — Infantry Squad 5 (optional) -->
+        <selectionEntry id="nflb-se-is5" name="Infantry Squad 5" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks><publicationLink id="nflb-pl-is5" targetId="nflb-pub-main"/></publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-is5-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-is5-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-is5-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-is5-unit" name="Infantry Squad 5" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-is5-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is5-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <!-- Sergeant sidearm -->
+            <selectionEntryGroup id="nflb-seg-is5-pistol" name="Sergeant Sidearm" hidden="false" defaultSelectionEntryId="nflb-se-is5-laspistol">
+              <constraints>
+                <constraint id="nflb-con-is5-pistol-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-pistol-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-laspistol" name="Laspistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-lp2" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-boltpistol" name="Bolt Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-bp" name="Bolt Pistol" hidden="false" targetId="nflb-wp-boltpistol" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-plasmapistol" name="Plasma Pistol" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is5-pp-s" name="Plasma Pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+                    <infoLink id="nflb-il-is5-pp-sc" name="Plasma Pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Sergeant melee -->
+            <selectionEntryGroup id="nflb-seg-is5-melee" name="Sergeant Melee" hidden="false" defaultSelectionEntryId="nflb-se-is5-chainsword">
+              <constraints>
+                <constraint id="nflb-con-is5-melee-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-melee-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-chainsword" name="Chainsword" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-cs" name="Chainsword" hidden="false" targetId="nflb-wp-chainsword" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-powerweapon" name="Power Weapon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-pw" name="Power Weapon" hidden="false" targetId="nflb-wp-powerweapon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-powerfist" name="Power Fist" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-pf" name="Power Fist" hidden="false" targetId="nflb-wp-powerfist" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Special Weapon (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is5-sw" name="Special Weapon" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is5-sw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-sw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-sw-flamer" name="Flamer" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-sw-fl" name="Flamer" hidden="false" targetId="nflb-wp-flamer" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-sw-gl" name="Grenade Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is5-sw-gl-f" name="Grenade Launcher (Frag)" hidden="false" targetId="nflb-wp-gl-frag" type="profile"/>
+                    <infoLink id="nflb-il-is5-sw-gl-k" name="Grenade Launcher (Krak)" hidden="false" targetId="nflb-wp-gl-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-sw-melta" name="Meltagun" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-sw-mt" name="Meltagun" hidden="false" targetId="nflb-wp-meltagun" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-sw-plasma" name="Plasma Gun" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is5-sw-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/>
+                    <infoLink id="nflb-il-is5-sw-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-sw-sniper" name="Sniper Rifle" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-sw-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-sw-demo" name="Demolition Charge" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-sw-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Heavy Weapon Team (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is5-hw" name="Heavy Weapon Team" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is5-hw-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-hw-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-hw-ac" name="Autocannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-hw-ac" name="Autocannon" hidden="false" targetId="nflb-wp-autocannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-hw-hb" name="Heavy Bolter" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-hw-hb" name="Heavy Bolter" hidden="false" targetId="nflb-wp-hbolter" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-hw-lc" name="Lascannon" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-hw-lc" name="Lascannon" hidden="false" targetId="nflb-wp-lascannon" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-hw-ml" name="Missile Launcher" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is5-hw-ml-f" name="Missile Launcher (Frag)" hidden="false" targetId="nflb-wp-missile-frag" type="profile"/>
+                    <infoLink id="nflb-il-is5-hw-ml-k" name="Missile Launcher (Krak)" hidden="false" targetId="nflb-wp-missile-krak" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-hw-mortar" name="Mortar" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-hw-mo" name="Mortar" hidden="false" targetId="nflb-wp-mortar" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-hw-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-hw-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- Specialist (0-1) -->
+            <selectionEntryGroup id="nflb-seg-is5-spec" name="Specialist" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is5-spec-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-spec-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-vox" name="Vox-Caster" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-vox" name="Vox-Caster" hidden="false" targetId="nflb-wp-voxcaster" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-medi" name="Medi-Pack" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-medi" name="Medi-Pack" hidden="false" targetId="nflb-wp-medipack" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+                <selectionEntry id="nflb-se-is5-regstd" name="Regimental Standard" type="upgrade" hidden="false" import="true">
+                  <infoLinks><infoLink id="nflb-il-is5-std" name="Regimental Standard" hidden="false" targetId="nflb-wp-regstandard" type="profile"/></infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1 per squad) -->
+            <selectionEntryGroup id="nflb-seg-is5-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-is5-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-is5-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-is5-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-is5-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint id="nflb-con-is5-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-is5-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
           </constraints>
           <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="60"/></costs>
         </selectionEntry>
 
-        <!-- C — Heavy Weapons Squad: 3 teams, each picks a heavy weapon -->
+                <!-- C — Heavy Weapons Squad: 3 teams, each picks a heavy weapon -->
         <selectionEntry id="nflb-se-hws" name="Heavy Weapons Squad" hidden="false" collective="false" import="true" type="unit">
           <publicationLinks><publicationLink id="nflb-pl-hws" targetId="nflb-pub-main"/></publicationLinks>
           <categoryLinks>
@@ -1517,9 +2285,19 @@
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Transport carrying a sub-squad from this Platoon is destroyed, the disembarked models gain Stealth and Benefit of Cover until the start of your next Movement phase.</characteristic>
       </characteristics>
     </profile>
+    <profile id="nflb-prof-chimera" name="Chimera" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10"</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">9</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+    </profile>
     <profile id="nflb-prof-transport-note" name="Transports" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each sub-squad may be accompanied by one Chimera (add to roster separately, 70pts each): one per PCS Base, per Infantry Squad, per Heavy Weapons Squad, per Special Weapons Squad. The Platoon Commander may issue Orders while embarked (measure from the Chimera).</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each Infantry Squad has an optional Chimera Transport (70pts) built in — select it from within the squad entry. The PCS, Heavy Weapons Squad, and Special Weapons Squad may also take a Chimera (add separately, 70pts each). The Platoon Commander may issue Orders while embarked (measure from the Chimera).</characteristic>
       </characteristics>
     </profile>
     <profile id="nflb-prof-pcs-wargear" name="PCS Base — Wargear Options" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
