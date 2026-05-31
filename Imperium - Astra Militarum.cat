@@ -1089,6 +1089,21 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1) -->
+            <selectionEntryGroup id="nflb-seg-pcs-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-pcs-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-pcs-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-pcs-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-pcs-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint id="nflb-con-pcs-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
@@ -2182,6 +2197,21 @@
                 <selectionEntry id="nflb-se-hws-t3-hs" name="Heavy Stubber" type="upgrade" hidden="false" import="true"><infoLinks><infoLink id="nflb-il-hws-t3-hs" name="Heavy Stubber" hidden="false" targetId="nflb-wp-hstubber" type="profile"/></infoLinks><costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs></selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1) -->
+            <selectionEntryGroup id="nflb-seg-hws-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-hws-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-hws-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-hws-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-hws-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
             <constraint id="nflb-con-hws-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
@@ -2256,6 +2286,21 @@
                 <selectionEntry id="nflb-se-sws-g4-pg" name="Plasma Gun" type="upgrade" hidden="false" import="true"><infoLinks><infoLink id="nflb-il-sws-g4-pg-s" name="Plasma Gun (standard)" hidden="false" targetId="nflb-wp-plasmagun-std" type="profile"/><infoLink id="nflb-il-sws-g4-pg-sc" name="Plasma Gun (supercharge)" hidden="false" targetId="nflb-wp-plasmagun-sc" type="profile"/></infoLinks><costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs></selectionEntry>
                 <selectionEntry id="nflb-se-sws-g4-sn" name="Sniper Rifle" type="upgrade" hidden="false" import="true"><infoLinks><infoLink id="nflb-il-sws-g4-sn" name="Sniper Rifle" hidden="false" targetId="nflb-wp-sniper" type="profile"/></infoLinks><costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs></selectionEntry>
                 <selectionEntry id="nflb-se-sws-g4-dc" name="Demolition Charge" type="upgrade" hidden="false" import="true"><infoLinks><infoLink id="nflb-il-sws-g4-dc" name="Demolition Charge" hidden="false" targetId="nflb-wp-demolition" type="profile"/></infoLinks><costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs></selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <!-- E — Chimera Transport (0-1) -->
+            <selectionEntryGroup id="nflb-seg-sws-chim" name="Chimera Transport" hidden="false">
+              <constraints>
+                <constraint id="nflb-con-sws-chim-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+                <constraint id="nflb-con-sws-chim-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="nflb-se-sws-chim" name="Chimera" type="upgrade" hidden="false" import="true">
+                  <infoLinks>
+                    <infoLink id="nflb-il-sws-chim" name="Chimera — Stats &amp; Wargear" hidden="false" targetId="nflb-prof-chimera" type="profile"/>
+                  </infoLinks>
+                  <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="70"/></costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
