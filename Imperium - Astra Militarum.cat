@@ -989,14 +989,18 @@
         <categoryLink id="nflb-cl-plat-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink id="nflb-il-coc" name="Chain of Command" hidden="false" targetId="nflb-prof-ability-coc" type="profile"/>
-        <infoLink id="nflb-il-won" name="Weight of Numbers" hidden="false" targetId="nflb-prof-ability-won" type="profile"/>
+        <infoLink id="nflb-il-coc" name="Combined Operations" hidden="false" targetId="nflb-prof-ability-coc" type="profile"/>
+        <infoLink id="nflb-il-won" name="Iron Discipline" hidden="false" targetId="nflb-prof-ability-won" type="profile"/>
+        <infoLink id="nflb-il-disembark" name="Coordinated Disembark" hidden="false" targetId="nflb-prof-ability-orders" type="profile"/>
+        <infoLink id="nflb-il-transport" name="Transports" hidden="false" targetId="nflb-prof-transport-note" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry id="nflb-se-pcs" name="Platoon Command Squad" hidden="false" collective="false" import="true" type="unit">
+
+        <!-- A1 — PCS Base: 4 Veteran Guardsmen, mandatory -->
+        <selectionEntry id="nflb-se-pcs" name="PCS Base — 4 Veteran Guardsmen" hidden="false" collective="false" import="true" type="unit">
           <publicationLinks>
             <publicationLink id="nflb-pl-pcs" targetId="nflb-pub-main"/>
           </publicationLinks>
@@ -1006,42 +1010,74 @@
             <categoryLink id="nflb-cl-pcs-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
           </categoryLinks>
           <profiles>
-            <profile id="nflb-prof-pcs-unit" name="Platoon Command Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+            <profile id="nflb-prof-pcs-unit" name="PCS Base" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
                 <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-pcs-wargear" name="PCS Base — Wargear Options" hidden="false" targetId="nflb-prof-pcs-wargear" type="profile"/>
+            <infoLink id="nflb-il-pcs-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+            <infoLink id="nflb-il-pcs-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
+            <infoLink id="nflb-il-pcs-frag" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
+            <infoLink id="nflb-il-pcs-krak" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
+          </infoLinks>
+          <constraints>
+            <constraint id="nflb-con-pcs-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-pcs-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+          </costs>
+        </selectionEntry>
+
+        <!-- A2 — Generic Platoon Castellan: optional (0-1), omit if using a Named Officer -->
+        <selectionEntry id="nflb-se-castellan" name="Generic Platoon Castellan" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks>
+            <publicationLink id="nflb-pl-castellan" targetId="nflb-pub-main"/>
+          </publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-cast-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-cast-char" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+            <categoryLink id="nflb-cl-cast-officer" name="Officer" hidden="false" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+            <categoryLink id="nflb-cl-cast-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-cast-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-castellan-unit" name="Generic Platoon Castellan" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                 <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="nflb-il-pcs-orders" name="Issue Orders" hidden="false" targetId="nflb-prof-ability-orders" type="profile"/>
+            <infoLink id="nflb-il-cast-wargear" name="Generic Platoon Castellan — Wargear" hidden="false" targetId="nflb-prof-castellan-wargear" type="profile"/>
+            <infoLink id="nflb-il-cast-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
+            <infoLink id="nflb-il-cast-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
+            <infoLink id="nflb-il-cast-frag" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
+            <infoLink id="nflb-il-cast-krak" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="nflb-se-pcs-laspistol" name="Laspistol" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="nflb-il-pcs-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
-              </infoLinks>
-              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
-            </selectionEntry>
-            <selectionEntry id="nflb-se-pcs-ccw" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="nflb-il-pcs-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
-              </infoLinks>
-              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
-            <constraint id="nflb-con-pcs-min" type="min" value="1" field="selections" scope="parent" shared="true"/>
-            <constraint id="nflb-con-pcs-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-cast-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-cast-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
           </costs>
         </selectionEntry>
+
+        <!-- B — Infantry Squads: 2-5 per Platoon -->
         <selectionEntry id="nflb-se-is" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
           <publicationLinks>
             <publicationLink id="nflb-pl-is" targetId="nflb-pub-main"/>
@@ -1063,51 +1099,146 @@
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="nflb-se-is-lasgun" name="Lasgun" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="nflb-il-is-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
-              </infoLinks>
-              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
-            </selectionEntry>
-            <selectionEntry id="nflb-se-is-frag" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="nflb-il-is-fg" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
-              </infoLinks>
-              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
-            </selectionEntry>
-            <selectionEntry id="nflb-se-is-krak" name="Krak Grenade" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="nflb-il-is-kg" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
-              </infoLinks>
-              <costs><cost name="pts" typeId="51b2-306e-1021-d207" value="0"/></costs>
-            </selectionEntry>
-          </selectionEntries>
+          <infoLinks>
+            <infoLink id="nflb-il-is-comp" name="Infantry Squad — Composition" hidden="false" targetId="nflb-prof-is-composition" type="profile"/>
+            <infoLink id="nflb-il-is-lg" name="Lasgun" hidden="false" targetId="nflb-prof-lasgun" type="profile"/>
+            <infoLink id="nflb-il-is-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
+            <infoLink id="nflb-il-is-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
+            <infoLink id="nflb-il-is-frag" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
+            <infoLink id="nflb-il-is-krak" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
+          </infoLinks>
           <constraints>
             <constraint id="nflb-con-is-min" type="min" value="2" field="selections" scope="parent" shared="true"/>
             <constraint id="nflb-con-is-max" type="max" value="5" field="selections" scope="parent" shared="true"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
           </costs>
         </selectionEntry>
+
+        <!-- C — Heavy Weapons Squad: optional, 0-1 per Platoon -->
+        <selectionEntry id="nflb-se-hws" name="Heavy Weapons Squad" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks>
+            <publicationLink id="nflb-pl-hws" targetId="nflb-pub-main"/>
+          </publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-hws-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-hws-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-hws-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-hws-unit" name="Heavy Weapons Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-hws-comp" name="Heavy Weapons Squad — Composition" hidden="false" targetId="nflb-prof-hws-composition" type="profile"/>
+            <infoLink id="nflb-il-hws-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
+            <infoLink id="nflb-il-hws-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
+            <infoLink id="nflb-il-hws-frag" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
+            <infoLink id="nflb-il-hws-krak" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
+          </infoLinks>
+          <constraints>
+            <constraint id="nflb-con-hws-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-hws-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+          </costs>
+        </selectionEntry>
+
+        <!-- D — Special Weapons Squad: optional, 0-1 per Platoon -->
+        <selectionEntry id="nflb-se-sws" name="Special Weapons Squad" hidden="false" collective="false" import="true" type="unit">
+          <publicationLinks>
+            <publicationLink id="nflb-pl-sws" targetId="nflb-pub-main"/>
+          </publicationLinks>
+          <categoryLinks>
+            <categoryLink id="nflb-cl-sws-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+            <categoryLink id="nflb-cl-sws-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+            <categoryLink id="nflb-cl-sws-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile id="nflb-prof-sws-unit" name="Special Weapons Squad" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="nflb-il-sws-comp" name="Special Weapons Squad — Composition" hidden="false" targetId="nflb-prof-sws-composition" type="profile"/>
+            <infoLink id="nflb-il-sws-lp" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
+            <infoLink id="nflb-il-sws-ccw" name="Close Combat Weapon" hidden="false" targetId="nflb-prof-ccw" type="profile"/>
+            <infoLink id="nflb-il-sws-frag" name="Frag Grenade" hidden="false" targetId="nflb-prof-frag" type="profile"/>
+            <infoLink id="nflb-il-sws-krak" name="Krak Grenade" hidden="false" targetId="nflb-prof-krak" type="profile"/>
+          </infoLinks>
+          <constraints>
+            <constraint id="nflb-con-sws-min" type="min" value="0" field="selections" scope="parent" shared="true"/>
+            <constraint id="nflb-con-sws-max" type="max" value="1" field="selections" scope="parent" shared="true"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+          </costs>
+        </selectionEntry>
+
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="nflb-prof-ability-coc" name="Chain of Command" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+    <profile id="nflb-prof-ability-coc" name="Combined Operations" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this Platoon contains a Platoon Command Squad, Infantry Squads within 6" of it may use the Platoon Command Squad's Leadership characteristic instead of their own. If the Platoon Command Squad is destroyed, Infantry Squads in this Platoon lose this ability for the rest of the battle.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Platoon counts as 1 unit for army construction, target selection, and points counting. Sub-squads target separately in the Shooting phase, may declare Charges separately, and contribute OC independently. The Platoon is destroyed only when every sub-squad is destroyed.</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-ability-won" name="Weight of Numbers" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+    <profile id="nflb-prof-ability-won" name="Iron Discipline" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack is made against an Infantry Squad in this Platoon, if that unit contains 6 or more models, subtract 1 from the Wound roll.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the Platoon Commander is on the battlefield, sub-squads in this Platoon may re-roll failed Battle-shock tests. If no Castellan is taken, a Named Officer Character leading the Platoon fulfils this role.</characteristic>
       </characteristics>
     </profile>
-    <profile id="nflb-prof-ability-orders" name="Issue Orders" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+    <profile id="nflb-prof-ability-orders" name="Coordinated Disembark" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, the Platoon Commander may issue one of the following orders to one Infantry Squad within 6": MOVE MOVE MOVE (that unit may make a Normal Move of up to 3" immediately), TAKE AIM (that unit's ranged weapons gain [LETHAL HITS] until the end of the turn), or GET DOWN (that unit gains a 6+ invulnerable save until the start of your next Command phase).</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Transport carrying a sub-squad from this Platoon is destroyed, the disembarked models gain Stealth and Benefit of Cover until the start of your next Movement phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-transport-note" name="Transports" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each sub-squad may be accompanied by one Chimera (add to roster separately, 70pts each): one per PCS Base, per Infantry Squad, per Heavy Weapons Squad, per Special Weapons Squad. The Platoon Commander may issue Orders while embarked (measure from the Chimera).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-pcs-wargear" name="PCS Base — Wargear Options" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4 Veteran Guardsmen. Default: Lasgun, Close Combat Weapon, Frag and Krak Grenades. Each of the 4 may freely (free of cost): replace Lasgun with a Special Weapon (Flamer, Grenade Launcher, Meltagun, Plasma Gun, Sniper Rifle, or Demolition Charge); or become a Specialist — Vox-caster, Medi-pack, Regimental Standard, or Master Vox (max 1 of each Specialist type per PCS).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-castellan-wargear" name="Generic Platoon Castellan — Wargear" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Default: Laspistol, Chainsword, Frag and Krak Grenades. Free swaps: Laspistol → Bolt Pistol or Plasma Pistol; Chainsword → Power Weapon or Power Fist. Issues Orders via Voice of Command (2 Orders to Regiment units). Omit this entry if a Named Officer Character leads the Platoon instead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-is-composition" name="Infantry Squad — Composition" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">10 models: 1 Sergeant + 9 Guardsmen. Sergeant: Laspistol, Chainsword, Grenades (free swaps: Laspistol → Bolt/Plasma Pistol; Chainsword → Power Weapon/Power Fist). Guardsmen: Lasgun, Close Combat Weapon, Grenades. Optional upgrades per squad (all free, max 1 each): Special Weapon — one Guardsman replaces Lasgun with Flamer, Grenade Launcher, Meltagun, Plasma Gun, Sniper Rifle, or Demolition Charge. Heavy Weapon Team — two Guardsmen with one of: Autocannon, Heavy Bolter, Lascannon, Missile Launcher, Mortar, or Heavy Stubber. Specialist — one Guardsman becomes Vox-caster, Medi-pack bearer, or Regimental Standard bearer.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-hws-composition" name="Heavy Weapons Squad — Composition" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6 models: 3 Heavy Weapons Teams (gunner + loader each). Each team freely selects one heavy weapon (mix-and-match): Autocannon, Heavy Bolter, Lascannon, Missile Launcher, Mortar, or Heavy Stubber. Each model also carries Laspistol, Close Combat Weapon, and Grenades.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-sws-composition" name="Special Weapons Squad — Composition" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5 models: 1 Sergeant + 4 Special Weapons Guardsmen. Sergeant: Laspistol, Chainsword, Grenades. Each of the 4 Guardsmen freely selects one special weapon (mix-and-match, no duplicate cap): Flamer, Grenade Launcher, Meltagun, Plasma Gun, Sniper Rifle, or Demolition Charge.</characteristic>
       </characteristics>
     </profile>
     <profile id="nflb-prof-lasgun" name="Lasgun" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
