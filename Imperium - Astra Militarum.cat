@@ -9,6 +9,11 @@
         <categoryLink id="nflb-cl-el-troops" name="Battleline" hidden="false" targetId="e338-111e-d0c6-b687" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Captain Al’Rahem [NFLB]" hidden="false" id="nflb-el-alrahem" type="selectionEntry" targetId="nflb-se-alrahem">
+      <categoryLinks>
+        <categoryLink id="nflb-cl-alrahem-char" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="’Iron Hand’ Straken [Legends]" hidden="false" type="selectionEntry" id="f38c-6b5-d8d3-32db" targetId="913f-3cb6-fb80-7f6a"/>
     <entryLink import="true" name="Aegis Defence Line" hidden="false" type="selectionEntry" id="2c5d-9f8f-b19d-53be" targetId="cb99-456-f100-40ed">
       <modifiers>
@@ -931,6 +936,48 @@
     <entryLink import="true" name="Cadian Recon Squad" hidden="false" id="39a7-1ea5-9552-d4ba" targetId="05de-5701-33a0-b23d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
+    <selectionEntry id="nflb-se-alrahem" name="Captain Al'Rahem [NFLB]" hidden="false" collective="false" import="true" type="model">
+      <publicationLinks>
+        <publicationLink id="nflb-pl-alrahem" targetId="nflb-pub-main"/>
+      </publicationLinks>
+      <categoryLinks>
+        <categoryLink id="nflb-cl-alrahem-inf" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink id="nflb-cl-alrahem-char" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink id="nflb-cl-alrahem-epic" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="false"/>
+        <categoryLink id="nflb-cl-alrahem-officer" name="Officer" hidden="false" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+        <categoryLink id="nflb-cl-alrahem-am" name="Faction: Astra Militarum" hidden="false" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink id="nflb-cl-alrahem-imp" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="nflb-con-alrahem-max" type="max" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile id="nflb-prof-alrahem-unit-inline" name="Captain Al'Rahem" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="nflb-il-alrahem-voc" name="Voice of Command" hidden="false" targetId="nflb-prof-alrahem-voc" type="profile"/>
+        <infoLink id="nflb-il-alrahem-leader" name="Leader" hidden="false" targetId="nflb-prof-alrahem-leader" type="profile"/>
+        <infoLink id="nflb-il-alrahem-wind" name="&quot;Like the Wind!&quot; Order" hidden="false" targetId="nflb-prof-alrahem-wind" type="profile"/>
+        <infoLink id="nflb-il-alrahem-outflank" name="Tallarn Outflank" hidden="false" targetId="nflb-prof-alrahem-outflank" type="profile"/>
+        <infoLink id="nflb-il-alrahem-bushido" name="Bushido of the Sands" hidden="false" targetId="nflb-prof-alrahem-bushido" type="profile"/>
+        <infoLink id="nflb-il-alrahem-plasma-std" name="Plasma pistol (standard)" hidden="false" targetId="nflb-prof-alrahem-plasma-std" type="profile"/>
+        <infoLink id="nflb-il-alrahem-plasma-sc" name="Plasma pistol (supercharge)" hidden="false" targetId="nflb-prof-alrahem-plasma-sc" type="profile"/>
+        <infoLink id="nflb-il-alrahem-laspistol" name="Laspistol" hidden="false" targetId="nflb-prof-laspistol" type="profile"/>
+        <infoLink id="nflb-il-alrahem-sword" name="Tallarn power sword" hidden="false" targetId="nflb-prof-alrahem-sword" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="nflb-se-platoon" name="Infantry Platoon [NFLB]" hidden="false" collective="false" import="true" type="unit">
       <publicationLinks>
         <publicationLink id="nflb-pl-platoon" targetId="nflb-pub-main"/>
@@ -1105,6 +1152,74 @@
         <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[BLAST]</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-unit" name="Captain Al'Rahem" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6"</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-plasma-std" name="Plasma pistol (standard)" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+      <characteristics>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[PISTOL]</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-plasma-sc" name="Plasma pistol (supercharge)" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+      <characteristics>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12"</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">[PISTOL], [HAZARDOUS]</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-sword" name="Tallarn power sword" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+      <characteristics>
+        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+        <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-voc" name="Voice of Command" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-leader" name="Leader" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Aquilons^^**, **^^Infantry Platoon [NFLB]^^**.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-wind" name="&quot;Like the Wind!&quot; Order" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, in your Movement phase, you can issue the Like the Wind! Order to a friendly **^^Astra Militarum Infantry^^** unit within 6" of this model. Until the end of the turn, that unit can move as if it had the Scouts 6" ability AND its ranged weapons gain the **[ASSAULT]** ability. This is in addition to any other Orders issued by other Officers.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-outflank" name="Tallarn Outflank" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During deployment, instead of placing this model (and its attached unit, if any) on the battlefield, you can place it in Strategic Reserves. In your Movement phase, you can set up this unit anywhere on the battlefield more than 9" away from enemy models. This may be used from the first battle round (it does NOT require the standard wait for Reserves).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="nflb-prof-alrahem-bushido" name="Bushido of the Sands" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the unit Al&apos;Rahem leads **Advances** or **Charges**, you can re-roll the dice. This ability also applies if the attached unit benefits from the Like the Wind! Order this turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="nflb-prof-krak" name="Krak Grenade" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
