@@ -1,0 +1,214 @@
+// Builder helpers for NFLB overlay catalogues.
+// Specs in nflb-src/ call these to produce BSData-JSON. Everything is resolved
+// against the CURRENT upstream files at build time, so official weapons/rules/
+// categories are linked by id rather than copied.
+
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
+const PTS = '51b2-306e-1021-d207';
+const DP = '82ae-1066-5107-6ae0';
+const ENH = 'f759-1bc4-cb3a-f0d2';
+
+function createBuilder({ root, catalogueName, factionLibrary }) {
+  const readCat = f => {
+    const o = JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
+    return o.catalogue || o.gameSystem;
+  };
+  const gstFile = fs.readdirSync(root).find(f => f.endsWith('.json') && !f.startsWith('NFLB - ') &&
+    JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')).gameSystem);
+  const gst = readCat(gstFile);
+  const lib = readCat(factionLibrary);
+
+  const usedIds = new Set();
+  const id = key => {
+    const h = 'nflb-' + crypto.createHash('sha1').update(catalogueName + '|' + key).digest('hex').slice(0, 12);
+    if (usedIds.has(h)) throw new Error(`Duplicate id key: ${key}`);
+    usedIds.add(h);
+    return h;
+  };
+
+  // ---------- lookups ----------
+  const ptype = name => {
+    const t = gst.profileTypes.find(p => p.name === name);
+    if (!t) throw new Error(`No profile type ${name}`);
+    const ch = {};
+    for (const c of t.characteristicTypes) ch[c.name] = c.id;
+    return { id: t.id, name: t.name, ch };
+  };
+  const UNIT = ptype('Unit'), RANGED = ptype('Ranged Weapons'), MELEE = ptype('Melee Weapons'), ABIL = ptype('Abilities');
+
+  const ownCategories = [];
+  const category = name => {
+    const c = [...gst.categoryEntries, ...(lib.categoryEntries || []), ...ownCategories].find(x => x.name.toLowerCase() === name.toLowerCase());
+    if (c) return c;
+    const nc = { name, id: id('cat:' + name), hidden: false };
+    ownCategories.push(nc);
+    return nc;
+  };
+  const rule = name => {
+    const r = [...(gst.sharedRules || []), ...(lib.sharedRules || [])].find(x => x.name.toLowerCase() === name.toLowerCase());
+    if (!r) throw new Error(`No shared rule named ${name}`);
+    return r;
+  };
+  const ruleLinksFor = (keywords, key) => {
+    const out = [];
+    for (const kw of keywords.split(',').map(s => s.trim()).filter(Boolean)) {
+      const base = kw.replace(/\s*[\d+D-]+\+?$/, '').replace(/-.*$/, '').replace(/^Anti$/, 'Anti').trim();
+      const r = [...(gst.sharedRules || [])].find(x => x.name.toLowerCase() === base.toLowerCase());
+      if (r && !out.some(o => o.targetId === r.id)) out.push({ name: r.name, id: id(`${key}:rl:${r.name}`), hidden: false, targetId: r.id, type: 'rule' });
+    }
+    return out;
+  };
+
+  // ---------- profiles ----------
+  const unitProfile = (name, [M, T, Sv, W, LD, OC, InSv = '']) => ({
+    name, id: id(`unitprof:${name}`), hidden: false, typeId: UNIT.id, typeName: 'Unit',
+    characteristics: Object.entries({ M, T, Sv, W, LD, OC, InSv }).map(([k, v]) => ({ name: k, typeId: UNIT.ch[k], $text: String(v) })),
+  });
+  const ability = (key, name, text) => ({
+    name, id: id(`abil:${key}:${name}`), hidden: false, typeId: ABIL.id, typeName: 'Abilities',
+    characteristics: [{ name: 'Description', typeId: ABIL.ch.Description, $text: text }],
+  });
+
+  // ---------- weapons ----------
+  // stats: [range, A, BS/WS, S, AP, D]; profiles: { suffix: stats } for multi-profile weapons
+  const sharedEntries = [];
+  const weaponCache = new Map();
+  const sameStats = (p, stats) => {
+    const t = p.typeId === MELEE.id ? MELEE : RANGED;
+    const skill = t === MELEE ? 'WS' : 'BS';
+    const get = n => (p.characteristics.find(c => c.name === n) || {}).$text;
+    const want = stats.map(String);
+    return [get('Range'), get('A'), get(skill), get('S'), get('AP'), get('D')].every((v, i) => v === want[i]);
+  };
+  const officialByName = name => lib.sharedSelectionEntries.filter(e => e.name.toLowerCase() === name.toLowerCase() && (e.profiles || []).length);
+  const officialKeywords = name => {
+    const o = officialByName(name)[0];
+    return o ? o.profiles.map(p => (p.characteristics.find(c => c.name === 'Keywords') || {}).$text || '') : [];
+  };
+
+  function weapon(name, stats, { keywords, melee } = {}) {
+    const multi = !Array.isArray(stats);
+    const variants = multi ? Object.entries(stats) : [[null, stats]];
+    const cacheKey = name + JSON.stringify(stats) + (keywords || '');
+    if (weaponCache.has(cacheKey)) return weaponCache.get(cacheKey);
+
+    let result;
+    if (!keywords) {
+      const match = officialByName(name).find(e => e.profiles.length === variants.length &&
+        variants.every(([, s], i) => sameStats(e.profiles[i], s)));
+      if (match) result = { targetId: match.id, name: match.name, official: true };
+    }
+    if (!result) {
+      const isMelee = melee ?? variants[0][1][0] === 'Melee';
+      const T = isMelee ? MELEE : RANGED;
+      const skill = isMelee ? 'WS' : 'BS';
+      const offKw = officialKeywords(name);
+      const eid = id(`weapon:${cacheKey}`);
+      const kwFor = i => (keywords !== undefined ? (Array.isArray(keywords) ? keywords[i] : keywords) : (offKw[i] ?? offKw[0] ?? '')) || '';
+      const profiles = variants.map(([suffix, s], i) => ({
+        name: suffix ? `➤ ${name} - ${suffix}` : name, id: id(`weapon:${cacheKey}:p${i}`), hidden: false,
+        typeId: T.id, typeName: T.name,
+        characteristics: [['Range', s[0]], ['A', s[1]], [skill, s[2]], ['S', s[3]], ['AP', s[4]], ['D', s[5]], ['Keywords', kwFor(i)]]
+          .map(([k, v]) => ({ name: k, typeId: T.ch[k], $text: String(v) })),
+      }));
+      const allKw = variants.map((_, i) => kwFor(i)).join(', ');
+      const entry = { name, id: eid, hidden: false, import: true, type: 'upgrade', profiles };
+      const links = ruleLinksFor(allKw, eid);
+      if (links.length) entry.infoLinks = links;
+      sharedEntries.push(entry);
+      result = { targetId: eid, name, official: false };
+    }
+    weaponCache.set(cacheKey, result);
+    return result;
+  }
+
+  // ---------- structure ----------
+  const cons = (key, min, max, scope = 'parent') => {
+    // roster-wide limits must also count copies nested inside other units/forces
+    const deep = scope === 'roster' ? { includeChildSelections: true, includeChildForces: true } : {};
+    const out = [];
+    if (min != null) out.push({ id: id(`${key}:min`), field: 'selections', scope, shared: true, type: 'min', value: min, ...deep });
+    if (max != null) out.push({ id: id(`${key}:max`), field: 'selections', scope, shared: true, type: 'max', value: max, ...deep });
+    return out;
+  };
+  // link to a weapon/entry (w = result of weapon() or {targetId,name})
+  const link = (key, w, { min = 1, max = 1, type = 'selectionEntry' } = {}) => ({
+    name: w.name, id: id(`${key}:link:${w.name}`), hidden: false, import: true, targetId: w.targetId, type,
+    ...(min != null || max != null ? { constraints: cons(`${key}:link:${w.name}`, min, max) } : {}),
+  });
+  // choose exactly one of several weapons; first is default
+  const choice = (key, name, weapons, { min = 1, max = 1 } = {}) => {
+    const gkey = `${key}:choice:${name}`;
+    const links = weapons.map(w => link(gkey, w, { min: null, max: null }));
+    return { name, id: id(gkey), hidden: false, defaultSelectionEntryId: links[0].id, constraints: cons(gkey, min, max), entryLinks: links };
+  };
+  const upgrade = (key, name, { profiles, pts = 0 } = {}) => ({
+    name, id: id(`upg:${key}:${name}`), hidden: false, import: true, type: 'upgrade',
+    ...(profiles ? { profiles } : {}), costs: [{ name: 'pts', typeId: PTS, value: pts }],
+  });
+  // model: { name, min, max, gear: [entryLink...], groups: [group...], entries: [selectionEntry...], pts }
+  const model = (key, name, { min, max, gear = [], groups = [], entries = [], pts = 0, extra = {} } = {}) => {
+    const mkey = `${key}:model:${name}`;
+    const m = { name, id: id(mkey), hidden: false, import: true, type: 'model', constraints: cons(mkey, min, max),
+      costs: [{ name: 'pts', typeId: PTS, value: pts }], ...extra };
+    if (gear.length) m.entryLinks = gear;
+    if (groups.length) m.selectionEntryGroups = groups;
+    if (entries.length) m.selectionEntries = entries;
+    return m;
+  };
+  const group = (key, name, children, { min, max, def } = {}) => {
+    const gkey = `${key}:group:${name}`;
+    const g = { name, id: id(gkey), hidden: false, constraints: cons(gkey, min, max) };
+    const ents = children.filter(c => c.type === 'model' || c.type === 'upgrade');
+    const links = children.filter(c => c.targetId);
+    const groups = children.filter(c => !c.type && !c.targetId);
+    if (ents.length) g.selectionEntries = ents;
+    if (links.length) g.entryLinks = links;
+    if (groups.length) g.selectionEntryGroups = groups;
+    if (def) g.defaultSelectionEntryId = def.id;
+    return g;
+  };
+  // Lower a model's min/max constraints by `per` for every selection of each listed sibling.
+  const shrinkFor = (target, siblings) => {
+    target.modifiers = target.modifiers || [];
+    for (const c of target.constraints) {
+      for (const [sib, per] of siblings) {
+        target.modifiers.push({ field: c.id, type: 'decrement', value: per,
+          repeats: [{ childId: sib.id, field: 'selections', scope: 'parent', shared: true, repeats: 1, roundUp: false, value: 1 }] });
+      }
+    }
+    return target;
+  };
+  const catLinks = (key, names, primary) => names.map(n => {
+    const c = category(n);
+    return { name: c.name, id: id(`${key}:cl:${c.name}`), hidden: false, primary: n === primary, targetId: c.id };
+  });
+  const leadAssociation = (key, unitNames) => ({
+    name: 'Leading', id: id(`${key}:assoc`), action: 'group', childId: 'unit', childName: 'unit',
+    includeChildSelections: true, label: 'Leader', max: 1, min: 0, scope: 'force',
+    conditionGroups: [{ type: 'or', conditions: unitNames.map(n => {
+      const u = lib.sharedSelectionEntries.find(e => e.name === n);
+      if (!u) throw new Error(`Leader target not found upstream: ${n}`);
+      return { childId: u.id, childName: n, field: 'selections', scope: 'self', shared: true, type: 'instanceOf', value: 1 };
+    }) }],
+  });
+  const ruleLinks = (key, names) => names.map(n => {
+    const r = rule(n);
+    return { name: r.name, id: id(`${key}:rule:${r.name}`), hidden: false, targetId: r.id, type: 'rule' };
+  });
+  // Link to an upstream shared group (preferred) or entry by name, e.g. 'Warlord', 'Enhancements'
+  const sharedLink = (key, targetName) => {
+    const g = (lib.sharedSelectionEntryGroups || []).find(x => x.name === targetName);
+    const e = g || lib.sharedSelectionEntries.find(x => x.name === targetName);
+    if (!e) throw new Error(`Shared entry not found upstream: ${targetName}`);
+    return { name: e.name, id: id(`${key}:shared:${targetName}`), hidden: false, import: true, targetId: e.id, type: g ? 'selectionEntryGroup' : 'selectionEntry' };
+  };
+
+  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, weapon, link, choice, upgrade, model, group,
+    shrinkFor, catLinks, leadAssociation, ruleLinks, sharedLink, cons, sharedEntries, ownCategories };
+}
+
+module.exports = { createBuilder };
