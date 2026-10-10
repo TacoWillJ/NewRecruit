@@ -346,12 +346,12 @@ module.exports = {
       ],
     });
     character('Mogul Kamir', 80, {
-      stats: ['12"', 5, '4+', 5, '6+', 2], kws: ['Mounted', 'Character', 'Epic Hero', 'Officer', 'Attilan', 'Mogul Kamir'],
+      stats: ['12"', 5, '4+', 5, '6+', 2, '4+'], kws: ['Mounted', 'Character', 'Epic Hero', 'Officer', 'Attilan', 'Mogul Kamir'],
       gear: [plasma3, pistol3, W('Attilan hunting lance', ['Melee', 5, '3+', 8, -2, 2], { keywords: 'Anti-Infantry 3+' }),
         W('Power sabre', ['Melee', 4, '3+', 5, -2, 1], { keywords: '' }), W('Cyber-horse hooves', ['Melee', 2, '4+', 5, 0, 1], { keywords: '' })],
-      rules: ['Voice Of Command', 'Lance', 'Devastating Wounds'], leads: ['Attilan Rough Riders', units.find(u => u.name === 'Imperial Guard Rough Riders [NFLB]')],
+      rules: ['Voice Of Command', 'Feel No Pain 6+', 'Lance', 'Devastating Wounds'], leads: ['Attilan Rough Riders', units.find(u => u.name === 'Imperial Guard Rough Riders [NFLB]')],
       profiles: [
-        orders('kamir', 'This **^^Officer^^** can issue 1 Order to a **^^Mounted Regiment^^** unit.'),
+        orders('kamir', 'This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units.'),
         ability('kamir', 'Like Lightning!', 'Each time this model issues an Order to a **^^Mounted^^** unit, it can issue the following Order instead of one from the Voice of Command list. **LIKE LIGHTNING!**: You can re-roll Charge rolls made for this unit, and melee weapons equipped by models in this unit have the **[LANCE]** ability.'),
         ability('kamir', 'Heroic Charge', 'Each time this model\'s unit ends a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the **[LANCE]** and **[DEVASTATING WOUNDS]** abilities. After that fight, this model can no longer use its Attilan hunting lance for the rest of the battle.'),
         ability('kamir', 'Honourable Death', 'Each time this model is destroyed in the Fight phase, do not remove it from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.'),

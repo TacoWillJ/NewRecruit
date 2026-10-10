@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 16,
     "library": true,
-    "revision": 8,
+    "revision": 9,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "publications": [
@@ -7280,6 +7280,13 @@
             "type": "rule"
           },
           {
+            "name": "Feel No Pain 6+",
+            "id": "nflb-11b663680392",
+            "hidden": false,
+            "targetId": "676c-ecb5-d24d-3540",
+            "type": "rule"
+          },
+          {
             "name": "Lance",
             "id": "nflb-42fbc9806d50",
             "hidden": false,
@@ -7335,7 +7342,7 @@
               {
                 "name": "InSv",
                 "typeId": "55a7-5b54-c60d-11dc",
-                "$text": ""
+                "$text": "4+"
               }
             ]
           },
@@ -7363,7 +7370,7 @@
               {
                 "name": "Orders",
                 "typeId": "36b-c3c9-245f-e97d",
-                "$text": "This **^^Officer^^** can issue 1 Order to a **^^Mounted Regiment^^** unit."
+                "$text": "This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units."
               }
             ]
           },
