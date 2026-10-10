@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 19005,
+    "revision": 19006,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -39381,6 +39381,179 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Auto-proxy Servitor [NFLB]",
+                "id": "nflb-ac50f5b50143",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-e9b284937c8d",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Taser goad",
+                    "id": "nflb-b04d810e4aca",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-4c732e57d66d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-4c9e004797ee",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-6a6b99366abd",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Achillan Eye",
+                    "id": "nflb-07474f86f3a2",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "9b8f-694b-e5e-b573",
+                        "$text": "While this model is in this unit, ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Breacher Servitor [NFLB]",
+                "id": "nflb-4482eab49313",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-9c1c8d46ce37",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Hydraulic pincer and lascutter",
+                    "id": "nflb-ac79363a29b5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-ea10411ffc3f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-f3f7112e1126",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-fc7d7e08bba8",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Technomedic Servitor [NFLB]",
+                "id": "nflb-84511954e118",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-d8ac2e305a0c",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Servo-chirurgic claw",
+                    "id": "nflb-a314a3d7133d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-4947af758d53",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-494513e3ac51",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-3d93068541fc",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Mechanosuture Array",
+                    "id": "nflb-cb8433207284",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "9b8f-694b-e5e-b573",
+                        "$text": "While this model is in this unit, models in this unit have the Feel No Pain 6+ ability."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -65746,6 +65919,174 @@
                 "name": "S",
                 "typeId": "ab33-d393-96ce-ccba",
                 "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Taser goad",
+        "id": "nflb-4c732e57d66d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Taser goad",
+            "id": "nflb-2365e579b0c1",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Lethal Hits"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Lethal Hits",
+            "id": "nflb-8caeabc7c00f",
+            "hidden": false,
+            "targetId": "d1d1-611e-5191-1095",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Hydraulic pincer and lascutter",
+        "id": "nflb-ea10411ffc3f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hydraulic pincer and lascutter",
+            "id": "nflb-06bfdf993989",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Servo-chirurgic claw",
+        "id": "nflb-4947af758d53",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Servo-chirurgic claw",
+            "id": "nflb-b5550fe329ed",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
               },
               {
                 "name": "AP",

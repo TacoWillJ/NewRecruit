@@ -11,6 +11,7 @@
 
 const cards = require('./data/admech-cards.json');
 const { unitsFromCards, resolveLeaders } = require('../tools/nflb-cards');
+const kt = require('../tools/nflb-kt');
 const LEGENDS_LIB = 'Library - Astartes Heresy Legends';
 
 // Model structure for every unit that is not a single model
@@ -140,9 +141,27 @@ module.exports = {
       modifiers: gateMods(n === 'Tarantula Sentry Battery' ? 'hh' : 'dark'),
     }));
 
+    // ---------- Kill Team kits brought into 40k (user decision 2026-10-10) ----------
+    // Battleclade (KT 2024): the Auto-proxy, Breacher and Technomedic Servitors have no 40k option. They
+    // are copies of GW's own Combat Servitor model (official statline + servo-claw) inside the official
+    // Servitor Battleclade datasheet, taking a Combat Servitor slot.
+    const W = b.weapon;
+    const clade = b.lib.sharedSelectionEntries.find(e => e.name === 'Servitor Battleclade');
+    const combat = clade && kt.findModel(clade, 'Combat Servitor w/ meltagun');
+    if (!combat) throw new Error('Servitor Battleclade > Combat Servitor w/ meltagun not found upstream');
+    const servitor = kt.specialists(b, combat, 'battleclade');
+    const servitors = [
+      servitor('Auto-proxy Servitor', { weapons: [W('Taser goad', ['Melee', 3, '4+', 5, 0, 1], { keywords: 'Lethal Hits' })],
+        abilities: [ability('kt:clade:proxy', 'Achillan Eye', 'While this model is in this unit, ranged weapons equipped by models in this unit have the **[IGNORES COVER]** ability.')] }),
+      servitor('Breacher Servitor', { weapons: [W('Hydraulic pincer and lascutter', ['Melee', 2, '4+', 8, -2, 2])] }),
+      servitor('Technomedic Servitor', { weapons: [W('Servo-chirurgic claw', ['Melee', 2, '4+', 4, -1, 1])],
+        abilities: [ability('kt:clade:medic', 'Mechanosuture Array', 'While this model is in this unit, models in this unit have the Feel No Pain 6+ ability.')] }),
+    ];
+
     return {
       rootUnits: units,
       injections: [
+        ...servitors.map(m => ({ file: F, entryName: 'Servitor Battleclade', within: 'Combat Servitors', selectionEntry: m })),
         { file: F, groupName: 'Detachments', selectionEntry: tagh },
         { file: F, groupName: 'Detachments', selectionEntry: dark },
         { file: F, groupName: 'Enhancements', selectionEntryGroup: taghEnh },

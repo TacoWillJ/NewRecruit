@@ -4,6 +4,8 @@
 // official 11e wargear/weapon profiles where an official equivalent exists, 11e Orders
 // profiles on Officers, 11e rules wording (Heavy, strategic reserves, sticky objectives).
 
+const kt = require('../tools/nflb-kt');
+
 module.exports = {
   faction: 'Imperium - Astra Militarum.json',
   factionLibrary: 'Imperium - Astra Militarum - Library.json',
@@ -416,10 +418,86 @@ module.exports = {
       ],
     };
 
+    // ---------- Kill Team kits brought into 40k (user decision 2026-10-10) ----------
+    // Death Korps (KT 2024): Bruiser, Confidant, Zealot, Sapper and Spotter have no 40k option. They are
+    // copies of GW's own "Death Korps Trooper" model (official statline + lasgun) added inside the
+    // official Death Korps of Krieg datasheet, and take the place of a Trooper.
+    const ktInjections = [];
+    {
+      const krieg = b.lib.sharedSelectionEntries.find(e => e.name === 'Death Korps of Krieg');
+      const LIB = 'Imperium - Astra Militarum - Library.json';
+      for (const [grp, max] of [['9 Death Korps Troopers', 1], ['18 Death Korps Troopers', 2]]) {
+        const g = krieg && kt.findModel(krieg, 'Death Korps Trooper') && (function find(o) {
+          for (const sg of o.selectionEntryGroups || []) { if (sg.name === grp) return sg; const r = find(sg); if (r) return r; }
+          for (const se of o.selectionEntries || []) { const r = find(se); if (r) return r; }
+          return null;
+        })(krieg);
+        const trooper = g && kt.findModel(g, 'Death Korps Trooper');
+        if (!trooper) throw new Error(`Death Korps of Krieg > ${grp} > Death Korps Trooper not found upstream`);
+        const spec = kt.specialists(b, trooper, `krieg:${grp}`, { embed: true });
+        const models = [
+          spec('Death Korps Bruiser', { max, keep: ['Lasgun'], weapons: [W('Trench club', ['Melee', 2, '4+', 4, 0, 1])],
+            abilities: [ability(`kt:krieg:${grp}:bruiser`, 'Bruiser', 'Once per battle, when this model would lose a wound as the result of a melee attack, that wound is not lost.')] }),
+          spec('Death Korps Confidant', { max, keep: ['Lasgun', 'Close combat weapon'],
+            abilities: [ability(`kt:krieg:${grp}:confidant`, 'Second in Command', 'While this unit does not contain a **^^Death Korps Watchmaster^^** model, you can re-roll Battle-shock tests taken for this unit.')] }),
+          spec('Death Korps Zealot', { max, keep: ['Lasgun', 'Close combat weapon'],
+            abilities: [ability(`kt:krieg:${grp}:zealot`, 'Uplifting Primer', 'While this model is in this unit, each time a model in this unit makes a melee attack, you can re-roll a Hit roll of 1.')] }),
+          spec('Death Korps Sapper', { max, keep: ['Lasgun', 'Close combat weapon'],
+            abilities: [ability(`kt:krieg:${grp}:sapper`, 'Remote Detonator', 'Once per battle, in your Shooting phase, when this unit is selected to shoot, you can select one enemy unit within 6" of and visible to this model. Roll one D6: on a 2+, that unit suffers D3 mortal wounds. This model cannot make any other attacks this phase.')] }),
+          spec('Death Korps Spotter', { max, keep: ['Close combat weapon'],
+            weapons: [W('Mortar barrage', ['48"', 'D3', '5+', 5, 0, 1], { keywords: 'Blast, Indirect Fire, One Shot' })] }),
+        ];
+        for (const m of models) ktInjections.push({ file: LIB, entryName: 'Death Korps of Krieg', within: grp, selectionEntry: m });
+        ktInjections.push(...kt.shrinkMin(b, trooper, models, { file: LIB, entryName: 'Death Korps of Krieg', within: `${grp} > Death Korps Trooper` }, grp));
+      }
+    }
+
+    // Ratlings (KT 2024): the box's Ratlings fight alongside an Ogryn and a Bullgryn minder. Built from
+    // copies of GW's own Ratlings unit plus its Ogryn and Bullgryn models (official stats, weapons and
+    // abilities); costs Ratlings + one third of an Ogryn Squad and of a Bullgryn Squad (their per-model
+    // price), so it follows the Munitorum Field Manual.
+    {
+      const ratlings = b.lib.sharedSelectionEntries.find(e => e.name === 'Ratlings');
+      const ogrynSq = b.lib.sharedSelectionEntries.find(e => e.name === 'Ogryn Squad');
+      const bullSq = b.lib.sharedSelectionEntries.find(e => e.name === 'Bullgryn Squad');
+      const ogryn = ogrynSq && kt.findModel(ogrynSq, 'Ogryn');
+      const bull = bullSq && kt.findModel(bullSq, 'Bullgryn');
+      if (!ratlings || !ogryn || !bull) throw new Error('Ratlings / Ogryn / Bullgryn not found upstream');
+      const profileOf = name => (b.lib.sharedProfiles || []).find(p => p.name === name && p.typeName === 'Unit');
+      const ru = b.cloneEntry(ratlings, 'kt:ratlings', { name: 'Ratling Kill Team [NFLB]' });
+      const minder = (src, name, profName, ownAbility) => {
+        const m = b.cloneEntry(src, `kt:ratlings:${name}`, { name });
+        m.constraints = cons(`kt:ratlings:${name}`, 1, 1);
+        kt.dropStaleLimits(m);
+        if (!(m.infoLinks || []).some(l => l.name === profName)) m.infoLinks = [...(m.infoLinks || []), { name: profName, id: b.id(`kt:ratlings:${name}:profile`), hidden: false, targetId: profileOf(profName).id, type: 'profile' }];
+        m.profiles = [...(m.profiles || []), b.cloneEntry(ownAbility, `kt:ratlings:${name}:ability`, { name: ownAbility.name })];
+        return m;
+      };
+      const minders = {
+        name: 'Ogryn Minders', id: b.id('kt:ratlings:minders'), hidden: false, constraints: cons('kt:ratlings:minders', 2, 2),
+        selectionEntries: [
+          minder(ogryn, 'Ogryn', 'Ogryns', ogrynSq.profiles.find(p => p.typeName === 'Abilities')),
+          minder(bull, 'Bullgryn', 'Bullgryn', bullSq.profiles.find(p => p.typeName === 'Abilities')),
+        ],
+      };
+      ru.selectionEntryGroups = [...(ru.selectionEntryGroups || []), minders];
+      ru.profiles = [...(ru.profiles || []), ability('kt:ratlings', 'Ogryn Minders', 'This unit contains 1 Ogryn and 1 Bullgryn model. While this unit contains one or more Ogryn models, it does not have the Infiltrators ability. Ogryn models in this unit have the Feel No Pain 6+ ability.')];
+      ru.categoryLinks = [...ru.categoryLinks, ...catLinks('kt:ratlings', ['Ogryn', 'Ratling Kill Team'], null)];
+      const extra = Math.round(b.officialPts('Ogryn Squad') / 3 / 5) * 5 + Math.round(b.officialPts('Bullgryn Squad') / 3 / 5) * 5;
+      ru.costs = ru.costs.map(c => (c.name === 'pts' ? { ...c, value: c.value + extra } : c));
+      // the 10-Ratling price: counts models, so the two minders shift its threshold by 2
+      for (const m of ru.modifiers || []) if (m.field === b.PTS && m.type === 'set') {
+        m.value += extra;
+        for (const c of m.conditions || []) if (c.childId === 'model') c.value += 2;
+      }
+      units.push(ru);
+    }
+
     return {
       rootUnits: units,
       // Copied whole into the upstream pickers (New Recruit won't follow a link into our catalogue)
       injections: [
+        ...ktInjections,
         { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Detachment', selectionEntry: detachment },
         { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Enhancements', selectionEntryGroup: enhGroup },
         // Pask lives in the Library itself and every Leman Russ variant links to it (same file)

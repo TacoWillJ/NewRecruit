@@ -183,15 +183,16 @@ for (const { inline, spec, catId, catName, injections } of built) {
     const cleaned = new Set();
     for (const inj of list) {
       const isRoot = !inj.groupName && !inj.entryName;
-      // `within`: a group nested inside the entry (e.g. the "9 Kommandos" model group of Kommandos)
+      // `within`: a group (or model) nested inside the entry (e.g. the "9 Kommandos" model group of Kommandos)
       const nested = (o, name) => {
         for (const sg of o.selectionEntryGroups || []) { if (sg.name === name) return sg; const r = nested(sg, name); if (r) return r; }
-        for (const se of o.selectionEntries || []) { const r = nested(se, name); if (r) return r; }
+        for (const se of o.selectionEntries || []) { if (se.name === name && se.type === 'model') return se; const r = nested(se, name); if (r) return r; }
         return null;
       };
       let g = inj.groupName ? (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName)
         : inj.entryName ? (c.sharedSelectionEntries || []).find(x => x.name === inj.entryName) : c;
-      if (g && inj.within) g = nested(g, inj.within);
+      // "A > B": a path of nested groups/models (e.g. "18 Death Korps Troopers > Death Korps Trooper")
+      if (g && inj.within) for (const part of inj.within.split(' > ')) g = g && nested(g, part);
       if (!g) { problems.push(`Injection target "${inj.groupName || inj.entryName}" not found in ${file} (renamed upstream?)`); continue; }
       const keys = isRoot ? ROOT_KEYS : KEYS;
       if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh (keep this run's inline merge)
@@ -225,7 +226,9 @@ for (const f of touched) {
   manifest.patched[f] = { hash, upstreamRevision: upRev, patch };
   if (c.revision !== upRev * 1000 + patch) { c.revision = upRev * 1000 + patch; writeJson(f, o); }
 }
-for (const f of Object.keys(manifest.patched)) if (!touched.has(f)) delete manifest.patched[f];
+// Records of files no longer touched are kept (not deleted): if a spec fails for one run and its
+// file is patched again later, the patch number must keep counting up, never restart and reuse a
+// revision the app has already cached with different content.
 
 // ---------- 6. Validate every reference in the NFLB catalogues ----------
 const ids = new Set();

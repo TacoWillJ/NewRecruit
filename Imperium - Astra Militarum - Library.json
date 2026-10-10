@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": true,
-    "revision": 5002,
+    "revision": 5003,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "categoryEntries": [
@@ -17068,6 +17068,93 @@
                             "targetId": "11ee-5a7d-7e13-e1ef",
                             "type": "profile"
                           }
+                        ],
+                        "modifiers": [
+                          {
+                            "field": "3c89-8002-b3d5-79f9",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 9 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-55fbdeda6ffd",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "3c89-8002-b3d5-79f9",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 9 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-e651ffbdd3df",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "3c89-8002-b3d5-79f9",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 9 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-da4ea3447083",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "3c89-8002-b3d5-79f9",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 9 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-70fda6ead9cd",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "3c89-8002-b3d5-79f9",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 9 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-7c153f71dfac",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          }
                         ]
                       },
                       {
@@ -17279,6 +17366,551 @@
                             "hidden": false,
                             "targetId": "11ee-5a7d-7e13-e1ef",
                             "type": "profile"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Bruiser [NFLB]",
+                        "id": "nflb-55fbdeda6ffd",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-c295bbb8df15",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-2a498c59860d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-3038a5b30df3",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-0fc912ef69b6",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Trench club",
+                            "id": "nflb-29440678b45d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "d9c5-2d58-e38a-7a81",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-9cc290e80140",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-a95b5334bed4",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-40e114bbb663",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Bruiser",
+                            "id": "nflb-1c3d88247842",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "Once per battle, when this model would lose a wound as the result of a melee attack, that wound is not lost."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Confidant [NFLB]",
+                        "id": "nflb-e651ffbdd3df",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-5aabc3c3b6c8",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-a5a00691ba58",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-dcd161b3ffea",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-3c9d1906087f",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-941ad4bca3f4",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-b1da06d9be9f",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-0ba854acdd5e",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-b3ed5c9c187a",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Second in Command",
+                            "id": "nflb-7c0810b4de60",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "While this unit does not contain a **^^Death Korps Watchmaster^^** model, you can re-roll Battle-shock tests taken for this unit."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Zealot [NFLB]",
+                        "id": "nflb-da4ea3447083",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-b0c750f69351",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-4c8c6a9c91c9",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-17cc3a8f18bf",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-19db2f0d1d81",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-c3c5af48248a",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-58d73c132a7c",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-ea1705b76887",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-2cbc1923157c",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Uplifting Primer",
+                            "id": "nflb-4ea736f89bea",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "While this model is in this unit, each time a model in this unit makes a melee attack, you can re-roll a Hit roll of 1."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Sapper [NFLB]",
+                        "id": "nflb-70fda6ead9cd",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-f715ea729b2e",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-bb163e05a988",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-3d63f68f1d47",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-08d2942be10d",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-2b00fb5b19ad",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-e5691d8c86d8",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-d22856537545",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-075ed1b0f53d",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Remote Detonator",
+                            "id": "nflb-d3c0de6e2690",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "Once per battle, in your Shooting phase, when this unit is selected to shoot, you can select one enemy unit within 6\" of and visible to this model. Roll one D6: on a 2+, that unit suffers D3 mortal wounds. This model cannot make any other attacks this phase."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Spotter [NFLB]",
+                        "id": "nflb-7c153f71dfac",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-3aaa026528a5",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-63d5082c6bde",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-ce2e7b634195",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-2222869fb5cc",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-5d7d398f8e3e",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "selectionEntries": [
+                          {
+                            "name": "Mortar barrage",
+                            "id": "nflb-ebaf9a81efae",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "profiles": [
+                              {
+                                "name": "Mortar barrage",
+                                "id": "nflb-a05385aeeca6",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {
+                                    "name": "Range",
+                                    "typeId": "9896-9419-16a1-92fc",
+                                    "$text": "48\""
+                                  },
+                                  {
+                                    "name": "A",
+                                    "typeId": "3bb-c35f-f54-fb08",
+                                    "$text": "D3"
+                                  },
+                                  {
+                                    "name": "BS",
+                                    "typeId": "94d-8a98-cf90-183e",
+                                    "$text": "5+"
+                                  },
+                                  {
+                                    "name": "S",
+                                    "typeId": "2229-f494-25db-c5d3",
+                                    "$text": "5"
+                                  },
+                                  {
+                                    "name": "AP",
+                                    "typeId": "9ead-8a10-520-de15",
+                                    "$text": "0"
+                                  },
+                                  {
+                                    "name": "D",
+                                    "typeId": "a354-c1c8-a745-f9e3",
+                                    "$text": "1"
+                                  },
+                                  {
+                                    "name": "Keywords",
+                                    "typeId": "7f1b-8591-2fcf-d01c",
+                                    "$text": "Blast, Indirect Fire, One Shot"
+                                  }
+                                ]
+                              }
+                            ],
+                            "infoLinks": [
+                              {
+                                "name": "Blast",
+                                "id": "nflb-64771c46b694",
+                                "hidden": false,
+                                "targetId": "6c1f-1cf7-ff25-c99e",
+                                "type": "rule"
+                              },
+                              {
+                                "name": "Indirect Fire",
+                                "id": "nflb-1031e08b38fc",
+                                "hidden": false,
+                                "targetId": "4ddd-4e29-acdd-5e6d",
+                                "type": "rule"
+                              },
+                              {
+                                "name": "One Shot",
+                                "id": "nflb-aa6923dab778",
+                                "hidden": false,
+                                "targetId": "cd26-1611-860a-91e4",
+                                "type": "rule"
+                              }
+                            ],
+                            "modifiers": [],
+                            "constraints": [
+                              {
+                                "id": "nflb-712ab92e2e12",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-9a2e4c57c7ce",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -18155,6 +18787,93 @@
                             "targetId": "11ee-5a7d-7e13-e1ef",
                             "type": "profile"
                           }
+                        ],
+                        "modifiers": [
+                          {
+                            "field": "20c1-5eaf-37ba-78d2",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 18 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-a485ac9c0390",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "20c1-5eaf-37ba-78d2",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 18 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-b2eff82066ec",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "20c1-5eaf-37ba-78d2",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 18 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-1cd9e382ce7b",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "20c1-5eaf-37ba-78d2",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 18 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-6087427f65b8",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "field": "20c1-5eaf-37ba-78d2",
+                            "type": "decrement",
+                            "value": 1,
+                            "comment": "NFLB kill team: 18 Death Korps Troopers",
+                            "repeats": [
+                              {
+                                "childId": "nflb-7e181207cc4a",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "repeats": 1,
+                                "roundUp": false,
+                                "value": 1
+                              }
+                            ]
+                          }
                         ]
                       },
                       {
@@ -18366,6 +19085,551 @@
                             "hidden": false,
                             "targetId": "11ee-5a7d-7e13-e1ef",
                             "type": "profile"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Bruiser [NFLB]",
+                        "id": "nflb-a485ac9c0390",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-ecc1fca8aa26",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-4f6ca4a59caf",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-2e28639d8171",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-fc43731c6f3e",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Trench club",
+                            "id": "nflb-3561c701199f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "d9c5-2d58-e38a-7a81",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-e86645d1949e",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-3a0207b13253",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-370c19cd2f5b",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Bruiser",
+                            "id": "nflb-36cfc762981d",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "Once per battle, when this model would lose a wound as the result of a melee attack, that wound is not lost."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Confidant [NFLB]",
+                        "id": "nflb-b2eff82066ec",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-341a3d14d0a2",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-bf1aa7d3d06c",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-9245a5d04aaf",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-a1d884818032",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-cda10c765e4a",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-f7d8c734d294",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-dd78f519b0bd",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-a031abe14b32",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Second in Command",
+                            "id": "nflb-f0ab60edda9a",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "While this unit does not contain a **^^Death Korps Watchmaster^^** model, you can re-roll Battle-shock tests taken for this unit."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Zealot [NFLB]",
+                        "id": "nflb-1cd9e382ce7b",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-7253bda16c27",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-ced289f20179",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-331a4a98166c",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-1922dfb3e620",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-b78716e15735",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-9deb3f5c9d7a",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-201df34ac1b2",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-e269f0a391b6",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Uplifting Primer",
+                            "id": "nflb-6698ad0af307",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "While this model is in this unit, each time a model in this unit makes a melee attack, you can re-roll a Hit roll of 1."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Sapper [NFLB]",
+                        "id": "nflb-6087427f65b8",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-684461ad7405",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Lasgun",
+                            "id": "nflb-a3579166bdb4",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "26c-19b3-720-8dcf",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-18378d3b43b0",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-83026010f4c8",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-345d5877aa72",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-cff806231f4c",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-26e5b254798e",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-56d532079228",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "profiles": [
+                          {
+                            "name": "Remote Detonator",
+                            "id": "nflb-42639f9aae2d",
+                            "hidden": false,
+                            "typeId": "9cc3-6d83-4dd3-9b64",
+                            "typeName": "Abilities",
+                            "characteristics": [
+                              {
+                                "name": "Description",
+                                "typeId": "9b8f-694b-e5e-b573",
+                                "$text": "Once per battle, in your Shooting phase, when this unit is selected to shoot, you can select one enemy unit within 6\" of and visible to this model. Roll one D6: on a 2+, that unit suffers D3 mortal wounds. This model cannot make any other attacks this phase."
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Death Korps Spotter [NFLB]",
+                        "id": "nflb-7e181207cc4a",
+                        "defaultAmount": "",
+                        "hidden": false,
+                        "import": true,
+                        "type": "model",
+                        "constraints": [
+                          {
+                            "id": "nflb-cb5479a49b1b",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Close combat weapon",
+                            "id": "nflb-e6fae5840149",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "8fe1-438f-f00a-ef5c",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-42269eb13713",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-b879ada9af7c",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Death Korps of Krieg",
+                            "id": "nflb-5ecd0195463b",
+                            "hidden": false,
+                            "targetId": "11ee-5a7d-7e13-e1ef",
+                            "type": "profile"
+                          }
+                        ],
+                        "modifiers": [],
+                        "selectionEntries": [
+                          {
+                            "name": "Mortar barrage",
+                            "id": "nflb-70f36c438b33",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "profiles": [
+                              {
+                                "name": "Mortar barrage",
+                                "id": "nflb-8e4eee2c892d",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {
+                                    "name": "Range",
+                                    "typeId": "9896-9419-16a1-92fc",
+                                    "$text": "48\""
+                                  },
+                                  {
+                                    "name": "A",
+                                    "typeId": "3bb-c35f-f54-fb08",
+                                    "$text": "D3"
+                                  },
+                                  {
+                                    "name": "BS",
+                                    "typeId": "94d-8a98-cf90-183e",
+                                    "$text": "5+"
+                                  },
+                                  {
+                                    "name": "S",
+                                    "typeId": "2229-f494-25db-c5d3",
+                                    "$text": "5"
+                                  },
+                                  {
+                                    "name": "AP",
+                                    "typeId": "9ead-8a10-520-de15",
+                                    "$text": "0"
+                                  },
+                                  {
+                                    "name": "D",
+                                    "typeId": "a354-c1c8-a745-f9e3",
+                                    "$text": "1"
+                                  },
+                                  {
+                                    "name": "Keywords",
+                                    "typeId": "7f1b-8591-2fcf-d01c",
+                                    "$text": "Blast, Indirect Fire, One Shot"
+                                  }
+                                ]
+                              }
+                            ],
+                            "infoLinks": [
+                              {
+                                "name": "Blast",
+                                "id": "nflb-4e166bebf082",
+                                "hidden": false,
+                                "targetId": "6c1f-1cf7-ff25-c99e",
+                                "type": "rule"
+                              },
+                              {
+                                "name": "Indirect Fire",
+                                "id": "nflb-8efa7f6dd30e",
+                                "hidden": false,
+                                "targetId": "4ddd-4e29-acdd-5e6d",
+                                "type": "rule"
+                              },
+                              {
+                                "name": "One Shot",
+                                "id": "nflb-5f35c4d20fc3",
+                                "hidden": false,
+                                "targetId": "cd26-1611-860a-91e4",
+                                "type": "rule"
+                              }
+                            ],
+                            "modifiers": [],
+                            "constraints": [
+                              {
+                                "id": "nflb-9e9120b5b598",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 1
+                              },
+                              {
+                                "id": "nflb-cd9d6b84b008",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -136904,8 +138168,7 @@
               }
             ]
           }
-        ],
-        "entryLinks": []
+        ]
       },
       {
         "name": "Enhancements",

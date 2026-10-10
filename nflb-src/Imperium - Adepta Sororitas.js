@@ -7,6 +7,7 @@
 
 const cards = require('./data/sororitas-cards.json');
 const { unitsFromCards, resolveLeaders } = require('../tools/nflb-cards');
+const kt = require('../tools/nflb-kt');
 
 module.exports = {
   faction: 'Imperium - Adepta Sororitas.json',
@@ -31,6 +32,31 @@ module.exports = {
       },
     });
     resolveLeaders(b, units);
-    return { rootUnits: units };
+
+    // ---------- Kill Team kits brought into 40k (user decision 2026-10-10) ----------
+    // Novitiates (KT 2024): copies of GW's own Novitiate model (official statline) inside the official
+    // Sisters Novitiate Squad, each with its operative's signature weapon. The Purgatus and the
+    // Reliquarius are already covered by GW's "Novitiate with Ministorum Flamer" / "with Sacred Banner".
+    const { weapon: W, ability } = b;
+    const squad = b.lib.sharedSelectionEntries.find(e => e.name === 'Sisters Novitiate Squad');
+    const base = squad && kt.findModel(squad, 'Novitiate with Ministorum Flamer');
+    if (!base) throw new Error('Sisters Novitiate Squad > Novitiate with Ministorum Flamer not found upstream');
+    const nov = kt.specialists(b, base, 'novitiates');
+    const KEEP = ['Close combat weapon', 'Autopistol'];
+    const novitiates = [
+      nov('Novitiate Condemnor', { keep: ['Autopistol'], weapons: [W('Condemnor stake crossbow', ['24"', 1, '3+', 4, -1, 2], { keywords: 'Anti-Psyker 2+, Precision' }), W('Null rod', ['Melee', 2, '3+', 4, -1, 1])] }),
+      nov('Novitiate Dialogus', { keep: ['Autopistol'], weapons: [W('Dialogus stave', ['Melee', 2, '3+', 4, 0, 1])],
+        abilities: [ability('kt:nov:dialogus', 'Stirring Rhetoric', 'While this model is in this unit, you can re-roll Battle-shock tests taken for this unit.')] }),
+      nov('Novitiate Duellist', { keep: ['Autopistol'], weapons: [W('Duelling blades', ['Melee', 3, '3+', 3, -1, 1], { keywords: 'Precision' })] }),
+      nov('Novitiate Exactor', { weapons: [W('Neural whips', ['Melee', 3, '3+', 3, -1, 1], { keywords: 'Lethal Hits' })] }),
+      nov('Novitiate Hospitaller', { keep: ['Autopistol'], weapons: [W('Surgical saw', ['Melee', 2, '3+', 3, -1, 1])],
+        abilities: [ability('kt:nov:hospitaller', "Chirurgeon's Tools", 'While this model is in this unit, models in this unit have the Feel No Pain 6+ ability.')] }),
+      nov('Novitiate Penitent', { weapons: [W('Penitent eviscerator', ['Melee', 3, '4+', 6, -2, 2])] }),
+      nov('Novitiate Preceptor', { keep: ['Autopistol'], weapons: [W('Mace of the Righteous', ['Melee', 3, '3+', 5, -1, 2])] }),
+      nov('Novitiate Pronatus', { keep: KEEP,
+        abilities: [ability('kt:nov:pronatus', 'Relic Seeker', 'While this model is within range of an objective marker, it has an Objective Control characteristic of 3.')] }),
+    ];
+
+    return { rootUnits: units, injections: novitiates.map(m => ({ file: 'Imperium - Adepta Sororitas.json', entryName: 'Sisters Novitiate Squad', within: 'Novitiates', selectionEntry: m })) };
   },
 };

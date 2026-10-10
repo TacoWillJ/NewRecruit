@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 16,
     "library": true,
-    "revision": 9,
+    "revision": 11,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "publications": [
@@ -112,6 +112,11 @@
       {
         "name": "Mogul Kamir",
         "id": "nflb-5473389f107c",
+        "hidden": false
+      },
+      {
+        "name": "Ratling Kill Team",
+        "id": "nflb-714f86b00454",
         "hidden": false
       }
     ],
@@ -234,6 +239,14 @@
         "hidden": false,
         "import": true,
         "targetId": "nflb-923d26e8de0d",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Ratling Kill Team [NFLB]",
+        "id": "nflb-647fc44bbea9",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-758ca65edf16",
         "type": "selectionEntry"
       }
     ],
@@ -7590,6 +7603,1315 @@
         ]
       },
       {
+        "name": "Ratling Kill Team [NFLB]",
+        "id": "nflb-758ca65edf16",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-f2ae60d76011",
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-e61f9e190cad",
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Infantry",
+            "id": "nflb-e4bea365017a",
+            "primary": true,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Ratlings",
+            "id": "nflb-c57fa26f9e14",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2810-9f9e-082d-8df5"
+          },
+          {
+            "name": "Ogryn",
+            "id": "nflb-940461b8dc60",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5e1a-9392-f640-e4b"
+          },
+          {
+            "name": "Ratling Kill Team",
+            "id": "nflb-d2eec193f173",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-714f86b00454"
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-ba539aee65f7",
+            "field": "75bb-ded1-c86d-bdf0",
+            "includeChildSelections": false,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          },
+          {
+            "id": "nflb-3c82136d50d6",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "nflb-0a766689a7cc",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "nflb-6fbe3bca1224",
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          },
+          {
+            "id": "nflb-05cb2df4f10e",
+            "childId": "any",
+            "field": "f759-1bc4-cb3a-f0d2",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "message": "An Attached Unit can only take 1 Enhancement.",
+            "scope": "root-entry",
+            "shared": true,
+            "traverseAssociationGroup": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "nflb-5b3ceb8837cd",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "nflb-418dfba1de52",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 110
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Crusade",
+            "id": "nflb-f9a9788a19ce",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "56e1-e9a8-6946-0518",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Enhancements - Upgrades",
+            "id": "nflb-bee0275cc331",
+            "flatten": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "da24-02e9-22e6-cb3d",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Infiltrators",
+            "id": "nflb-bace8135560d",
+            "hidden": false,
+            "targetId": "c05d-f4c3-f091-4938",
+            "type": "rule"
+          },
+          {
+            "name": "Stealth",
+            "id": "nflb-0e241b93affb",
+            "hidden": false,
+            "targetId": "bec5-4288-34a6-ccfa",
+            "type": "rule"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Crusade modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "nflb-ba539aee65f7",
+                "type": "set",
+                "value": 6,
+                "conditions": [
+                  {
+                    "childId": "1511-18fe-f51e-7b9d",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-3c82136d50d6",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-0a766689a7cc",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-ba539aee65f7",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "d0de-45ce-e737-b6be",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-ready)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 5
+                      },
+                      {
+                        "childId": "cac3-71d1-ea4b-795d",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Blooded)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 5
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 15
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-hardened)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 15
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 30
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Heroic)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 30
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 50
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Legendary)",
+                "conditions": [
+                  {
+                    "childId": "2dbf-4d49-5d74-85c9",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 50
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Boarding Actions modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1d6e-2579-8e7f-1ed4",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Abhuman Auxiliaries Detachment",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "category",
+                "scope": "root-entry",
+                "type": "add",
+                "value": "167d-44bb-08ce-ea36",
+                "conditions": [
+                  {
+                    "childId": "57a9-88a1-84c1-e421",
+                    "childName": "Abhuman Auxiliaries",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "b0ae-12a5-c84-ea45",
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "notInstanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "51b2-306e-1021-d207",
+            "type": "set",
+            "value": 150,
+            "conditions": [
+              {
+                "childId": "model",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "self",
+                "shared": true,
+                "type": "atLeast",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "field": "nflb-6fbe3bca1224",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "d62d-db22-4893-4bc0",
+                "childName": "1. Incursion (1000 Point limit)",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Shoot Sharp and Scarper",
+            "id": "nflb-241c43a28bed",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move as if it were your Movement phase. If it does, until the end of the turn, this unit is not eligible to declare a charge.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Ogryn Minders",
+            "id": "nflb-dab9eb56e815",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This unit contains 1 Ogryn and 1 Bullgryn model. While this unit contains one or more Ogryn models, it does not have the Infiltrators ability. Ogryn models in this unit have the Feel No Pain 6+ ability."
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "5-10 Ratlings",
+            "id": "nflb-847eb988dd53",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {
+                "id": "nflb-305950263abd",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 10
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ratlings",
+                "id": "nflb-4a40e20867d6",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-f3e61cbe60b3",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 5
+                  },
+                  {
+                    "id": "nflb-4f00b9cfa297",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 10
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Sniper rifle",
+                    "id": "nflb-f23f85fd94fc",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "0b70-2702-788f-b739",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-8bf7a469740a",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-4e6393ba977c",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-cf84ef34f07e",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Ratlings",
+                    "id": "nflb-3db186dcfa07",
+                    "hidden": false,
+                    "targetId": "9a35-f520-c54b-9e61",
+                    "type": "profile"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Close combat weapon",
+                    "id": "nflb-7bc4a2ae548c",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "nflb-8a300f274bf8",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-13dfa12a99a9",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-727c9c92d1aa",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Close combat weapon",
+                        "id": "nflb-32d412677ae2",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "Melee",
+                            "typeId": "914c-b413-91e3-a132"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "1",
+                            "typeId": "2337-daa1-6682-b110"
+                          },
+                          {
+                            "name": "WS",
+                            "$text": "5+",
+                            "typeId": "95d1-95f-45b4-11d6"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "2",
+                            "typeId": "ab33-d393-96ce-ccba"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "0",
+                            "typeId": "41a0-1301-112a-e2f2"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "1",
+                            "typeId": "3254-9fe6-d824-513e"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "",
+                            "typeId": "893f-9000-ccf7-648e"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ratling w/ tankstopper rifle",
+                "id": "nflb-100fb4473ac4",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-cea1558e443a",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Ratlings",
+                    "id": "nflb-6abac853e57b",
+                    "hidden": false,
+                    "targetId": "9a35-f520-c54b-9e61",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "nflb-cea1558e443a",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Close combat weapon",
+                    "id": "nflb-d3d700761e30",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "nflb-abfcb4a589ec",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-c34b3912b0ac",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-6570f3bacb60",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Close combat weapon",
+                        "id": "nflb-6052520617db",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "Melee",
+                            "typeId": "914c-b413-91e3-a132"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "1",
+                            "typeId": "2337-daa1-6682-b110"
+                          },
+                          {
+                            "name": "WS",
+                            "$text": "5+",
+                            "typeId": "95d1-95f-45b4-11d6"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "2",
+                            "typeId": "ab33-d393-96ce-ccba"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "0",
+                            "typeId": "41a0-1301-112a-e2f2"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "1",
+                            "typeId": "3254-9fe6-d824-513e"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "",
+                            "typeId": "893f-9000-ccf7-648e"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tankstopper rifle",
+                    "id": "nflb-89b988c5328b",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "categoryLinks": [
+                      {
+                        "name": "Damage Dx Weapon",
+                        "id": "nflb-5d52c11b06ab",
+                        "hidden": false,
+                        "primary": false,
+                        "targetId": "4986-bf86-beb4-13ac"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "id": "nflb-9b994b85e388",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-ae037982c881",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-c051731799e3",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Heavy",
+                        "id": "nflb-4a32b6979b59",
+                        "hidden": false,
+                        "targetId": "1202-10a8-78e9-4c67",
+                        "type": "rule"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Tankstopper rifle",
+                        "id": "nflb-3f7ebc118c43",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "36\"",
+                            "typeId": "9896-9419-16a1-92fc"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "1",
+                            "typeId": "3bb-c35f-f54-fb08"
+                          },
+                          {
+                            "name": "BS",
+                            "$text": "3+",
+                            "typeId": "94d-8a98-cf90-183e"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "9",
+                            "typeId": "2229-f494-25db-c5d3"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "-3",
+                            "typeId": "9ead-8a10-520-de15"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "D6",
+                            "typeId": "a354-c1c8-a745-f9e3"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "Heavy",
+                            "typeId": "7f1b-8591-2fcf-d01c"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wargear Options",
+            "id": "nflb-efde36b1eb4d",
+            "hidden": false,
+            "sortIndex": 4,
+            "selectionEntries": [
+              {
+                "name": "Ratling Battlemutt",
+                "id": "nflb-8fa8c04ca10e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "nflb-dcdc27cf0682",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Lethal Hits",
+                    "id": "nflb-81a6229544f8",
+                    "hidden": false,
+                    "targetId": "d1d1-611e-5191-1095",
+                    "type": "rule"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "nflb-dcdc27cf0682",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Ratling Battlemutt",
+                    "id": "nflb-0b0c2a50917b",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Once per battle, when this unit is selected to shoot, it can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the **[LETHAL HITS]** ability.\n\n**Designer’s Note:** *Place a Ratling Battlemutt token next to the unit, removing it once this ability has been used.*",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Demolition Gear",
+                "id": "nflb-b172e7647e6f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [
+                  {
+                    "name": "Grenades",
+                    "id": "nflb-353cf0565d7a",
+                    "hidden": false,
+                    "primary": false,
+                    "targetId": "5a61-81ac-eb7c-a87e"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "id": "nflb-b0124b33441a",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "nflb-b0124b33441a",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "unit",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Demolition Gear",
+                    "id": "nflb-2832eec21ec8",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "The bearer’s unit has the **^^Grenades^^** keyword.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ogryn Minders",
+            "id": "nflb-08c68138c58b",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "nflb-bb2299a3ba20",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 2
+              },
+              {
+                "id": "nflb-55ec605450a1",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ogryn",
+                "id": "nflb-2a8dc520faea",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-89a253bbffe0",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-f65680ed1a2b",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Ripper gun",
+                    "id": "nflb-87dfd86a2c6c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e383-791c-b4cf-e0be",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-e2a373380fd2",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-296c7d2a36f3",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Ogryns",
+                    "id": "nflb-480194459978",
+                    "hidden": false,
+                    "targetId": "a91e-4361-6555-64a8",
+                    "type": "profile"
+                  }
+                ],
+                "modifierGroups": [],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Point-blank Barrage",
+                    "id": "nflb-7a9acc2222d3",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Each time a model in this unit makes a ranged attack that targets the closest eligible target, improve the Armour Penetration characteristic of that attack by 1.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ],
+                    "modifiers": []
+                  }
+                ]
+              },
+              {
+                "name": "Bullgryn",
+                "id": "nflb-b3453ed155c7",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "entryLinks": [
+                  {
+                    "name": "Close combat weapon",
+                    "id": "nflb-7bb5ace28398",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3cb-d255-67fb-4a7b",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-608bca564c7c",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-f60bf986a3a0",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Bullgryn",
+                    "id": "nflb-ef9761bb7698",
+                    "hidden": false,
+                    "targetId": "8a6e-a41f-3712-fc55",
+                    "type": "profile"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Slabshield",
+                    "id": "nflb-a90aa5c84e5f",
+                    "defaultSelectionEntryId": "nflb-b29e05ba19de",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "nflb-baa9faf2c7b5",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-28d9112dca38",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Slabshield",
+                        "id": "nflb-b29e05ba19de",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "be30-b742-ec15-1066",
+                        "type": "selectionEntry"
+                      },
+                      {
+                        "name": "Brute shield",
+                        "id": "nflb-2594bd9f2c63",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "5a1c-ba0c-7970-348d",
+                        "type": "selectionEntry"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grenadier Gauntlet",
+                    "id": "nflb-f3235901af96",
+                    "defaultSelectionEntryId": "nflb-f98993d57d4b",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "nflb-ad4f8c9f1cd3",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-caf130624bf3",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Bullgryn maul",
+                        "id": "nflb-66660331933b",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "5bf-ab9e-390c-cc84",
+                        "type": "selectionEntry"
+                      },
+                      {
+                        "name": "Grenadier gauntlet",
+                        "id": "nflb-f98993d57d4b",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4c19-7a93-f2d6-30e9",
+                        "type": "selectionEntry"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [],
+                "constraints": [
+                  {
+                    "id": "nflb-d4b1012dc9e2",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-abea968656df",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Wall of Muscle",
+                    "id": "nflb-385896233c7d",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Each time an attack is allocated to a model in this unit, subtract 1 from the Damage characteristic of that attack.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ],
+                    "modifiers": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Tallarn power sword",
         "id": "nflb-6106060034c5",
         "hidden": false,
@@ -9519,6 +10841,82 @@
                 "$text": ""
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Mortar barrage",
+        "id": "nflb-ff7adeb85ec4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Mortar barrage",
+            "id": "nflb-e27d4fe5cf48",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "48\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "D3"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "5+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Blast, Indirect Fire, One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "nflb-f9baa4bf9da2",
+            "hidden": false,
+            "targetId": "6c1f-1cf7-ff25-c99e",
+            "type": "rule"
+          },
+          {
+            "name": "Indirect Fire",
+            "id": "nflb-a1eb970537af",
+            "hidden": false,
+            "targetId": "4ddd-4e29-acdd-5e6d",
+            "type": "rule"
+          },
+          {
+            "name": "One Shot",
+            "id": "nflb-9ce4011bf57c",
+            "hidden": false,
+            "targetId": "cd26-1611-860a-91e4",
+            "type": "rule"
           }
         ]
       }

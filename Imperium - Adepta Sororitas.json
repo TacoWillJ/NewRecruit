@@ -9,7 +9,7 @@
     "gameSystemRevision": 1,
     "library": false,
     "readme": "",
-    "revision": 21002,
+    "revision": 21003,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -29301,6 +29301,569 @@
                     "type": "profile"
                   }
                 ]
+              },
+              {
+                "name": "Novitiate Condemnor [NFLB]",
+                "id": "nflb-3093b39fb091",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-c0cfcfa57998",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-9f4f8df72b5f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Condemnor stake crossbow",
+                    "id": "nflb-ac1c2818b243",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-8d6376a8507a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-cde889e7b7ca",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-4579bda09c0f",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Null rod",
+                    "id": "nflb-009e6997cebe",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-0c3a09c60790",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-b42eac427fac",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-d1b5db6c425d",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-a8e13fc79937",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Novitiate Dialogus [NFLB]",
+                "id": "nflb-f14f0e3fe923",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-712405e5664d",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-fc24abef0717",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Dialogus stave",
+                    "id": "nflb-7bcbcf65854c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-4a83b9109917",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-2edc5938dab4",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-bd05f7d00624",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-24b00c4b45e7",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Stirring Rhetoric",
+                    "id": "nflb-cf3fb4d7fe3d",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "9b8f-694b-e5e-b573",
+                        "$text": "While this model is in this unit, you can re-roll Battle-shock tests taken for this unit."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Novitiate Duellist [NFLB]",
+                "id": "nflb-0c265378581c",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-6b78fec968de",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-581bdc5be207",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Duelling blades",
+                    "id": "nflb-e60e9afba69e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-68a180756af2",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-6586c82e7830",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-82691da3aafb",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-b6e48b3db5da",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Novitiate Exactor [NFLB]",
+                "id": "nflb-290b51e1a730",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-69b26be0fb93",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Neural whips",
+                    "id": "nflb-7630811dc28d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-a201e1d9d108",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-b8291b0fcb53",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-924792e9d07d",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-bf5e67e3f844",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Novitiate Hospitaller [NFLB]",
+                "id": "nflb-687ad26d8892",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-4c4ccff24f61",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-9c7f4a521cfd",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Surgical saw",
+                    "id": "nflb-1b43ce2dd195",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-b6389c677e22",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-9698285b4d54",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-e683202cf9cb",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-99cf2846cf5c",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Chirurgeon's Tools",
+                    "id": "nflb-7cd220bbfa2e",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "9b8f-694b-e5e-b573",
+                        "$text": "While this model is in this unit, models in this unit have the Feel No Pain 6+ ability."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Novitiate Penitent [NFLB]",
+                "id": "nflb-d4552de0406b",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-af4ee51d0251",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Penitent eviscerator",
+                    "id": "nflb-24672fb94b07",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-a2a6f97a04a9",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-e376f415b400",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-bb4510577dd9",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-283ffc5b06f1",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Novitiate Preceptor [NFLB]",
+                "id": "nflb-758eeb005025",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-c20a3e00c148",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-9383368b6bc1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Mace of the Righteous",
+                    "id": "nflb-cdf8428c60ca",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-b5968fa54bef",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-191913bbcad9",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-1cf7f20612be",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-e204468ac76d",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": []
+              },
+              {
+                "name": "Novitiate Pronatus [NFLB]",
+                "id": "nflb-15c5f94a0685",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "nflb-5ded9b6a8646",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Close combat weapon",
+                    "id": "nflb-0338a71e51aa",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f204-1361-eda8-9845",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-7790cc87dd77",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "nflb-7fb6eae24b82",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Autopistol",
+                    "id": "nflb-87a80a1f5750",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "836e-4f46-1837-b270",
+                    "type": "selectionEntry"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Sister Novitiate",
+                    "id": "nflb-d66451ba2ffe",
+                    "hidden": false,
+                    "targetId": "9996-fbd1-4807-f820",
+                    "type": "profile"
+                  }
+                ],
+                "modifiers": [],
+                "profiles": [
+                  {
+                    "name": "Relic Seeker",
+                    "id": "nflb-877b25785ed2",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "9b8f-694b-e5e-b573",
+                        "$text": "While this model is within range of an objective marker, it has an Objective Control characteristic of 3."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -43824,6 +44387,464 @@
                 "name": "D",
                 "typeId": "3254-9fe6-d824-513e",
                 "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Condemnor stake crossbow",
+        "id": "nflb-8d6376a8507a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Condemnor stake crossbow",
+            "id": "nflb-5af24fec883f",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Anti-Psyker 2+, Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-da6e8c8afa0a",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          },
+          {
+            "name": "Precision",
+            "id": "nflb-f3558fcf0df0",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Null rod",
+        "id": "nflb-0c3a09c60790",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Null rod",
+            "id": "nflb-bb423441bdcb",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dialogus stave",
+        "id": "nflb-4a83b9109917",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Dialogus stave",
+            "id": "nflb-e4db164446de",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Duelling blades",
+        "id": "nflb-68a180756af2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Duelling blades",
+            "id": "nflb-9ebf31513e11",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Precision",
+            "id": "nflb-0e2bb91651c2",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Neural whips",
+        "id": "nflb-a201e1d9d108",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Neural whips",
+            "id": "nflb-d9344645b3e5",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Lethal Hits"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Lethal Hits",
+            "id": "nflb-ca767cf93c42",
+            "hidden": false,
+            "targetId": "d1d1-611e-5191-1095",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Surgical saw",
+        "id": "nflb-b6389c677e22",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Surgical saw",
+            "id": "nflb-2b93d9cde6ad",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Penitent eviscerator",
+        "id": "nflb-a2a6f97a04a9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Penitent eviscerator",
+            "id": "nflb-c6d16f1db443",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mace of the Righteous",
+        "id": "nflb-b5968fa54bef",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Mace of the Righteous",
+            "id": "nflb-09cf29d2850a",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
               },
               {
                 "name": "Keywords",
