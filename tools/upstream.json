@@ -87,6 +87,11 @@
       "hash": "0d4d12de9a90ea1248b6b30e75f27c443589e64e",
       "upstreamRevision": 21,
       "patch": 2
+    },
+    "Aeldari - Drukhari.json": {
+      "hash": "31af2af11da64ece8b77233b7d20e3c58366a10d",
+      "upstreamRevision": 2,
+      "patch": 1
     }
   }
 }

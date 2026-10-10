@@ -1,0 +1,435 @@
+[
+ {
+  "slug": "asdrubael-vect",
+  "name": "Asdrubael Vect",
+  "subtitle": "Supreme Overlord of Commorragh",
+  "factionLine": "Aeldari • Drukhari • Black Heart Kabal",
+  "points": "165",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "4",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "3+",
+  "weapons": [
+   {
+    "name": "Splinter pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "The Sceptre of Dark Millennia",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "D3+1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Splinter pistol",
+    "text": "[PISTOL] [ANTI-INFANTRY 4+]"
+   },
+   {
+    "name": "The Sceptre of Dark Millennia",
+    "text": "[DEVASTATING WOUNDS] [PRECISION]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [LONE OPERATIVE] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Kabalite Warriors, Kabalite Trueborn, Incubi."
+   },
+   {
+    "name": "Shadow Field",
+    "text": "This model has a 3+ Invulnerable Save. The first time this model fails an Invulnerable save in any phase, its Invulnerable save is permanently reduced to 6+ for the rest of the battle."
+   },
+   {
+    "name": "Supreme Overlord [AURA]",
+    "text": "While a friendly Drukhari unit is within 6\" of this model, that unit re-rolls Hit rolls of 1, and while wholly within your opponent's deployment zone, also re-rolls Wound rolls of 1."
+   },
+   {
+    "name": "Master of Combat Drugs",
+    "text": "In your Command phase, you may select one Combat Drug for this model and any unit it leads (instead of rolling randomly). The chosen drug applies until your next Command phase, and the unit gains +1 to Wound rolls for the entire duration (in addition to the drug's normal effects)."
+   },
+   {
+    "name": "Eternal Spite",
+    "text": "Each time this model would lose its last wound, roll one D6: on a 5+, this model is not destroyed and instead has its remaining Wounds set to 1. This ability cannot trigger more than once per battle."
+   }
+  ],
+  "composition": "1 Asdrubael Vect model. This model is equipped with: 1 splinter pistol; 1 The Sceptre of Dark Millennia.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, ARCHON, ASDRUBAEL VECT",
+  "factionKeywords": "AELDARI, DRUKHARI"
+ },
+ {
+  "slug": "baron-sathonyx",
+  "name": "Baron Sathonyx",
+  "subtitle": "Master of the Hellions",
+  "factionLine": "Aeldari • Drukhari • Cult of Strife",
+  "points": "95",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "3",
+    "Sv": "4+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Splinter pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Hellglaive",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Splinter pistol",
+    "text": "[PISTOL] [ANTI-INFANTRY 4+]"
+   },
+   {
+    "name": "Hellglaive",
+    "text": "[EXTRA ATTACKS]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE] [FLY] [JUMP PACK]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Hellions, Reavers, Scourges."
+   },
+   {
+    "name": "Shadow Field",
+    "text": "This model has a 4+ Invulnerable Save. The first time this model fails an Invulnerable save in any phase, its Invulnerable save is permanently reduced to 6+ for the rest of the battle."
+   },
+   {
+    "name": "Hit & Run",
+    "text": "This model and any unit it leads can declare a Fall Back move in any of your Movement phases and still shoot, charge, or fight that turn (as if it had not Fallen Back)."
+   },
+   {
+    "name": "Skyboard Mastery",
+    "text": "When this model is part of a unit of Hellions, the unit gains the [LONE OPERATIVE] ability while at full strength (10 or more models). On a turn this model finished a Charge move, attacks made by Hellglaive gain +1 to the Wound roll."
+   },
+   {
+    "name": "Lord of the Sky-City [AURA]",
+    "text": "While a friendly Hellions unit is within 6\" of this model, that unit re-rolls Charge rolls and gains +1 to its Move characteristic."
+   }
+  ],
+  "composition": "1 Baron Sathonyx model. This model is equipped with: 1 splinter pistol; 1 Hellglaive.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, HELLIARCH, FLY, JUMP PACK, BARON SATHONYX",
+  "factionKeywords": "AELDARI, DRUKHARI"
+ },
+ {
+  "slug": "duke-sliscus",
+  "name": "Duke Sliscus the Serpent",
+  "subtitle": "Lord of the Soaring Spite Kabal",
+  "factionLine": "Aeldari • Drukhari • Soaring Spite Kabal",
+  "points": "110",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "3",
+    "Sv": "6+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Splinter pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Serpent's Tongue",
+    "melee": false,
+    "range": "12\"",
+    "a": "3",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Twin Power Swords",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-3",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Splinter pistol",
+    "text": "[PISTOL] [ANTI-INFANTRY 4+]"
+   },
+   {
+    "name": "Serpent's tongue",
+    "text": "[PISTOL] [POISON 2+] [LETHAL HITS]"
+   },
+   {
+    "name": "Twin Power Swords",
+    "text": "[TWIN-LINKED] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Kabalite Warriors, Kabalite Trueborn, Incubi, Scourges."
+   },
+   {
+    "name": "Shadow Field",
+    "text": "This model has a 4+ Invulnerable Save. The first time this model fails an Invulnerable save in any phase, its Invulnerable save is permanently reduced to 6+ for the rest of the battle."
+   },
+   {
+    "name": "Dark Olympiad Master",
+    "text": "In your Command phase, you may roll 3D6 on the Combat Drugs table and choose 2 results to apply to this model and any unit it leads (instead of the usual roll-1/apply-1). The chosen drugs last until your next Command phase."
+   },
+   {
+    "name": "Serpentine Strikes",
+    "text": "Each time this model makes a melee attack, on an unmodified Wound roll of 5+, the target suffers 1 mortal wound in addition to normal damage."
+   },
+   {
+    "name": "Pirate Prince [AURA]",
+    "text": "While a friendly Kabal of the Last Hatred unit (any Kabalite unit) is within 6\" of this model, that unit gains the [STEALTH] ability."
+   }
+  ],
+  "composition": "1 Duke Sliscus model. This model is equipped with: 1 splinter pistol; 1 Serpent's tongue; 1 pair of Twin Power Swords.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, ARCHON, DUKE SLISCUS",
+  "factionKeywords": "AELDARI, DRUKHARI"
+ },
+ {
+  "slug": "kheradruakh",
+  "name": "Kheradruakh, the Decapitator",
+  "subtitle": "Six-Headed Mandrake-Prince",
+  "factionLine": "Aeldari • Drukhari • Mandrakes",
+  "points": "85",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "3",
+    "Sv": "5+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Decapitating Blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Decapitating Blade",
+    "text": "[PRECISION] [ANTI-CHARACTER 4+]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [LONE OPERATIVE] [DEEP STRIKE] [STEALTH] [INFILTRATORS]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Mandrakes."
+   },
+   {
+    "name": "Shadow Cloak",
+    "text": "This model has a 5+ Invulnerable Save. Each time a ranged attack would target this model, if the attacker is more than 12\" away, the attack fails on an unmodified Hit roll of 1-3 (the shadow obscures the target)."
+   },
+   {
+    "name": "Six Heads",
+    "text": "Each time this model destroys an enemy Character in the Fight phase, until the end of the battle the Attacks characteristic of Decapitating Blade is increased by 1 (cumulative; up to a maximum of +5 from this ability)."
+   },
+   {
+    "name": "Heart of Living Shadow",
+    "text": "This model is not slowed by Difficult Terrain and treats any terrain feature as an Open terrain feature for movement purposes. In addition, this model can be set up in Strategic Reserves with no Strategic Reserves point cost."
+   },
+   {
+    "name": "Tide of Shadow [AURA]",
+    "text": "While a friendly Mandrakes unit is within 6\" of this model, that unit gains the [INFILTRATORS] keyword and each model in that unit can attempt to Deny the Witch as if it were a Psyker (Deny on 2D6 = 7+)."
+   }
+  ],
+  "composition": "1 Kheradruakh model. This model is equipped with: 1 Decapitating Blade.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, MANDRAKE, KHERADRUAKH",
+  "factionKeywords": "AELDARI, DRUKHARI"
+ },
+ {
+  "slug": "vect-on-dais",
+  "name": "Vect on the Dais of Destruction",
+  "subtitle": "Anti-Grav Throne Variant",
+  "factionLine": "Aeldari • Drukhari • Black Heart Kabal",
+  "points": "365",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "14\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "14",
+    "LD": "6+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin Splinter Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "8",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Dark Lance",
+    "melee": false,
+    "range": "36\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "12",
+    "ap": "-4",
+    "d": "D6+1"
+   },
+   {
+    "name": "Disintegrator Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "The Sceptre of Dark Millennia",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "D3+1"
+   },
+   {
+    "name": "Crushing impact",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin Splinter Cannon",
+    "text": "[TWIN-LINKED] [ANTI-INFANTRY 4+] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Dark Lance",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Disintegrator Cannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "The Sceptre of Dark Millennia",
+    "text": "[DEVASTATING WOUNDS] [PRECISION]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEADLY DEMISE D6] [FLY] [HOVER] [LONE OPERATIVE]"
+   },
+   {
+    "name": "Open-Topped Transport",
+    "text": "This model has a Transport capacity of 10 Drukhari Infantry models. Models embarked within this transport can shoot as if they were not embarked, and can disembark even if this model has Advanced (but cannot then charge that turn)."
+   },
+   {
+    "name": "Shadow Field",
+    "text": "This model has a 4+ Invulnerable Save. The first time this model fails an Invulnerable save in any phase, its Invulnerable save is permanently reduced to 6+ for the rest of the battle."
+   },
+   {
+    "name": "Vect Commands [AURA]",
+    "text": "While a friendly Drukhari unit is within 9\" of this model, that unit re-rolls Hit rolls of 1. Additionally, this model and its passengers count as Vect being on the battlefield for the purposes of Supreme Overlord (the standing version of Vect cannot be fielded in the same army)."
+   },
+   {
+    "name": "Night Shield",
+    "text": "Each time a ranged attack with a Range of 24\" or more targets this model, that attack's Range is treated as 6\" shorter."
+   },
+   {
+    "name": "Flickerfield",
+    "text": "Each time a ranged attack would inflict damage on this model, you may roll one D6: on a 5+ (4+ against attacks with the [BLAST] keyword), that damage is reduced to 0."
+   }
+  ],
+  "composition": "1 Vect on the Dais of Destruction model. This model is equipped with: 1 Twin Splinter Cannon; 1 Dark Lance; 2 Disintegrator Cannons; 1 The Sceptre of Dark Millennia.",
+  "keywords": "VEHICLE, CHARACTER, EPIC HERO, TRANSPORT, FLY, HOVER, OPEN-TOPPED, VECT ON THE DAIS OF DESTRUCTION",
+  "factionKeywords": "AELDARI, DRUKHARI"
+ }
+]

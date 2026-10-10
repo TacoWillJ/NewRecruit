@@ -15,6 +15,7 @@ const isKeywordLine = t => /^(\[[^\]]+\]\s*)+$/.test(t);
  *   keywords(c)   -> { kws: [...extra keywords], faction: [...faction categories] }
  *   modifiers(c)  -> extra unit modifiers (e.g. detachment gating)
  *   overrides     { slug: { 'Ability name': 'new text' | null } } 11e rewording; null drops it
+ *   extraRules    { slug: ['Firing Deck 10', ...] } rules to link in addition to the card's
  */
 function unitsFromCards(b, cards, opts) {
   const { weapon: W, link, model, group, choice, ability, unitProfile, catLinks, ruleLinks, cons, shrinkFor } = b;
@@ -57,7 +58,7 @@ function unitsFromCards(b, cards, opts) {
     const seen = new Set();
     for (const a of c.abilities) {
       if (isKeywordLine(a.text)) { // weapon keyword line, or "Core | [DEADLY DEMISE D3]"
-        if (/^core$/i.test(a.name)) rules.push(...[...a.text.matchAll(/\[([^\]]+)\]/g)].map(m => title(m[1])).filter(r => r !== 'Fly'));
+        if (/^core$/i.test(a.name)) rules.push(...[...a.text.matchAll(/\[([^\]]+)\]/g)].map(m => title(m[1])).filter(r => !/^(Fly|Jump Pack)$/.test(r)));
         continue;
       }
       if (skipAbility.test(a.name)) continue;
@@ -75,6 +76,8 @@ function unitsFromCards(b, cards, opts) {
       if (text === null) continue;
       profiles.push(ability(key, a.name, text));
     }
+
+    rules.push(...(opts.extraRules?.[c.slug] || []));
 
     // keywords
     const extra = keywords(c);
@@ -159,6 +162,10 @@ function resolveLeaders(b, units, extra = {}) {
       }
       const ex = Object.entries(extra).find(([n]) => n.toLowerCase().includes(tl));
       if (ex) targets.add(ex[1]);
+      // GW sometimes splits a unit ("Scourges" -> "Scourges with Heavy Weapons" / "... with Shardcarbines")
+      if (![...targets].some(x => x.name.toLowerCase().includes(tl))) {
+        for (const e of b.lib.sharedSelectionEntries) if (e.type !== 'upgrade' && e.name.toLowerCase().startsWith(`${tl} with `)) targets.add(e);
+      }
     }
     if (!targets.size) throw new Error(`${u.name}: no leader targets resolved from "${text}"`);
     u.associations = [b.leadAssociation(`lead:${u.id}`, [...targets])];

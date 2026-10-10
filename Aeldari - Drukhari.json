@@ -8,13 +8,34 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 2,
+    "revision": 2001,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "catalogueLinks": [{"name": "Aeldari - Aeldari Library", "id": "d965-4d5b-d10b-350b", "targetId": "dfcf-1214-b57-2205", "type": "catalogue"}],
+    "catalogueLinks": [
+      {
+        "name": "Aeldari - Aeldari Library",
+        "id": "d965-4d5b-d10b-350b",
+        "targetId": "dfcf-1214-b57-2205",
+        "type": "catalogue"
+      }
+    ],
     "entryLinks": [
-      {"name": "Archon", "id": "f96f-85f3-fda6-40d9", "hidden": false, "import": true, "targetId": "5c1c-fa4a-3234-c711", "type": "selectionEntry"},
-      {"name": "Beastmaster [Legends]", "id": "e44f-a5c6-e78-cce4", "hidden": false, "import": true, "targetId": "f99a-af49-64c0-9bed", "type": "selectionEntry"},
+      {
+        "name": "Archon",
+        "id": "f96f-85f3-fda6-40d9",
+        "hidden": false,
+        "import": true,
+        "targetId": "5c1c-fa4a-3234-c711",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Beastmaster [Legends]",
+        "id": "e44f-a5c6-e78-cce4",
+        "hidden": false,
+        "import": true,
+        "targetId": "f99a-af49-64c0-9bed",
+        "type": "selectionEntry"
+      },
       {
         "name": "Court of the Archon [Legends]",
         "id": "1cfc-355a-ccc1-176b",
@@ -23,19 +44,110 @@
         "targetId": "b221-43a3-8bee-117c",
         "type": "selectionEntry"
       },
-      {"name": "Cronos", "id": "6ce9-94b5-94c8-82f", "hidden": false, "import": true, "targetId": "a5d3-e21b-bf13-a952", "type": "selectionEntry"},
-      {"name": "Drazhar", "id": "80eb-f424-6a35-c0c9", "hidden": false, "import": true, "targetId": "a30b-b966-d264-e935", "type": "selectionEntry"},
-      {"name": "Grotesques [Legends]", "id": "c4bf-74c9-87a2-f609", "hidden": false, "import": true, "targetId": "d729-7e1f-93a9-b1c5", "type": "selectionEntry"},
-      {"name": "Haemonculus", "id": "16f-1b8-d251-4b6a", "hidden": false, "import": true, "targetId": "32ff-aec4-9669-c8a2", "type": "selectionEntry"},
-      {"name": "Hellions", "id": "e32b-d49a-e848-2274", "hidden": false, "import": true, "targetId": "2311-9feb-9d0a-8154", "type": "selectionEntry"},
-      {"name": "Incubi", "id": "a658-2f16-a5ad-f228", "hidden": false, "import": true, "targetId": "1529-793d-481b-82bf", "type": "selectionEntry"},
-      {"name": "Kabalite Warriors", "id": "c45d-8c86-3405-8215", "hidden": false, "import": true, "targetId": "d20b-783-ccf6-b29d", "type": "selectionEntry"},
-      {"name": "Lelith Hesperax", "id": "fb3e-8f1b-63d7-f761", "hidden": false, "import": true, "targetId": "ae1b-1a96-5b4c-cecc", "type": "selectionEntry"},
-      {"name": "Mandrakes", "id": "a128-870b-3f8b-59e0", "hidden": false, "import": true, "targetId": "6a3a-7973-b509-532e", "type": "selectionEntry"},
-      {"name": "Raider", "id": "ead3-cdad-4f60-e095", "hidden": false, "import": true, "targetId": "635b-21f4-f801-453", "type": "selectionEntry"},
-      {"name": "Ravager", "id": "db8-7a89-3b82-c492", "hidden": false, "import": true, "targetId": "3376-d337-6a33-4bca", "type": "selectionEntry"},
-      {"name": "Razorwing Jetfighter", "id": "1356-8664-65d6-7600", "hidden": false, "import": true, "targetId": "fbc4-c7d0-db5b-91c", "type": "selectionEntry"},
-      {"name": "Reavers", "id": "77b-3115-cf3b-5acc", "hidden": false, "import": true, "targetId": "2c3a-9752-2516-69ab", "type": "selectionEntry"},
+      {
+        "name": "Cronos",
+        "id": "6ce9-94b5-94c8-82f",
+        "hidden": false,
+        "import": true,
+        "targetId": "a5d3-e21b-bf13-a952",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Drazhar",
+        "id": "80eb-f424-6a35-c0c9",
+        "hidden": false,
+        "import": true,
+        "targetId": "a30b-b966-d264-e935",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Grotesques [Legends]",
+        "id": "c4bf-74c9-87a2-f609",
+        "hidden": false,
+        "import": true,
+        "targetId": "d729-7e1f-93a9-b1c5",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Haemonculus",
+        "id": "16f-1b8-d251-4b6a",
+        "hidden": false,
+        "import": true,
+        "targetId": "32ff-aec4-9669-c8a2",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Hellions",
+        "id": "e32b-d49a-e848-2274",
+        "hidden": false,
+        "import": true,
+        "targetId": "2311-9feb-9d0a-8154",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Incubi",
+        "id": "a658-2f16-a5ad-f228",
+        "hidden": false,
+        "import": true,
+        "targetId": "1529-793d-481b-82bf",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Kabalite Warriors",
+        "id": "c45d-8c86-3405-8215",
+        "hidden": false,
+        "import": true,
+        "targetId": "d20b-783-ccf6-b29d",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Lelith Hesperax",
+        "id": "fb3e-8f1b-63d7-f761",
+        "hidden": false,
+        "import": true,
+        "targetId": "ae1b-1a96-5b4c-cecc",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Mandrakes",
+        "id": "a128-870b-3f8b-59e0",
+        "hidden": false,
+        "import": true,
+        "targetId": "6a3a-7973-b509-532e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Raider",
+        "id": "ead3-cdad-4f60-e095",
+        "hidden": false,
+        "import": true,
+        "targetId": "635b-21f4-f801-453",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Ravager",
+        "id": "db8-7a89-3b82-c492",
+        "hidden": false,
+        "import": true,
+        "targetId": "3376-d337-6a33-4bca",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Razorwing Jetfighter",
+        "id": "1356-8664-65d6-7600",
+        "hidden": false,
+        "import": true,
+        "targetId": "fbc4-c7d0-db5b-91c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Reavers",
+        "id": "77b-3115-cf3b-5acc",
+        "hidden": false,
+        "import": true,
+        "targetId": "2c3a-9752-2516-69ab",
+        "type": "selectionEntry"
+      },
       {
         "name": "Scourges with Heavy Weapons",
         "id": "1bf4-a1c-67e5-9b0a",
@@ -44,27 +156,174 @@
         "targetId": "7c93-baac-e65f-58bd",
         "type": "selectionEntry"
       },
-      {"name": "Succubus", "id": "70b6-9051-a20e-365f", "hidden": false, "import": true, "targetId": "b5a9-c802-10f0-6768", "type": "selectionEntry"},
-      {"name": "Talos", "id": "eae1-89c6-5754-9ac4", "hidden": false, "import": true, "targetId": "5c5f-b70b-f6ee-a81e", "type": "selectionEntry"},
-      {"name": "Urien Rakarth [Legends]", "id": "ea25-2609-22d8-7463", "hidden": false, "import": true, "targetId": "76c4-e2ba-e247-560e", "type": "selectionEntry"},
-      {"name": "Venom", "id": "9ab-3dd9-480d-5435", "hidden": false, "import": true, "targetId": "ee2c-6ca0-5e29-37a6", "type": "selectionEntry"},
-      {"name": "Voidraven Bomber", "id": "673b-c008-9da7-4704", "hidden": false, "import": true, "targetId": "71e1-7d54-4856-4ce1", "type": "selectionEntry"},
-      {"name": "Wracks", "id": "20c5-c1e3-ebe4-8fcc", "hidden": false, "import": true, "targetId": "2659-7a1b-3ce6-8e4b", "type": "selectionEntry"},
-      {"name": "Wyches", "id": "a387-bbe1-7b73-2dd9", "hidden": false, "import": true, "targetId": "edca-1a1b-902d-421a", "type": "selectionEntry"},
-      {"name": "Tantalus [Legends]", "id": "c632-fc76-34bd-989f", "hidden": false, "import": true, "targetId": "dfe4-d4db-9d04-9e7a", "type": "selectionEntry"},
-      {"name": "Corsair Voidreavers", "id": "2e5c-7c80-a45d-3bcb", "hidden": false, "import": true, "targetId": "cc68-ad19-7285-7a11", "type": "selectionEntry"},
-      {"name": "Corsair Voidscarred", "id": "728f-eb25-ba3d-e39", "hidden": false, "import": true, "targetId": "cbb7-6669-a014-36fe", "type": "selectionEntry"},
-      {"name": "Death Jester", "id": "a389-35ee-3abb-338", "hidden": false, "import": true, "targetId": "5768-1f87-3a16-d901", "type": "selectionEntry"},
-      {"name": "Solitaire", "id": "b9e6-c04b-8799-1c79", "hidden": false, "import": true, "targetId": "f88f-60c5-3daf-3d2f", "type": "selectionEntry"},
-      {"name": "Shadowseer", "id": "f826-b031-f76c-751f", "hidden": false, "import": true, "targetId": "8c34-52ba-cbd0-9ca4", "type": "selectionEntry"},
-      {"name": "Skyweavers", "id": "dd4b-d758-5063-9b16", "hidden": false, "import": true, "targetId": "9270-4b93-ca59-f3ed", "type": "selectionEntry"},
-      {"name": "Starweaver", "id": "e9a-9fe4-d8b6-e59d", "hidden": false, "import": true, "targetId": "854b-f8e-28fa-8c24", "type": "selectionEntry"},
-      {"name": "Voidweaver", "id": "fd0b-aee0-3632-f3c6", "hidden": false, "import": true, "targetId": "e011-d99d-f0de-5289", "type": "selectionEntry"},
-      {"name": "Troupe", "id": "f21a-cd8a-ab17-5ecd", "hidden": false, "import": true, "targetId": "dac1-6a7f-a06a-82cf", "type": "selectionEntry"},
-      {"name": "Troupe Master", "id": "97e5-742b-fa8f-ae08", "hidden": false, "import": true, "targetId": "dada-b81b-37bd-1f3b", "type": "selectionEntry"},
-      {"name": "Detachment", "id": "7f91-2ea-672e-bcdc", "hidden": false, "import": true, "targetId": "68f1-24f4-a4c6-303f", "type": "selectionEntry"},
-      {"name": "Show/Hide Options", "id": "d5af-450f-475a-cb25", "hidden": false, "import": true, "targetId": "e8ef-836a-a9d1-901d", "type": "selectionEntry"},
-      {"name": "Reaper [Legends]", "id": "66da-5cd6-ac97-cdb7", "hidden": false, "import": true, "targetId": "a228-7269-9961-daf4", "type": "selectionEntry"},
+      {
+        "name": "Succubus",
+        "id": "70b6-9051-a20e-365f",
+        "hidden": false,
+        "import": true,
+        "targetId": "b5a9-c802-10f0-6768",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Talos",
+        "id": "eae1-89c6-5754-9ac4",
+        "hidden": false,
+        "import": true,
+        "targetId": "5c5f-b70b-f6ee-a81e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Urien Rakarth [Legends]",
+        "id": "ea25-2609-22d8-7463",
+        "hidden": false,
+        "import": true,
+        "targetId": "76c4-e2ba-e247-560e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Venom",
+        "id": "9ab-3dd9-480d-5435",
+        "hidden": false,
+        "import": true,
+        "targetId": "ee2c-6ca0-5e29-37a6",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Voidraven Bomber",
+        "id": "673b-c008-9da7-4704",
+        "hidden": false,
+        "import": true,
+        "targetId": "71e1-7d54-4856-4ce1",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Wracks",
+        "id": "20c5-c1e3-ebe4-8fcc",
+        "hidden": false,
+        "import": true,
+        "targetId": "2659-7a1b-3ce6-8e4b",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Wyches",
+        "id": "a387-bbe1-7b73-2dd9",
+        "hidden": false,
+        "import": true,
+        "targetId": "edca-1a1b-902d-421a",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Tantalus [Legends]",
+        "id": "c632-fc76-34bd-989f",
+        "hidden": false,
+        "import": true,
+        "targetId": "dfe4-d4db-9d04-9e7a",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Corsair Voidreavers",
+        "id": "2e5c-7c80-a45d-3bcb",
+        "hidden": false,
+        "import": true,
+        "targetId": "cc68-ad19-7285-7a11",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Corsair Voidscarred",
+        "id": "728f-eb25-ba3d-e39",
+        "hidden": false,
+        "import": true,
+        "targetId": "cbb7-6669-a014-36fe",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Death Jester",
+        "id": "a389-35ee-3abb-338",
+        "hidden": false,
+        "import": true,
+        "targetId": "5768-1f87-3a16-d901",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Solitaire",
+        "id": "b9e6-c04b-8799-1c79",
+        "hidden": false,
+        "import": true,
+        "targetId": "f88f-60c5-3daf-3d2f",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Shadowseer",
+        "id": "f826-b031-f76c-751f",
+        "hidden": false,
+        "import": true,
+        "targetId": "8c34-52ba-cbd0-9ca4",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Skyweavers",
+        "id": "dd4b-d758-5063-9b16",
+        "hidden": false,
+        "import": true,
+        "targetId": "9270-4b93-ca59-f3ed",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Starweaver",
+        "id": "e9a-9fe4-d8b6-e59d",
+        "hidden": false,
+        "import": true,
+        "targetId": "854b-f8e-28fa-8c24",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Voidweaver",
+        "id": "fd0b-aee0-3632-f3c6",
+        "hidden": false,
+        "import": true,
+        "targetId": "e011-d99d-f0de-5289",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Troupe",
+        "id": "f21a-cd8a-ab17-5ecd",
+        "hidden": false,
+        "import": true,
+        "targetId": "dac1-6a7f-a06a-82cf",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Troupe Master",
+        "id": "97e5-742b-fa8f-ae08",
+        "hidden": false,
+        "import": true,
+        "targetId": "dada-b81b-37bd-1f3b",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Detachment",
+        "id": "7f91-2ea-672e-bcdc",
+        "hidden": false,
+        "import": true,
+        "targetId": "68f1-24f4-a4c6-303f",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Show/Hide Options",
+        "id": "d5af-450f-475a-cb25",
+        "hidden": false,
+        "import": true,
+        "targetId": "e8ef-836a-a9d1-901d",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Reaper [Legends]",
+        "id": "66da-5cd6-ac97-cdb7",
+        "hidden": false,
+        "import": true,
+        "targetId": "a228-7269-9961-daf4",
+        "type": "selectionEntry"
+      },
       {
         "name": "Raven Strike Fighter [Legends]",
         "id": "64cb-bc69-eed-3989",
@@ -96,10 +355,33 @@
         "import": true,
         "targetId": "eda7-8b4b-3719-af36",
         "type": "selectionEntry",
-        "entryLinks": [{"name": "Ascendant Lords", "id": "fc81-f619-fdff-3444", "hidden": false, "import": true, "targetId": "4d2d-b519-7542-788f", "type": "selectionEntryGroup"}]
+        "entryLinks": [
+          {
+            "name": "Ascendant Lords",
+            "id": "fc81-f619-fdff-3444",
+            "hidden": false,
+            "import": true,
+            "targetId": "4d2d-b519-7542-788f",
+            "type": "selectionEntryGroup"
+          }
+        ]
       },
-      {"name": "Lady Malys", "id": "1a82-f502-3d69-09da", "hidden": false, "import": true, "targetId": "a223-234b-7886-fccc", "type": "selectionEntry"},
-      {"name": "Hand of the Archon", "id": "0498-bbf7-e836-168e", "hidden": false, "import": true, "targetId": "76ab-197c-bd41-181b", "type": "selectionEntry"},
+      {
+        "name": "Lady Malys",
+        "id": "1a82-f502-3d69-09da",
+        "hidden": false,
+        "import": true,
+        "targetId": "a223-234b-7886-fccc",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Hand of the Archon",
+        "id": "0498-bbf7-e836-168e",
+        "hidden": false,
+        "import": true,
+        "targetId": "76ab-197c-bd41-181b",
+        "type": "selectionEntry"
+      },
       {
         "name": "Scourges with Shardcarbines",
         "id": "3e54-7923-06fa-ea76",
@@ -108,12 +390,2524 @@
         "targetId": "f2d1-4574-223f-998f",
         "type": "selectionEntry"
       },
-      {"name": "Corsair Skyreavers", "id": "8170-f4b5-e0e2-e3b7", "hidden": false, "import": true, "targetId": "662e-14c3-c894-e830", "type": "selectionEntry"},
-      {"name": "Prince Yriel", "id": "aab4-eaf1-5213-21ee", "hidden": false, "import": true, "targetId": "54dc-aa1f-817a-a5c5", "type": "selectionEntry"},
-      {"name": "Kharseth", "id": "5fb0-7aa1-e011-6869", "hidden": false, "import": true, "targetId": "4273-173c-e850-4071", "type": "selectionEntry"},
-      {"name": "Starfangs", "id": "4cb1-ad14-dc73-de3c", "hidden": false, "import": true, "targetId": "a074-87f8-810d-492a", "type": "selectionEntry"},
-      {"name": "Archtormentor [Crucible]", "id": "799a-1c90-f232-68d0", "hidden": false, "import": true, "targetId": "62f8-6a75-5ffb-e83b", "type": "selectionEntry"},
-      {"name": "Flesh Crafter [Crucible]", "id": "db0d-2274-9fd1-e3aa", "hidden": false, "import": true, "targetId": "b5a1-7e2b-7a1d-bbda", "type": "selectionEntry"}
-    ]
+      {
+        "name": "Corsair Skyreavers",
+        "id": "8170-f4b5-e0e2-e3b7",
+        "hidden": false,
+        "import": true,
+        "targetId": "662e-14c3-c894-e830",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Prince Yriel",
+        "id": "aab4-eaf1-5213-21ee",
+        "hidden": false,
+        "import": true,
+        "targetId": "54dc-aa1f-817a-a5c5",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Kharseth",
+        "id": "5fb0-7aa1-e011-6869",
+        "hidden": false,
+        "import": true,
+        "targetId": "4273-173c-e850-4071",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Starfangs",
+        "id": "4cb1-ad14-dc73-de3c",
+        "hidden": false,
+        "import": true,
+        "targetId": "a074-87f8-810d-492a",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Archtormentor [Crucible]",
+        "id": "799a-1c90-f232-68d0",
+        "hidden": false,
+        "import": true,
+        "targetId": "62f8-6a75-5ffb-e83b",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Flesh Crafter [Crucible]",
+        "id": "db0d-2274-9fd1-e3aa",
+        "hidden": false,
+        "import": true,
+        "targetId": "b5a1-7e2b-7a1d-bbda",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Asdrubael Vect [NFLB]",
+        "id": "nflb-78b63dc46350",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-67f1d3f009e3",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Baron Sathonyx [NFLB]",
+        "id": "nflb-21d7cea998a7",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-0cde78c1164a",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Duke Sliscus the Serpent [NFLB]",
+        "id": "nflb-41ce537fbd03",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-f77a35be8007",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Kheradruakh, the Decapitator [NFLB]",
+        "id": "nflb-dc37dcd9c4d8",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-bbe1098363cc",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Vect on the Dais of Destruction [NFLB]",
+        "id": "nflb-fbbaadc966f1",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-f58c8b29d62b",
+        "type": "selectionEntry"
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Asdrubael Vect",
+        "id": "nflb-c2e06427195f",
+        "hidden": false
+      },
+      {
+        "name": "Helliarch",
+        "id": "nflb-38f989013635",
+        "hidden": false
+      },
+      {
+        "name": "Baron Sathonyx",
+        "id": "nflb-c58b8474aa75",
+        "hidden": false
+      },
+      {
+        "name": "Duke Sliscus",
+        "id": "nflb-5aa62cb96828",
+        "hidden": false
+      },
+      {
+        "name": "Mandrake",
+        "id": "nflb-29e4e56cd83d",
+        "hidden": false
+      },
+      {
+        "name": "Kheradruakh",
+        "id": "nflb-4951004a8020",
+        "hidden": false
+      },
+      {
+        "name": "Hover",
+        "id": "nflb-4ba38d446326",
+        "hidden": false
+      },
+      {
+        "name": "Open-Topped",
+        "id": "nflb-db6bc6b79080",
+        "hidden": false
+      },
+      {
+        "name": "Vect On The Dais Of Destruction",
+        "id": "nflb-d5bee9b3f039",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Asdrubael Vect [NFLB]",
+        "id": "nflb-67f1d3f009e3",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-7fb23f37ee6f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-5086362db7f0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-c627c6c1115a",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Archon",
+            "id": "nflb-0a325cef5995",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6c05-f06f-9b9f-890d"
+          },
+          {
+            "name": "Asdrubael Vect",
+            "id": "nflb-691a70313f39",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-c2e06427195f"
+          },
+          {
+            "name": "Aeldari",
+            "id": "nflb-24a31586e16c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e035-51fc-813a-1313"
+          },
+          {
+            "name": "Faction: Drukhari",
+            "id": "nflb-901926910805",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1015-db48-a2fa-c7da"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Power from Pain",
+            "id": "nflb-f99e25fcb3bd",
+            "hidden": false,
+            "targetId": "5e02-2ddc-f55-e6dd",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-31ae2e85a75f",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Lone Operative",
+            "id": "nflb-9612595963b8",
+            "hidden": false,
+            "targetId": "a8a0-8fe7-898-e0f3",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-0e66edc0662f",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "nflb-f58c8b29d62b",
+                "field": "selections",
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Asdrubael Vect",
+            "id": "nflb-e02651aa8a9c",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "7\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "4"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "6"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "3+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-537d4e651666",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Kabalite Warriors^^**, **^^Incubi^^**"
+              }
+            ]
+          },
+          {
+            "name": "Shadow Field",
+            "id": "nflb-63f72b07efec",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a 3+ invulnerable save. You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable save."
+              }
+            ]
+          },
+          {
+            "name": "Supreme Overlord [AURA]",
+            "id": "nflb-c8083b6b7003",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly Drukhari unit is within 6\" of this model, that unit re-rolls Hit rolls of 1, and while wholly within your opponent's deployment zone, also re-rolls Wound rolls of 1."
+              }
+            ]
+          },
+          {
+            "name": "Master of Combat Drugs",
+            "id": "nflb-ec4fb08b712c",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model is leading a unit, in your Command phase, select one Combat Drug from the Combat Drugs list. Until the start of your next Command phase, that Combat Drug is active for this model's unit (in addition to any active for your army), and each time a model in that unit makes an attack, add 1 to the Wound roll."
+              }
+            ]
+          },
+          {
+            "name": "Eternal Spite",
+            "id": "nflb-e80ffae47d91",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model would lose its last wound, roll one D6: on a 5+, this model is not destroyed and instead has its remaining Wounds set to 1. This ability cannot trigger more than once per battle."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 165
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Splinter pistol",
+            "id": "nflb-875e597ba2b1",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-007d8f64263c",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-8e6b54558dd2",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-299079a6d62a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "The Sceptre of Dark Millennia",
+            "id": "nflb-6c1a3a5e6e2e",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-b361ce8f12a0",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-77b2f6139434",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-013a3c5d4bb3",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-4aa501ce90ed",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-fd645b4f5095",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "d20b-783-ccf6-b29d",
+                    "childName": "Kabalite Warriors",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "1529-793d-481b-82bf",
+                    "childName": "Incubi",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Baron Sathonyx [NFLB]",
+        "id": "nflb-0cde78c1164a",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-7346dcea1e88",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-e286040d3df2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-a1cf377348af",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Helliarch",
+            "id": "nflb-ac8676321bf3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-38f989013635"
+          },
+          {
+            "name": "Fly",
+            "id": "nflb-d8884bba665f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c619-2086-bbcf-69c9"
+          },
+          {
+            "name": "Jump Pack",
+            "id": "nflb-986372d95554",
+            "hidden": false,
+            "primary": false,
+            "targetId": "dda2-bb0a-215e-ad9c"
+          },
+          {
+            "name": "Baron Sathonyx",
+            "id": "nflb-daa5f8763e82",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-c58b8474aa75"
+          },
+          {
+            "name": "Aeldari",
+            "id": "nflb-5cda6f5f3411",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e035-51fc-813a-1313"
+          },
+          {
+            "name": "Faction: Drukhari",
+            "id": "nflb-2b6cf5e5bb6e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1015-db48-a2fa-c7da"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Power from Pain",
+            "id": "nflb-f4d636d0e3cc",
+            "hidden": false,
+            "targetId": "5e02-2ddc-f55-e6dd",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-2f157e680369",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-68632dc11dec",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Baron Sathonyx",
+            "id": "nflb-73879fd1a1d6",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "12\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-8cfc56d21df4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Hellions^^**, **^^Reavers^^**, **^^Scourges with Heavy Weapons^^**, **^^Scourges with Shardcarbines^^**"
+              }
+            ]
+          },
+          {
+            "name": "Shadow Field",
+            "id": "nflb-58d920f7bc0b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a 4+ invulnerable save. You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable save."
+              }
+            ]
+          },
+          {
+            "name": "Hit & Run",
+            "id": "nflb-db6cec1e70b9",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model and any unit it leads can declare a Fall Back move in any of your Movement phases and still shoot, charge, or fight that turn (as if it had not Fallen Back)."
+              }
+            ]
+          },
+          {
+            "name": "Skyboard Mastery",
+            "id": "nflb-acf238083e32",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "When this model is part of a unit of Hellions, the unit gains the [LONE OPERATIVE] ability while at full strength (10 or more models). On a turn this model finished a Charge move, attacks made by Hellglaive gain +1 to the Wound roll."
+              }
+            ]
+          },
+          {
+            "name": "Lord of the Sky-City [AURA]",
+            "id": "nflb-454dc01b9052",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly Hellions unit is within 6\" of this model, that unit re-rolls Charge rolls and gains +1 to its Move characteristic."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 95
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Splinter pistol",
+            "id": "nflb-908543716fe4",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-007d8f64263c",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-1be865ea4510",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-d48d964b2215",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Hellglaive",
+            "id": "nflb-7f8a67a0cc99",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-9dbc78a31170",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-84cb9da3b2e3",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-515cf7a8e1c8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-7c4e291187ff",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-f0724375ba29",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "2311-9feb-9d0a-8154",
+                    "childName": "Hellions",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "2c3a-9752-2516-69ab",
+                    "childName": "Reavers",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7c93-baac-e65f-58bd",
+                    "childName": "Scourges with Heavy Weapons",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f2d1-4574-223f-998f",
+                    "childName": "Scourges with Shardcarbines",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Duke Sliscus the Serpent [NFLB]",
+        "id": "nflb-f77a35be8007",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-b8c8d9e16c7c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-c08d9081e625",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-3ddacc46b709",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Archon",
+            "id": "nflb-852762c8681b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6c05-f06f-9b9f-890d"
+          },
+          {
+            "name": "Duke Sliscus",
+            "id": "nflb-98bfd0d9dbc7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-5aa62cb96828"
+          },
+          {
+            "name": "Aeldari",
+            "id": "nflb-5e018508783a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e035-51fc-813a-1313"
+          },
+          {
+            "name": "Faction: Drukhari",
+            "id": "nflb-98bfb50489be",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1015-db48-a2fa-c7da"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Power from Pain",
+            "id": "nflb-c23214ee2d39",
+            "hidden": false,
+            "targetId": "5e02-2ddc-f55-e6dd",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-c3c3ee530b4c",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-f46b3cd0f5f4",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Duke Sliscus the Serpent",
+            "id": "nflb-484875615245",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "7\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "6+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-2d12c6ee5e6e",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Kabalite Warriors^^**, **^^Incubi^^**, **^^Scourges with Heavy Weapons^^**, **^^Scourges with Shardcarbines^^**"
+              }
+            ]
+          },
+          {
+            "name": "Shadow Field",
+            "id": "nflb-de09644e537d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a 4+ invulnerable save. You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable save."
+              }
+            ]
+          },
+          {
+            "name": "Dark Olympiad Master",
+            "id": "nflb-d6e60ffc0cee",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model is leading a unit, in your Command phase, select two Combat Drugs from the Combat Drugs list. Until the start of your next Command phase, those Combat Drugs are active for this model's unit (in addition to any active for your army)."
+              }
+            ]
+          },
+          {
+            "name": "Serpentine Strikes",
+            "id": "nflb-bd68c615bed2",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model makes a melee attack, on an unmodified Wound roll of 5+, the target suffers 1 mortal wound in addition to normal damage."
+              }
+            ]
+          },
+          {
+            "name": "Pirate Prince [AURA]",
+            "id": "nflb-4cbc7b0a3b4b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Kabalite Warriors^^** unit is within 6\" of this model, models in that unit have the Stealth ability."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 110
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Splinter pistol",
+            "id": "nflb-b3343ec91b28",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-007d8f64263c",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-6a19703d0f3c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-d213f4391d3c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Serpent's Tongue",
+            "id": "nflb-82d5aea28bb5",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-629f4245d56e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-ae42ce2ed286",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-b1268b16ad26",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Twin Power Swords",
+            "id": "nflb-901ea27d84be",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ee83ed2aab0e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-9801435f02f7",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-2a8b3679b49a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-77e595ce401d",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-a0b71edc81c5",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "d20b-783-ccf6-b29d",
+                    "childName": "Kabalite Warriors",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "1529-793d-481b-82bf",
+                    "childName": "Incubi",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7c93-baac-e65f-58bd",
+                    "childName": "Scourges with Heavy Weapons",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f2d1-4574-223f-998f",
+                    "childName": "Scourges with Shardcarbines",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kheradruakh, the Decapitator [NFLB]",
+        "id": "nflb-bbe1098363cc",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-07e9b9018ffb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-86888c1964d3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-b7269afeec4f",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Mandrake",
+            "id": "nflb-292c7984ef82",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-29e4e56cd83d"
+          },
+          {
+            "name": "Kheradruakh",
+            "id": "nflb-1edc996b2765",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-4951004a8020"
+          },
+          {
+            "name": "Aeldari",
+            "id": "nflb-f971a1fe44e0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e035-51fc-813a-1313"
+          },
+          {
+            "name": "Faction: Drukhari",
+            "id": "nflb-cbcf861d15af",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1015-db48-a2fa-c7da"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Power from Pain",
+            "id": "nflb-1d6a8d5c492c",
+            "hidden": false,
+            "targetId": "5e02-2ddc-f55-e6dd",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-fb313e5e0537",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Lone Operative",
+            "id": "nflb-2246593e9d78",
+            "hidden": false,
+            "targetId": "a8a0-8fe7-898-e0f3",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-fdc0e3afcb1b",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Stealth",
+            "id": "nflb-6c9ee9068e62",
+            "hidden": false,
+            "targetId": "bec5-4288-34a6-ccfa",
+            "type": "rule"
+          },
+          {
+            "name": "Infiltrators",
+            "id": "nflb-0f96e5bfb96e",
+            "hidden": false,
+            "targetId": "c05d-f4c3-f091-4938",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Kheradruakh, the Decapitator",
+            "id": "nflb-6d24f319cf7a",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "8\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "5+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-ad0840a97e04",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Mandrakes^^**"
+              }
+            ]
+          },
+          {
+            "name": "Shadow Cloak",
+            "id": "nflb-6bc1d5f4200d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a 5+ invulnerable save. Each time a ranged attack targets this model, if the attacking model is more than 12\" away, an unmodified Hit roll of 1-3 fails."
+              }
+            ]
+          },
+          {
+            "name": "Six Heads",
+            "id": "nflb-135cc718e625",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model destroys an enemy Character in the Fight phase, until the end of the battle the Attacks characteristic of Decapitating Blade is increased by 1 (cumulative; up to a maximum of +5 from this ability)."
+              }
+            ]
+          },
+          {
+            "name": "Heart of Living Shadow",
+            "id": "nflb-6f90341121c8",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model makes a Normal, Advance or Fall Back move, it can move through models and terrain features as if they were not there."
+              }
+            ]
+          },
+          {
+            "name": "Tide of Shadow [AURA]",
+            "id": "nflb-734e0ef23528",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Mandrakes^^** unit is within 6\" of this model, models in that unit have the Infiltrators ability, and each time an attack with the **[PSYCHIC]** ability targets that unit, subtract 1 from the Wound roll."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 85
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Decapitating Blade",
+            "id": "nflb-207821f09e8e",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-0efb14da9144",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-cfa3d9269a7f",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-654c5753e67c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-fb6d2a059402",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-1eb4a0818871",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "6a3a-7973-b509-532e",
+                    "childName": "Mandrakes",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vect on the Dais of Destruction [NFLB]",
+        "id": "nflb-f58c8b29d62b",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Vehicle",
+            "id": "nflb-3159e55a8282",
+            "hidden": false,
+            "primary": false,
+            "targetId": "dbd4-63-af05-998"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-c0840e9b39ce",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-187b6e88774e",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Transport",
+            "id": "nflb-d506c1a6af2d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "75e8-57c4-40e3-1817"
+          },
+          {
+            "name": "Fly",
+            "id": "nflb-ef429d5f05ef",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c619-2086-bbcf-69c9"
+          },
+          {
+            "name": "Hover",
+            "id": "nflb-c5fff039b386",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-4ba38d446326"
+          },
+          {
+            "name": "Open-Topped",
+            "id": "nflb-68474b82ea2f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-db6bc6b79080"
+          },
+          {
+            "name": "Vect On The Dais Of Destruction",
+            "id": "nflb-37112a250c8e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-d5bee9b3f039"
+          },
+          {
+            "name": "Aeldari",
+            "id": "nflb-4324ff4ea9da",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e035-51fc-813a-1313"
+          },
+          {
+            "name": "Faction: Drukhari",
+            "id": "nflb-5e06ca2b77eb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1015-db48-a2fa-c7da"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Power from Pain",
+            "id": "nflb-b1e599e616d4",
+            "hidden": false,
+            "targetId": "5e02-2ddc-f55-e6dd",
+            "type": "rule"
+          },
+          {
+            "name": "Deadly Demise",
+            "id": "nflb-8a5f294ef728",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "D6"
+              }
+            ]
+          },
+          {
+            "name": "Hover",
+            "id": "nflb-c9d3acf6b8df",
+            "hidden": false,
+            "targetId": "eec5-5f54-9c03-c305",
+            "type": "rule"
+          },
+          {
+            "name": "Lone Operative",
+            "id": "nflb-abf8dbb3c7f8",
+            "hidden": false,
+            "targetId": "a8a0-8fe7-898-e0f3",
+            "type": "rule"
+          },
+          {
+            "name": "Firing Deck",
+            "id": "nflb-5a1cc01f4674",
+            "hidden": false,
+            "targetId": "13b2-6518-dab3-7ea1",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "10"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "nflb-67f1d3f009e3",
+                "field": "selections",
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Vect on the Dais of Destruction",
+            "id": "nflb-65bda7e887d7",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "14\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "9"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "14"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "3"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Open-Topped Transport",
+            "id": "nflb-b13e2c306afa",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a transport capacity of 10 **^^Drukhari Infantry^^** models (excluding **^^Jump Pack^^** models). Units embarked within it can disembark even if this model Advanced this turn (but cannot declare a charge that turn)."
+              }
+            ]
+          },
+          {
+            "name": "Shadow Field",
+            "id": "nflb-916bd0b4f222",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model has a 4+ invulnerable save. You cannot re-roll invulnerable saving throws made for this model. The first time an invulnerable saving throw made for this model is failed, until the end of the battle, this model has no invulnerable save."
+              }
+            ]
+          },
+          {
+            "name": "Vect Commands [AURA]",
+            "id": "nflb-8dc5aea19093",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Drukhari^^** unit is within 9\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1. Asdrubael Vect and Vect on the Dais of Destruction cannot both be included in the same army."
+              }
+            ]
+          },
+          {
+            "name": "Night Shield",
+            "id": "nflb-017ed5329bce",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a ranged attack with a Range of 24\" or more targets this model, that attack's Range is treated as 6\" shorter."
+              }
+            ]
+          },
+          {
+            "name": "Flickerfield",
+            "id": "nflb-8af7eaf9c66b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a ranged attack would inflict damage on this model, you may roll one D6: on a 5+ (4+ against attacks with the [BLAST] keyword), that damage is reduced to 0."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 365
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Twin Splinter Cannon",
+            "id": "nflb-b3946521252f",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-b870a2900b4b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-460a9df9264c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-db1e9bec12b5",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Lance",
+            "id": "nflb-edff30134de1",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-f924dfc521d6",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-eb70487a0974",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-4cef02226143",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Disintegrator Cannon",
+            "id": "nflb-b01804511253",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-fd99647ca3c9",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-4895f93753d9",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-3d31d4ecca9a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "The Sceptre of Dark Millennia",
+            "id": "nflb-51331c722401",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-b361ce8f12a0",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-b3add30f8e75",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-c6587ba63b98",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Crushing impact",
+            "id": "nflb-007d37d7dbd1",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-1e458dfc84b3",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-7b24a1dcf142",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-e4fdc4a08c15",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-068d3a1eb7e9",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ]
+      },
+      {
+        "name": "Splinter pistol",
+        "id": "nflb-007d8f64263c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Splinter pistol",
+            "id": "nflb-7f1bd79b063c",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol, Anti-Infantry 4+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-fdb23738a563",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Anti",
+            "id": "nflb-bfe6c3e7f4a8",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "The Sceptre of Dark Millennia",
+        "id": "nflb-b361ce8f12a0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "The Sceptre of Dark Millennia",
+            "id": "nflb-c19b725566f0",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "D3+1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Devastating Wounds, Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-99259bf4d4e1",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          },
+          {
+            "name": "Precision",
+            "id": "nflb-3fee2fce306b",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Hellglaive",
+        "id": "nflb-9dbc78a31170",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hellglaive",
+            "id": "nflb-e3b1fd879e95",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Extra Attacks"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Extra Attacks",
+            "id": "nflb-d10248780480",
+            "hidden": false,
+            "targetId": "115b-79dc-f723-d761",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Serpent's Tongue",
+        "id": "nflb-629f4245d56e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Serpent's Tongue",
+            "id": "nflb-37bb403ec55e",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "3"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol, Poison 2+, Lethal Hits"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-b6682e95e1b2",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Lethal Hits",
+            "id": "nflb-d9690e963688",
+            "hidden": false,
+            "targetId": "d1d1-611e-5191-1095",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Twin Power Swords",
+        "id": "nflb-ee83ed2aab0e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Twin Power Swords",
+            "id": "nflb-b497d65b5b37",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Twin-Linked, Sustained Hits 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Sustained Hits",
+            "id": "nflb-3b3e7eb620e3",
+            "hidden": false,
+            "targetId": "1897-c22c-9597-12b1",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Decapitating Blade",
+        "id": "nflb-0efb14da9144",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Decapitating Blade",
+            "id": "nflb-2660de4c27bf",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Precision, Anti-Character 4+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Precision",
+            "id": "nflb-2a9729ad39a6",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          },
+          {
+            "name": "Anti",
+            "id": "nflb-18ce6d646da5",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Twin Splinter Cannon",
+        "id": "nflb-b870a2900b4b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Twin Splinter Cannon",
+            "id": "nflb-5ee8d6858e69",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "36\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "8"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Twin-Linked, Anti-Infantry 4+, Devastating Wounds"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-73d47118fb31",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          },
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-a95cd1677f85",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Dark Lance",
+        "id": "nflb-f924dfc521d6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Dark Lance",
+            "id": "nflb-74ba87f5f7d0",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "36\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "12"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-4"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "D6+1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Heavy"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Heavy",
+            "id": "nflb-3a36a8bf0f01",
+            "hidden": false,
+            "targetId": "1202-10a8-78e9-4c67",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Disintegrator Cannon",
+        "id": "nflb-fd99647ca3c9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Disintegrator Cannon",
+            "id": "nflb-6d9201a02078",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "36\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "6"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Twin-Linked"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crushing impact",
+        "id": "nflb-1e458dfc84b3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Crushing impact",
+            "id": "nflb-17266468c2a7",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": []
   }
 }
