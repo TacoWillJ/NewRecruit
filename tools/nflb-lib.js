@@ -203,9 +203,10 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     const c = category(n);
     return { name: c.name, id: id(`${key}:cl:${c.name}`), hidden: false, primary: n === primary, targetId: c.id };
   });
-  const leadAssociation = (key, unitNames) => ({
-    name: 'Leading', id: id(`${key}:assoc`), action: 'group', childId: 'unit', childName: 'unit',
-    includeChildSelections: true, label: 'Leader', max: 1, min: 0, scope: 'force',
+  // support: true = 11e Support unit (can join a bodyguard that already has a Leader)
+  const leadAssociation = (key, unitNames, { support = false } = {}) => ({
+    name: support ? 'Supporting' : 'Leading', id: id(`${key}:assoc`), action: 'group', childId: 'unit', childName: 'unit',
+    includeChildSelections: true, label: support ? 'Supported by' : 'Leader', max: 1, min: 0, scope: 'force',
     conditionGroups: [{ type: 'or', conditions: unitNames.map(n => {
       // a name = official unit (looked up upstream); an object = an NFLB unit built in this spec
       const u = typeof n === 'string' ? lib.sharedSelectionEntries.find(e => e.name === n) || lib.sharedSelectionEntries.find(e => e.name === `${n} [Legends]`) : n;

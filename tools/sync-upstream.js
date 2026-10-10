@@ -167,16 +167,23 @@ for (const { inline, spec, catId, catName, injections } of built) {
     const c = o.catalogue || o.gameSystem;
     // New Recruit does not follow links from an upstream catalogue into ours, so injected
     // content is copied in whole (selectionEntry / selectionEntryGroup), never linked.
+    // Target: a shared group (groupName), a shared entry (entryName), or the catalogue's own
+    // shared lists (neither). Links are fine only when they point at something injected into
+    // the same file.
     const KEYS = { selectionEntry: 'selectionEntries', selectionEntryGroup: 'selectionEntryGroups', entryLink: 'entryLinks' };
-    const groups = new Set();
+    const ROOT_KEYS = { selectionEntry: 'sharedSelectionEntries', selectionEntryGroup: 'sharedSelectionEntryGroups', entryLink: 'entryLinks' };
+    const cleaned = new Set();
     for (const inj of list) {
-      const g = (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName);
-      if (!g) { problems.push(`Injection target group "${inj.groupName}" not found in ${file} (renamed upstream?)`); continue; }
-      if (!groups.has(g)) { // drop anything a previous run injected, then re-add fresh
-        for (const k of Object.values(KEYS)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-'));
-        groups.add(g);
+      const isRoot = !inj.groupName && !inj.entryName;
+      const g = inj.groupName ? (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName)
+        : inj.entryName ? (c.sharedSelectionEntries || []).find(x => x.name === inj.entryName) : c;
+      if (!g) { problems.push(`Injection target "${inj.groupName || inj.entryName}" not found in ${file} (renamed upstream?)`); continue; }
+      const keys = isRoot ? ROOT_KEYS : KEYS;
+      if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh
+        for (const k of Object.values(keys)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-'));
+        cleaned.add(g);
       }
-      for (const [kind, key] of Object.entries(KEYS)) {
+      for (const [kind, key] of Object.entries(keys)) {
         if (!inj[kind]) continue;
         (g[key] = g[key] || []).push(inj[kind]);
         injectedObjects.push({ where: `${file} > ${g.name}`, obj: inj[kind] });

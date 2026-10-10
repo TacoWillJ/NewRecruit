@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 16,
     "library": true,
-    "revision": 6,
+    "revision": 8,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "publications": [
@@ -57,6 +57,61 @@
       {
         "name": "Imperial Guard Rough Riders",
         "id": "nflb-bce5b654d5b3",
+        "hidden": false
+      },
+      {
+        "name": "Penal Legion",
+        "id": "nflb-473e5bd39495",
+        "hidden": false
+      },
+      {
+        "name": "Last Chancers",
+        "id": "nflb-bc592008677e",
+        "hidden": false
+      },
+      {
+        "name": "Wyrdvane Psykers",
+        "id": "nflb-e17ac8e831d4",
+        "hidden": false
+      },
+      {
+        "name": "Captain Chenkov",
+        "id": "nflb-0c95e906b1ac",
+        "hidden": false
+      },
+      {
+        "name": "Colonel Schaeffer",
+        "id": "nflb-20cd41e6aa29",
+        "hidden": false
+      },
+      {
+        "name": "Colour Sergeant Kell",
+        "id": "nflb-bfb35e92b166",
+        "hidden": false
+      },
+      {
+        "name": "Sergeant Bastonne",
+        "id": "nflb-4751e6212f1c",
+        "hidden": false
+      },
+      {
+        "name": "Officio Prefectus",
+        "id": "nflb-1991f09fd2bf",
+        "hidden": false
+      },
+      {
+        "name": "Severina Raine",
+        "id": "nflb-6ce57a0d44e0",
+        "hidden": false
+      },
+      {
+        "name": "Attilan",
+        "id": "nflb-28686bbc5561",
+        "hidden": false
+      },
+      {
+        "name": "Mogul Kamir",
+        "id": "nflb-5473389f107c",
         "hidden": false
       }
     ],
@@ -107,6 +162,78 @@
         "hidden": false,
         "import": true,
         "targetId": "nflb-565b1ae4c58e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Penal Legion Squad [NFLB]",
+        "id": "nflb-a083f8f4921c",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-36d5404834ff",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Last Chancers [NFLB]",
+        "id": "nflb-e12496ec4218",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-6cd5a591f613",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Wyrdvane Psykers [NFLB]",
+        "id": "nflb-3da1abfbcb99",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-efb498843a35",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Captain Chenkov [NFLB]",
+        "id": "nflb-2a4fd0059f99",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-f4b9afee1cbc",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Colonel Schaeffer [NFLB]",
+        "id": "nflb-5721d9502939",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-d580daf1e7c3",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Colour Sergeant Kell [NFLB]",
+        "id": "nflb-a49014dc70e9",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-2fef309dd523",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Sergeant Bastonne [NFLB]",
+        "id": "nflb-22716e0e6673",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-d913fe599fde",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Commissar Severina Raine [NFLB]",
+        "id": "nflb-039c22dcc24f",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-0d0523c12b8c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Mogul Kamir [NFLB]",
+        "id": "nflb-222b838534b0",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-923d26e8de0d",
         "type": "selectionEntry"
       }
     ],
@@ -3882,6 +4009,3580 @@
         ]
       },
       {
+        "name": "Penal Legion Squad [NFLB]",
+        "id": "nflb-36d5404834ff",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 70
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-b9c576a1e631",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Battleline",
+            "id": "nflb-bbed35bdcad7",
+            "hidden": false,
+            "primary": true,
+            "targetId": "e338-111e-d0c6-b687"
+          },
+          {
+            "name": "Regiment",
+            "id": "nflb-b7383fc721a4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c8a1-fef-5569-61c9"
+          },
+          {
+            "name": "Penal Legion",
+            "id": "nflb-ed9cefb5167a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-473e5bd39495"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-318e85fa9188",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-e3382f2a66e9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-3e17c4a8aca9",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Convict",
+            "id": "nflb-6df95e8befbb",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "1"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "8+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Explosive Collars",
+            "id": "nflb-ce648c10f4cd",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This unit automatically passes Battle-shock tests and cannot Fall Back. If the Custodian Sergeant is destroyed by an enemy attack, roll one D6 at the end of the phase: on a 4+, until the start of your next turn, add 1 to the Attacks characteristic of melee weapons equipped by models in this unit and those weapons have the **[LETHAL HITS]** ability; at the start of your next turn, remove the remaining models in this unit from the battlefield."
+              }
+            ]
+          },
+          {
+            "name": "Desperadoes",
+            "id": "nflb-ee0fa44b9ff1",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the start of each of your turns, roll one D6. Until the end of the turn: 1-2 — melee weapons equipped by models in this unit have the **[LETHAL HITS]** ability; 3-4 — improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1; 5-6 — melee weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability."
+              }
+            ]
+          },
+          {
+            "name": "Press-Ganged",
+            "id": "nflb-f11949800716",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This unit cannot be your Warlord. Officers can only issue the Take Aim! or Fix Bayonets! Orders to this unit."
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Custodian Sergeant",
+            "id": "nflb-a98e8dab120e",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-67e65708947d",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-41af6c675b89",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Autogun",
+                "id": "nflb-984ac43d80b1",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-c25c146a4d51",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-40615d999e55",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-180ad0374e19",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Shock maul",
+                "id": "nflb-6af0c33b8f32",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-b814ea1e42c2",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-9ca92d5d08dc",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-c454498b149b",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Convict",
+            "id": "nflb-f508d5f6090e",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-5a9228305633",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 5
+              },
+              {
+                "id": "nflb-f2c0dff95d02",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Laspistol",
+                "id": "nflb-d48284a50d7a",
+                "hidden": false,
+                "import": true,
+                "targetId": "2689-4c0e-cdfb-3e5",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-5518a1f8a5d0",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-e79d15f9f2d0",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Improvised close combat weapon",
+                "id": "nflb-b8de09ece42e",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-9b3d4db5accd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-aedabbae0a4d",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-cc28a0e8b0f8",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Convict w/ Shotgun",
+            "id": "nflb-822913c0ddcc",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-f1decbc48a41",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "nflb-e064b0a06c14",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Shotgun",
+                "id": "nflb-014dc5c33f37",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-6d35bcdd25d5",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-34032a53aab4",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-675d4c603eda",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Improvised close combat weapon",
+                "id": "nflb-5b10dfa28871",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-9b3d4db5accd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-c72345bbb4ee",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-613d1effcd6d",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Convict w/ Grenade launcher",
+            "id": "nflb-84094137becd",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-abe70faa88d4",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-06da69e357cc",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Penal grenade launcher",
+                "id": "nflb-f2da9cd728a8",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-c7480fb76e4d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-e0bd2b4a6231",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-b348f1380ad8",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Improvised close combat weapon",
+                "id": "nflb-98b74a2c6c3c",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-9b3d4db5accd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-3ecf0b2ee43e",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-45a7dcd9af80",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Last Chancers [NFLB]",
+        "id": "nflb-6cd5a591f613",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 110
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-64d25aaa57cc",
+            "hidden": false,
+            "primary": true,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Penal Legion",
+            "id": "nflb-f1750f4d472a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-473e5bd39495"
+          },
+          {
+            "name": "Last Chancers",
+            "id": "nflb-c4e76695ad53",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-bc592008677e"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-89334c433de1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-28857de30ca1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-4254a6cfa10b",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Lieutenant Kage",
+            "id": "nflb-0a98e8047b21",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "2"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "7+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Last Chancer",
+            "id": "nflb-e73ef121e955",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "1"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "7+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Suicide Mission",
+            "id": "nflb-4c77da87f205",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The first battle round in which this unit shoots or fights, each time a model in this unit makes an attack, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1. In addition, once in that battle round, you can re-roll one saving throw made for a model in this unit."
+              }
+            ]
+          },
+          {
+            "name": "No Quarter Asked, None Given",
+            "id": "nflb-aeeb4eea32f5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This unit cannot Fall Back and automatically passes Battle-shock tests. Each time a model in this unit is destroyed, roll one D6: on a 6, do not remove it from play; it can shoot (as if it were your Shooting phase) or fight after the attacking unit has finished making its attacks, and is then removed from play."
+              }
+            ]
+          },
+          {
+            "name": "Medi-pack (Lieutenant Kage)",
+            "id": "nflb-99f84383e0b7",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In your Command phase, while Lieutenant Kage is on the battlefield, one model in this unit, or one friendly **^^Astra Militarum Character^^** model within 3\" of this unit, regains 1 lost wound."
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Lieutenant Kage",
+            "id": "nflb-815686559b71",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-65abc7976325",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-a864ba01916e",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Laspistol",
+                "id": "nflb-c6a444a024f2",
+                "hidden": false,
+                "import": true,
+                "targetId": "5837-1692-df16-8061",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-8c9ac44456fd",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-0911dabab5f2",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Power sword",
+                "id": "nflb-a9b8f9a6c5e7",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-975e19e2e7f4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-958604383d15",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-86270d01006a",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Brick",
+            "id": "nflb-1bf6adfcc0de",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-1f6abac06257",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-0a7aa875eef1",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Heavy bolter",
+                "id": "nflb-088bde82aac3",
+                "hidden": false,
+                "import": true,
+                "targetId": "51a8-ffe2-928f-3f50",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-b8502332c4ee",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-65374f323c35",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Close combat weapon",
+                "id": "nflb-231e0056f746",
+                "hidden": false,
+                "import": true,
+                "targetId": "b349-9d3a-1a65-3e48",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-68b6f78fc3a3",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-95df79ce6d36",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gunnar",
+            "id": "nflb-44a897df7978",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-7070dda2119d",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ca43a82fe4cd",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Long-las",
+                "id": "nflb-b31d89ffd299",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-8b151a36a9c3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-b332ac52fde9",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-499a24631462",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Close combat weapon",
+                "id": "nflb-d6984961f331",
+                "hidden": false,
+                "import": true,
+                "targetId": "b349-9d3a-1a65-3e48",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-29e054696b2e",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-9bb3094ad047",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Demolition Man",
+            "id": "nflb-e7a3ac6175db",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-fa120d1a1dc4",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ffb617144b6f",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Meltagun",
+                "id": "nflb-fa8b1d0591ba",
+                "hidden": false,
+                "import": true,
+                "targetId": "e701-7c4-8b3b-49d6",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-ac8bca5947ee",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-d643a5864998",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Melta bombs",
+                "id": "nflb-acb2bb272455",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-e6a1af7cce1d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-5a1e67335ac6",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-1b660cbac423",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Close combat weapon",
+                "id": "nflb-56bc7a5a8195",
+                "hidden": false,
+                "import": true,
+                "targetId": "b349-9d3a-1a65-3e48",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-b6b0a583a519",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-ba2a8567aa6f",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bionics Man",
+            "id": "nflb-9e5b9dcb78d8",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-2aab04d956b4",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-de9f11b6d9f6",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Boltgun",
+                "id": "nflb-fba34e6cdd93",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-7a74cd052e63",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-ec6e0ca47c73",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-a26cf0e044e8",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Bionic arm",
+                "id": "nflb-a2594c61ca3d",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-c7fd179d82a3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-2617d23513bf",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-41d1919b016e",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Una the Madwoman",
+            "id": "nflb-f8255b52b9d3",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-fa43301ec760",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-1f2e220d15b7",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Flamer",
+                "id": "nflb-fba32180e27d",
+                "hidden": false,
+                "import": true,
+                "targetId": "5779-e27a-e226-5a66",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-4d149722e9ae",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-18193a35cb4a",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Close combat weapon",
+                "id": "nflb-933d04ab78bc",
+                "hidden": false,
+                "import": true,
+                "targetId": "b349-9d3a-1a65-3e48",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-408c2f3cc40b",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-4ec2a9567749",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wyrdvane Psykers [NFLB]",
+        "id": "nflb-efb498843a35",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 55
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-2178d76a0744",
+            "hidden": false,
+            "primary": true,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Psyker",
+            "id": "nflb-7e46b130c91d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "13bf-2bee-3ae0-b414"
+          },
+          {
+            "name": "Regiment",
+            "id": "nflb-ad0f5b90320d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c8a1-fef-5569-61c9"
+          },
+          {
+            "name": "Wyrdvane Psykers",
+            "id": "nflb-d021c48c77a4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-e17ac8e831d4"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-54ea381b8586",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-2db205cb2f47",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-56f69ded7adb",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          },
+          {
+            "name": "Stealth",
+            "id": "nflb-09a6ef0fb627",
+            "hidden": false,
+            "targetId": "bec5-4288-34a6-ccfa",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "51b2-306e-1021-d207",
+            "type": "set",
+            "value": 110,
+            "conditions": [
+              {
+                "childId": "model",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "self",
+                "shared": true,
+                "type": "atLeast",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Wyrdvane Psyker",
+            "id": "nflb-4179dd96692c",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "1"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "7+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Pooled Wyrdpower",
+            "id": "nflb-fb81f71c5226",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The Attacks characteristic (X) of this unit's pooled wyrdpower is equal to the number of models in this unit when it is selected to shoot. Only one model in this unit can shoot with it each phase."
+              }
+            ]
+          },
+          {
+            "name": "Empyric Feedback",
+            "id": "nflb-646846536555",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a model in this unit is destroyed as the result of a Hazardous test, each unit (friend or foe) within 6\" of that model suffers D3 mortal wounds."
+              }
+            ]
+          },
+          {
+            "name": "Strength in Numbers",
+            "id": "nflb-67f4c47bb2dc",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this unit contains 3 or more models, models in this unit have the Stealth ability and you can re-roll Battle-shock tests taken for this unit."
+              }
+            ]
+          },
+          {
+            "name": "Unit Size",
+            "id": "nflb-8543934c6f19",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "3 models (55 pts) or 6 models (110 pts)."
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Wyrdvane Psyker",
+            "id": "nflb-da6de60b9002",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-ef4aa9890a80",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "nflb-0854422fc71b",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Laspistol",
+                "id": "nflb-1049202cbb8f",
+                "hidden": false,
+                "import": true,
+                "targetId": "2689-4c0e-cdfb-3e5",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-2a35ce4b24fe",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-8d0e5aacc7e1",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Pooled wyrdpower",
+                "id": "nflb-dd507d747959",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-2664d8ceae1d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-0cc85521a187",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-817e14fc3ef6",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "name": "Wyrdvane stave",
+                "id": "nflb-c796e880c92b",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-81e21c37c380",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-c1b37c990028",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-ee2b8a628a75",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Captain Chenkov [NFLB]",
+        "id": "nflb-f4b9afee1cbc",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 75
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-a777e6cc4054",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-aaf918cf6436",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-e25d41b58559",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-9193ba1a197c",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Officer",
+            "id": "nflb-ae7fc91bc486",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e4d8-c6a1-7c23-ae25"
+          },
+          {
+            "name": "Grenades",
+            "id": "nflb-d3a14145e462",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5a61-81ac-eb7c-a87e"
+          },
+          {
+            "name": "Captain Chenkov",
+            "id": "nflb-bf600c64d400",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-0c95e906b1ac"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-cfcd2621e718",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-76843e7b358e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-250763990de9",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-69b1664fc12d",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Captain Chenkov",
+            "id": "nflb-e10a6858a87a",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "7+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-873cb2b4ef13",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Krieg Combat Engineers^^**, **^^Imperial Guard Squad [NFLB]^^**"
+              }
+            ]
+          },
+          {
+            "name": "Orders",
+            "id": "nflb-a46775ae8e63",
+            "hidden": false,
+            "typeId": "3fc9-16d8-8670-c8e2",
+            "typeName": "Orders",
+            "characteristics": [
+              {
+                "name": "Orders",
+                "typeId": "36b-c3c9-245f-e97d",
+                "$text": "This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units."
+              }
+            ]
+          },
+          {
+            "name": "Numbers Are A Weapon",
+            "id": "nflb-5b93a551f68f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model issues an Order to a unit that contains 7 or more models, it can issue the following Order instead of one from the Voice of Command list. **NUMBERS ARE A WEAPON!**: Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1, and those weapons have the **[SUSTAINED HITS 1]** ability."
+              }
+            ]
+          },
+          {
+            "name": "Send in the Next Wave! (Once per battle)",
+            "id": "nflb-c3a7fcdfe5f2",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In your Command phase, select one friendly **^^Astra Militarum Infantry^^** unit (excluding **^^Characters^^**) that was destroyed. Set up a new unit identical to that unit, at its Starting Strength, wholly within 6\" of any battlefield edge and more than 9\" horizontally from all enemy units."
+              }
+            ]
+          },
+          {
+            "name": "Disposable!",
+            "id": "nflb-6ed7461c145f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Astra Militarum Infantry^^** unit is wholly within 6\" of this model, that unit automatically passes Battle-shock tests."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Laspistol",
+            "id": "nflb-dfea84aff4c0",
+            "hidden": false,
+            "import": true,
+            "targetId": "5837-1692-df16-8061",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-10e9e4e57be3",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-7cb4c70e3b72",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Melee weapon",
+            "id": "nflb-2e7143ae8f84",
+            "hidden": false,
+            "defaultSelectionEntryId": "nflb-8a687912d51b",
+            "constraints": [
+              {
+                "id": "nflb-fbf0d98422b4",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-195b3c04c52e",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Valhallan power sword",
+                "id": "nflb-8a687912d51b",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-21f2a6a7d4fd",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Frost-bladed chainsword",
+                "id": "nflb-8acc139adf95",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-b73eba39e894",
+                "type": "selectionEntry"
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-a29617004e76",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "a2aa-7688-dcb1-4132",
+                    "childName": "Cadian Shock Troops",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "fe5a-764e-37ed-7cef",
+                    "childName": "Catachan Jungle Fighters",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "3e90-9359-2aaa-205e",
+                    "childName": "Krieg Combat Engineers",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "nflb-b7b3d16d5a11",
+                    "childName": "Imperial Guard Squad [NFLB]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colonel Schaeffer [NFLB]",
+        "id": "nflb-d580daf1e7c3",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 85
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-924dd73b3310",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-03bfceab6d1e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-b14184715dc5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-bc9f33d73933",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Officer",
+            "id": "nflb-d42418a52975",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e4d8-c6a1-7c23-ae25"
+          },
+          {
+            "name": "Penal Legion",
+            "id": "nflb-b63edc0d58c8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-473e5bd39495"
+          },
+          {
+            "name": "Colonel Schaeffer",
+            "id": "nflb-29deb438f703",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-20cd41e6aa29"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-4231039e34ef",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-21d0cc19fec1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-eec985a9f13c",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-4897ce20c31c",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Colonel Schaeffer",
+            "id": "nflb-3d698ab0aaba",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-09b496ddc118",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Last Chancers [NFLB]^^**, **^^Penal Legion Squad [NFLB]^^**, **^^Cadian Shock Troops^^**, **^^Krieg Combat Engineers^^**"
+              }
+            ]
+          },
+          {
+            "name": "Orders",
+            "id": "nflb-0bf6ae875898",
+            "hidden": false,
+            "typeId": "3fc9-16d8-8670-c8e2",
+            "typeName": "Orders",
+            "characteristics": [
+              {
+                "name": "Orders",
+                "typeId": "36b-c3c9-245f-e97d",
+                "$text": "This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** or **^^Penal Legion^^** units."
+              }
+            ]
+          },
+          {
+            "name": "Iron Discipline (Aura)",
+            "id": "nflb-f28ef2d627cc",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Penal Legion^^** unit is within 6\" of this model, that unit automatically passes Battle-shock tests."
+              }
+            ]
+          },
+          {
+            "name": "Iron Hand (Once per battle)",
+            "id": "nflb-5db61af154ce",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In your Command phase, if this model was destroyed in the previous turn, set it up again with 3 wounds remaining, wholly within 6\" of where it was destroyed and more than 3\" horizontally from all enemy units."
+              }
+            ]
+          },
+          {
+            "name": "Bionic Eye (Once per battle)",
+            "id": "nflb-41577f544d9b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "You can re-roll one Hit roll, one Wound roll or one saving throw made for this model."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Schaeffer's plasma pistol",
+            "id": "nflb-92fb39826d4f",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-e1e4061c8eb0",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-4edad263c379",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ed5cd49087e7",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Schaeffer's power sword",
+            "id": "nflb-a59b0d40ff78",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-3ee272ab4c1b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-fc26a69589ce",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-33b6ed22207a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Bionic gauntlet",
+            "id": "nflb-52c9512f71b8",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-5b2b5fcae1b4",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-e43ebcfa77b9",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-555831fdd2c9",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-2535c6bc58f3",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "nflb-6cd5a591f613",
+                    "childName": "Last Chancers [NFLB]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "nflb-36d5404834ff",
+                    "childName": "Penal Legion Squad [NFLB]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "a2aa-7688-dcb1-4132",
+                    "childName": "Cadian Shock Troops",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "3e90-9359-2aaa-205e",
+                    "childName": "Krieg Combat Engineers",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colour Sergeant Kell [NFLB]",
+        "id": "nflb-2fef309dd523",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 60
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-8c0b85098c49",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-60ed1eb93578",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-067a182fc923",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-12a6723b1aeb",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Cadian",
+            "id": "nflb-ad206e0f23d9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ec4a-9386-40bd-7fb7"
+          },
+          {
+            "name": "Grenades",
+            "id": "nflb-0f80f97ec64b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5a61-81ac-eb7c-a87e"
+          },
+          {
+            "name": "Colour Sergeant Kell",
+            "id": "nflb-0a5a90d1d1fb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-bfb35e92b166"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-bde69e472827",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-bf4ed2b8fdfc",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Support",
+            "id": "nflb-537ebc1ed78a",
+            "hidden": false,
+            "targetId": "3342-2180-9c5d-925f",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Colour Sergeant Kell",
+            "id": "nflb-482ea137cd99",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "7+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "nflb-238e04006774",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Kasrkin^^**. You can attach this model to one of the above units even if a Leader has already been attached to it."
+              }
+            ]
+          },
+          {
+            "name": "Regimental Standard (Aura)",
+            "id": "nflb-d3709931b314",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Cadian^^** unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit, and while it is within range of an objective marker, add 1 to the Objective Control characteristic of models in that unit."
+              }
+            ]
+          },
+          {
+            "name": "Listen Up, Maggots!",
+            "id": "nflb-835bffe434d6",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In your Command phase, one friendly **^^Cadian Officer^^** model within 6\" of this model can issue one additional Order."
+              }
+            ]
+          },
+          {
+            "name": "Sworn Protector",
+            "id": "nflb-9b4b8e9bf15f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model is part of the same attached unit as **^^Ursula Creed^^**, each time Ursula Creed would lose a wound, roll one D6: on a 2+, that wound is allocated to this model instead."
+              }
+            ]
+          },
+          {
+            "name": "Colours of the Cadian 8th",
+            "id": "nflb-8d4dde039f54",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a friendly **^^Cadian Infantry^^** model within 6\" of this model is destroyed, roll one D6: on a 6, do not remove it from play; it can shoot or fight after the attacking unit has finished making its attacks, and is then removed from play."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Laspistol",
+            "id": "nflb-5b52af9e1410",
+            "hidden": false,
+            "import": true,
+            "targetId": "5837-1692-df16-8061",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-505135ae85ec",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-f35f332296a4",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Melee weapon",
+            "id": "nflb-93451a2fb7f0",
+            "hidden": false,
+            "defaultSelectionEntryId": "nflb-c291badfbb39",
+            "constraints": [
+              {
+                "id": "nflb-b7748d798e85",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-9018efcdad5d",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Power fist",
+                "id": "nflb-c291badfbb39",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-c21334aca468",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Power sword",
+                "id": "nflb-3e52a8e8b124",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-678162bb11a1",
+                "type": "selectionEntry"
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Supporting",
+            "id": "nflb-80aa86d7fd52",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Supported by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "a2aa-7688-dcb1-4132",
+                    "childName": "Cadian Shock Troops",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "abe4-ca71-d5a7-3883",
+                    "childName": "Kasrkin",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sergeant Bastonne [NFLB]",
+        "id": "nflb-d913fe599fde",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 55
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-3e717bad686c",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-f858e1fa525e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-5fad937763c6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-9f01c993d6a8",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Cadian",
+            "id": "nflb-4204bf5417e3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ec4a-9386-40bd-7fb7"
+          },
+          {
+            "name": "Grenades",
+            "id": "nflb-9ffa6b5d3530",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5a61-81ac-eb7c-a87e"
+          },
+          {
+            "name": "Sergeant Bastonne",
+            "id": "nflb-66e3190faf0a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-4751e6212f1c"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-67e7424d6abf",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-3f0500c1f3d4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-757b9367b84e",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Feel No Pain 6+",
+            "id": "nflb-a12e75f1d71d",
+            "hidden": false,
+            "targetId": "676c-ecb5-d24d-3540",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sergeant Bastonne",
+            "id": "nflb-b775d6747c3b",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-37edaada303b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Kasrkin^^**"
+              }
+            ]
+          },
+          {
+            "name": "Honour of Cadia",
+            "id": "nflb-1bff5465e317",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1. If that unit is within range of an objective marker you control, you can re-roll a Hit roll of 1, 2 or 3 instead."
+              }
+            ]
+          },
+          {
+            "name": "Cadian Steel (Once per battle)",
+            "id": "nflb-235562ad2aa0",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The first time this model's unit is selected as the target of one or more ranged attacks, until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Bastonne's plasma pistol",
+            "id": "nflb-cd8fb059e4d8",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-2b6f1fdb790b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-6478eef88e99",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-dbca747f2e3a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Power weapon",
+            "id": "nflb-23075e4afa2f",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-0d5f6ddddc7b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-2e0e417bbd7c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-cb03cb668777",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-ab75ca98460a",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "a2aa-7688-dcb1-4132",
+                    "childName": "Cadian Shock Troops",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "abe4-ca71-d5a7-3883",
+                    "childName": "Kasrkin",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Commissar Severina Raine [NFLB]",
+        "id": "nflb-0d0523c12b8c",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 55
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-0a16effd8f6a",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-0b13a83a2221",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-a2525086053c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-33618676a18d",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Officio Prefectus",
+            "id": "nflb-2e45d452e2df",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-1991f09fd2bf"
+          },
+          {
+            "name": "Grenades",
+            "id": "nflb-2186d6ba9d26",
+            "hidden": false,
+            "primary": false,
+            "targetId": "5a61-81ac-eb7c-a87e"
+          },
+          {
+            "name": "Severina Raine",
+            "id": "nflb-296a190f74ab",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-6ce57a0d44e0"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-5a024717cc6f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-813a9d1621f1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-06993d921d2e",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Commissar Severina Raine",
+            "id": "nflb-a44dcad574f0",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-da318a38c73e",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Tempestus Scions^^**, **^^Imperial Guard Squad [NFLB]^^**"
+              }
+            ]
+          },
+          {
+            "name": "Aura of Discipline (Aura)",
+            "id": "nflb-6ee46ba6a0bb",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Astra Militarum^^** unit is within 6\" of this model, you can re-roll Battle-shock tests taken for that unit."
+              }
+            ]
+          },
+          {
+            "name": "Leading from the Front",
+            "id": "nflb-51a35284a189",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model is within Engagement Range of one or more enemy units, friendly **^^Astra Militarum^^** units within 6\" of this model automatically pass Battle-shock tests."
+              }
+            ]
+          },
+          {
+            "name": "Summary Execution",
+            "id": "nflb-9f6483f18f5a",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a friendly **^^Astra Militarum^^** unit within 6\" of this model fails a Battle-shock test, you can roll one D6: on a 4+, one model in that unit is destroyed and that test is passed instead."
+              }
+            ]
+          },
+          {
+            "name": "Honourbound",
+            "id": "nflb-7f0d238569d4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a friendly **^^Astra Militarum Officer^^** model within 6\" of this model is destroyed, before it is removed from play, this model can issue one Order as if it were that **^^Officer^^**."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Penance",
+            "id": "nflb-ebfd48cda82e",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-20169a00273d",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-debdd17b6708",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ea1f38bd2966",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Evenfall",
+            "id": "nflb-46dfda53aa43",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-1ecbe9b90a55",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-4dd3eebe7ae8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-cf28e1d3987e",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-2b7f6b055bb4",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "a2aa-7688-dcb1-4132",
+                    "childName": "Cadian Shock Troops",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "fe5a-764e-37ed-7cef",
+                    "childName": "Catachan Jungle Fighters",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ade0-fa44-d4cf-4fc8",
+                    "childName": "Death Korps of Krieg",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "679b-f37f-2388-748",
+                    "childName": "Tempestus Scions",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "nflb-b7b3d16d5a11",
+                    "childName": "Imperial Guard Squad [NFLB]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mogul Kamir [NFLB]",
+        "id": "nflb-923d26e8de0d",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 80
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-4f4a65c92044",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Mounted",
+            "id": "nflb-0f0669838b36",
+            "hidden": false,
+            "primary": false,
+            "targetId": "14a0-40c9-2748-ae6e"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-b1ea2af0d26f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-1743e32bf330",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Officer",
+            "id": "nflb-cc0065ad7a17",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e4d8-c6a1-7c23-ae25"
+          },
+          {
+            "name": "Attilan",
+            "id": "nflb-e18a96d5b173",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-28686bbc5561"
+          },
+          {
+            "name": "Mogul Kamir",
+            "id": "nflb-1ae2555af3ed",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-5473389f107c"
+          },
+          {
+            "name": "Faction: Astra Militarum",
+            "id": "nflb-86cc08c284e7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fa45-57e-930e-602b"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-748b9f1ac36a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-d7442d8c9a1a",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Voice Of Command",
+            "id": "nflb-0f96ac2ec6f1",
+            "hidden": false,
+            "targetId": "53c9-34f6-2443-a95e",
+            "type": "rule"
+          },
+          {
+            "name": "Lance",
+            "id": "nflb-42fbc9806d50",
+            "hidden": false,
+            "targetId": "2ebc-abdf-8129-6c57",
+            "type": "rule"
+          },
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-5b14d9a02ee4",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Mogul Kamir",
+            "id": "nflb-a91f3315906a",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "12\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-5d74fffc5f43",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Attilan Rough Riders^^**, **^^Imperial Guard Rough Riders [NFLB]^^**"
+              }
+            ]
+          },
+          {
+            "name": "Orders",
+            "id": "nflb-968512812f39",
+            "hidden": false,
+            "typeId": "3fc9-16d8-8670-c8e2",
+            "typeName": "Orders",
+            "characteristics": [
+              {
+                "name": "Orders",
+                "typeId": "36b-c3c9-245f-e97d",
+                "$text": "This **^^Officer^^** can issue 1 Order to a **^^Mounted Regiment^^** unit."
+              }
+            ]
+          },
+          {
+            "name": "Like Lightning!",
+            "id": "nflb-4578c129854e",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model issues an Order to a **^^Mounted^^** unit, it can issue the following Order instead of one from the Voice of Command list. **LIKE LIGHTNING!**: You can re-roll Charge rolls made for this unit, and melee weapons equipped by models in this unit have the **[LANCE]** ability."
+              }
+            ]
+          },
+          {
+            "name": "Heroic Charge",
+            "id": "nflb-ae14e2269057",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model's unit ends a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the **[LANCE]** and **[DEVASTATING WOUNDS]** abilities. After that fight, this model can no longer use its Attilan hunting lance for the rest of the battle."
+              }
+            ]
+          },
+          {
+            "name": "Honourable Death",
+            "id": "nflb-67cbfe6f2491",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model is destroyed in the Fight phase, do not remove it from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Plasma pistol",
+            "id": "nflb-52957ded1af3",
+            "hidden": false,
+            "import": true,
+            "targetId": "2da9-abbd-3c4d-361a",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-f6c3a5ff5140",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-f1ce8f50b4d1",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Laspistol",
+            "id": "nflb-cd60d1eb893a",
+            "hidden": false,
+            "import": true,
+            "targetId": "5837-1692-df16-8061",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-56c2a26c6dbd",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-82ec03c29647",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Attilan hunting lance",
+            "id": "nflb-6f70b214f5d9",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-8b0e4d4656e5",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-5826e776201b",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-c3c7004e1d6e",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Power sabre",
+            "id": "nflb-c2ee2b3508ba",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-8c0706d9d17e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-7539da56091e",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-1e67d8967d15",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Cyber-horse hooves",
+            "id": "nflb-081995a65697",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-546495310042",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-a4eb0eda295f",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-b69233a3be14",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-f4aabdadb006",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "2299-bed9-3e-2b60",
+                    "childName": "Attilan Rough Riders",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "nflb-565b1ae4c58e",
+                    "childName": "Imperial Guard Rough Riders [NFLB]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Tallarn power sword",
         "id": "nflb-6106060034c5",
         "hidden": false,
@@ -4144,6 +7845,1656 @@
                 "name": "S",
                 "typeId": "ab33-d393-96ce-ccba",
                 "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Improvised close combat weapon",
+        "id": "nflb-9b3d4db5accd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Improvised close combat weapon",
+            "id": "nflb-80c3b543d2ff",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Autogun",
+        "id": "nflb-c25c146a4d51",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Autogun",
+            "id": "nflb-f868b6cbfae8",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-ab36ffd49aa1",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Shock maul",
+        "id": "nflb-b814ea1e42c2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Shock maul",
+            "id": "nflb-4ace730dc0a0",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Anti-Infantry 4+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-9fca09d44fa6",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Shotgun",
+        "id": "nflb-6d35bcdd25d5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Shotgun",
+            "id": "nflb-426176756ef0",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Assault"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault",
+            "id": "nflb-82f6f0a472fa",
+            "hidden": false,
+            "targetId": "fc8a-8c24-bae9-cc1c",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Penal grenade launcher",
+        "id": "nflb-c7480fb76e4d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Penal grenade launcher",
+            "id": "nflb-1be5e53ff150",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Anti-Infantry 4+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-a7d34d6c69af",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Power sword",
+        "id": "nflb-975e19e2e7f4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power sword",
+            "id": "nflb-a06d15716b97",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Long-las",
+        "id": "nflb-8b151a36a9c3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Long-las",
+            "id": "nflb-8f47a9a45960",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "36\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "D3"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Heavy, Precision, Lethal Hits"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Heavy",
+            "id": "nflb-79926108c3bf",
+            "hidden": false,
+            "targetId": "1202-10a8-78e9-4c67",
+            "type": "rule"
+          },
+          {
+            "name": "Precision",
+            "id": "nflb-ceaa98fc2b3b",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          },
+          {
+            "name": "Lethal Hits",
+            "id": "nflb-a3203c27b918",
+            "hidden": false,
+            "targetId": "d1d1-611e-5191-1095",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Melta bombs",
+        "id": "nflb-e6a1af7cce1d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Melta bombs",
+            "id": "nflb-f5230c1580db",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "6\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "D6"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Melta 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Melta",
+            "id": "nflb-6863d671bc27",
+            "hidden": false,
+            "targetId": "7cdb-fb99-44a9-8849",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Boltgun",
+        "id": "nflb-7a74cd052e63",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Boltgun",
+            "id": "nflb-3e337110aefa",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-1a1c36c60768",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Bionic arm",
+        "id": "nflb-c7fd179d82a3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bionic arm",
+            "id": "nflb-f994c49b61d5",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pooled wyrdpower",
+        "id": "nflb-2664d8ceae1d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Pooled wyrdpower",
+            "id": "nflb-172b7ff4b8d7",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "18\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "X"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Psychic, Hazardous"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Psychic",
+            "id": "nflb-03438c3ae56a",
+            "hidden": false,
+            "targetId": "e9c4-2bb8-12ee-cd1b",
+            "type": "rule"
+          },
+          {
+            "name": "Hazardous",
+            "id": "nflb-091ca9a3572b",
+            "hidden": false,
+            "targetId": "8367-374c-f87-c627",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Wyrdvane stave",
+        "id": "nflb-81e21c37c380",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Wyrdvane stave",
+            "id": "nflb-c3ca2a105f80",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Psychic"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Psychic",
+            "id": "nflb-6c458b7146c5",
+            "hidden": false,
+            "targetId": "e9c4-2bb8-12ee-cd1b",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Valhallan power sword",
+        "id": "nflb-21f2a6a7d4fd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Valhallan power sword",
+            "id": "nflb-95c75b5ae188",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frost-bladed chainsword",
+        "id": "nflb-b73eba39e894",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Frost-bladed chainsword",
+            "id": "nflb-4ef719b985ed",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Sustained Hits 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Sustained Hits",
+            "id": "nflb-496f0c59735e",
+            "hidden": false,
+            "targetId": "1897-c22c-9597-12b1",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Schaeffer's plasma pistol",
+        "id": "nflb-e1e4061c8eb0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "➤ Schaeffer's plasma pistol - standard",
+            "id": "nflb-afac0f53e68f",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol, Precision"
+              }
+            ]
+          },
+          {
+            "name": "➤ Schaeffer's plasma pistol - supercharge",
+            "id": "nflb-b2fd42d0be03",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Hazardous, Pistol, Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-ad3c208e8e12",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Precision",
+            "id": "nflb-2138a2f80553",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          },
+          {
+            "name": "Hazardous",
+            "id": "nflb-8741d721a91b",
+            "hidden": false,
+            "targetId": "8367-374c-f87-c627",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Schaeffer's power sword",
+        "id": "nflb-3ee272ab4c1b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Schaeffer's power sword",
+            "id": "nflb-52889002e4c6",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bionic gauntlet",
+        "id": "nflb-5b2b5fcae1b4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bionic gauntlet",
+            "id": "nflb-7dab377d66dd",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power fist",
+        "id": "nflb-c21334aca468",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power fist",
+            "id": "nflb-182bd4c25b3b",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power sword",
+        "id": "nflb-678162bb11a1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power sword",
+            "id": "nflb-54c24a36308e",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bastonne's plasma pistol",
+        "id": "nflb-2b6f1fdb790b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "➤ Bastonne's plasma pistol - standard",
+            "id": "nflb-5760b8b96f00",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol"
+              }
+            ]
+          },
+          {
+            "name": "➤ Bastonne's plasma pistol - supercharge",
+            "id": "nflb-1e88b200037b",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Hazardous, Pistol"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-1ce5a538f7f7",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Hazardous",
+            "id": "nflb-ed79441fd8e6",
+            "hidden": false,
+            "targetId": "8367-374c-f87-c627",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Power weapon",
+        "id": "nflb-0d5f6ddddc7b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power weapon",
+            "id": "nflb-6fac8aea5c49",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Penance",
+        "id": "nflb-20169a00273d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Penance",
+            "id": "nflb-638dffd0ba84",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol, Lethal Hits"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-5fe074efd31b",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Lethal Hits",
+            "id": "nflb-b7ec1ee89921",
+            "hidden": false,
+            "targetId": "d1d1-611e-5191-1095",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Evenfall",
+        "id": "nflb-1ecbe9b90a55",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Evenfall",
+            "id": "nflb-82990b3ae708",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Sustained Hits 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Sustained Hits",
+            "id": "nflb-e0572ccb04ea",
+            "hidden": false,
+            "targetId": "1897-c22c-9597-12b1",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Attilan hunting lance",
+        "id": "nflb-8b0e4d4656e5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Attilan hunting lance",
+            "id": "nflb-fa670de874c5",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Anti-Infantry 3+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-0207d7df7286",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Power sabre",
+        "id": "nflb-8c0706d9d17e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power sabre",
+            "id": "nflb-880a39ece0af",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cyber-horse hooves",
+        "id": "nflb-546495310042",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cyber-horse hooves",
+            "id": "nflb-0a7e60205bea",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "2"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
               },
               {
                 "name": "AP",

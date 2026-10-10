@@ -10,7 +10,7 @@ Add `https://github.com/TacoWillJ/NewRecruit` as a data source and pick **Warham
 
 | Faction | Units | Detachments |
 |---|---|---|
-| Astra Militarum | Captain Al'Rahem, Imperial Guard Command Squad, Imperial Guard Squad, Imperial Guard Heavy Weapon Squad, Imperial Guard Special Weapon Squad, Imperial Guard Rough Riders | Mechanised Strike Force |
+| Astra Militarum | Captain Al'Rahem, Captain Chenkov, Colonel Schaeffer, Colour Sergeant Kell (Support), Commissar Severina Raine, Mogul Kamir, Sergeant Bastonne, Imperial Guard Command Squad / Squad / Heavy Weapon Squad / Special Weapon Squad / Rough Riders, Penal Legion Squad, Last Chancers, Wyrdvane Psykers; Knight Commander Pask as a +45 pt upgrade on any Leman Russ | Mechanised Strike Force |
 | Orks | 24 units dropped in the Sept 2026 codex: 15 Legendary Proxies (Speed Freeks buggies, Wurrboy, Big Gunz, Nobz on Warbikes, Attack Fighta, Fighta-Bommer, Meka-Dread, Mega Dread, Kannonwagon, Squiggoth, Big Mek with Kustom Force Field, Ufthak Blackhawk) + 9 homebrew (Skorchas, Deffkoptas with Big Shootas, Da Red Gobbo, Grot Bomm Launcha, Kill Krusha, 'Chinork' Warkopta, Painboy/Big Mek on Warbike, Deff Rolla Battle Fortress) | — |
 
 ## How the repo is put together

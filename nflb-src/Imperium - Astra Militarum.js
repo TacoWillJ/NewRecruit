@@ -191,6 +191,191 @@ module.exports = {
     }
 
     // =========================================================
+    // Characters + squads batch 2 (2026-10-10). 11e fixes applied vs the cards:
+    // leader lists drop units that are themselves Leaders (Cadian Command Squad) or no longer
+    // exist (Veteran Guardsmen); bespoke Orders become selectable Orders (11e Orders are issued
+    // in the Command phase); Officers get an Orders profile; Kell is an 11e Support unit.
+    // =========================================================
+    const pistol3 = W('Laspistol', ['12"', 1, '3+', 3, 0, 1]);
+    const plasma3 = W('Plasma pistol', { standard: ['12"', 1, '3+', 7, -2, 1], supercharge: ['12"', 1, '3+', 8, -3, 2] });
+    // single-model character: stats, weapons (array, or {choice:[...]}) and the rest of the entry
+    const character = (name, pts, { stats, kws, primary = 'Epic Hero', gear = [], choose, rules = [], profiles = [], leads, support, extra = {} }) => {
+      const k = `char:${name}`;
+      const u = unit(name, pts, {
+        type: 'model',
+        ...(kws.includes('Epic Hero') ? { constraints: cons(`${k}:roster`, null, 1, 'roster') } : {}),
+        categoryLinks: catLinks(k, [...kws, ...FACTION], primary),
+        infoLinks: ruleLinks(k, [...(leads ? [support ? 'Support' : 'Leader'] : []), ...rules]),
+        profiles: [unitProfile(name, stats), ...profiles],
+        entryLinks: gear.map(w => link(k, w)),
+        ...(choose ? { selectionEntryGroups: [choice(k, choose.name, choose.weapons)] } : {}),
+        ...extra,
+      });
+      if (leads) {
+        u.associations = [leadAssociation(k, leads, { support })];
+        u.profiles.splice(1, 0, ability(k, support ? 'Support' : 'Leader', `This model can be attached to the following units: ${leads.map(n => `**^^${typeof n === 'string' ? n : n.name}^^**`).join(', ')}${support ? '. You can attach this model to one of the above units even if a Leader has already been attached to it.' : ''}`));
+      }
+      return u;
+    };
+
+    // ---- Penal Legion Squad ----
+    let penal;
+    {
+      const k = 'penal';
+      const ccwImp = W('Improvised close combat weapon', ['Melee', 2, '4+', 3, 0, 1], { keywords: '' });
+      const sgt = model(k, 'Custodian Sergeant', { min: 1, max: 1, gear: [
+        link(k + ':s', W('Autogun', ['24"', 2, '4+', 3, 0, 1], { keywords: 'Rapid Fire 2' })),
+        link(k + ':s', W('Shock maul', ['Melee', 3, '3+', 5, -1, 1], { keywords: 'Anti-Infantry 4+' }))] });
+      const convicts = model(k, 'Convict', { min: 5, max: 5, gear: [link(k + ':c', laspistol), link(k + ':c', ccwImp)] });
+      const shotguns = model(k, 'Convict w/ Shotgun', { min: 3, max: 3, gear: [link(k + ':sg', W('Shotgun', ['12"', 2, '4+', 4, 0, 1], { keywords: 'Assault' })), link(k + ':sg', ccwImp)] });
+      const glConvict = model(k, 'Convict w/ Grenade launcher', { min: 1, max: 1, gear: [link(k + ':gl', W('Penal grenade launcher', ['24"', 1, '4+', 5, 0, 1], { keywords: 'Anti-Infantry 4+' })), link(k + ':gl', ccwImp)] });
+      penal = unit('Penal Legion Squad', 70, {
+        categoryLinks: catLinks(k, ['Infantry', 'Battleline', 'Regiment', 'Penal Legion', ...FACTION], 'Battleline'),
+        infoLinks: ruleLinks(k, ['Voice Of Command']),
+        profiles: [
+          unitProfile('Convict', ['6"', 3, '5+', 1, '8+', 2]),
+          ability(k, 'Explosive Collars', 'This unit automatically passes Battle-shock tests and cannot Fall Back. If the Custodian Sergeant is destroyed by an enemy attack, roll one D6 at the end of the phase: on a 4+, until the start of your next turn, add 1 to the Attacks characteristic of melee weapons equipped by models in this unit and those weapons have the **[LETHAL HITS]** ability; at the start of your next turn, remove the remaining models in this unit from the battlefield.'),
+          ability(k, 'Desperadoes', 'At the start of each of your turns, roll one D6. Until the end of the turn: 1-2 — melee weapons equipped by models in this unit have the **[LETHAL HITS]** ability; 3-4 — improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1; 5-6 — melee weapons equipped by models in this unit have the **[SUSTAINED HITS 1]** ability.'),
+          ability(k, 'Press-Ganged', 'This unit cannot be your Warlord. Officers can only issue the Take Aim! or Fix Bayonets! Orders to this unit.'),
+        ],
+        selectionEntries: [sgt, convicts, shotguns, glConvict],
+      });
+    }
+
+    // ---- Last Chancers ----
+    let lastChancers;
+    {
+      const k = 'lastch';
+      const spec = (name, gear) => model(k, name, { min: 1, max: 1, gear: gear.map(w => link(`${k}:${name}`, w)) });
+      lastChancers = unit('Last Chancers', 110, {
+        categoryLinks: catLinks(k, ['Infantry', 'Penal Legion', 'Last Chancers', ...FACTION], 'Infantry'),
+        infoLinks: ruleLinks(k, ['Voice Of Command']),
+        profiles: [
+          unitProfile('Lieutenant Kage', ['6"', 3, '5+', 2, '7+', 2]),
+          unitProfile('Last Chancer', ['6"', 3, '5+', 1, '7+', 2]),
+          ability(k, 'Suicide Mission', 'The first battle round in which this unit shoots or fights, each time a model in this unit makes an attack, you can re-roll a Hit roll of 1 and you can re-roll a Wound roll of 1. In addition, once in that battle round, you can re-roll one saving throw made for a model in this unit.'),
+          ability(k, 'No Quarter Asked, None Given', 'This unit cannot Fall Back and automatically passes Battle-shock tests. Each time a model in this unit is destroyed, roll one D6: on a 6, do not remove it from play; it can shoot (as if it were your Shooting phase) or fight after the attacking unit has finished making its attacks, and is then removed from play.'),
+          ability(k, 'Medi-pack (Lieutenant Kage)', 'In your Command phase, while Lieutenant Kage is on the battlefield, one model in this unit, or one friendly **^^Astra Militarum Character^^** model within 3" of this unit, regains 1 lost wound.'),
+        ],
+        selectionEntries: [
+          spec('Lieutenant Kage', [pistol3, W('Power sword', ['Melee', 3, '3+', 5, -2, 1], { keywords: '' })]),
+          spec('Brick', [W('Heavy bolter', ['36"', 3, '4+', 5, -1, 2]), ccw]),
+          spec('Gunnar', [W('Long-las', ['36"', 1, '3+', 4, -2, 'D3'], { keywords: 'Heavy, Precision, Lethal Hits' }), ccw]),
+          spec('Demolition Man', [melta, W('Melta bombs', ['6"', 1, '4+', 8, -3, 'D6'], { keywords: 'Melta 2' }), ccw]),
+          spec('Bionics Man', [W('Boltgun', ['24"', 2, '4+', 4, 0, 1], { keywords: 'Rapid Fire 1' }), W('Bionic arm', ['Melee', 3, '3+', 5, -1, 1], { keywords: '' })]),
+          spec('Una the Madwoman', [flamer, ccw]),
+        ],
+      });
+    }
+
+    // ---- Wyrdvane Psykers ----
+    {
+      const k = 'wyrd';
+      const m = model(k, 'Wyrdvane Psyker', { min: 3, max: 6, gear: [link(k, laspistol),
+        link(k, W('Pooled wyrdpower', ['18"', 'X', '4+', 4, -1, 1], { keywords: 'Psychic, Hazardous' })),
+        link(k, W('Wyrdvane stave', ['Melee', 2, '4+', 4, -1, 1], { keywords: 'Psychic' }))] });
+      unit('Wyrdvane Psykers', 55, {
+        categoryLinks: catLinks(k, ['Infantry', 'Psyker', 'Regiment', 'Wyrdvane Psykers', ...FACTION], 'Infantry'),
+        infoLinks: ruleLinks(k, ['Voice Of Command', 'Stealth']),
+        modifiers: [{ field: b.PTS, type: 'set', value: 110, conditions: [{ childId: 'model', field: 'selections', includeChildSelections: true, scope: 'self', shared: true, type: 'atLeast', value: 4 }] }],
+        profiles: [
+          unitProfile('Wyrdvane Psyker', ['6"', 3, '5+', 1, '7+', 2]),
+          ability(k, 'Pooled Wyrdpower', 'The Attacks characteristic (X) of this unit\'s pooled wyrdpower is equal to the number of models in this unit when it is selected to shoot. Only one model in this unit can shoot with it each phase.'),
+          ability(k, 'Empyric Feedback', 'Each time a model in this unit is destroyed as the result of a Hazardous test, each unit (friend or foe) within 6" of that model suffers D3 mortal wounds.'),
+          ability(k, 'Strength in Numbers', 'While this unit contains 3 or more models, models in this unit have the Stealth ability and you can re-roll Battle-shock tests taken for this unit.'),
+          ability(k, 'Unit Size', '3 models (55 pts) or 6 models (110 pts).'),
+        ],
+        selectionEntries: [m],
+      });
+    }
+
+    // ---- Characters ----
+    character('Captain Chenkov', 75, {
+      stats: ['6"', 3, '4+', 4, '7+', 1], kws: ['Infantry', 'Character', 'Epic Hero', 'Officer', 'Grenades', 'Captain Chenkov'],
+      gear: [pistol3], choose: { name: 'Melee weapon', weapons: [W('Valhallan power sword', ['Melee', 4, '3+', 5, -2, 1], { keywords: '' }), W('Frost-bladed chainsword', ['Melee', 5, '3+', 4, -1, 1], { keywords: 'Sustained Hits 1' })] },
+      rules: ['Voice Of Command'], leads: ['Cadian Shock Troops', 'Catachan Jungle Fighters', 'Krieg Combat Engineers', igSquad],
+      profiles: [
+        orders('chenkov', 'This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units.'),
+        ability('chenkov', 'Numbers Are A Weapon', 'Each time this model issues an Order to a unit that contains 7 or more models, it can issue the following Order instead of one from the Voice of Command list. **NUMBERS ARE A WEAPON!**: Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1, and those weapons have the **[SUSTAINED HITS 1]** ability.'),
+        ability('chenkov', 'Send in the Next Wave! (Once per battle)', 'In your Command phase, select one friendly **^^Astra Militarum Infantry^^** unit (excluding **^^Characters^^**) that was destroyed. Set up a new unit identical to that unit, at its Starting Strength, wholly within 6" of any battlefield edge and more than 9" horizontally from all enemy units.'),
+        ability('chenkov', 'Disposable!', 'While a friendly **^^Astra Militarum Infantry^^** unit is wholly within 6" of this model, that unit automatically passes Battle-shock tests.'),
+      ],
+    });
+    character('Colonel Schaeffer', 85, {
+      stats: ['6"', 3, '5+', 4, '6+', 1], kws: ['Infantry', 'Character', 'Epic Hero', 'Officer', 'Penal Legion', 'Colonel Schaeffer'],
+      gear: [W("Schaeffer's plasma pistol", { standard: ['12"', 1, '3+', 7, -2, 1], supercharge: ['12"', 1, '3+', 8, -3, 2] }, { keywords: ['Pistol, Precision', 'Hazardous, Pistol, Precision'] }),
+        W("Schaeffer's power sword", ['Melee', 4, '3+', 5, -2, 1], { keywords: '' }), W('Bionic gauntlet', ['Melee', 2, '3+', 6, -1, 1], { keywords: '' })],
+      rules: ['Voice Of Command'], leads: [lastChancers, penal, 'Cadian Shock Troops', 'Krieg Combat Engineers'],
+      profiles: [
+        orders('schaeffer', 'This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** or **^^Penal Legion^^** units.'),
+        ability('schaeffer', 'Iron Discipline (Aura)', 'While a friendly **^^Penal Legion^^** unit is within 6" of this model, that unit automatically passes Battle-shock tests.'),
+        ability('schaeffer', 'Iron Hand (Once per battle)', 'In your Command phase, if this model was destroyed in the previous turn, set it up again with 3 wounds remaining, wholly within 6" of where it was destroyed and more than 3" horizontally from all enemy units.'),
+        ability('schaeffer', 'Bionic Eye (Once per battle)', 'You can re-roll one Hit roll, one Wound roll or one saving throw made for this model.'),
+      ],
+    });
+    character('Colour Sergeant Kell', 60, {
+      stats: ['6"', 3, '4+', 4, '7+', 1], kws: ['Infantry', 'Character', 'Epic Hero', 'Cadian', 'Grenades', 'Colour Sergeant Kell'],
+      gear: [pistol3], choose: { name: 'Melee weapon', weapons: [W('Power fist', ['Melee', 3, '4+', 8, -2, 2], { keywords: '' }), W('Power sword', ['Melee', 4, '3+', 4, -2, 1], { keywords: '' })] },
+      rules: [], leads: ['Cadian Shock Troops', 'Kasrkin'], support: true,
+      profiles: [
+        ability('kell', 'Regimental Standard (Aura)', 'While a friendly **^^Cadian^^** unit is within 6" of this model, you can re-roll Battle-shock tests taken for that unit, and while it is within range of an objective marker, add 1 to the Objective Control characteristic of models in that unit.'),
+        ability('kell', 'Listen Up, Maggots!', 'In your Command phase, one friendly **^^Cadian Officer^^** model within 6" of this model can issue one additional Order.'),
+        ability('kell', 'Sworn Protector', 'While this model is part of the same attached unit as **^^Ursula Creed^^**, each time Ursula Creed would lose a wound, roll one D6: on a 2+, that wound is allocated to this model instead.'),
+        ability('kell', 'Colours of the Cadian 8th', 'Each time a friendly **^^Cadian Infantry^^** model within 6" of this model is destroyed, roll one D6: on a 6, do not remove it from play; it can shoot or fight after the attacking unit has finished making its attacks, and is then removed from play.'),
+      ],
+    });
+    character('Sergeant Bastonne', 55, {
+      stats: ['6"', 3, '4+', 4, '6+', 1], kws: ['Infantry', 'Character', 'Epic Hero', 'Cadian', 'Grenades', 'Sergeant Bastonne'],
+      gear: [W("Bastonne's plasma pistol", { standard: ['12"', 1, '3+', 7, -2, 1], supercharge: ['12"', 1, '3+', 8, -3, 2] }, { keywords: ['Pistol', 'Hazardous, Pistol'] }),
+        W('Power weapon', ['Melee', 4, '3+', 5, -2, 1], { keywords: '' })],
+      rules: ['Feel No Pain 6+'], leads: ['Cadian Shock Troops', 'Kasrkin'],
+      profiles: [
+        ability('bastonne', 'Honour of Cadia', 'While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1. If that unit is within range of an objective marker you control, you can re-roll a Hit roll of 1, 2 or 3 instead.'),
+        ability('bastonne', 'Cadian Steel (Once per battle)', 'The first time this model\'s unit is selected as the target of one or more ranged attacks, until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll.'),
+      ],
+    });
+    character('Commissar Severina Raine', 55, {
+      stats: ['6"', 3, '4+', 4, '6+', 1], kws: ['Infantry', 'Character', 'Epic Hero', 'Officio Prefectus', 'Grenades', 'Severina Raine'],
+      gear: [W('Penance', ['12"', 2, '3+', 4, -1, 1], { keywords: 'Pistol, Lethal Hits' }), W('Evenfall', ['Melee', 4, '3+', 4, -1, 1], { keywords: 'Sustained Hits 1' })],
+      rules: [], leads: ['Cadian Shock Troops', 'Catachan Jungle Fighters', 'Death Korps of Krieg', 'Tempestus Scions', igSquad],
+      profiles: [
+        ability('raine', 'Aura of Discipline (Aura)', 'While a friendly **^^Astra Militarum^^** unit is within 6" of this model, you can re-roll Battle-shock tests taken for that unit.'),
+        ability('raine', 'Leading from the Front', 'While this model is within Engagement Range of one or more enemy units, friendly **^^Astra Militarum^^** units within 6" of this model automatically pass Battle-shock tests.'),
+        ability('raine', 'Summary Execution', 'Each time a friendly **^^Astra Militarum^^** unit within 6" of this model fails a Battle-shock test, you can roll one D6: on a 4+, one model in that unit is destroyed and that test is passed instead.'),
+        ability('raine', 'Honourbound', 'Each time a friendly **^^Astra Militarum Officer^^** model within 6" of this model is destroyed, before it is removed from play, this model can issue one Order as if it were that **^^Officer^^**.'),
+      ],
+    });
+    character('Mogul Kamir', 80, {
+      stats: ['12"', 5, '4+', 5, '6+', 2], kws: ['Mounted', 'Character', 'Epic Hero', 'Officer', 'Attilan', 'Mogul Kamir'],
+      gear: [plasma3, pistol3, W('Attilan hunting lance', ['Melee', 5, '3+', 8, -2, 2], { keywords: 'Anti-Infantry 3+' }),
+        W('Power sabre', ['Melee', 4, '3+', 5, -2, 1], { keywords: '' }), W('Cyber-horse hooves', ['Melee', 2, '4+', 5, 0, 1], { keywords: '' })],
+      rules: ['Voice Of Command', 'Lance', 'Devastating Wounds'], leads: ['Attilan Rough Riders', units.find(u => u.name === 'Imperial Guard Rough Riders [NFLB]')],
+      profiles: [
+        orders('kamir', 'This **^^Officer^^** can issue 1 Order to a **^^Mounted Regiment^^** unit.'),
+        ability('kamir', 'Like Lightning!', 'Each time this model issues an Order to a **^^Mounted^^** unit, it can issue the following Order instead of one from the Voice of Command list. **LIKE LIGHTNING!**: You can re-roll Charge rolls made for this unit, and melee weapons equipped by models in this unit have the **[LANCE]** ability.'),
+        ability('kamir', 'Heroic Charge', 'Each time this model\'s unit ends a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the **[LANCE]** and **[DEVASTATING WOUNDS]** abilities. After that fight, this model can no longer use its Attilan hunting lance for the rest of the battle.'),
+        ability('kamir', 'Honourable Death', 'Each time this model is destroyed in the Fight phase, do not remove it from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play.'),
+      ],
+    });
+
+    // ---- Knight Commander Pask: +45 pts upgrade for any official Leman Russ ----
+    const paskId = b.id('pask');
+    const pask = {
+      name: 'Knight Commander Pask [NFLB]', id: paskId, hidden: false, import: true, type: 'upgrade',
+      constraints: [...cons('pask', null, 1), ...cons('pask:roster', null, 1, 'roster')],
+      costs: [{ name: 'pts', typeId: b.PTS, value: 45 }],
+      profiles: [
+        ability('pask', 'Knight Commander Pask', 'This model is commanded by Knight Commander Pask (0-1 per army). It gains the **^^Character^^**, **^^Epic Hero^^** and **^^Knight Commander Pask^^** keywords.'),
+        ability('pask', 'Tank Ace', 'Improve the Ballistic Skill characteristic of ranged weapons equipped by this model by 1 (to a maximum of 2+). In addition, each time this model is selected to shoot, you can re-roll one Wound roll.'),
+        ability('pask', 'Hand of Steel', 'While this model has its full number of wounds, it has the Feel No Pain 6+ ability against ranged attacks. While it is Below Half-strength, it has the Lone Operative ability.'),
+        ability('pask', 'Master of All Variants', 'Ranged weapons equipped by this model whose names include battle cannon, demolisher cannon, plasma cannon, autocannon, vanquisher cannon, gatling cannon or nova cannon have the **[SUSTAINED HITS 1]** ability.'),
+        ability('pask', 'Coordinated Strike (Aura)', 'While a friendly **^^Leman Russ^^** unit is within 12" of this model, that unit is eligible to shoot in a turn in which it Advanced.'),
+      ],
+    };
+    const lemanRuss = b.lib.sharedSelectionEntries.filter(e => /^Leman Russ/.test(e.name) && e.type === 'model').map(e => e.name);
+    if (lemanRuss.length < 7) throw new Error(`Expected the Leman Russ variants upstream, found ${lemanRuss.length}`);
+
+    // =========================================================
     // Detachment: Mechanised Strike Force
     // =========================================================
     const detId = b.id('det:msf');
@@ -237,6 +422,10 @@ module.exports = {
       injections: [
         { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Detachment', selectionEntry: detachment },
         { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Enhancements', selectionEntryGroup: enhGroup },
+        // Pask lives in the Library itself and every Leman Russ variant links to it (same file)
+        { file: 'Imperium - Astra Militarum - Library.json', selectionEntry: pask },
+        ...lemanRuss.map(n => ({ file: 'Imperium - Astra Militarum - Library.json', entryName: n,
+          entryLink: { name: pask.name, id: b.id(`pask:link:${n}`), hidden: false, import: true, targetId: paskId, type: 'selectionEntry' } })),
       ],
     };
   },

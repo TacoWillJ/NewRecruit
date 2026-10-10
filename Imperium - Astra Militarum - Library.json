@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": true,
-    "revision": 5001,
+    "revision": 5002,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "categoryEntries": [
@@ -29719,6 +29719,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-07fa57562062",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -30315,6 +30323,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-80cb9107bd61",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -30911,6 +30927,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-8daa0f5dc6f0",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -31507,6 +31531,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-067d264a906b",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -32103,6 +32135,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-d9ee3ea7a09c",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -32699,6 +32739,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-8f195fe50fe6",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoGroups": [
@@ -33311,6 +33359,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-25cff3ad0956",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -49203,6 +49259,14 @@
             "sortIndex": 1,
             "targetId": "56e1-e9a8-6946-0518",
             "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Knight Commander Pask [NFLB]",
+            "id": "nflb-fa583e330341",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ec70c799bbaa",
+            "type": "selectionEntry"
           }
         ],
         "infoLinks": [
@@ -135180,6 +135244,112 @@
                 "import": true,
                 "targetId": "f842-6e90-bc5a-80f1",
                 "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Knight Commander Pask [NFLB]",
+        "id": "nflb-ec70c799bbaa",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "nflb-b9c51a657442",
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "nflb-520c810d7575",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 45
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Knight Commander Pask",
+            "id": "nflb-daf04d678919",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model is commanded by Knight Commander Pask (0-1 per army). It gains the **^^Character^^**, **^^Epic Hero^^** and **^^Knight Commander Pask^^** keywords."
+              }
+            ]
+          },
+          {
+            "name": "Tank Ace",
+            "id": "nflb-7154e9b532ab",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Improve the Ballistic Skill characteristic of ranged weapons equipped by this model by 1 (to a maximum of 2+). In addition, each time this model is selected to shoot, you can re-roll one Wound roll."
+              }
+            ]
+          },
+          {
+            "name": "Hand of Steel",
+            "id": "nflb-89d704be5523",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While this model has its full number of wounds, it has the Feel No Pain 6+ ability against ranged attacks. While it is Below Half-strength, it has the Lone Operative ability."
+              }
+            ]
+          },
+          {
+            "name": "Master of All Variants",
+            "id": "nflb-8a19309a2f5d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Ranged weapons equipped by this model whose names include battle cannon, demolisher cannon, plasma cannon, autocannon, vanquisher cannon, gatling cannon or nova cannon have the **[SUSTAINED HITS 1]** ability."
+              }
+            ]
+          },
+          {
+            "name": "Coordinated Strike (Aura)",
+            "id": "nflb-9a7a256bb7e9",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly **^^Leman Russ^^** unit is within 12\" of this model, that unit is eligible to shoot in a turn in which it Advanced."
               }
             ]
           }
