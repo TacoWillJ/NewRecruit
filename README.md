@@ -17,6 +17,10 @@ Add `https://github.com/TacoWillJ/NewRecruit` as a data source and pick **Warham
 | T'au Empire | The Eight (Commanders Arra'kon, Bravestorm, Brightsword, Ob'lotai 9-0, O'Vesa, Sha'vastos, Torchstar — Farsight himself is official), Dahyak Grekh | — |
 | Adeptus Mechanicus | 35 Horus Heresy Mechanicum units (incl. Dark Mechanicum: Anacharis Scoria, Archmagos Draykavac) — only selectable with one of the two NFLB Mechanicum detachments; Heterodox-locked units only with Dark Mechanicum. Plus Legio Cybernetica battle robots (Cataphract, Colossus, Conqueror, Crusader), always available. Official Legends Decimator, Blood Slaughterer, Greater Brass Scorpion, Kytan Ravager and Tarantula Sentry Battery linked in from the Heresy Legends library | Taghmata Omnissiah, Dark Mechanicum |
 
+**[NFLB-L]** units are rebalanced copies of official **[Legends]** datasheets that fell out of step with their 11th edition codex (currently Orks: Big Trakk, Kill Tank). They replace the official Legends entries on purpose.
+
+**Points:** NFLB units anchored to an official unit (e.g. Legendary Proxies) take that unit's *current* points plus a fixed offset on every sync, so they follow each Munitorum Field Manual.
+
 ## How the repo is put together
 
 - **Root `*.json` (except `NFLB - *`)**: an untouched copy of BSData's 11e files. Every sync overwrites them. Don't edit them by hand.

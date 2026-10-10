@@ -234,7 +234,75 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     return { name: e.name, id: id(`${key}:shared:${targetName}`), hidden: false, import: true, targetId: e.id, type: g ? 'selectionEntryGroup' : 'selectionEntry' };
   };
 
-  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, orders, transport, weapon, link, choice, upgrade, model, group,
+  // ---------- points tracking ----------
+  // An anchored card costs the anchor unit's CURRENT official points + the offset it was priced at,
+  // so it follows every Munitorum Field Manual. Moves are reported so the printed card can be updated.
+  const notes = [];
+  const officialPts = name => {
+    const e = lib.sharedSelectionEntries.find(x => x.name === name);
+    if (!e) throw new Error(`Points anchor not found upstream: ${name}`);
+    return ((e.costs || []).find(c => c.name === 'pts') || {}).value;
+  };
+  const trackedPts = (unitName, anchor, printed) => {
+    const now = officialPts(anchor.name) + anchor.offset;
+    if (now !== printed) notes.push(`POINTS: ${unitName} ${printed} -> ${now} (${anchor.name} now ${officialPts(anchor.name)}, offset ${anchor.offset >= 0 ? '+' : ''}${anchor.offset}) — update its card`);
+    return now;
+  };
+
+  // ---------- NFLB-L: rebalanced copies of official [Legends] entries ----------
+  // Deep-copies an upstream entry with fresh deterministic ids (internal references remapped),
+  // inlines shared entries it links to when `inline(link)` says so (so their profiles can be
+  // patched), drops the "Show Legends" visibility gate, and renames it.
+  const cloneEntry = (src, key, { name, inline = () => false, dropModifier = () => false } = {}) => {
+    const idMap = new Map();
+    const fresh = old => { if (!idMap.has(old)) idMap.set(old, id(`clone:${key}:${old}:${idMap.size}`)); return idMap.get(old); };
+    const copy = o => {
+      if (Array.isArray(o)) return o.map(copy);
+      if (!o || typeof o !== 'object') return o;
+      if (o.targetId && o.type === 'selectionEntry' && inline(o)) {
+        const t = lib.sharedSelectionEntries.find(e => e.id === o.targetId);
+        if (t) {
+          const merged = { ...t, id: o.id, constraints: [...(t.constraints || []), ...(o.constraints || [])], modifiers: [...(t.modifiers || []), ...(o.modifiers || [])] };
+          return copy(merged);
+        }
+      }
+      const out = {};
+      for (const [k, v] of Object.entries(o)) out[k] = k === 'id' && typeof v === 'string' ? fresh(v) : copy(v);
+      return out;
+    };
+    let c = copy(src);
+    const remap = o => {
+      if (Array.isArray(o)) return o.forEach(remap);
+      if (!o || typeof o !== 'object') return;
+      for (const k of ['targetId', 'childId', 'field', 'defaultSelectionEntryId', 'scope']) if (typeof o[k] === 'string' && idMap.has(o[k])) o[k] = idMap.get(o[k]);
+      Object.values(o).forEach(remap);
+    };
+    remap(c);
+    c.modifiers = (c.modifiers || []).filter(m => !dropModifier(m));
+    c.name = name;
+    return c;
+  };
+  // replace the characteristics of every profile whose name matches, keeping the given ones (e.g. BS)
+  const patchProfiles = (entry, nameRe, fromProfiles, keep = ['BS', 'WS']) => {
+    let n = 0;
+    const walk = o => {
+      if (Array.isArray(o)) return o.forEach(walk);
+      if (!o || typeof o !== 'object') return;
+      if (o.typeName && o.characteristics && nameRe.test(o.name || '')) {
+        const suffix = (o.name.match(/-\s*(\w+)$/) || [])[1];
+        const src = fromProfiles.find(p => (p.name.match(/-\s*(\w+)$/) || [])[1]?.toLowerCase() === suffix?.toLowerCase());
+        if (src) {
+          o.characteristics = o.characteristics.map(ch => keep.includes(ch.name) ? ch : { ...ch, $text: (src.characteristics.find(x => x.name === ch.name) || ch).$text });
+          n++;
+        }
+      }
+      Object.values(o).forEach(walk);
+    };
+    walk(entry);
+    return n;
+  };
+
+  return { cloneEntry, patchProfiles, notes, officialPts, trackedPts, id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, orders, transport, weapon, link, choice, upgrade, model, group,
     shrinkFor, catLinks, leadAssociation, ruleLinks, sharedLink, cons, sharedEntries, ownCategories };
 }
 

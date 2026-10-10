@@ -90,7 +90,12 @@
    ],
    "composition": "1 Kustom Boosta-blasta model. Equipped with: 1 Rivet kannon; 1 Burna exhausts; 1 Ram bar.",
    "keywords": "Vehicle &bull; Explosives &bull; Orks &bull; Speed Freeks &bull; Kustom Boosta-Blasta",
-   "designerNote": "Kustom Boosta-blasta was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Rivet Kannon + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Rivetin' Dakka ability intact. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Kustom Boosta-blasta was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Rivet Kannon + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Rivetin' Dakka ability intact. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 0
+   }
   }
  },
  {
@@ -183,7 +188,12 @@
    ],
    "composition": "1 Megatrakk Scrapjet model. Equipped with: 1 Rokkit cannon; 1 Wing missiles; 1 Nose drill.",
    "keywords": "Vehicle &bull; Explosives &bull; Orks &bull; Speed Freeks &bull; Megatrakk Scrapjet",
-   "designerNote": "Megatrakk Scrapjet was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Mek Speshul + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Drill Through ability intact. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Megatrakk Scrapjet was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Mek Speshul + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Drill Through ability intact. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 5
+   }
   }
  },
  {
@@ -276,7 +286,12 @@
    ],
    "composition": "1 Boomdakka Snazzwagon model. Equipped with: 1 Mek speshul; 1 Big shoota; 1 Spiked wheels.",
    "keywords": "Vehicle &bull; Grenades &bull; Orks &bull; Speed Freeks &bull; Boomdakka Snazzwagon",
-   "designerNote": "Boomdakka Snazzwagon was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Mek Speshul + Extra Dakka + Spiked Ram loadout — both already share the Snazzwagon's original weapon names, Mek speshul and Spiked wheels) re-skinned to match, keeping its signature Billowing Fumes aura intact. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Boomdakka Snazzwagon was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Mek Speshul + Extra Dakka + Spiked Ram loadout — both already share the Snazzwagon's original weapon names, Mek speshul and Spiked wheels) re-skinned to match, keeping its signature Billowing Fumes aura intact. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 0
+   }
   }
  },
  {
@@ -371,7 +386,12 @@
    ],
    "composition": "1 Shokkjump Dragsta model. Equipped with: 1 Kustom shokk rifle; 1 Rokkit launcha; 1 Saw blades.",
    "keywords": "Vehicle &bull; Orks &bull; Speed Freeks &bull; Shokkjump Dragsta",
-   "designerNote": "Shokkjump Dragsta was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Rivet Kannon + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Shokk Tunnel mobility ability intact. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Shokkjump Dragsta was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbuggies. This card is that Warbuggies chassis (identical stats, and its exact current Rivet Kannon + Extra Dakka + Spiked Ram loadout) re-skinned under the model's original weapon names, keeping its signature Shokk Tunnel mobility ability intact. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 0
+   }
   }
  },
  {
@@ -380,7 +400,7 @@
   "data": {
    "title": "Wurrboy",
    "proxyOf": "Weirdboy",
-   "points": 60,
+   "points": 55,
    "role": "Character — Psyker — Leader",
    "stats": {
     "M": "6\"",
@@ -454,7 +474,12 @@
    ],
    "composition": "1 Wurrboy model. Equipped with: 1 Eyez of Mork; 1 Copper Staff.",
    "keywords": "Character &bull; Infantry &bull; Psyker &bull; Beast Snagga &bull; Leader &bull; Orks &bull; Wurrboy",
-   "designerNote": "Wurrboy was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Weirdboy — and current BSData already keeps a hidden “Wurrband” sub-configuration on Weirdboy with a psychic ability still literally named Roar of Mork, gated behind a Wurrband upgrade selection. This card takes that configuration directly (stats, Roar of Mork power text, Deadly Demise D3, Unstable Energies) and restores Wurrboy's original signature traits BSData didn't carry over into the base Weirdboy: Feel No Pain 6+, the Eyez of Mork weapon with its Unstable Oracle scaling, and the narrower Leader restriction to Beast Snagga Boyz only. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Wurrboy was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Weirdboy — and current BSData already keeps a hidden “Wurrband” sub-configuration on Weirdboy with a psychic ability still literally named Roar of Mork, gated behind a Wurrband upgrade selection. This card takes that configuration directly (stats, Roar of Mork power text, Deadly Demise D3, Unstable Energies) and restores Wurrboy's original signature traits BSData didn't carry over into the base Weirdboy: Feel No Pain 6+, the Eyez of Mork weapon with its Unstable Oracle scaling, and the narrower Leader restriction to Beast Snagga Boyz only. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Weirdboy",
+    "basePts": 60,
+    "offset": -5
+   }
   }
  },
  {
@@ -531,7 +556,12 @@
    ],
    "composition": "1-3 Big Gunz models, each armed with 1 Kannon, 1 Lobba, or 1 Zzap gun.",
    "keywords": "Vehicle &bull; Artillery &bull; Grots &bull; Orks &bull; Big Gunz",
-   "designerNote": "Big Gunz was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Mek Gunz. This card takes the current Mek Gunz chassis and its exact 3 of 4 current gun-crew loadouts (Kustom Mega-kannon, Bubblechukka, Traktor Kannon, here labelled Kannon/Lobba/Zzap gun to match the original unit's own weapon names), keeping the historical Splat! ability verbatim. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Big Gunz was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Mek Gunz. This card takes the current Mek Gunz chassis and its exact 3 of 4 current gun-crew loadouts (Kustom Mega-kannon, Bubblechukka, Traktor Kannon, here labelled Kannon/Lobba/Zzap gun to match the original unit's own weapon names), keeping the historical Splat! ability verbatim. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Mek Gunz",
+    "basePts": 55,
+    "offset": 0
+   }
   }
  },
  {
@@ -598,7 +628,12 @@
    ],
    "composition": "3 Nobz on Warbikes models. Every model is equipped with: 1 Twin dakkagun; 1 Power klaw.",
    "keywords": "Mounted &bull; Speed Freeks &bull; Grenades &bull; Orks &bull; Nobz on Warbikes",
-   "designerNote": "Nobz on Warbikes was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbikers — and by coincidence, current Warbikers' own upgraded \"Biker Nob\" sub-entry already has the exact same per-model stat line (M12\"/T6/Sv4+/W4/LD7+/OC2/InSv6+) this unit's models had historically. This card is a full unit of that Nob-tier profile, all armed with power klaws, keeping both of the unit's own historical abilities (Drive-by Krumpin', Speed Freeks Mob) plus current Warbikers' High-speed Carnage. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Nobz on Warbikes was removed from BSData entirely in the Sept 2026 Ork codex refresh (Orks.json rev 2→3). GW's own Legendary Proxies list assigns it to count as Warbikers — and by coincidence, current Warbikers' own upgraded \"Biker Nob\" sub-entry already has the exact same per-model stat line (M12\"/T6/Sv4+/W4/LD7+/OC2/InSv6+) this unit's models had historically. This card is a full unit of that Nob-tier profile, all armed with power klaws, keeping both of the unit's own historical abilities (Drive-by Krumpin', Speed Freeks Mob) plus current Warbikers' High-speed Carnage. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warbikers",
+    "basePts": 75,
+    "offset": 50
+   }
   }
  },
  {
@@ -664,7 +699,12 @@
    ],
    "composition": "1 Attack Fighta model. Equipped with: 1 Twin big shoota; 1 Armoured hull.",
    "keywords": "Vehicle &bull; Fly &bull; Aircraft &bull; Speed Freeks &bull; Orks &bull; Attack Fighta",
-   "designerNote": "Attack Fighta was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Dakkajet. This card uses Dakkajet's current chassis and Dual Supa-shoota weapon (renamed Twin big shoota to match the original), but keeps Attack Fighta's own defining Interceptor (anti-air) ability instead of Dakkajet's Strafing Run (anti-ground) — the two aircraft have opposite battlefield roles, and Interceptor is Attack Fighta's whole identity — plus its historical Small Bomms ability. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Attack Fighta was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Dakkajet. This card uses Dakkajet's current chassis and Dual Supa-shoota weapon (renamed Twin big shoota to match the original), but keeps Attack Fighta's own defining Interceptor (anti-air) ability instead of Dakkajet's Strafing Run (anti-ground) — the two aircraft have opposite battlefield roles, and Interceptor is Attack Fighta's whole identity — plus its historical Small Bomms ability. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Dakkajet",
+    "basePts": 125,
+    "offset": 0
+   }
   }
  },
  {
@@ -730,7 +770,12 @@
    ],
    "composition": "1 Fighta-Bommer model. Equipped with: 1 Twin big shoota; 1 Armoured hull.",
    "keywords": "Vehicle &bull; Fly &bull; Aircraft &bull; Speed Freeks &bull; Orks &bull; Fighta-Bommer",
-   "designerNote": "Fighta-Bommer was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Blitza-bommer. This card uses Blitza-bommer's current chassis, Dual Supa-shoota weapon (renamed Twin big shoota), and its Boom Bomb ability, plus Fighta-Bommer's own historical Strafing Run ability — worded identically to current Dakkajet's Strafing Run, confirming it survived unchanged elsewhere in the codex even though this unit's own copy was cut. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Fighta-Bommer was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Blitza-bommer. This card uses Blitza-bommer's current chassis, Dual Supa-shoota weapon (renamed Twin big shoota), and its Boom Bomb ability, plus Fighta-Bommer's own historical Strafing Run ability — worded identically to current Dakkajet's Strafing Run, confirming it survived unchanged elsewhere in the codex even though this unit's own copy was cut. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Blitza-bommer",
+    "basePts": 115,
+    "offset": 0
+   }
   }
  },
  {
@@ -809,7 +854,12 @@
    ],
    "composition": "1 Meka-Dread model. Equipped with: 1 Kustom Mega-zappa; 1 Dual Big Shoota; 1 Meka Klaw.",
    "keywords": "Vehicle &bull; Titanic &bull; Towering &bull; Transport &bull; Walker &bull; Orks &bull; Meka-Dread",
-   "designerNote": "Meka-Dread (a Forge World 10e Legends datasheet) was removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Morkanaut. This card is that Morkanaut chassis (identical stats and weapons — Klaw of Mork renamed Meka Klaw to avoid implying a Deffkilla-cult affiliation the original unit never had), keeping its signature Mekaniak repair/buff ability intact alongside Morkanaut's own Big an' Shooty. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Meka-Dread (a Forge World 10e Legends datasheet) was removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Morkanaut. This card is that Morkanaut chassis (identical stats and weapons — Klaw of Mork renamed Meka Klaw to avoid implying a Deffkilla-cult affiliation the original unit never had), keeping its signature Mekaniak repair/buff ability intact alongside Morkanaut's own Big an' Shooty. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Morkanaut",
+    "basePts": 345,
+    "offset": 0
+   }
   }
  },
  {
@@ -865,7 +915,12 @@
    ],
    "composition": "1 Big Mek with Kustom Force Field model. Equipped with: 1 Power Klaw.",
    "keywords": "Character &bull; Infantry &bull; Grenades &bull; Leader &bull; Orks &bull; Big Mek with Kustom Force Field",
-   "designerNote": "Big Mek with Kustom Force Field was a 10e Legends datasheet on a light-infantry chassis, removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Big Mek in Mega Armour equipped with Kustom Force Field — a heavier chassis than the original. This card uses that Mega Armour statline and Power Klaw, current BSData's Kustom Force Field text, and restores two things BSData didn't carry into that combination: the historical More Dakka ability, and the original unit's full 5-unit Leader list (current Big Mek in Mega Armour alone only attaches to Meganobz/Mek Gunz) — that wider support-attachment role was this unit's whole niche. Points are a designer estimate (no exact current combined cost found in BSData for this specific loadout). Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Big Mek with Kustom Force Field was a 10e Legends datasheet on a light-infantry chassis, removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Big Mek in Mega Armour equipped with Kustom Force Field — a heavier chassis than the original. This card uses that Mega Armour statline and Power Klaw, current BSData's Kustom Force Field text, and restores two things BSData didn't carry into that combination: the historical More Dakka ability, and the original unit's full 5-unit Leader list (current Big Mek in Mega Armour alone only attaches to Meganobz/Mek Gunz) — that wider support-attachment role was this unit's whole niche. Points are a designer estimate (no exact current combined cost found in BSData for this specific loadout). Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Big Mek in Mega Armour",
+    "basePts": 90,
+    "offset": 10
+   }
   }
  },
  {
@@ -930,7 +985,12 @@
    ],
    "composition": "1 Kannonwagon model. Equipped with: 1 Supa-kannon; 1 Wreckin' Ball. Transport capacity of 6 Orks Infantry models (each Mega Armour/Jump Pack model takes up the space of 2 models).",
    "keywords": "Vehicle &bull; Transport &bull; Orks &bull; Kannonwagon",
-   "designerNote": "Kannonwagon was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gunwagon. This card uses the Gunwagon chassis but keeps Kannonwagon's own signature Supa-kannon gun (current BSData weapon profile — Squiggoth's transport rules still reference this weapon, confirming it's still live data even though no current datasheet equips it by default) and its Big Booms concussive-wave ability verbatim, plus the historically narrower 6-model transport capacity (current Gunwagon holds 12) to preserve the unit's original bigger-gun-smaller-hold niche. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Kannonwagon was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gunwagon. This card uses the Gunwagon chassis but keeps Kannonwagon's own signature Supa-kannon gun (current BSData weapon profile — Squiggoth's transport rules still reference this weapon, confirming it's still live data even though no current datasheet equips it by default) and its Big Booms concussive-wave ability verbatim, plus the historically narrower 6-model transport capacity (current Gunwagon holds 12) to preserve the unit's original bigger-gun-smaller-hold niche. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Gunwagon",
+    "basePts": 150,
+    "offset": 0
+   }
   }
  },
  {
@@ -1024,7 +1084,12 @@
    ],
    "composition": "1 Mega Dread model. Equipped with: 1 Deffstorm Mega-shoota; 2 Dread rippa klaws.",
    "keywords": "Vehicle &bull; Titanic &bull; Towering &bull; Walker &bull; Orks &bull; Mega Dread",
-   "designerNote": "Mega Dread was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gorkanaut. This card uses Gorkanaut's current chassis and Deffstorm Mega-shoota, with Klaw of Gork renamed Dread rippa klaw (x2, paired) to match Mega Dread's own historical Dead Rippy ability, which specifically names \"dread rippa klaws\" as one of this unit's signature paired-weapon configurations — that ability is kept verbatim alongside its Mega Carnage charge-mortal-wounds ability. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Mega Dread was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gorkanaut. This card uses Gorkanaut's current chassis and Deffstorm Mega-shoota, with Klaw of Gork renamed Dread rippa klaw (x2, paired) to match Mega Dread's own historical Dead Rippy ability, which specifically names \"dread rippa klaws\" as one of this unit's signature paired-weapon configurations — that ability is kept verbatim alongside its Mega Carnage charge-mortal-wounds ability. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Gorkanaut",
+    "basePts": 325,
+    "offset": 0
+   }
   }
  },
  {
@@ -1076,7 +1141,12 @@
    ],
    "composition": "1 Squiggoth model. Equipped with: 1 Huge tusks. Transport capacity of 20 Orks Infantry models (15 if equipped with a supa-kannon; each Mega Armour/Jump Pack model takes up the space of 2 models).",
    "keywords": "Monster &bull; Titanic &bull; Towering &bull; Transport &bull; Orks &bull; Squiggoth",
-   "designerNote": "Squiggoth was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gargantuan Squiggoth — a significantly bigger, Titanic-scale current unit (500pts vs. the original's 150pts), not a like-for-like size match. That's GW's own call, not a homebrew inflation: this card uses the Gargantuan Squiggoth's current full stat line and transport rules as-is, adding back the original Squiggoth's Trample charge-mortal-wounds ability since current abilities (Gargantuan, Walking Bastion) don't overlap with it. Flagged here because the price jump is the largest of any unit in this Legendary Proxy batch. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Squiggoth was a 10e Legends datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Gargantuan Squiggoth — a significantly bigger, Titanic-scale current unit (500pts vs. the original's 150pts), not a like-for-like size match. That's GW's own call, not a homebrew inflation: this card uses the Gargantuan Squiggoth's current full stat line and transport rules as-is, adding back the original Squiggoth's Trample charge-mortal-wounds ability since current abilities (Gargantuan, Walking Bastion) don't overlap with it. Flagged here because the price jump is the largest of any unit in this Legendary Proxy batch. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Gargantuan Squiggoth",
+    "basePts": 500,
+    "offset": 0
+   }
   }
  },
  {
@@ -1174,7 +1244,12 @@
    ],
    "composition": "1 Ufthak Blackhawk model. Equipped with: 1 Shokk rifle; 1 Princess' jaws; 1 Snazzhammer.",
    "keywords": "Infantry &bull; Epic Hero &bull; Character &bull; Grenades &bull; Leader &bull; Orks &bull; Ufthak Blackhawk",
-   "designerNote": "Ufthak Blackhawk was a 10e Legends named-character datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Warboss. This card keeps Ufthak's own bespoke weapons (Shokk rifle, Princess' jaws, Snazzhammer) untouched — they're his signature gear, not generic Warboss equipment — while taking current Warboss's improved statline and full current ability suite (Da Boss, Might is Right, Boss' Ammo Runt, Intimidating Motivation), narrowing Leader back to his own historical Boyz/Nobz restriction, and restoring his two unique abilities (Tellyporta Tech, Gargantsmasha) that don't exist on stock Warboss. Revert to a real datasheet if GW reinstates one."
+   "designerNote": "Ufthak Blackhawk was a 10e Legends named-character datasheet removed from BSData entirely in the Sept 2026 Ork codex refresh. GW's own Legendary Proxies list assigns it to count as Warboss. This card keeps Ufthak's own bespoke weapons (Shokk rifle, Princess' jaws, Snazzhammer) untouched — they're his signature gear, not generic Warboss equipment — while taking current Warboss's improved statline and full current ability suite (Da Boss, Might is Right, Boss' Ammo Runt, Intimidating Motivation), narrowing Leader back to his own historical Boyz/Nobz restriction, and restoring his two unique abilities (Tellyporta Tech, Gargantsmasha) that don't exist on stock Warboss. Revert to a real datasheet if GW reinstates one.",
+   "anchor": {
+    "name": "Warboss",
+    "basePts": 100,
+    "offset": 0
+   }
   }
  },
  {
@@ -1267,7 +1342,12 @@
    ],
    "composition": "1-2 Skorchas models. Every model is equipped with: 1 Skorcha; 1 Extra Dakka; 1 Spiked Ram.",
    "keywords": "Vehicle &bull; Mounted &bull; Speed Freeks &bull; Orks &bull; Skorchas",
-   "designerNote": "Skorchas was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given (unlike the 15 units GW did provide a counts-as for). Anchored here to the current Warbuggies chassis using its Mek Speshul loadout (renamed Skorcha to match the flamer-buggy theme), keeping the unit's own signature Pyromaniaks ability verbatim."
+   "designerNote": "Skorchas was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given (unlike the 15 units GW did provide a counts-as for). Anchored here to the current Warbuggies chassis using its Mek Speshul loadout (renamed Skorcha to match the flamer-buggy theme), keeping the unit's own signature Pyromaniaks ability verbatim.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 0
+   }
   }
  },
  {
@@ -1276,7 +1356,7 @@
   "data": {
    "title": "Deffkoptas with Big Shootas",
    "proxyOf": "Deffkoptas",
-   "points": 80,
+   "points": 85,
    "role": "Vehicle — Aircraft",
    "stats": {
     "M": "12\"",
@@ -1368,7 +1448,12 @@
    ],
    "composition": "3 Deffkopta models. Every model is equipped with: 2 Big Shootas; 1 Slugga; 1 Spinnin' Blades; 1 Choppa.",
    "keywords": "Vehicle &bull; Fly &bull; Grenades &bull; Orks &bull; Deffkoptas with Big Shootas",
-   "designerNote": "Deffkoptas with Big Shootas was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Deffkoptas chassis and its exact current 4-weapon loadout structure (main gun + Slugga + Spinnin' Blades + Choppa, confirmed all four are worn simultaneously on a real Deffkopta), swapping the main-gun slot to twin Big Shootas to match this variant's namesake, keeping Deff from Above verbatim."
+   "designerNote": "Deffkoptas with Big Shootas was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Deffkoptas chassis and its exact current 4-weapon loadout structure (main gun + Slugga + Spinnin' Blades + Choppa, confirmed all four are worn simultaneously on a real Deffkopta), swapping the main-gun slot to twin Big Shootas to match this variant's namesake, keeping Deff from Above verbatim.",
+   "anchor": {
+    "name": "Deffkoptas",
+    "basePts": 85,
+    "offset": 0
+   }
   }
  },
  {
@@ -1532,7 +1617,12 @@
    ],
    "composition": "1 Grot Bomm Launcha model. Equipped with: 1 Grot-guided Bomms; 1 Extra Dakka; 1 Spiked Wheel.",
    "keywords": "Vehicle &bull; Mounted &bull; Speed Freeks &bull; Grots &bull; Orks &bull; Grot Bomm Launcha",
-   "designerNote": "Grot Bomm Launcha was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbuggies chassis using its Rivet Kannon loadout (renamed Grot-guided Bomms), with the melee weapon keeping its original name (Spiked Wheel is already a near-exact match for Warbuggies' Spiked Ram), and its signature Furious Barrage ability kept verbatim."
+   "designerNote": "Grot Bomm Launcha was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbuggies chassis using its Rivet Kannon loadout (renamed Grot-guided Bomms), with the melee weapon keeping its original name (Spiked Wheel is already a near-exact match for Warbuggies' Spiked Ram), and its signature Furious Barrage ability kept verbatim.",
+   "anchor": {
+    "name": "Warbuggies",
+    "basePts": 70,
+    "offset": 0
+   }
   }
  },
  {
@@ -1609,7 +1699,12 @@
    ],
    "composition": "1 Kill Krusha model. Equipped with: 1 Krusha Kannon; 1 Tracks and Wheels. Transport capacity of 12 Orks Infantry models (each Mega Armour/Jump Pack model takes up the space of 2 models).",
    "keywords": "Vehicle &bull; Titanic &bull; Transport &bull; Orks &bull; Kill Krusha",
-   "designerNote": "Kill Krusha was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. No current Ork chassis matches its tracked-super-heavy-transport role exactly; anchored here to Gunwagon's stats/transport capacity and Mobile Arsenal ability (the closest current Transport vehicle), while keeping Kill Krusha's own signature Krusha Kannon (dual tankhamma-shell/blast-burna profile) and Da Biggest Booms ability, and its historical Titanic keyword to preserve its outsized battlefield presence."
+   "designerNote": "Kill Krusha was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. No current Ork chassis matches its tracked-super-heavy-transport role exactly; anchored here to Gunwagon's stats/transport capacity and Mobile Arsenal ability (the closest current Transport vehicle), while keeping Kill Krusha's own signature Krusha Kannon (dual tankhamma-shell/blast-burna profile) and Da Biggest Booms ability, and its historical Titanic keyword to preserve its outsized battlefield presence.",
+   "anchor": {
+    "name": "Gunwagon",
+    "basePts": 150,
+    "offset": 0
+   }
   }
  },
  {
@@ -1729,7 +1824,12 @@
    ],
    "composition": "1 Painboy on Warbike model. Equipped with: 1 Twin Dakkagun; 1 'Urty Syringe.",
    "keywords": "Character &bull; Mounted &bull; Speed Freeks &bull; Leader &bull; Orks &bull; Painboy on Warbike",
-   "designerNote": "Painboy on Warbike was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbikers datasheet's Biker Nob-tier statline and its current Dual Dakkagun weapon (renamed Twin Dakkagun to match this unit's own historical name), keeping his own signature 'Urty Syringe and both named abilities verbatim. Leader list narrowed from the historical Nobz on Warbikes/Skorchas/Warbikers/Warbuggies to the units that still exist as standalone datasheets (Nobz on Warbikes no longer exists separately, folded into Warbikers)."
+   "designerNote": "Painboy on Warbike was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbikers datasheet's Biker Nob-tier statline and its current Dual Dakkagun weapon (renamed Twin Dakkagun to match this unit's own historical name), keeping his own signature 'Urty Syringe and both named abilities verbatim. Leader list narrowed from the historical Nobz on Warbikes/Skorchas/Warbikers/Warbuggies to the units that still exist as standalone datasheets (Nobz on Warbikes no longer exists separately, folded into Warbikers).",
+   "anchor": {
+    "name": "Warbikers",
+    "basePts": 75,
+    "offset": 10
+   }
   }
  },
  {
@@ -1795,7 +1895,12 @@
    ],
    "composition": "1 Big Mek on Warbike model. Equipped with: 1 Twin Dakkagun; 1 Choppa.",
    "keywords": "Character &bull; Mounted &bull; Speed Freeks &bull; Grenades &bull; Leader &bull; Orks &bull; Big Mek on Warbike",
-   "designerNote": "Big Mek on Warbike was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbikers datasheet's Biker Nob-tier statline and current weapon profiles (Dual Dakkagun renamed Twin Dakkagun to match; the historical Close Combat Weapon reskinned as the current Choppa), keeping both signature abilities (More Dakka, Mekaniak) verbatim. Leader list narrowed for the same reason as Painboy on Warbike."
+   "designerNote": "Big Mek on Warbike was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Warbikers datasheet's Biker Nob-tier statline and current weapon profiles (Dual Dakkagun renamed Twin Dakkagun to match; the historical Close Combat Weapon reskinned as the current Choppa), keeping both signature abilities (More Dakka, Mekaniak) verbatim. Leader list narrowed for the same reason as Painboy on Warbike.",
+   "anchor": {
+    "name": "Warbikers",
+    "basePts": 75,
+    "offset": 30
+   }
   }
  },
  {
@@ -1847,7 +1952,12 @@
    ],
    "composition": "1 Deff Rolla Battle Fortress model. Equipped with: 1 Deff Rolla. Transport capacity of 12 Orks Infantry models (each Mega Armour/Jump Pack model takes up the space of 2 models).",
    "keywords": "Vehicle &bull; Titanic &bull; Transport &bull; Orks &bull; Deff Rolla Battle Fortress",
-   "designerNote": "Deff Rolla Battle Fortress was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Gunwagon chassis and its Mobile Arsenal ability (the closest current Transport vehicle, same as Kill Krusha in this batch), dropping the ranged gun in favor of keeping the unit's own signature Deff Rolla melee weapon and Rolling Fortress cover-granting ability verbatim, plus its historical Titanic keyword to preserve its outsized battlefield presence."
+   "designerNote": "Deff Rolla Battle Fortress was a 10e Legends datasheet dropped entirely from BSData in the Sept 2026 Ork codex refresh, with no official GW Legendary Proxy given. Anchored to the current Gunwagon chassis and its Mobile Arsenal ability (the closest current Transport vehicle, same as Kill Krusha in this batch), dropping the ranged gun in favor of keeping the unit's own signature Deff Rolla melee weapon and Rolling Fortress cover-granting ability verbatim, plus its historical Titanic keyword to preserve its outsized battlefield presence.",
+   "anchor": {
+    "name": "Gunwagon",
+    "basePts": 150,
+    "offset": 0
+   }
   }
  }
 ]

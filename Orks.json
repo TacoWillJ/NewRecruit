@@ -8,7 +8,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 7001,
+    "revision": 7004,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -1380,6 +1380,22 @@
         "hidden": false,
         "import": true,
         "targetId": "nflb-740cb9f236f0",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Big Trakk [NFLB-L]",
+        "id": "nflb-dda39421746e",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-e05c39d09b96",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Kill Tank [NFLB-L]",
+        "id": "nflb-4710b8e91dea",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-c297043bfd5e",
         "type": "selectionEntry"
       }
     ],
@@ -49605,6 +49621,12 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
           }
         ],
         "profiles": [
@@ -50909,6 +50931,12 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
           }
         ],
         "profiles": [
@@ -73738,7 +73766,7 @@
           {
             "name": "pts",
             "typeId": "51b2-306e-1021-d207",
-            "value": 60
+            "value": 55
           }
         ],
         "categoryLinks": [
@@ -76887,7 +76915,7 @@
           {
             "name": "pts",
             "typeId": "51b2-306e-1021-d207",
-            "value": 80
+            "value": 85
           }
         ],
         "categoryLinks": [
@@ -78763,6 +78791,2151 @@
                 "shared": true,
                 "type": "max",
                 "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Big Trakk [NFLB-L]",
+        "id": "nflb-e05c39d09b96",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {
+            "name": "Vehicle",
+            "id": "nflb-059ffca7a188",
+            "primary": true,
+            "targetId": "dbd4-63-af05-998"
+          },
+          {
+            "name": "Transport",
+            "id": "nflb-555412a7f609",
+            "primary": false,
+            "targetId": "75e8-57c4-40e3-1817"
+          },
+          {
+            "name": "Faction: Orks",
+            "id": "nflb-143d5ae510fd",
+            "primary": false,
+            "targetId": "56cc-5f43-2403-8da0"
+          },
+          {
+            "name": "Big Trakk",
+            "id": "nflb-8a34a82fd5fd",
+            "primary": false,
+            "targetId": "1a31-2d63-1f2b-25f9"
+          },
+          {
+            "name": "Frame",
+            "id": "nflb-e2fa35d6c926",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b927-8eeb-7cc3-8dec"
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-9b47dbc498b9",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "nflb-7cc54e273802",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "nflb-71481c7f87e2",
+            "field": "75bb-ded1-c86d-bdf0",
+            "includeChildSelections": false,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          },
+          {
+            "id": "nflb-c0a79b0fd45a",
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 90
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Crusade",
+            "id": "nflb-d5a4606338c0",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "87e9-baa9-52e2-5cce",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "nflb-a53b225c741b",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "D3"
+              }
+            ]
+          },
+          {
+            "name": "Damaged",
+            "id": "nflb-308c69219a02",
+            "hidden": false,
+            "targetId": "c68c-a968-354f-bb99",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "name": "Waaagh!",
+            "id": "nflb-faf151b426a9",
+            "hidden": false,
+            "targetId": "37c-6ef9-277-9091",
+            "type": "rule"
+          },
+          {
+            "name": "Firing Deck",
+            "id": "nflb-998295b9c8df",
+            "hidden": false,
+            "targetId": "13b2-6518-dab3-7ea1",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": 12
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Crusade modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "nflb-9b47dbc498b9",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-7cc54e273802",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-71481c7f87e2",
+                "type": "set",
+                "value": 6,
+                "conditions": [
+                  {
+                    "childId": "1511-18fe-f51e-7b9d",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-ready)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 5
+                      },
+                      {
+                        "childId": "cac3-71d1-ea4b-795d",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Blooded)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 5
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 15
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-hardened)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 15
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 30
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Heroic)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 30
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 50
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Legendary)",
+                "conditions": [
+                  {
+                    "childId": "2dbf-4d49-5d74-85c9",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 50
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Boarding Actions modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1d6e-2579-8e7f-1ed4",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "nflb-c0a79b0fd45a",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "d62d-db22-4893-4bc0",
+                "childName": "1. Incursion (1000 Point limit)",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Big Trakk",
+            "id": "nflb-db01537319c8",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "$text": "12\"",
+                "typeId": "e703-ecb6-5ce7-aec1"
+              },
+              {
+                "name": "T",
+                "$text": "9",
+                "typeId": "d29d-cf75-fc2d-34a4"
+              },
+              {
+                "name": "Sv",
+                "$text": "4+",
+                "typeId": "450-a17e-9d5e-29da"
+              },
+              {
+                "name": "W",
+                "$text": "12",
+                "typeId": "750a-a2ec-90d3-21fe"
+              },
+              {
+                "name": "LD",
+                "$text": "7+",
+                "typeId": "58d2-b879-49c7-43bc"
+              },
+              {
+                "name": "OC",
+                "$text": "3",
+                "typeId": "bef7-942a-1a23-59f8"
+              },
+              {
+                "name": "InSv",
+                "$text": "6+",
+                "typeId": "55a7-5b54-c60d-11dc"
+              }
+            ]
+          },
+          {
+            "name": "Spiked Ram",
+            "id": "nflb-4e70ce6ffeb1",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit ends a **charge move**, you can select one enemy unit **engaged**with this unit. If you do, roll one D6:\n- On a 2-5, that enemy unit suffers D3 **mortal wounds**.\n- On a 6, that enemy unit suffers 3 **mortal wounds**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Big Trakk",
+            "id": "nflb-2dcbcd94a377",
+            "hidden": false,
+            "typeId": "74f8-5443-9d6d-1f1e",
+            "typeName": "Transport",
+            "characteristics": [
+              {
+                "name": "Capacity",
+                "$text": "This model has a transport capacity of 12 Orks Infantry models. It cannot transport Ghazghkull Thraka models. Each Mega Armour, Jump Pack model takes up the space of 2 models.",
+                "typeId": "30f2-be70-861d-1b84"
+              }
+            ]
+          },
+          {
+            "name": "NFLB-L Rebalance",
+            "id": "nflb-dc69c35ffac5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "GW's Big Trakk [Legends] datasheet with its Kannon updated to the current Codex: Orks profile. Replaces the official Legends entry; points follow GW's Legends points."
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "nflb-9b48e8b4c833",
+            "hidden": false,
+            "sortIndex": 2,
+            "entryLinks": [
+              {
+                "name": "Big Shoota",
+                "id": "nflb-c49f4f40d6f1",
+                "hidden": false,
+                "import": true,
+                "targetId": "bab8-ecdc-4ff6-71d4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-2c15d4998747",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 2
+                  },
+                  {
+                    "id": "nflb-ea37eb9a2aba",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 2
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "nflb-7518dc897b36",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              },
+              {
+                "name": "Armoured hull",
+                "id": "nflb-9a1e75434161",
+                "hidden": false,
+                "import": true,
+                "targetId": "c20a-6327-4743-4114",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-94b65a1173d8",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-a84efc8378db",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "nflb-324763c7dc9b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Wargear Options",
+                "id": "nflb-96e7a8f95464",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "nflb-a5bd53d355cc",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Kannon",
+                    "id": "nflb-fe8ef1a2dd88",
+                    "comment": "A3",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "➤ Kannon - Shell",
+                        "id": "nflb-4022fe000cfc",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "36\"",
+                            "typeId": "9896-9419-16a1-92fc"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "2",
+                            "typeId": "3bb-c35f-f54-fb08"
+                          },
+                          {
+                            "name": "BS",
+                            "$text": "5+",
+                            "typeId": "94d-8a98-cf90-183e"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "10",
+                            "typeId": "2229-f494-25db-c5d3"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "-2",
+                            "typeId": "9ead-8a10-520-de15"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "D6+1",
+                            "typeId": "a354-c1c8-a745-f9e3"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "Rapid Fire 2",
+                            "typeId": "7f1b-8591-2fcf-d01c"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "➤ Kannon - Frag",
+                        "id": "nflb-a0e209d1bcd4",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "36\"",
+                            "typeId": "9896-9419-16a1-92fc"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "6",
+                            "typeId": "3bb-c35f-f54-fb08"
+                          },
+                          {
+                            "name": "BS",
+                            "$text": "5+",
+                            "typeId": "94d-8a98-cf90-183e"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "5",
+                            "typeId": "2229-f494-25db-c5d3"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "0",
+                            "typeId": "9ead-8a10-520-de15"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "1",
+                            "typeId": "a354-c1c8-a745-f9e3"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "Blast 1, Rapid Fire 6",
+                            "typeId": "7f1b-8591-2fcf-d01c"
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [],
+                    "modifiers": []
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Supa-kannon",
+                    "id": "nflb-2a6a48867b14",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-68240cb17052",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "➤ Supa-kannon - Shell",
+                        "id": "nflb-5994afe34460",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "36\"",
+                            "typeId": "9896-9419-16a1-92fc"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "1",
+                            "typeId": "3bb-c35f-f54-fb08"
+                          },
+                          {
+                            "name": "BS",
+                            "$text": "5+",
+                            "typeId": "94d-8a98-cf90-183e"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "12",
+                            "typeId": "2229-f494-25db-c5d3"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "-3",
+                            "typeId": "9ead-8a10-520-de15"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "D6+3",
+                            "typeId": "a354-c1c8-a745-f9e3"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "",
+                            "typeId": "7f1b-8591-2fcf-d01c"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "➤ Supa-kannon - Frag",
+                        "id": "nflb-0938974e59c5",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "$text": "36\"",
+                            "typeId": "9896-9419-16a1-92fc"
+                          },
+                          {
+                            "name": "A",
+                            "$text": "D6+3",
+                            "typeId": "3bb-c35f-f54-fb08"
+                          },
+                          {
+                            "name": "BS",
+                            "$text": "5+",
+                            "typeId": "94d-8a98-cf90-183e"
+                          },
+                          {
+                            "name": "S",
+                            "$text": "5",
+                            "typeId": "2229-f494-25db-c5d3"
+                          },
+                          {
+                            "name": "AP",
+                            "$text": "0",
+                            "typeId": "9ead-8a10-520-de15"
+                          },
+                          {
+                            "name": "D",
+                            "$text": "1",
+                            "typeId": "a354-c1c8-a745-f9e3"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "BLAST 2",
+                            "typeId": "7f1b-8591-2fcf-d01c"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kill Tank [NFLB-L]",
+        "id": "nflb-c297043bfd5e",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {
+            "name": "Vehicle",
+            "id": "nflb-203f41aa6d45",
+            "primary": true,
+            "targetId": "dbd4-63-af05-998"
+          },
+          {
+            "name": "Transport",
+            "id": "nflb-e04d3eafb940",
+            "primary": false,
+            "targetId": "75e8-57c4-40e3-1817"
+          },
+          {
+            "name": "Kill Tank",
+            "id": "nflb-03d9afd11b21",
+            "primary": false,
+            "targetId": "b80b-edb4-1b4c-82ae"
+          },
+          {
+            "name": "Faction: Orks",
+            "id": "nflb-62660f89a6c8",
+            "primary": false,
+            "targetId": "56cc-5f43-2403-8da0"
+          },
+          {
+            "name": "Wagon",
+            "id": "nflb-03703671cf40",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fdf7-a8ea-d7d8-8cb4"
+          },
+          {
+            "name": "Frame",
+            "id": "nflb-db32d3691d7a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b927-8eeb-7cc3-8dec"
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-83a29c876dbd",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "nflb-83448d67641d",
+            "field": "716d-91b7-d55a-1022",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "nflb-6decd7b12a9c",
+            "field": "75bb-ded1-c86d-bdf0",
+            "includeChildSelections": false,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          },
+          {
+            "id": "nflb-34c1ef21ad36",
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 300
+          },
+          {
+            "name": "Crusade Points",
+            "typeId": "b03b-c239-15a5-da55",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Battle Honours",
+            "typeId": "75bb-ded1-c86d-bdf0",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Experience",
+            "typeId": "a623-fe74-1d33-cddf",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Weapon Modifications",
+            "typeId": "716d-91b7-d55a-1022",
+            "value": 0
+          },
+          {
+            "name": "Blackstone Fragments",
+            "typeId": "ac6b-ced3-9b5e-9a6e",
+            "value": 0
+          },
+          {
+            "name": "Detachment Points",
+            "typeId": "82ae-1066-5107-6ae0",
+            "value": 0
+          },
+          {
+            "name": "Enhancements",
+            "typeId": "f759-1bc4-cb3a-f0d2",
+            "value": 0
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Crusade",
+            "id": "nflb-c337f64490ce",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "87e9-baa9-52e2-5cce",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Enhancements - Upgrades",
+            "id": "nflb-c092277eb5d9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "ebea-74c4-f3db-183d",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Damaged",
+            "id": "nflb-589015be00bc",
+            "hidden": false,
+            "targetId": "c68c-a968-354f-bb99",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "6"
+              }
+            ]
+          },
+          {
+            "name": "Waaagh!",
+            "id": "nflb-c818fb34fc05",
+            "hidden": false,
+            "targetId": "37c-6ef9-277-9091",
+            "type": "rule"
+          },
+          {
+            "name": "Deadly Demise",
+            "id": "nflb-52be6b2e1304",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "D6"
+              }
+            ]
+          },
+          {
+            "name": "Firing Deck",
+            "id": "nflb-0920827e5028",
+            "hidden": false,
+            "targetId": "13b2-6518-dab3-7ea1",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "12"
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Crusade modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "nflb-83a29c876dbd",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-83448d67641d",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "nflb-6decd7b12a9c",
+                "type": "set",
+                "value": 6,
+                "conditions": [
+                  {
+                    "childId": "1511-18fe-f51e-7b9d",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-ready)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 5
+                      },
+                      {
+                        "childId": "cac3-71d1-ea4b-795d",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Blooded)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 5
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 15
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-hardened)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 15
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 30
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Heroic)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 30
+                      },
+                      {
+                        "childId": "2dbf-4d49-5d74-85c9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atMost",
+                        "value": 50
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Legendary)",
+                "conditions": [
+                  {
+                    "childId": "2dbf-4d49-5d74-85c9",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 50
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Boarding Actions modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1d6e-2579-8e7f-1ed4",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "nflb-34c1ef21ad36",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "d62d-db22-4893-4bc0",
+                "childName": "1. Incursion (1000 Point limit)",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Kill Tank",
+            "id": "nflb-6d462b9cdabb",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "$text": "12\"",
+                "typeId": "e703-ecb6-5ce7-aec1"
+              },
+              {
+                "name": "T",
+                "$text": "12",
+                "typeId": "d29d-cf75-fc2d-34a4"
+              },
+              {
+                "name": "Sv",
+                "$text": "3+",
+                "typeId": "450-a17e-9d5e-29da"
+              },
+              {
+                "name": "W",
+                "$text": "24",
+                "typeId": "750a-a2ec-90d3-21fe"
+              },
+              {
+                "name": "LD",
+                "$text": "6+",
+                "typeId": "58d2-b879-49c7-43bc"
+              },
+              {
+                "name": "OC",
+                "$text": "10",
+                "typeId": "bef7-942a-1a23-59f8"
+              },
+              {
+                "name": "InSv",
+                "$text": "",
+                "typeId": "55a7-5b54-c60d-11dc"
+              }
+            ]
+          },
+          {
+            "name": "Da Biggest Boom",
+            "id": "nflb-c2d6dfab747a",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Shooting phase, when this unit has shot, you can select one enemy unit hit by this unit's Tank Kannon attacks. If you do, enemy units (excluding **MONSTER/VEHICLE** units) within 3\" of that enemy unit make a **battle-shock roll**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Kill Tank",
+            "id": "nflb-3ce95a749098",
+            "hidden": false,
+            "typeId": "74f8-5443-9d6d-1f1e",
+            "typeName": "Transport",
+            "characteristics": [
+              {
+                "name": "Capacity",
+                "$text": "This model has a transport capacity of 12 Orks Infantry models. Each Mega Armour, Jump Pack model takes up the space of 2 models. Each Ghazghkull Thraka model takes up the space of 4 models.",
+                "typeId": "30f2-be70-861d-1b84"
+              }
+            ]
+          },
+          {
+            "name": "Rolling Fortress",
+            "id": "nflb-c78b821efe04",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When an attack targets a friendly **ORKS** unit that is not **fully visible** to the attacking model because of this unit, the target has the **benefit of cover** against that attack.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "NFLB-L Rebalance",
+            "id": "nflb-20379e78541d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "GW's Kill Tank [Legends] datasheet with its Kannon updated to the current Codex: Orks profile. Replaces the official Legends entry; points follow GW's Legends points."
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "nflb-e52f631b79bd",
+            "hidden": false,
+            "sortIndex": 3,
+            "selectionEntryGroups": [
+              {
+                "name": "Big Shootas",
+                "id": "nflb-184cefdea2c7",
+                "defaultSelectionEntryId": "nflb-b4608e0ea570",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "nflb-15064fb5afe9",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-ef2de404fbf5",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "2 Big Shootas",
+                    "id": "nflb-b4608e0ea570",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Big Shoota",
+                        "id": "nflb-33dc3ccab35f",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "bab8-ecdc-4ff6-71d4",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {
+                            "id": "nflb-58b3b97ec8e4",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          },
+                          {
+                            "id": "nflb-fd9da5a20385",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-82a3b727591f",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Rokkit Launchas",
+                    "id": "nflb-6fc51c7e5e30",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Rokkit Launcha",
+                        "id": "nflb-481fde54cad4",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6318-d7d7-ea26-8302",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {
+                            "id": "nflb-60c3b5f43222",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          },
+                          {
+                            "id": "nflb-960c5beb0696",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-11423a97be68",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Skorchas",
+                    "id": "nflb-0bb476b65954",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Skorcha",
+                        "id": "nflb-047e8a3bb9a2",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "d9d3-f0ca-f950-69b2",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {
+                            "id": "nflb-15868ffa433d",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 2
+                          },
+                          {
+                            "id": "nflb-7742d5889b0e",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 2
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-3161bbc9aa15",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Additional Big Shootas",
+                "id": "nflb-df3e3fc98e43",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "name": "Big Shoota",
+                    "id": "nflb-0137d526eb27",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "bab8-ecdc-4ff6-71d4",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {
+                        "id": "nflb-29a4140136f6",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 2
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "nflb-95e1ff583560",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "nflb-29a4140136f6",
+                        "type": "set",
+                        "value": 4,
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "childId": "nflb-6fc51c7e5e30",
+                                "childName": "2 Rokkit Launchas",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "root-entry",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "nflb-0bb476b65954",
+                                "childName": "2 Skorchas",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "root-entry",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tank Kannon and Crushing Bulk",
+                "id": "nflb-9f9311285881",
+                "defaultSelectionEntryId": "nflb-afcff302d03c",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "id": "nflb-8f80a3b2579b",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-94d72ddaab8c",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Tank Kannon and Crushing Bulk",
+                    "id": "nflb-afcff302d03c",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "entryLinks": [
+                      {
+                        "name": "Crushin' Bulk",
+                        "id": "nflb-2f3c94cf7d1a",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ae0b-205a-2f7c-c502",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {
+                            "id": "nflb-79140d054704",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "nflb-6c687bb16d3b",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-ea32cf19dcb5",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Tank Kannon",
+                        "id": "nflb-acf77d65d640",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "categoryLinks": [
+                          {
+                            "name": "Attacks Dx Weapon",
+                            "id": "nflb-1dc101346ece",
+                            "hidden": false,
+                            "primary": false,
+                            "targetId": "e993-e086-6de1-12af"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "id": "nflb-c1448283926f",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "nflb-3394a73b74d9",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-6587a34635fe",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "➤ Tank Kannon - Tankhamma",
+                            "id": "nflb-3761267bcbf1",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "$text": "48\"",
+                                "typeId": "9896-9419-16a1-92fc"
+                              },
+                              {
+                                "name": "A",
+                                "$text": "2",
+                                "typeId": "3bb-c35f-f54-fb08"
+                              },
+                              {
+                                "name": "BS",
+                                "$text": "5+",
+                                "typeId": "94d-8a98-cf90-183e"
+                              },
+                              {
+                                "name": "S",
+                                "$text": "16",
+                                "typeId": "2229-f494-25db-c5d3"
+                              },
+                              {
+                                "name": "AP",
+                                "$text": "-3",
+                                "typeId": "9ead-8a10-520-de15"
+                              },
+                              {
+                                "name": "D",
+                                "$text": "D6+6",
+                                "typeId": "a354-c1c8-a745-f9e3"
+                              },
+                              {
+                                "name": "Keywords",
+                                "$text": "HEAVY",
+                                "typeId": "7f1b-8591-2fcf-d01c"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "➤ Tank Kannon - Blasta",
+                            "id": "nflb-672ed0255903",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "$text": "48\"",
+                                "typeId": "9896-9419-16a1-92fc"
+                              },
+                              {
+                                "name": "A",
+                                "$text": "10",
+                                "typeId": "3bb-c35f-f54-fb08"
+                              },
+                              {
+                                "name": "BS",
+                                "$text": "5+",
+                                "typeId": "94d-8a98-cf90-183e"
+                              },
+                              {
+                                "name": "S",
+                                "$text": "6",
+                                "typeId": "2229-f494-25db-c5d3"
+                              },
+                              {
+                                "name": "AP",
+                                "$text": "-1",
+                                "typeId": "9ead-8a10-520-de15"
+                              },
+                              {
+                                "name": "D",
+                                "$text": "1",
+                                "typeId": "a354-c1c8-a745-f9e3"
+                              },
+                              {
+                                "name": "Keywords",
+                                "$text": "BLAST 2",
+                                "typeId": "7f1b-8591-2fcf-d01c"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Deff Rolla and 3 Zzap Guns",
+                    "id": "nflb-69556ad3da84",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Deff Rolla",
+                        "id": "nflb-d2f305aff375",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "nflb-abd74b725269",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "nflb-cc1501245c87",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "nflb-ef87f8e95054",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Deff Rolla",
+                            "id": "nflb-3a095ea4246c",
+                            "hidden": false,
+                            "typeId": "8a40-4aaa-c780-9046",
+                            "typeName": "Melee Weapons",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "$text": "Melee",
+                                "typeId": "914c-b413-91e3-a132"
+                              },
+                              {
+                                "name": "A",
+                                "$text": "6",
+                                "typeId": "2337-daa1-6682-b110"
+                              },
+                              {
+                                "name": "WS",
+                                "$text": "3+",
+                                "typeId": "95d1-95f-45b4-11d6"
+                              },
+                              {
+                                "name": "S",
+                                "$text": "10",
+                                "typeId": "ab33-d393-96ce-ccba"
+                              },
+                              {
+                                "name": "AP",
+                                "$text": "-2",
+                                "typeId": "41a0-1301-112a-e2f2"
+                              },
+                              {
+                                "name": "D",
+                                "$text": "",
+                                "typeId": "3254-9fe6-d824-513e"
+                              },
+                              {
+                                "name": "Keywords",
+                                "$text": "",
+                                "typeId": "893f-9000-ccf7-648e"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Zzap Gun",
+                        "id": "nflb-2885c9e66b06",
+                        "defaultSelectionEntryId": "nflb-fcbf53159b2d",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "id": "nflb-95fb396d2d31",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 3
+                          },
+                          {
+                            "id": "nflb-c586c2272db2",
+                            "field": "selections",
+                            "includeChildSelections": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 3
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Zzap Gun",
+                            "id": "nflb-fcbf53159b2d",
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "d123-19a5-0863-875e",
+                            "type": "selectionEntry",
+                            "constraints": [
+                              {
+                                "id": "nflb-369b0550046e",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "min",
+                                "value": 2
+                              },
+                              {
+                                "id": "nflb-0a77850d971b",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 3
+                              }
+                            ],
+                            "entryLinks": [
+                              {
+                                "name": "Weapon Modifications",
+                                "id": "nflb-934e8ce44dc7",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "f9da-852a-d7f0-92e9",
+                                "type": "selectionEntryGroup"
+                              }
+                            ]
+                          }
+                        ],
+                        "selectionEntries": [
+                          {
+                            "name": "Lobba",
+                            "id": "nflb-494da2d86ff3",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [
+                              {
+                                "id": "nflb-d8896d636eb4",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ],
+                            "entryLinks": [
+                              {
+                                "name": "Weapon Modifications",
+                                "id": "nflb-0a486759508e",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "f9da-852a-d7f0-92e9",
+                                "type": "selectionEntryGroup"
+                              }
+                            ],
+                            "profiles": [
+                              {
+                                "name": "Lobba",
+                                "id": "nflb-06b76e75d9b9",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {
+                                    "name": "Range",
+                                    "$text": "48\"",
+                                    "typeId": "9896-9419-16a1-92fc"
+                                  },
+                                  {
+                                    "name": "A",
+                                    "$text": "3",
+                                    "typeId": "3bb-c35f-f54-fb08"
+                                  },
+                                  {
+                                    "name": "BS",
+                                    "$text": "5+",
+                                    "typeId": "94d-8a98-cf90-183e"
+                                  },
+                                  {
+                                    "name": "S",
+                                    "$text": "5",
+                                    "typeId": "2229-f494-25db-c5d3"
+                                  },
+                                  {
+                                    "name": "AP",
+                                    "$text": "0",
+                                    "typeId": "9ead-8a10-520-de15"
+                                  },
+                                  {
+                                    "name": "D",
+                                    "$text": "1",
+                                    "typeId": "a354-c1c8-a745-f9e3"
+                                  },
+                                  {
+                                    "name": "Keywords",
+                                    "$text": "BLAST 3, INDIRECT FIRE",
+                                    "typeId": "7f1b-8591-2fcf-d01c"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Kannon",
+                            "id": "nflb-81e8872d9061",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [
+                              {
+                                "id": "nflb-9b99959ac972",
+                                "field": "selections",
+                                "includeChildSelections": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "max",
+                                "value": 1
+                              }
+                            ],
+                            "entryLinks": [
+                              {
+                                "name": "Weapon Modifications",
+                                "id": "nflb-ede15844ff5d",
+                                "hidden": false,
+                                "import": true,
+                                "targetId": "f9da-852a-d7f0-92e9",
+                                "type": "selectionEntryGroup"
+                              }
+                            ],
+                            "profiles": [
+                              {
+                                "name": "➤ Kannon - Shell",
+                                "id": "nflb-7e77ceedf2eb",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {
+                                    "name": "Range",
+                                    "$text": "36\"",
+                                    "typeId": "9896-9419-16a1-92fc"
+                                  },
+                                  {
+                                    "name": "A",
+                                    "$text": "2",
+                                    "typeId": "3bb-c35f-f54-fb08"
+                                  },
+                                  {
+                                    "name": "BS",
+                                    "$text": "5+",
+                                    "typeId": "94d-8a98-cf90-183e"
+                                  },
+                                  {
+                                    "name": "S",
+                                    "$text": "10",
+                                    "typeId": "2229-f494-25db-c5d3"
+                                  },
+                                  {
+                                    "name": "AP",
+                                    "$text": "-2",
+                                    "typeId": "9ead-8a10-520-de15"
+                                  },
+                                  {
+                                    "name": "D",
+                                    "$text": "D6+1",
+                                    "typeId": "a354-c1c8-a745-f9e3"
+                                  },
+                                  {
+                                    "name": "Keywords",
+                                    "$text": "Rapid Fire 2",
+                                    "typeId": "7f1b-8591-2fcf-d01c"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "➤ Kannon - Frag",
+                                "id": "nflb-484cdcacf9d2",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {
+                                    "name": "Range",
+                                    "$text": "36\"",
+                                    "typeId": "9896-9419-16a1-92fc"
+                                  },
+                                  {
+                                    "name": "A",
+                                    "$text": "6",
+                                    "typeId": "3bb-c35f-f54-fb08"
+                                  },
+                                  {
+                                    "name": "BS",
+                                    "$text": "5+",
+                                    "typeId": "94d-8a98-cf90-183e"
+                                  },
+                                  {
+                                    "name": "S",
+                                    "$text": "5",
+                                    "typeId": "2229-f494-25db-c5d3"
+                                  },
+                                  {
+                                    "name": "AP",
+                                    "$text": "0",
+                                    "typeId": "9ead-8a10-520-de15"
+                                  },
+                                  {
+                                    "name": "D",
+                                    "$text": "1",
+                                    "typeId": "a354-c1c8-a745-f9e3"
+                                  },
+                                  {
+                                    "name": "Keywords",
+                                    "$text": "Blast 1, Rapid Fire 6",
+                                    "typeId": "7f1b-8591-2fcf-d01c"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

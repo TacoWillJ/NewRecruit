@@ -7,11 +7,11 @@ const cards = require('./data/orks-cards.json');
 
 // Units that are more than one model (everything else is a single-model unit)
 const MULTI = {
-  'Big Gunz': { perModelPts: 55, choose: { name: 'Big Gun', min: 1, max: 3 } },
+  'Big Gunz': { perModel: true, choose: { name: 'Big Gun', min: 1, max: 3 } }, // priced per model, like Mek Gunz
   'Nobz on Warbikes': { model: 'Nob on Warbike', min: 3, max: 3 },
   'Deffkoptas with Big Shootas': { model: 'Deffkopta', min: 3, max: 3 },
-  // priced like its Warbuggies proxy: 70 for one, 130 for two
-  'Skorchas': { model: 'Skorcha', min: 1, max: 2, ptsAt2: 130 },
+  // priced like its Warbuggies proxy, including Warbuggies' 2-model price
+  'Skorchas': { model: 'Skorcha', min: 1, max: 2, tierAt2: true },
 };
 const PRIMARY = ['Epic Hero', 'Character', 'Battleline', 'Monster', 'Vehicle', 'Mounted', 'Infantry'];
 const amp = s => String(s).replace(/&bull;/g, '•').replace(/&amp;/g, '&');
@@ -27,6 +27,8 @@ module.exports = {
     const leaders = [];
 
     for (const { batch, data: d } of cards) {
+      // points follow the anchor unit's current Munitorum Field Manual cost (+ the card's offset)
+      const pts = d.anchor ? b.trackedPts(d.title, d.anchor, d.points) : d.points;
       const title = d.title;
       const key = `ork:${title}`;
       const multi = MULTI[title];
@@ -78,21 +80,25 @@ module.exports = {
       let u;
       if (!multi) {
         u = { name: `${title} [NFLB]`, id: b.id(`unit:${title}`), hidden: false, import: true, type: 'model',
-          costs: [{ name: 'pts', typeId: b.PTS, value: d.points }], ...common,
+          costs: [{ name: 'pts', typeId: b.PTS, value: pts }], ...common,
           entryLinks: gear.map(w => link(key, w)) };
         if (kws.includes('Epic Hero')) u.constraints = cons(`${key}:roster`, null, 1, 'roster');
       } else if (multi.choose) {
         // each model picks one weapon (Big Gunz): one model entry per weapon, priced per model
-        const models = gear.map(w => model(key, `${multi.choose.name} w/ ${w.name}`, { max: multi.choose.max, pts: multi.perModelPts, gear: [link(key + w.name, w)] }));
+        const models = gear.map(w => model(key, `${multi.choose.name} w/ ${w.name}`, { max: multi.choose.max, pts, gear: [link(key + w.name, w)] }));
         u = { name: `${title} [NFLB]`, id: b.id(`unit:${title}`), hidden: false, import: true, type: 'unit',
           costs: [{ name: 'pts', typeId: b.PTS, value: 0 }], ...common,
           selectionEntryGroups: [group(key, `${multi.choose.min}-${multi.choose.max} ${title}`, models, { min: multi.choose.min, max: multi.choose.max, def: models[0] })] };
       } else {
         const m = model(key, multi.model, { min: multi.min, max: multi.max, gear: gear.map(w => link(key + ':m', w)) });
         u = { name: `${title} [NFLB]`, id: b.id(`unit:${title}`), hidden: false, import: true, type: 'unit',
-          costs: [{ name: 'pts', typeId: b.PTS, value: d.points }], ...common, selectionEntries: [m] };
-        if (multi.ptsAt2) {
-          u.modifiers = [{ field: b.PTS, type: 'set', value: multi.ptsAt2,
+          costs: [{ name: 'pts', typeId: b.PTS, value: pts }], ...common, selectionEntries: [m] };
+        if (multi.tierAt2) {
+          // the anchor's own "2 models" price (+ the same offset)
+          const anchor = b.lib.sharedSelectionEntries.find(e => e.name === d.anchor.name);
+          const tier = (anchor.modifiers || []).find(m => m.field === b.PTS && m.type === 'set');
+          if (!tier) throw new Error(`${title}: anchor ${d.anchor.name} has no 2-model price`);
+          u.modifiers = [{ field: b.PTS, type: 'set', value: tier.value + d.anchor.offset,
             conditions: [{ childId: 'model', field: 'selections', includeChildSelections: true, scope: 'self', shared: true, type: 'atLeast', value: 2 }] }];
         }
       }
@@ -107,6 +113,33 @@ module.exports = {
       u.associations = [leadAssociation(key, targets)];
     }
 
-    return { rootUnits: units };
+    // ---------- NFLB-L: rebalanced Legends (user decision 2026-10-10) ----------
+    // Older Forge World Legends keep pre-codex weapons. Big Trakk and Kill Tank still carry the old
+    // Kannon; their NFLB-L copies use the current codex Kannon (as on the Gargantuan Squiggoth),
+    // keeping the crew's BS. They replace the official [Legends] entries, which are hidden.
+    const SHOW_LEGENDS = '9ed-cbf4-bfe5-90bf';
+    const squig = b.lib.sharedSelectionEntries.find(e => e.name === 'Gargantuan Squiggoth');
+    const currentKannon = [];
+    (function walk(o) { if (Array.isArray(o)) return o.forEach(walk); if (!o || typeof o !== 'object') return;
+      if (o.typeName && /^➤ Kannon - /i.test(o.name || '')) currentKannon.push(o); Object.values(o).forEach(walk); })(squig);
+    if (currentKannon.length !== 2) throw new Error('current Kannon profiles not found on Gargantuan Squiggoth');
+    const injections = [];
+    for (const legend of ['Big Trakk', 'Kill Tank']) {
+      const src = b.lib.sharedSelectionEntries.find(e => e.name === `${legend} [Legends]`);
+      if (!src) throw new Error(`${legend} [Legends] no longer exists upstream`);
+      const u = b.cloneEntry(src, `nl:${legend}`, {
+        name: `${legend} [NFLB-L]`,
+        inline: l => /^Kannon$/i.test(l.name),
+        dropModifier: m => JSON.stringify(m.conditions || []).includes(SHOW_LEGENDS),
+      });
+      if (!b.patchProfiles(u, /^➤ Kannon - /i, currentKannon)) throw new Error(`${legend}: no Kannon profiles patched`);
+      u.profiles = [...(u.profiles || []), ability(`nl:${legend}`, 'NFLB-L Rebalance',
+        `GW's ${legend} [Legends] datasheet with its Kannon updated to the current Codex: Orks profile. Replaces the official Legends entry; points follow GW's Legends points.`)];
+      units.push(u);
+      injections.push({ file: 'Orks.json', entryName: `${legend} [Legends]`,
+        modifier: { field: 'hidden', type: 'set', value: true, comment: 'NFLB-L replacement' } });
+    }
+
+    return { rootUnits: units, injections };
   },
 };

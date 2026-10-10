@@ -100,6 +100,7 @@ for (const sf of specs) {
     }
     const b = createBuilder({ root: ROOT, catalogueName: name, factionLibrary: spec.factionLibrary });
     const out = spec.build(b);
+    notes.push(...b.notes);
     const catId = b.id('catalogue');
     const catalogue = {
       name, id: catId, authorName: 'No Figure Left Behind', authorUrl: 'https://tacowillj.github.io/nofigureleftbehind.github.io/',
@@ -172,7 +173,9 @@ for (const { inline, spec, catId, catName, injections } of built) {
     // Target: a shared group (groupName), a shared entry (entryName), or the catalogue's own
     // shared lists (neither). Links are fine only when they point at something injected into
     // the same file.
-    const KEYS = { selectionEntry: 'selectionEntries', selectionEntryGroup: 'selectionEntryGroups', entryLink: 'entryLinks' };
+    // `modifier` (e.g. hiding an official [Legends] entry replaced by NFLB-L) carries a comment
+    // starting "NFLB" instead of an id, which is how it is recognised and cleaned on the next run.
+    const KEYS = { selectionEntry: 'selectionEntries', selectionEntryGroup: 'selectionEntryGroups', entryLink: 'entryLinks', modifier: 'modifiers' };
     const ROOT_KEYS = { selectionEntry: 'sharedSelectionEntries', selectionEntryGroup: 'sharedSelectionEntryGroups', entryLink: 'entryLinks', catalogueLink: 'catalogueLinks' };
     const cleaned = new Set();
     for (const inj of list) {
@@ -182,7 +185,7 @@ for (const { inline, spec, catId, catName, injections } of built) {
       if (!g) { problems.push(`Injection target "${inj.groupName || inj.entryName}" not found in ${file} (renamed upstream?)`); continue; }
       const keys = isRoot ? ROOT_KEYS : KEYS;
       if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh (keep this run's inline merge)
-        for (const k of Object.values(keys)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-') || inlineIds.has(x.id));
+        for (const k of Object.values(keys)) if (g[k]) g[k] = g[k].filter(x => (!String(x.id).startsWith('nflb-') || inlineIds.has(x.id)) && !/^NFLB/.test(x.comment || ''));
         cleaned.add(g);
       }
       for (const [kind, key] of Object.entries(keys)) {
