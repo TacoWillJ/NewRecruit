@@ -14,6 +14,7 @@ Add `https://github.com/TacoWillJ/NewRecruit` as a data source and pick **Warham
 | Orks | 24 units dropped in the Sept 2026 codex: 15 Legendary Proxies (Speed Freeks buggies, Wurrboy, Big Gunz, Nobz on Warbikes, Attack Fighta, Fighta-Bommer, Meka-Dread, Mega Dread, Kannonwagon, Squiggoth, Big Mek with Kustom Force Field, Ufthak Blackhawk) + 9 homebrew (Skorchas, Deffkoptas with Big Shootas, Da Red Gobbo, Grot Bomm Launcha, Kill Krusha, 'Chinork' Warkopta, Painboy/Big Mek on Warbike, Deff Rolla Battle Fortress) | — |
 | Adepta Sororitas | Arch-Confessor Kyrinov, Saint Praxedes, Uriah Jacobus | — |
 | Drukhari | Asdrubael Vect, Vect on the Dais of Destruction, Baron Sathonyx, Duke Sliscus the Serpent, Kheradruakh the Decapitator | — |
+| T'au Empire | The Eight (Commanders Arra'kon, Bravestorm, Brightsword, Ob'lotai 9-0, O'Vesa, Sha'vastos, Torchstar — Farsight himself is official), Dahyak Grekh | — |
 | Adeptus Mechanicus | 35 Horus Heresy Mechanicum units (incl. Dark Mechanicum: Anacharis Scoria, Archmagos Draykavac) — only selectable with one of the two NFLB Mechanicum detachments; Heterodox-locked units only with Dark Mechanicum. Plus Legio Cybernetica battle robots (Cataphract, Colossus, Conqueror, Crusader), always available. Official Legends Decimator, Blood Slaughterer, Greater Brass Scorpion, Kytan Ravager and Tarantula Sentry Battery linked in from the Heresy Legends library | Taghmata Omnissiah, Dark Mechanicum |
 
 ## How the repo is put together

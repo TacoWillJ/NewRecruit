@@ -1,0 +1,658 @@
+[
+ {
+  "slug": "commander-arrakon",
+  "name": "Commander Arra'kon",
+  "subtitle": "The Hundred-Battle Strategist",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "115",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Cyclic Ion Blaster",
+    "melee": false,
+    "range": "18\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Cyclic Ion Blaster — Overcharge",
+    "melee": false,
+    "range": "18\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Missile Pod",
+    "melee": false,
+    "range": "30\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Battlesuit Fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Cyclic Ion Blaster",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Cyclic Ion Blaster — Overcharge",
+    "text": "[ASSAULT] [HAZARDOUS]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Sunforge Battlesuits, Crisis Starscythe Battlesuits, Crisis Fireknife Battlesuits."
+   },
+   {
+    "name": "Coordinated Fire Strategist",
+    "text": "At the start of your Shooting phase, select one friendly T'au Empire unit within 9\" of this model. Until the end of the phase, ranged attacks made by models in that unit re-roll Hit rolls of 1. If the target of those attacks has been marked with a Markerlight, also re-roll Wound rolls of 1."
+   },
+   {
+    "name": "Veteran of a Hundred Engagements",
+    "text": "Once per phase, you can re-roll one Hit roll, one Wound roll, or one Damage roll made for this model."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This model and any unit it leads automatically pass Battle-shock tests."
+   }
+  ],
+  "composition": "1 Commander Arra'kon model. This model is equipped with: 1 Cyclic Ion Blaster; 1 Missile Pod; 1 pair of Battlesuit Fists.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, ARRA'KON",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-bravestorm",
+  "name": "Commander Bravestorm",
+  "subtitle": "Iridium-Clad, Sole Survivor",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "135",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin burst cannon",
+    "melee": false,
+    "range": "18\"",
+    "a": "8",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Onager gauntlet",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "4"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin burst cannon",
+    "text": "[RAPID FIRE 4] [TWIN-LINKED]"
+   },
+   {
+    "name": "Onager gauntlet",
+    "text": "[DEVASTATING WOUNDS] [ANTI-VEHICLE 4+]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE] [FEEL NO PAIN 6+]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Sunforge Battlesuits, Crisis Fireknife Battlesuits."
+   },
+   {
+    "name": "Iridium Armour",
+    "text": "Each time an attack would inflict damage on this model, the Damage characteristic of that attack is reduced to a maximum of 3."
+   },
+   {
+    "name": "Charge of the Bull",
+    "text": "On a turn in which this model made a Charge move, until the end of the turn, melee attacks made by this model gain the [LETHAL HITS] ability and its Onager gauntlet gains the [EXTRA ATTACKS] ability."
+   },
+   {
+    "name": "Sole Survivor",
+    "text": "Each time this model would lose its last wound, roll one D6: on a 5+, this model is not destroyed and instead has its Wounds characteristic reset to 1. This ability cannot trigger more than once per battle."
+   }
+  ],
+  "composition": "1 Commander Bravestorm model. This model is equipped with: 1 twin burst cannon; 1 onager gauntlet.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, BRAVESTORM",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-brightsword",
+  "name": "Commander Brightsword",
+  "subtitle": "The Sword-Saint",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "125",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin plasma rifle",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Twin fusion blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin plasma rifle",
+    "text": "[RAPID FIRE 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Twin fusion blades",
+    "text": "[MELTA 2] [ANTI-VEHICLE 4+] [TWIN-LINKED]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Sunforge Battlesuits, Crisis Starscythe Battlesuits."
+   },
+   {
+    "name": "Sword-Saint Surge",
+    "text": "This model can Advance and still charge that turn. Each time this model finishes a Charge move, it makes 2 additional melee attacks that phase with its Twin fusion blades."
+   },
+   {
+    "name": "Strike of the Twin Suns",
+    "text": "Once per battle, in your Fight phase, when this model is selected to fight, you may declare a Strike of the Twin Suns. Until the end of the phase, attacks made by this model's Twin fusion blades have their Damage characteristic improved by +1, and gain the [DEVASTATING WOUNDS] ability."
+   }
+  ],
+  "composition": "1 Commander Brightsword model. This model is equipped with: 1 twin plasma rifle; 1 pair of twin fusion blades.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, BRIGHTSWORD",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-oblotai",
+  "name": "Commander Ob'lotai 9-0",
+  "subtitle": "The Ghost-Pilot",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "140",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "8+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin heavy burst cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "12",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Twin plasma rifle",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Battlesuit fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin heavy burst cannon",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED] [HEAVY]"
+   },
+   {
+    "name": "Twin plasma rifle",
+    "text": "[RAPID FIRE 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEEP STRIKE]"
+   },
+   {
+    "name": "AI-Driven",
+    "text": "This model cannot be your Warlord. This model automatically passes Battle-shock tests, never Falls Back, and ignores all modifiers to its Leadership and Hit rolls. (This model does not have the Leader ability.)"
+   },
+   {
+    "name": "Static Gun Platform",
+    "text": "If this model Remained Stationary in your previous Movement phase, until the start of your next turn, attacks made by this model gain +1 to the Hit roll, and the [HEAVY] keyword penalty is treated as already in effect."
+   },
+   {
+    "name": "Ghost in the Machine",
+    "text": "Each time this model would be destroyed, roll one D6: on a 5+, instead of being destroyed, set its remaining Wounds to 1. This ability triggers only once per battle."
+   },
+   {
+    "name": "Sentinel Protocol [AURA]",
+    "text": "While a friendly The Eight model is within 9\" of this model, that friendly model can re-roll Hit rolls of 1 with ranged weapons."
+   }
+  ],
+  "composition": "1 Commander Ob'lotai 9-0 model. This model is equipped with: 1 twin heavy burst cannon; 1 twin plasma rifle; 1 pair of battlesuit fists.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, OB'LOTAI",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-ovesa",
+  "name": "Commander O'Vesa",
+  "subtitle": "The Drone-Fortress",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "135",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin plasma rifle",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Fusion blaster",
+    "melee": false,
+    "range": "18\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Battlesuit fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin plasma rifle",
+    "text": "[RAPID FIRE 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Fusion blaster",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Sunforge Battlesuits, Crisis Fireknife Battlesuits, Riptide Battlesuit."
+   },
+   {
+    "name": "Shield Drone Network",
+    "text": "This model is accompanied by 3 Shield Drones. Attacks targeting this model suffer -1 to the Wound roll. Once per battle round, when this model would lose a wound from an attack, you may sacrifice a Shield Drone to ignore that attack on a roll of 4+."
+   },
+   {
+    "name": "Mobile Fortress [AURA]",
+    "text": "While a friendly Battlesuit unit is within 6\" of this model, models in that unit have a 5+ Feel No Pain against Mortal Wounds."
+   },
+   {
+    "name": "Drone Maintenance",
+    "text": "In your Command phase, you can return 1 destroyed Shield Drone to this model. This can only restore Shield Drones that were destroyed earlier in the battle, and only once per battle round."
+   }
+  ],
+  "composition": "1 Commander O'Vesa model. This model is equipped with: 1 twin plasma rifle; 1 fusion blaster; 1 pair of battlesuit fists.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, O'VESA",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-shavastos",
+  "name": "Commander Sha'vastos",
+  "subtitle": "The Eldest, Drone-Bonded",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "125",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Plasma rifle",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Airbursting frag projector",
+    "melee": false,
+    "range": "18\"",
+    "a": "D6",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Battlesuit fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Plasma rifle",
+    "text": "[RAPID FIRE 1] [HAZARDOUS]"
+   },
+   {
+    "name": "Airbursting frag projector",
+    "text": "[INDIRECT FIRE] [BLAST]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Sunforge Battlesuits, Crisis Starscythe Battlesuits, Crisis Fireknife Battlesuits, Pathfinder Team."
+   },
+   {
+    "name": "Drone Master",
+    "text": "This model is accompanied by 2 Marker Drones. In your Shooting phase, before this model shoots, you may place 1 additional Markerlight token on an enemy unit visible to a Marker Drone within 36\". Marker Drones are destroyed before this model if a wound is suffered."
+   },
+   {
+    "name": "Wisdom of Years",
+    "text": "This model and any unit it leads automatically pass Battle-shock tests. If this model leads a unit, that unit gains +1 to Hit with ranged attacks against enemy units marked with one or more Markerlight tokens."
+   },
+   {
+    "name": "Veteran Eye",
+    "text": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
+   }
+  ],
+  "composition": "1 Commander Sha'vastos model. This model is equipped with: 1 plasma rifle; 1 airbursting frag projector; 2 marker drones; 1 pair of battlesuit fists.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, SHA'VASTOS",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "commander-torchstar",
+  "name": "Commander Torchstar",
+  "subtitle": "The Pyromaniac",
+  "factionLine": "T'au Empire • Farsight Enclaves • The Eight",
+  "points": "115",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Twin flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6+2",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Battlesuit fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Twin flamer",
+    "text": "[IGNORES COVER] [TORRENT] [TWIN-LINKED]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[PISTOL] [HAZARDOUS]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER] [DEEP STRIKE] [LONE OPERATIVE]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Crisis Starscythe Battlesuits, Crisis Sunforge Battlesuits."
+   },
+   {
+    "name": "Reckless Advance",
+    "text": "This model can Advance and still shoot that turn. Each ranged weapon equipped by this model gains the [ASSAULT] ability."
+   },
+   {
+    "name": "Burning Vengeance",
+    "text": "Each time this model makes a ranged attack with a Flamer weapon, on an unmodified Wound roll of 6, the target suffers 1 mortal wound in addition to normal damage. If the target unit has lost one or more models this battle, instead deal D3 mortal wounds."
+   },
+   {
+    "name": "Lone Operative",
+    "text": "This model can only be selected as the target of a ranged attack if the attacking model is within 12\"."
+   }
+  ],
+  "composition": "1 Commander Torchstar model. This model is equipped with: 1 twin flamer; 1 plasma pistol; 1 pair of battlesuit fists.",
+  "keywords": "INFANTRY, BATTLESUIT, CHARACTER, EPIC HERO, COMMANDER, FLY, JUMP PACK, TORCHSTAR",
+  "factionKeywords": "T'AU EMPIRE, FARSIGHT ENCLAVES"
+ },
+ {
+  "slug": "dahyak-grekh",
+  "name": "Dahyak Grekh",
+  "subtitle": "Tracker of the Precipice",
+  "factionLine": "T'au Empire • Kroot • Auxiliary",
+  "points": "65",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "4",
+    "Sv": "5+",
+    "W": "5",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Tracker's Kroot rifle",
+    "melee": false,
+    "range": "30\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Tracker's blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Tracker's Kroot rifle",
+    "text": "[HEAVY] [PRECISION]"
+   },
+   {
+    "name": "Tracker's blades",
+    "text": "[LETHAL HITS]"
+   },
+   {
+    "name": "Core",
+    "text": "[LONE OPERATIVE] [SCOUTS 6\"] [STEALTH] [INFILTRATORS]"
+   },
+   {
+    "name": "Tracker's Mark",
+    "text": "At the start of the first battle round, after deployment, select one enemy unit. For the rest of the battle, Dahyak Grekh re-rolls Hit rolls and Wound rolls against that unit. If the marked unit is destroyed, at the start of your next Command phase select a new target."
+   },
+   {
+    "name": "Hunter of Pheromones",
+    "text": "Each time an enemy unit ends a Normal, Advance, or Fall Back move within 12\" of Dahyak Grekh, that unit cannot benefit from Stealth or the Cover rule against this model's ranged attacks until the start of your next turn."
+   },
+   {
+    "name": "Survivor of the Precipice",
+    "text": "Each time an attack is allocated to this model, on an unmodified Save roll of 5+ that attack is treated as having Damage 0. Usable any number of times per battle."
+   },
+   {
+    "name": "Voidsteed (once per battle)",
+    "text": "Once per battle, at the start of your Movement phase, if Dahyak Grekh is more than 9\" from any enemy model, you can remove him from the battlefield and immediately set him up again anywhere on the battlefield that is more than 9\" from any enemy model. This counts as having made a Normal move."
+   }
+  ],
+  "composition": "1 Dahyak Grekh model. This model is equipped with: 1 Tracker's Kroot rifle; 1 Tracker's blades.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, LONE OPERATIVE, KROOT, DAHYAK GREKH",
+  "factionKeywords": "T'AU EMPIRE, AUXILIARY"
+ }
+]
