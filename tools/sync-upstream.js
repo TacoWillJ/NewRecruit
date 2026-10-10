@@ -112,6 +112,22 @@ for (const sf of specs) {
       sharedSelectionEntries: [...out.rootUnits, ...(out.sharedSelectionEntries || []), ...b.sharedEntries],
       sharedSelectionEntryGroups: out.sharedSelectionEntryGroups || [],
     };
+    if (spec.inline) {
+      // Factions without a separate library (e.g. Orks): merge straight into the faction
+      // catalogue, so nothing depends on New Recruit following links between catalogues.
+      const fo = readJson(spec.faction);
+      const fc = fo.catalogue;
+      const strip = k => { fc[k] = (fc[k] || []).filter(x => !String(x.id).startsWith('nflb-')); };
+      for (const k of ['categoryEntries', 'entryLinks', 'sharedSelectionEntries', 'sharedSelectionEntryGroups']) strip(k);
+      fc.categoryEntries.push(...catalogue.categoryEntries);
+      fc.entryLinks.push(...catalogue.entryLinks);
+      fc.sharedSelectionEntries.push(...catalogue.sharedSelectionEntries);
+      fc.sharedSelectionEntryGroups.push(...catalogue.sharedSelectionEntryGroups);
+      writeJson(spec.faction, fo);
+      built.push({ inline: true, spec, injections: out.injections || [], content: catalogue });
+      notes.push(`Merged NFLB into ${spec.faction}: ${out.rootUnits.length} units, ${b.sharedEntries.length} NFLB-only weapons`);
+      continue;
+    }
     // Bump the revision only when the generated content actually changes
     const hash = crypto.createHash('sha1').update(JSON.stringify(catalogue)).digest('hex');
     const prev = manifest.nflb[outFile] || { hash: null, revision: 0 };
@@ -135,12 +151,14 @@ for (const f of rootJson().filter(isNflb)) {
 
 // ---------- 4. Attach: catalogueLink into the faction + injections into upstream groups ----------
 const injectedObjects = [];
-for (const { spec, catId, catName, injections } of built) {
+for (const { inline, spec, catId, catName, injections } of built) {
   const fo = readJson(spec.faction);
+  if (!inline) {
   fo.catalogue.catalogueLinks = fo.catalogue.catalogueLinks || [];
   if (!fo.catalogue.catalogueLinks.some(l => l.targetId === catId)) {
     fo.catalogue.catalogueLinks.push({ name: catName, id: `nflb-link-${catId}`, importRootEntries: true, targetId: catId, type: 'catalogue' });
     writeJson(spec.faction, fo);
+  }
   }
   const byFile = {};
   for (const inj of injections) (byFile[inj.file] = byFile[inj.file] || []).push(inj);
@@ -212,7 +230,10 @@ const validate = (root, label, ok) => {
   };
   walk(root, label);
 };
-for (const { outFile } of built) validate(readJson(outFile).catalogue, outFile, v => ids.has(v));
+for (const { inline, outFile, spec, content } of built) {
+  if (inline) validate(content, `${spec.faction} (NFLB)`, v => ids.has(v));
+  else validate(readJson(outFile).catalogue, outFile, v => ids.has(v));
+}
 // Injected copies live inside an upstream file, which cannot see the NFLB catalogue:
 // any nflb- id they use must be defined within the injected content itself.
 const injectedIds = new Set();

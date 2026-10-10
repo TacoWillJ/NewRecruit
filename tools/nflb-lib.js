@@ -20,6 +20,10 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')).gameSystem);
   const gst = readCat(gstFile);
   const lib = readCat(factionLibrary);
+  // inline specs merge into this same file: ignore our own previous output when looking things up
+  for (const k of ['sharedSelectionEntries', 'sharedSelectionEntryGroups', 'categoryEntries', 'entryLinks']) {
+    if (lib[k]) lib[k] = lib[k].filter(x => !String(x.id).startsWith('nflb-'));
+  }
 
   const usedIds = new Set();
   const id = key => {
@@ -49,7 +53,7 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     return nc;
   };
   const rule = name => {
-    const r = [...(gst.sharedRules || []), ...(lib.sharedRules || [])].find(x => x.name.toLowerCase() === name.toLowerCase());
+    const r = [...(gst.sharedRules || []), ...(lib.sharedRules || []), ...(lib.rules || [])].find(x => x.name.toLowerCase() === name.toLowerCase());
     if (!r) throw new Error(`No shared rule named ${name}`);
     return r;
   };
@@ -80,6 +84,10 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
       characteristics: [{ name: 'Orders', typeId: ORDERS.ch.Orders, $text: text }] };
   };
 
+  const TRANSPORT = ptype('Transport');
+  const transport = (key, text) => ({ name: 'Transport', id: id(`transport:${key}`), hidden: false, typeId: TRANSPORT.id, typeName: 'Transport',
+    characteristics: [{ name: 'Capacity', typeId: TRANSPORT.ch.Capacity, $text: text }] });
+
   // ---------- weapons ----------
   // stats: [range, A, BS/WS, S, AP, D]; profiles: { suffix: stats } for multi-profile weapons
   const sharedEntries = [];
@@ -97,14 +105,15 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     return o ? o.profiles.map(p => (p.characteristics.find(c => c.name === 'Keywords') || {}).$text || '') : [];
   };
 
-  function weapon(name, stats, { keywords, melee } = {}) {
+  // matchOfficial: link the official entry when name + stats match even if keywords were given
+  function weapon(name, stats, { keywords, melee, matchOfficial } = {}) {
     const multi = !Array.isArray(stats);
     const variants = multi ? Object.entries(stats) : [[null, stats]];
     const cacheKey = name + JSON.stringify(stats) + (keywords || '');
     if (weaponCache.has(cacheKey)) return weaponCache.get(cacheKey);
 
     let result;
-    if (!keywords) {
+    if (!keywords || matchOfficial) {
       const match = officialByName(name).find(e => e.profiles.length === variants.length &&
         variants.every(([, s], i) => sameStats(e.profiles[i], s)));
       if (match) result = { targetId: match.id, name: match.name, official: true };
@@ -199,14 +208,22 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     includeChildSelections: true, label: 'Leader', max: 1, min: 0, scope: 'force',
     conditionGroups: [{ type: 'or', conditions: unitNames.map(n => {
       // a name = official unit (looked up upstream); an object = an NFLB unit built in this spec
-      const u = typeof n === 'string' ? lib.sharedSelectionEntries.find(e => e.name === n) : n;
+      const u = typeof n === 'string' ? lib.sharedSelectionEntries.find(e => e.name === n) || lib.sharedSelectionEntries.find(e => e.name === `${n} [Legends]`) : n;
       if (!u) throw new Error(`Leader target not found upstream: ${n}`);
       return { childId: u.id, childName: u.name, field: 'selections', scope: 'self', shared: true, type: 'instanceOf', value: 1 };
     }) }],
   });
+  // "Deadly Demise D3" style names link the base rule and append the value, as BSData does
   const ruleLinks = (key, names) => names.map(n => {
-    const r = rule(n);
-    return { name: r.name, id: id(`${key}:rule:${r.name}`), hidden: false, targetId: r.id, type: 'rule' };
+    let r, value;
+    try { r = rule(n); } catch (e) {
+      const m = n.match(/^(.*?)\s+(\S+)$/);
+      if (!m) throw e;
+      r = rule(m[1]); value = m[2];
+    }
+    const l = { name: r.name, id: id(`${key}:rule:${n}`), hidden: false, targetId: r.id, type: 'rule' };
+    if (value) l.modifiers = [{ field: 'name', type: 'append', value }];
+    return l;
   });
   // Link to an upstream shared group (preferred) or entry by name, e.g. 'Warlord', 'Enhancements'
   const sharedLink = (key, targetName) => {
@@ -216,7 +233,7 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     return { name: e.name, id: id(`${key}:shared:${targetName}`), hidden: false, import: true, targetId: e.id, type: g ? 'selectionEntryGroup' : 'selectionEntry' };
   };
 
-  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, orders, weapon, link, choice, upgrade, model, group,
+  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, orders, transport, weapon, link, choice, upgrade, model, group,
     shrinkFor, catLinks, leadAssociation, ruleLinks, sharedLink, cons, sharedEntries, ownCategories };
 }
 
