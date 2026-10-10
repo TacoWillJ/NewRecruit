@@ -233,12 +233,10 @@ module.exports = {
 
     return {
       rootUnits: units,
-      sharedSelectionEntries: [detachment],
-      sharedSelectionEntryGroups: [enhGroup],
-      // Links added into upstream groups so the detachment/enhancements appear in the normal pickers
+      // Copied whole into the upstream pickers (New Recruit won't follow a link into our catalogue)
       injections: [
-        { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Detachment', entryLink: { name: detachment.name, id: b.id('inj:det'), hidden: false, import: true, targetId: detId, type: 'selectionEntry' } },
-        { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Enhancements', entryLink: { name: enhGroup.name, id: b.id('inj:enh'), hidden: false, import: true, targetId: enhGroup.id, type: 'selectionEntryGroup' } },
+        { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Detachment', selectionEntry: detachment },
+        { file: 'Imperium - Astra Militarum - Library.json', groupName: 'Enhancements', selectionEntryGroup: enhGroup },
       ],
     };
   },

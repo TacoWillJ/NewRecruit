@@ -130,7 +130,8 @@ for (const f of rootJson().filter(isNflb)) {
   }
 }
 
-// ---------- 4. Attach: catalogueLink into the faction + entryLink injections ----------
+// ---------- 4. Attach: catalogueLink into the faction + injections into upstream groups ----------
+const injectedObjects = [];
 for (const { spec, catId, catName, injections } of built) {
   const fo = readJson(spec.faction);
   fo.catalogue.catalogueLinks = fo.catalogue.catalogueLinks || [];
@@ -143,14 +144,24 @@ for (const { spec, catId, catName, injections } of built) {
   for (const [file, list] of Object.entries(byFile)) {
     const o = readJson(file);
     const c = o.catalogue || o.gameSystem;
-    let changed = false;
+    // New Recruit does not follow links from an upstream catalogue into ours, so injected
+    // content is copied in whole (selectionEntry / selectionEntryGroup), never linked.
+    const KEYS = { selectionEntry: 'selectionEntries', selectionEntryGroup: 'selectionEntryGroups', entryLink: 'entryLinks' };
+    const groups = new Set();
     for (const inj of list) {
       const g = (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName);
       if (!g) { problems.push(`Injection target group "${inj.groupName}" not found in ${file} (renamed upstream?)`); continue; }
-      g.entryLinks = g.entryLinks || [];
-      if (!g.entryLinks.some(l => l.id === inj.entryLink.id)) { g.entryLinks.push(inj.entryLink); changed = true; }
+      if (!groups.has(g)) { // drop anything a previous run injected, then re-add fresh
+        for (const k of Object.values(KEYS)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-'));
+        groups.add(g);
+      }
+      for (const [kind, key] of Object.entries(KEYS)) {
+        if (!inj[kind]) continue;
+        (g[key] = g[key] || []).push(inj[kind]);
+        injectedObjects.push({ where: `${file} > ${g.name}`, obj: inj[kind] });
+      }
     }
-    if (changed) writeJson(file, o);
+    writeJson(file, o);
   }
 }
 
@@ -165,20 +176,30 @@ const collect = o => {
 };
 for (const f of rootJson()) collect(readJson(f));
 const KEYWORD_IDS = new Set(['unit', 'model', 'self', 'parent', 'force', 'roster', 'ancestor', 'primary-catalogue', 'model-or-unit', 'any']);
-for (const { outFile } of built) {
+const validate = (root, label, ok) => {
   const walk = (o, where) => {
     if (Array.isArray(o)) return o.forEach(x => walk(x, where));
     if (!o || typeof o !== 'object') return;
     const here = o.name ? `${where} > ${o.name}` : where;
     for (const k of ['targetId', 'typeId', 'childId']) {
       const v = o[k];
-      if (typeof v === 'string' && !ids.has(v) && !KEYWORD_IDS.has(v)) problems.push(`Broken reference ${k}=${v} at ${here}`);
+      if (typeof v === 'string' && !ok(v) && !KEYWORD_IDS.has(v)) problems.push(`Broken reference ${k}=${v} at ${here}`);
     }
-    if (o.field && /^[0-9a-z]{2,}-/.test(o.field) && !ids.has(o.field)) problems.push(`Broken modifier field ${o.field} at ${here}`);
+    if (o.field && /^[0-9a-z]{2,}-/.test(o.field) && !ok(o.field)) problems.push(`Broken modifier field ${o.field} at ${here}`);
     for (const v of Object.values(o)) if (typeof v === 'object') walk(v, here);
   };
-  walk(readJson(outFile).catalogue, outFile);
-}
+  walk(root, label);
+};
+for (const { outFile } of built) validate(readJson(outFile).catalogue, outFile, v => ids.has(v));
+// Injected copies live inside an upstream file, which cannot see the NFLB catalogue:
+// any nflb- id they use must be defined within the injected content itself.
+const injectedIds = new Set();
+const addIds = o => {
+  if (Array.isArray(o)) return o.forEach(addIds);
+  if (o && typeof o === 'object') { if (typeof o.id === 'string') injectedIds.add(o.id); Object.values(o).forEach(addIds); }
+};
+for (const { obj } of injectedObjects) addIds(obj);
+for (const { where, obj } of injectedObjects) validate(obj, where, v => v.startsWith('nflb-') ? injectedIds.has(v) : ids.has(v));
 
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
 
