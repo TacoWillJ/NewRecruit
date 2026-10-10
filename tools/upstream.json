@@ -54,7 +54,24 @@
   "nflb": {
     "NFLB - Imperium - Astra Militarum.json": {
       "hash": "adde1d1aabee6fbb391698f835f9881b75359318",
-      "revision": 4
+      "revision": 6
+    }
+  },
+  "patched": {
+    "Warhammer 40,000.json": {
+      "hash": "397ddeefa115afbed0f86bd07ba4e592c07347f2",
+      "upstreamRevision": 16,
+      "patch": 1
+    },
+    "Imperium - Astra Militarum.json": {
+      "hash": "d4091826bc70947b283182050d9b12afc70196a9",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Imperium - Astra Militarum - Library.json": {
+      "hash": "c70d2578f7c1c743e8b383044abe05a02c0a99a1",
+      "upstreamRevision": 5,
+      "patch": 1
     }
   }
 }

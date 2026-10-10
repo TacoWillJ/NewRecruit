@@ -82,6 +82,9 @@ if (!gstFile) throw new Error('No game system file found');
   }
 }
 const gst = readJson(gstFile).gameSystem;
+// upstream's own revision (ours gets bumped in step 5); NFLB catalogues reference this one
+const gstCache = path.join(CACHE, gstFile);
+const gstUpstreamRevision = fs.existsSync(gstCache) ? JSON.parse(fs.readFileSync(gstCache, 'utf8')).gameSystem.revision : gst.revision;
 
 // ---------- 3. Build NFLB catalogues from nflb-src/ ----------
 const specs = fs.existsSync(SRC) ? fs.readdirSync(SRC).filter(f => f.endsWith('.js')).sort() : [];
@@ -100,7 +103,7 @@ for (const sf of specs) {
     const catId = b.id('catalogue');
     const catalogue = {
       name, id: catId, authorName: 'No Figure Left Behind', authorUrl: 'https://tacowillj.github.io/nofigureleftbehind.github.io/',
-      battleScribeVersion: gst.battleScribeVersion, gameSystemId: gst.id, gameSystemRevision: gst.revision,
+      battleScribeVersion: gst.battleScribeVersion, gameSystemId: gst.id, gameSystemRevision: gstUpstreamRevision,
       library: true, revision: 1, type: 'catalogue', xmlns: 'http://www.battlescribe.net/schema/catalogueSchema',
       publications: [{ name: 'No Figure Left Behind', id: b.id('publication'), hidden: false, shortName: 'NFLB' }],
       catalogueLinks: [{ name: b.lib.name, id: b.id('link:library'), importRootEntries: false, targetId: b.lib.id, type: 'catalogue' }],
@@ -165,7 +168,26 @@ for (const { spec, catId, catName, injections } of built) {
   }
 }
 
-// ---------- 5. Validate every reference in the NFLB catalogues ----------
+// ---------- 5. Bump revisions of every upstream file we modified ----------
+// New Recruit caches catalogues by id + revision. Our edited copies keep upstream's ids, so
+// unless their revision is higher than the official one, the app keeps using the official
+// copy it already has and our injections never show. revision = upstream * 1000 + patch.
+manifest.patched = manifest.patched || {};
+const touched = new Set([gstFile, ...built.map(x => x.spec.faction), ...built.flatMap(x => x.injections.map(i => i.file))]);
+for (const f of touched) {
+  const o = readJson(f);
+  const c = o.catalogue || o.gameSystem;
+  const cachePath = path.join(CACHE, f);
+  const upRev = fs.existsSync(cachePath) ? (n => (n.catalogue || n.gameSystem).revision)(JSON.parse(fs.readFileSync(cachePath, 'utf8'))) : Math.floor(c.revision / 1000) || c.revision;
+  const hash = crypto.createHash('sha1').update(JSON.stringify({ ...c, revision: 0 })).digest('hex');
+  const prev = manifest.patched[f] || { hash: null, upstreamRevision: upRev, patch: 0 };
+  const patch = prev.upstreamRevision !== upRev ? 1 : prev.hash === hash ? prev.patch : prev.patch + 1;
+  manifest.patched[f] = { hash, upstreamRevision: upRev, patch };
+  if (c.revision !== upRev * 1000 + patch) { c.revision = upRev * 1000 + patch; writeJson(f, o); }
+}
+for (const f of Object.keys(manifest.patched)) if (!touched.has(f)) delete manifest.patched[f];
+
+// ---------- 6. Validate every reference in the NFLB catalogues ----------
 const ids = new Set();
 const collect = o => {
   if (Array.isArray(o)) return o.forEach(collect);
