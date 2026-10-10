@@ -152,6 +152,9 @@ for (const f of rootJson().filter(isNflb)) {
 
 // ---------- 4. Attach: catalogueLink into the faction + injections into upstream groups ----------
 const injectedObjects = [];
+// ids merged inline into each faction file (an injection into that same file may reference them)
+const inlineIdsByFile = new Map(built.filter(x => x.inline).map(x => [x.spec.faction, new Set(
+  ['categoryEntries', 'entryLinks', 'sharedSelectionEntries', 'sharedSelectionEntryGroups'].flatMap(k => (x.content[k] || []).map(e => e.id)))]));
 const inlineIds = new Set(built.filter(x => x.inline).flatMap(x =>
   ['categoryEntries', 'entryLinks', 'sharedSelectionEntries', 'sharedSelectionEntryGroups'].flatMap(k => (x.content[k] || []).map(e => e.id))));
 for (const { inline, spec, catId, catName, injections } of built) {
@@ -180,8 +183,15 @@ for (const { inline, spec, catId, catName, injections } of built) {
     const cleaned = new Set();
     for (const inj of list) {
       const isRoot = !inj.groupName && !inj.entryName;
-      const g = inj.groupName ? (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName)
+      // `within`: a group nested inside the entry (e.g. the "9 Kommandos" model group of Kommandos)
+      const nested = (o, name) => {
+        for (const sg of o.selectionEntryGroups || []) { if (sg.name === name) return sg; const r = nested(sg, name); if (r) return r; }
+        for (const se of o.selectionEntries || []) { const r = nested(se, name); if (r) return r; }
+        return null;
+      };
+      let g = inj.groupName ? (c.sharedSelectionEntryGroups || []).find(x => x.name === inj.groupName)
         : inj.entryName ? (c.sharedSelectionEntries || []).find(x => x.name === inj.entryName) : c;
+      if (g && inj.within) g = nested(g, inj.within);
       if (!g) { problems.push(`Injection target "${inj.groupName || inj.entryName}" not found in ${file} (renamed upstream?)`); continue; }
       const keys = isRoot ? ROOT_KEYS : KEYS;
       if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh (keep this run's inline merge)
@@ -191,7 +201,7 @@ for (const { inline, spec, catId, catName, injections } of built) {
       for (const [kind, key] of Object.entries(keys)) {
         if (!inj[kind]) continue;
         (g[key] = g[key] || []).push(inj[kind]);
-        injectedObjects.push({ where: `${file} > ${g.name}`, obj: inj[kind] });
+        injectedObjects.push({ file, where: `${file} > ${g.name}`, obj: inj[kind] });
       }
     }
     writeJson(file, o);
@@ -254,7 +264,9 @@ const addIds = o => {
   if (o && typeof o === 'object') { if (typeof o.id === 'string') injectedIds.add(o.id); Object.values(o).forEach(addIds); }
 };
 for (const { obj } of injectedObjects) addIds(obj);
-for (const { where, obj } of injectedObjects) validate(obj, where, v => v.startsWith('nflb-') ? injectedIds.has(v) : ids.has(v));
+for (const { file, where, obj } of injectedObjects) {
+  validate(obj, where, v => v.startsWith('nflb-') ? injectedIds.has(v) || (inlineIdsByFile.get(file) || new Set()).has(v) : ids.has(v));
+}
 
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
 

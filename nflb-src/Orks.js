@@ -140,6 +140,61 @@ module.exports = {
         modifier: { field: 'hidden', type: 'set', value: true, comment: 'NFLB-L replacement' } });
     }
 
+    // ---------- Kill Team kits brought into 40k (user decision 2026-10-10) ----------
+    // Kommandos (KT 2024): Snipa, Slasha and Comms Boys have no 40k option. They are added as model
+    // options inside GW's own Kommandos datasheet, copied from its "Kommandos w/ Slugga and choppa"
+    // model so they keep the official Kommando statline. (Bomb Squig and Kommando Grot are already
+    // covered by GW's 11e Kommandos rules.)
+    const kommandos = b.lib.sharedSelectionEntries.find(e => e.name === 'Kommandos');
+    const kGroup = (kommandos.selectionEntryGroups || []).find(g => g.name === '9 Kommandos');
+    const kBoy = kGroup && kGroup.selectionEntries.find(m => m.name === 'Kommandos w/ Slugga and choppa');
+    if (!kBoy) throw new Error('Kommandos model "Kommandos w/ Slugga and choppa" not found upstream');
+    const specialist = (name, keep, weapons, extraProfiles = []) => {
+      const m = b.cloneEntry(kBoy, `kt:${name}`, { name: `${name} [NFLB]` });
+      m.entryLinks = (m.entryLinks || []).filter(l => keep.includes(l.name));
+      m.entryLinks.push(...weapons.map(w => link(`kt:${name}`, w)));
+      m.constraints = cons(`kt:${name}:max`, null, 1);
+      if (extraProfiles.length) m.profiles = [...(m.profiles || []), ...extraProfiles];
+      return m;
+    };
+    const kSpecialists = [
+      specialist('Kommando Snipa Boy', ['Choppa'], [W('Scoped big shoota', ['36"', 2, '4+', 5, -1, 2], { keywords: 'Heavy, Precision' })]),
+      specialist('Kommando Slasha Boy', [], [W('Twin choppas', ['Melee', 3, '3+', 5, -1, 1], { keywords: 'Twin-linked' }), W('Throwing knives', ['12"', 2, '5+', 4, -1, 1], { keywords: 'Assault' })]),
+      specialist('Kommando Comms Boy', ['Slugga', 'Choppa'], [], [ability('kt:comms', 'Comms Boy', 'Each time you target this model\'s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP.')]),
+    ];
+    for (const m of kSpecialists) injections.push({ file: 'Orks.json', entryName: 'Kommandos', within: '9 Kommandos', selectionEntry: m });
+
+    // Wrecka Krew (KT 2024): Breaka Boyz and Tankbustas fighting as one mob under a Wrecka Boss Nob.
+    // Built from copies of GW's own Breaka Boyz unit + Tankbusta models (official stats, weapons,
+    // abilities). 9 models = 3/4 of one Breaka Boyz + one Tankbustas unit, so it costs 3/4 of their
+    // combined points (rounded to 5) and follows the Field Manual.
+    const breaka = b.lib.sharedSelectionEntries.find(e => e.name === 'Breaka Boyz');
+    const busta = b.lib.sharedSelectionEntries.find(e => e.name === 'Tankbustas');
+    if (!breaka || !busta) throw new Error('Breaka Boyz / Tankbustas not found upstream');
+    const wk = b.cloneEntry(breaka, 'kt:wrecka', { name: 'Wrecka Krew [NFLB]' });
+    const bGroup = wk.selectionEntryGroups.find(g => /Breaka Boyz/.test(g.name));
+    bGroup.name = '4 Breaka Boyz';
+    for (const c of bGroup.constraints || []) if (c.field === 'selections') c.value = 4;
+    const bBoy = bGroup.selectionEntries.find(m => m.name === 'Breaka Boy');
+    for (const c of bBoy.constraints || []) if (c.type === 'min') c.value = 2; else if (c.type === 'max') c.value = 4;
+    const nobGroup = wk.selectionEntryGroups.find(g => g.name === 'Nob');
+    const nob = nobGroup.selectionEntries.find(m => m.name === 'Nob');
+    nob.name = 'Wrecka Boss Nob';
+    const tGroupSrc = busta.selectionEntryGroups.find(g => g.name === 'Tankbustas');
+    const tGroup = b.cloneEntry(tGroupSrc, 'kt:wrecka:bustas', { name: '4 Tankbustas' });
+    for (const c of tGroup.constraints || []) if (c.field === 'selections') c.value = 4;
+    const tBoy = tGroup.selectionEntries.find(m => m.name === 'Tankbusta w/ Busta Rokkit Launcha');
+    for (const c of tBoy.constraints || []) if (c.type === 'min') c.value = 2; else if (c.type === 'max') c.value = 4;
+    wk.selectionEntryGroups.push(tGroup);
+    // Tankbustas' own unit ability + keyword travel with their models
+    const barrage = (busta.profiles || []).filter(p => p.typeName === 'Abilities');
+    wk.profiles = [...(wk.profiles || []), ...barrage.map(p => b.cloneEntry(p, `kt:wrecka:${p.name}`, { name: p.name })),
+      ability('kt:wrecka', 'Wrecka Krew', 'This unit counts as both a **^^Breaka Boyz^^** unit and a **^^Tankbustas^^** unit for rules that refer to either.')];
+    wk.categoryLinks = [...wk.categoryLinks.filter(c => c.name !== 'Breaka Boyz'), ...catLinks('kt:wrecka', ['Breaka Boyz', 'Tankbustas', 'Wrecka Krew'], null)];
+    const wkPts = Math.round((b.officialPts('Breaka Boyz') + b.officialPts('Tankbustas')) * 0.75 / 5) * 5;
+    wk.costs = wk.costs.map(c => (c.name === 'pts' ? { ...c, value: wkPts } : c));
+    units.push(wk);
+
     return { rootUnits: units, injections };
   },
 };
