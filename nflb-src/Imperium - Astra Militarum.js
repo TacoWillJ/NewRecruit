@@ -1,13 +1,15 @@
 // NFLB overlay for Imperium - Astra Militarum.
-// Source of truth: Primarch Project\Workspace\homebrew_cp_11e\source\_reference-*.html (11e cards)
-// and mechanised-strike-force-detachment.html.
+// Source: Primarch Project\Workspace\homebrew_cp_11e\source\_reference-*.html (11e cards)
+// and mechanised-strike-force-detachment.html, normalised to 11e (2026-10-10):
+// official 11e wargear/weapon profiles where an official equivalent exists, 11e Orders
+// profiles on Officers, 11e rules wording (Heavy, strategic reserves, sticky objectives).
 
 module.exports = {
   faction: 'Imperium - Astra Militarum.json',
   factionLibrary: 'Imperium - Astra Militarum - Library.json',
 
   build(b) {
-    const { weapon: W, link, choice, model, group, upgrade, ability, unitProfile, catLinks, ruleLinks, sharedLink, shrinkFor, leadAssociation, cons } = b;
+    const { weapon: W, link, choice, model, group, ability, orders, unitProfile, catLinks, ruleLinks, sharedLink, shrinkFor, leadAssociation, cons } = b;
     const units = [];
     const unit = (name, pts, fields) => {
       const u = { name: `${name} [NFLB]`, id: b.id(`unit:${name}`), hidden: false, import: true, type: 'unit',
@@ -15,38 +17,69 @@ module.exports = {
       units.push(u);
       return u;
     };
+    const FACTION = ['Faction: Astra Militarum', 'Imperium'];
 
-    // ---- shared weapon stat lines (from the 11e cards) ----
+    // ---- weapons: official 11e infantry profiles (these resolve to official entries) ----
     const lasgun = W('Lasgun', ['24"', 1, '4+', 3, 0, 1]);
     const laspistol = W('Laspistol', ['12"', 1, '4+', 3, 0, 1]);
     const ccw = W('Close combat weapon', ['Melee', 2, '4+', 3, 0, 1]);
-    const sgtChainsword = W('Chainsword', ['Melee', 4, '3+', 3, 0, 1]);
+    const chainsword = W('Chainsword', ['Melee', 4, '4+', 3, 0, 1]);
     const flamer = W('Flamer', ['12"', 'D6', 'N/A', 4, 0, 1]);
     const gl = W('Grenade launcher', { frag: ['24"', 'D3', '4+', 4, 0, 1], krak: ['24"', 1, '4+', 9, -2, 'D3'] });
     const melta = W('Meltagun', ['12"', 1, '4+', 9, -4, 'D6']);
     const plasma = W('Plasma gun', { standard: ['24"', 1, '4+', 7, -2, 1], supercharge: ['24"', 1, '4+', 8, -3, 2] });
     const plasmaPistol = W('Plasma pistol', { standard: ['12"', 1, '4+', 7, -2, 1], supercharge: ['12"', 1, '4+', 8, -3, 2] });
     const specials = [flamer, gl, melta, plasma];
-    const missile = W('Missile launcher', { frag: ['48"', 'D6', '4+', 4, 0, 1], krak: ['48"', 1, '4+', 9, -2, 'D6'] });
-    const lascannon = W('Lascannon', ['48"', 1, '4+', 12, -3, 'D6+1']);
-    const autocannon = W('Autocannon', ['48"', 2, '4+', 9, -1, 3]);
+    // Infantry heavy weapon team profiles (BS5+, [HEAVY]) as on the official Heavy Weapons Squads
+    const heavyBolter = W('Heavy bolter', ['36"', 3, '5+', 5, -1, 2]);
+    const mortar = W('Mortar', ['48"', 'D6', '5+', 5, 0, 1]);
+    const missile = W('Missile launcher', { frag: ['48"', 'D6', '5+', 4, 0, 1], krak: ['48"', 1, '5+', 9, -2, 'D6'] });
+    const lascannon = W('Lascannon', ['48"', 1, '5+', 12, -3, 'D6+1']);
+    const autocannon = W('Autocannon', ['48"', 2, '5+', 9, -1, 3]);
+    const teamLaspistol = W('Laspistol', ['12"', 2, '4+', 3, 0, 1]);
+    const teamCcw = W('Weapons team close combat weapons', ['Melee', 2, '4+', 3, 0, 1]);
+
+    // =========================================================
+    // Imperial Guard Squad
+    // =========================================================
+    let igSquad;
+    {
+      const k = 'igs';
+      const sgt = model(k, 'Sergeant', { min: 1, max: 1, gear: [link(k + ':sgt', laspistol), link(k + ':sgt', chainsword)] });
+      const sw = model(k, 'Guardsman w/ Special Weapon', { max: 1, gear: [link(k + ':sw', ccw)], groups: [choice(k + ':sw', 'Special weapon', specials)] });
+      const hwt = model(k, 'Heavy Weapon Team', { max: 1, gear: [link(k + ':hwt', teamCcw)], groups: [choice(k + ':hwt', 'Heavy weapon', [autocannon, lascannon, missile])] });
+      const guard = model(k, 'Guardsman', { min: 9, max: 9, gear: [link(k + ':g', lasgun), link(k + ':g', ccw)] });
+      shrinkFor(guard, [[sw, 1], [hwt, 2]]);
+      igSquad = unit('Imperial Guard Squad', 75, {
+        categoryLinks: catLinks(k, ['Infantry', 'Battleline', 'Regiment', 'Platoon', 'Grenades', 'Imperial Guard Squad', ...FACTION], 'Battleline'),
+        infoLinks: ruleLinks(k, ['Voice Of Command']),
+        profiles: [
+          unitProfile('Guardsman', ['6"', 3, '5+', 1, '7+', 2]),
+          ability(k, 'Hold the Line', 'At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control until your opponent\'s Level of Control over that objective marker is greater than yours at the end of a phase.'),
+          ability(k, 'Heavy Weapon Team', 'A Heavy Weapon Team takes the place of two Guardsmen.'),
+        ],
+        selectionEntries: [sgt, guard, sw, hwt],
+      });
+    }
 
     // =========================================================
     // Captain Al'Rahem
     // =========================================================
     const AR = "Captain Al'Rahem";
+    const leadsAR = ['Cadian Shock Troops', 'Catachan Jungle Fighters', 'Krieg Combat Engineers', 'Tempestus Aquilons'];
     const alrahem = unit(AR, 70, {
       type: 'model',
       constraints: cons('alrahem:roster', null, 1, 'roster'),
-      categoryLinks: catLinks('alrahem', ['Infantry', 'Character', 'Epic Hero', 'Officer', AR, 'Faction: Astra Militarum', 'Imperium'], 'Epic Hero'),
-      associations: [leadAssociation('alrahem', ['Cadian Shock Troops', 'Catachan Jungle Fighters', 'Krieg Combat Engineers', 'Tempestus Aquilons'])],
+      categoryLinks: catLinks('alrahem', ['Infantry', 'Character', 'Epic Hero', 'Officer', 'Grenades', AR, ...FACTION], 'Epic Hero'),
+      associations: [leadAssociation('alrahem', [...leadsAR, igSquad])],
       infoLinks: ruleLinks('alrahem', ['Leader', 'Voice Of Command']),
       profiles: [
         unitProfile(AR, ['6"', 3, '4+', 4, '6+', 1]),
-        ability('alrahem', 'Leader', 'This model can be attached to one of the following units: Cadian Shock Troops, Catachan Jungle Fighters, Krieg Combat Engineers, Tempestus Aquilons.'),
-        ability('alrahem', '"Like the Wind!" Order', 'Once per turn, in your Movement phase, you can issue the Like the Wind! Order to a friendly **^^Astra Militarum Infantry^^** unit within 6" of this model. Until the end of the turn, that unit can move as if it had the Scouts 6" ability and its ranged weapons gain the **[ASSAULT]** ability. This is in addition to any other Orders issued by other **^^Officers^^**.'),
-        ability('alrahem', 'Tallarn Outflank', 'During deployment, instead of placing this model (and its attached unit, if any) on the battlefield, you can place it in Strategic Reserves. In your Movement phase, you can set up this unit anywhere on the battlefield more than 9" away from enemy models. This may be used from the first battle round.'),
-        ability('alrahem', 'Bushido of the Sands', 'Each time the unit Al\'Rahem leads Advances or Charges, you can re-roll the dice. This ability also applies if the attached unit benefits from the Like the Wind! Order this turn.'),
+        orders('alrahem', 'This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units.'),
+        ability('alrahem', 'Leader', `This model can be attached to the following units: ${[...leadsAR, igSquad.name].map(n => `**^^${n}^^**`).join(', ')}`),
+        ability('alrahem', 'Like the Wind!', 'Each time this model issues an Order, it can issue the following Order instead of one from the Voice of Command list. **LIKE THE WIND!**: Ranged weapons equipped by models in this unit have the **[ASSAULT]** ability, and each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in this unit.'),
+        ability('alrahem', 'Tallarn Outflank', 'This model, and any unit it is leading, can be placed into Strategic Reserves. Each time this unit makes an ingress move, it can do so in the first battle round, and it can be set up anywhere on the battlefield that is more than 9" horizontally from all enemy units.'),
+        ability('alrahem', 'Bushido of the Sands', 'While this model is leading a unit, you can re-roll Advance and Charge rolls made for that unit.'),
       ],
       entryLinks: [
         link('alrahem', W('Plasma pistol', { standard: ['12"', 1, '3+', 7, -2, 1], supercharge: ['12"', 1, '3+', 8, -3, 2] })),
@@ -61,59 +94,38 @@ module.exports = {
     // =========================================================
     {
       const k = 'igcs';
-      const commander = model(k, 'Commander', { min: null, max: 1, pts: 25,
+      const commander = model(k, 'Commander', { max: 1, pts: 25,
         groups: [
           choice(k + ':cmd', 'Pistol', [laspistol, W('Bolt pistol', ['12"', 1, '4+', 4, 0, 1]), plasmaPistol]),
-          choice(k + ':cmd', 'Melee weapon', [sgtChainsword, W('Power weapon', ['Melee', 3, '3+', 4, -2, 1]), W('Power fist', ['Melee', 3, '3+', 6, -2, 2])]),
+          choice(k + ':cmd', 'Melee weapon', [chainsword, W('Power weapon', ['Melee', 3, '4+', 4, -2, 1]), W('Power fist', ['Melee', 3, '4+', 6, -2, 2])]),
         ],
         gear: [sharedLink(k + ':cmd', 'Warlord'), sharedLink(k + ':cmd', 'Enhancements')],
       });
-      const officer = group(k, 'Officer', [commander, { name: AR, id: b.id(`${k}:alrahem-link`), hidden: false, import: true, targetId: alrahem.id, type: 'selectionEntry', constraints: cons(`${k}:alrahem-link`, null, 1) }], { min: 1, max: 1, def: commander });
+      const alrahemLink = { name: AR, id: b.id(`${k}:alrahem-link`), hidden: false, import: true, targetId: alrahem.id, type: 'selectionEntry', constraints: cons(`${k}:alrahem-link`, null, 1) };
+      const officer = group(k, 'Officer', [commander, alrahemLink], { min: 1, max: 1, def: commander });
 
-      const kit = (name, text) => upgrade(k, name, { profiles: [ability(k, `${name} (if taken)`, text)] });
-      const specialistModels = [
-        ['Regimental Standard', 'While a model with a Regimental Standard is part of this unit, each time a friendly **^^Regiment^^** unit within 6" of this unit would take a Battle-shock test, it automatically passes.'],
-        ['Master Vox', 'While a model with a Master Vox is part of this unit, Orders issued by an **^^Officer^^** to this unit, or by an **^^Officer^^** within this unit to another unit, can target friendly **^^Regiment^^** units within 12" instead of 6".'],
-        ['Medi-pack', 'While a model with a Medi-pack is part of this unit, models in this unit have the Feel No Pain 5+ ability.'],
-      ].map(([n, t]) => model(k, `Veteran Guardsman w/ ${n}`, { max: 1, gear: [link(k + ':' + n, ccw)], entries: [Object.assign(kit(n, t), { constraints: cons(`${k}:${n}:kit`, 1, 1) })] }));
-      const specialistGroup = group(k, 'Specialist (instead of Lasgun)', specialistModels, { max: 1 });
+      // official 11e wargear (rules come with the linked entries)
+      const kitModels = ['Regimental standard', 'Master vox', 'Medi-pack'].map(n =>
+        model(k, `Veteran Guardsman w/ ${n}`, { max: 1, gear: [link(k + ':' + n, lasgun), link(k + ':' + n, ccw), Object.assign(sharedLink(k + ':' + n, n), { constraints: cons(`${k}:${n}:kit`, 1, 1) })] }));
+      const specialistGroup = group(k, 'Specialist', kitModels, { max: 1 });
       const specialWeapon = model(k, 'Veteran Guardsman w/ Special Weapon', { max: 1, gear: [link(k + ':sw', ccw)], groups: [choice(k + ':sw', 'Special weapon', specials)] });
       const vet = model(k, 'Veteran Guardsman', { min: 4, max: 4, gear: [link(k + ':vet', lasgun), link(k + ':vet', ccw)] });
-      shrinkFor(vet, [...specialistModels.map(m => [m, 1]), [specialWeapon, 1]]);
+      shrinkFor(vet, [...kitModels.map(m => [m, 1]), [specialWeapon, 1]]);
 
       unit('Imperial Guard Command Squad', 35, {
-        categoryLinks: catLinks(k, ['Infantry', 'Character', 'Officer', 'Regiment', 'Leader', 'Imperial Guard Command Squad', 'Faction: Astra Militarum', 'Imperium'], 'Character'),
-        infoLinks: ruleLinks(k, ['Voice Of Command']),
+        categoryLinks: catLinks(k, ['Infantry', 'Character', 'Officer', 'Regiment', 'Platoon', 'Command Squad', 'Grenades', 'Leader', 'Imperial Guard Command Squad', ...FACTION], 'Character'),
+        associations: [leadAssociation(k, [igSquad])],
+        infoLinks: ruleLinks(k, ['Voice Of Command', 'Leader']),
         profiles: [
           unitProfile('Commander', ['6"', 3, '5+', 3, '7+', 1]),
           unitProfile('Veteran Guardsman', ['6"', 3, '5+', 1, '7+', 1]),
-          ability(k, 'Cadre Standing', 'While this unit contains the Commander model and is within range of an objective marker, this unit can re-roll Battle-shock tests.'),
-          ability(k, 'Leader (Officer Swap)', 'The Commander model can be replaced with a single named **^^Astra Militarum Officer Character^^** at their own full points cost, wargear, and abilities (e.g. Captain Al\'Rahem). When you do, the unit\'s cost becomes 35 points (the 4 Veteran Guardsmen only) plus the named Character\'s own points. The named Character occupies the Commander\'s role in this unit and issues Orders per their own datasheet (or this unit\'s Orders ability, whichever is more generous). Only one Officer may occupy this slot.'),
+          orders(k, 'This unit’s **^^Officer^^** can issue 1 Order to a **^^Regiment^^** unit.'),
+          ability(k, 'Leader', `This unit can be attached to the following unit: **^^${igSquad.name}^^**`),
+          ability(k, 'Cadre Standing', 'While this unit contains an **^^Officer^^** model and this unit is within range of an objective marker, this unit can re-roll Battle-shock tests.'),
+          ability(k, 'Officer Swap', 'The Commander model can be replaced with a single named **^^Astra Militarum Officer Character^^** (e.g. Captain Al\'Rahem), who uses their own points, wargear, abilities and Orders in place of the Commander\'s. When you do, this unit costs 35 points plus that Character\'s points.'),
         ],
         selectionEntries: [vet, specialWeapon],
         selectionEntryGroups: [officer, specialistGroup],
-      });
-    }
-
-    // =========================================================
-    // Imperial Guard Squad
-    // =========================================================
-    {
-      const k = 'igs';
-      const sgt = model(k, 'Sergeant', { min: 1, max: 1, gear: [link(k + ':sgt', laspistol), link(k + ':sgt', sgtChainsword)] });
-      const sw = model(k, 'Guardsman w/ Special Weapon', { max: 1, gear: [link(k + ':sw', ccw)], groups: [choice(k + ':sw', 'Special weapon', specials)] });
-      const hwt = model(k, 'Heavy Weapon Team', { max: 1, groups: [choice(k + ':hwt', 'Heavy weapon', [autocannon, lascannon, missile])] });
-      const guard = model(k, 'Guardsman', { min: 9, max: 9, gear: [link(k + ':g', lasgun), link(k + ':g', ccw)] });
-      shrinkFor(guard, [[sw, 1], [hwt, 2]]);
-      unit('Imperial Guard Squad', 75, {
-        categoryLinks: catLinks(k, ['Infantry', 'Battleline', 'Regiment', 'Imperial Guard Squad', 'Faction: Astra Militarum', 'Imperium'], 'Battleline'),
-        infoLinks: ruleLinks(k, ['Voice Of Command']),
-        profiles: [
-          unitProfile('Guardsman', ['6"', 3, '5+', 1, '7+', 2]),
-          ability(k, 'Hold the Line', 'At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.'),
-          ability(k, 'Heavy Weapon Team', 'A Heavy Weapon Team takes the place of two Guardsmen.'),
-        ],
-        selectionEntries: [sgt, guard, sw, hwt],
       });
     }
 
@@ -122,19 +134,14 @@ module.exports = {
     // =========================================================
     {
       const k = 'ighws';
-      const heavy = [
-        W('Heavy bolter', ['36"', 3, '4+', 5, -1, 2]),
-        W('Mortar', ['48"', 'D6', '4+', 5, 0, 1]),
-        missile, lascannon, autocannon,
-      ];
-      const teams = heavy.map(h => model(k, `Heavy Weapon Team w/ ${h.name}`, { max: 3, gear: [link(k + h.name, laspistol), link(k + h.name, W('Weapons team close combat weapons', ['Melee', 2, '4+', 3, 0, 1])), link(k + h.name, h)] }));
+      const teams = [heavyBolter, mortar, missile, lascannon, autocannon].map(h =>
+        model(k, `Heavy Weapon Team w/ ${h.name}`, { max: 3, gear: [link(k + h.name, teamLaspistol), link(k + h.name, teamCcw), link(k + h.name, h)] }));
       unit('Imperial Guard Heavy Weapon Squad', 65, {
-        categoryLinks: catLinks(k, ['Infantry', 'Regiment', 'Imperial Guard Heavy Weapon Squad', 'Faction: Astra Militarum', 'Imperium'], 'Infantry'),
+        categoryLinks: catLinks(k, ['Infantry', 'Regiment', 'Platoon', 'Grenades', 'Imperial Guard Heavy Weapon Squad', ...FACTION], 'Infantry'),
         infoLinks: ruleLinks(k, ['Voice Of Command']),
         profiles: [
           unitProfile('Heavy Weapon Team', ['6"', 3, '5+', 2, '7+', 1]),
           ability(k, 'Covering Fire', 'Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or on unmodified Hit rolls of 4+ instead if this unit is within 6" of one or more friendly **^^Regiment^^** units.'),
-          ability(k, 'Unit Composition', '6 models forming 3 Heavy Weapon Teams (2 models per team). Each team is equipped with one of: Heavy Bolter, Mortar, Missile Launcher, Lascannon, or Autocannon (mix-and-match freely).'),
         ],
         selectionEntryGroups: [group(k, '3 Heavy Weapon Teams', teams, { min: 3, max: 3, def: teams[0] })],
       });
@@ -145,10 +152,10 @@ module.exports = {
     // =========================================================
     {
       const k = 'igsws';
-      const sgt = model(k, 'Sergeant', { min: 1, max: 1, gear: [link(k + ':sgt', laspistol), link(k + ':sgt', sgtChainsword)] });
+      const sgt = model(k, 'Sergeant', { min: 1, max: 1, gear: [link(k + ':sgt', laspistol), link(k + ':sgt', chainsword)] });
       const troopers = specials.map(s => model(k, `Special Weapons Guardsman w/ ${s.name}`, { max: 4, gear: [link(k + s.name, s)] }));
       unit('Imperial Guard Special Weapon Squad', 70, {
-        categoryLinks: catLinks(k, ['Infantry', 'Regiment', 'Imperial Guard Special Weapon Squad', 'Faction: Astra Militarum', 'Imperium'], 'Infantry'),
+        categoryLinks: catLinks(k, ['Infantry', 'Regiment', 'Platoon', 'Grenades', 'Imperial Guard Special Weapon Squad', ...FACTION], 'Infantry'),
         infoLinks: ruleLinks(k, ['Voice Of Command', 'Lethal Hits']),
         profiles: [
           unitProfile('Special Weapons Guardsman', ['6"', 3, '5+', 1, '7+', 1]),
@@ -171,11 +178,11 @@ module.exports = {
       const sgt = model(k, 'Rough Rider Sergeant', { min: 1, max: 1, gear: [plasmaPistol, bombs, lance, sabre, hooves].map(w => link(k + ':sgt', w)) });
       const rider = model(k, 'Rough Rider', { min: 4, max: 4, gear: [laspistol, bombs, lance, sabre, hooves].map(w => link(k + ':r', w)) });
       unit('Imperial Guard Rough Riders', 85, {
-        categoryLinks: catLinks(k, ['Mounted', 'Regiment', 'Grenades', 'Imperial Guard Rough Riders', 'Faction: Astra Militarum', 'Imperium'], 'Mounted'),
+        categoryLinks: catLinks(k, ['Mounted', 'Regiment', 'Grenades', 'Imperial Guard Rough Riders', ...FACTION], 'Mounted'),
         infoLinks: ruleLinks(k, ['Voice Of Command', 'Scouts', 'Lance', 'Devastating Wounds']),
         profiles: [
           unitProfile('Rough Rider', ['12"', 4, '5+', 2, '7+', 2]),
-          ability(k, 'Cavalry Charge', 'Each time this unit ends a Charge move, until the end of the turn, Hunting Lance attacks made by models in this unit have the **[LANCE]** and **[DEVASTATING WOUNDS]** abilities. This unit\'s Hunting Lances are used up after this combat — for the rest of the battle, replace the Hunting Lance profile with the Cavalry Sabre profile.'),
+          ability(k, 'Cavalry Charge', 'Each time this unit ends a Charge move, until the end of the turn, Hunting Lance attacks made by models in this unit have the **[LANCE]** and **[DEVASTATING WOUNDS]** abilities. This unit\'s Hunting Lances are used up after this combat — for the rest of the battle, models in this unit use their Cavalry Sabre in place of their Hunting Lance.'),
           ability(k, 'Outriders', 'This unit has the Scouts 8" ability.'),
           ability(k, 'Crushing Pursuit', 'Each time this unit declares a charge against a unit with 5 or more models, you can re-roll the Charge roll.'),
         ],
@@ -189,37 +196,38 @@ module.exports = {
     const detId = b.id('det:msf');
     const detachment = {
       name: 'Mechanised Strike Force [NFLB]', id: detId, hidden: false, import: true, type: 'upgrade',
+      categoryLinks: catLinks('det:msf', ['Take and Hold'], null),
       constraints: cons('det:msf', null, 1),
       costs: [{ name: 'pts', typeId: b.PTS, value: 0 }, { name: 'Detachment Points', typeId: b.DP, value: 1 }],
       rules: [
         { name: 'Mechanised Doctrine', id: b.id('det:msf:rule'), hidden: false, description:
-          'While a friendly **^^Astra Militarum Infantry^^** unit is embarked in a friendly **^^Astra Militarum Transport^^**, that unit adds 1 to its Objective Control characteristic (modifying the Transport\'s OC for purposes of objective contests).\n\nEach time a friendly **^^Astra Militarum Infantry^^** unit disembarks from a Transport during your turn, until the end of that turn, ranged attacks made by models in that unit with the **[HEAVY]** ability are made at the firing model\'s full Ballistic Skill (the unit ignores the standard penalty for moving when firing Heavy weapons that turn).\n\nForce Disposition: Sweep and Clear.' },
+          'While a friendly **^^Astra Militarum Infantry^^** unit is embarked within a friendly **^^Astra Militarum Transport^^**, add 1 to the Objective Control characteristic of that **^^Transport^^**.\n\nEach time a friendly **^^Astra Militarum Infantry^^** unit disembarks from a **^^Transport^^** in your turn, until the end of that turn, attacks made with **[HEAVY]** weapons equipped by models in that unit can benefit from the **[HEAVY]** ability even though that unit was set up on the battlefield this turn, provided no model in that unit has moved more than 3" since it disembarked.' },
         ...[
-          ['Mechanised Spearhead (1CP)', 'Strategic Ploy. **When:** Pre-game, after both armies have deployed but before the first turn begins. Use once per battle. **Target:** One friendly **^^Astra Militarum Transport^^** unit and its embarked unit. **Effect:** Redeploy that Transport (and its embarked unit) anywhere on the battlefield wholly within 18" of any battlefield edge and more than 9" from any enemy unit.'],
-          ['Open Hatches! (1CP)', 'Battle Tactic. **When:** Your Shooting phase, just after a friendly Transport\'s embarked unit is selected to shoot using Firing Deck. **Target:** That embarked unit. **Effect:** Until the end of the phase, increase the Transport\'s Firing Deck characteristic by 2. The embarked unit may also re-roll Wound rolls of 1 from these Firing Deck attacks.'],
-          ['Treads Forward! (1CP)', 'Strategic Ploy. **When:** Your Movement phase, just before a friendly **^^Astra Militarum Transport^^** is selected to move. **Target:** That Transport. **Effect:** Add 3" to that Transport\'s Move characteristic until the end of the phase. In addition, if the Transport Advances this Movement phase, models embarked in it may still disembark this turn.'],
-          ['Disembark and Fire! (1CP)', 'Battle Tactic. **When:** Your Shooting phase, after a friendly **^^Astra Militarum Infantry^^** unit that disembarked this turn is selected to shoot. **Target:** That unit. **Effect:** Until the end of the phase, that unit\'s ranged attacks with the **[HEAVY]** ability gain the **[SUSTAINED HITS 1]** ability.'],
-          ['Hull-down Defense (1CP)', 'Strategic Ploy. **When:** Start of your opponent\'s Shooting phase, just after a friendly **^^Astra Militarum Transport^^** has been selected as the target of one or more attacks. **Target:** That Transport. **Effect:** Until the end of the phase, ranged attacks targeting that Transport are subject to -1 to the Wound roll, and the Transport has the Feel No Pain 5+ ability.'],
-          ['Smokescreen Surge (1CP)', 'Strategic Ploy. **When:** End of your Movement phase. **Target:** All friendly **^^Astra Militarum Transports^^** on the battlefield. **Effect:** Until the start of your next turn, those Transports gain the Stealth ability and the Benefit of Cover. Cannot be used by a Transport that Advanced this turn.'],
+          ['Mechanised Spearhead (1CP)', 'Strategic Ploy. **When:** Start of the first battle round, before the first turn begins. Use once per battle. **Target:** One friendly **^^Astra Militarum Transport^^** unit and any unit embarked within it. **Effect:** Remove that **^^Transport^^** from the battlefield and set it up again anywhere on the battlefield that is wholly within 18" of any battlefield edge and more than 9" horizontally from all enemy units.'],
+          ['Open Hatches! (1CP)', 'Battle Tactic. **When:** Your Shooting phase, when a friendly **^^Astra Militarum Transport^^** with one or more units embarked within it is selected to shoot. **Target:** That **^^Transport^^**. **Effect:** Until the end of the phase, add 2 to that **^^Transport^^**\'s Firing Deck value, and each time a model makes an attack with a weapon selected via Firing Deck, you can re-roll a Wound roll of 1.'],
+          ['Treads Forward! (1CP)', 'Strategic Ploy. **When:** Your Movement phase, just before a friendly **^^Astra Militarum Transport^^** is selected to move. **Target:** That **^^Transport^^**. **Effect:** Until the end of the phase, add 3" to the Move characteristic of that **^^Transport^^**. In addition, if it Advances this phase, units embarked within it can still disembark this turn.'],
+          ['Disembark and Fire! (1CP)', 'Battle Tactic. **When:** Your Shooting phase, when a friendly **^^Astra Militarum Infantry^^** unit that disembarked from a **^^Transport^^** this turn is selected to shoot. **Target:** That unit. **Effect:** Until the end of the phase, **[HEAVY]** weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability.'],
+          ['Hull-down Defense (1CP)', 'Strategic Ploy. **When:** Your opponent\'s Shooting phase, just after a friendly **^^Astra Militarum Transport^^** is selected as the target of one or more of the attacking unit\'s attacks. **Target:** That **^^Transport^^**. **Effect:** Until the end of the phase, each time an attack targets that **^^Transport^^**, subtract 1 from the Wound roll, and that **^^Transport^^** has the Feel No Pain 5+ ability.'],
+          ['Smokescreen Surge (1CP)', 'Strategic Ploy. **When:** End of your Movement phase. **Target:** Every friendly **^^Astra Militarum Transport^^** on the battlefield that did not Advance this turn. **Effect:** Until the start of your next turn, those **^^Transports^^** have the Stealth ability.'],
         ].map(([n, t]) => ({ name: `Stratagem: ${n}`, id: b.id(`det:msf:strat:${n}`), hidden: false, description: t })),
       ],
     };
-    const enh = (name, text) => ({
+    const enh = (name, pts, text) => ({
       name, id: b.id(`enh:${name}`), hidden: false, import: true, type: 'upgrade',
       constraints: [...cons(`enh:${name}`, null, 1), ...cons(`enh:${name}:roster`, null, 1, 'roster')],
-      costs: [{ name: 'pts', typeId: b.PTS, value: 0 }, { name: 'Enhancements', typeId: b.ENH, value: 1 }],
+      costs: [{ name: 'pts', typeId: b.PTS, value: pts }, { name: 'Enhancements', typeId: b.ENH, value: 1 }],
       modifiers: [{ field: 'hidden', type: 'set', value: true, conditions: [{ childId: b.category('Officer').id, field: 'selections', scope: 'ancestor', shared: true, type: 'notInstanceOf', value: 1 }] }],
-      profiles: [ability('enh', name, `**^^Astra Militarum Officer^^** model only. ${text}`)],
+      profiles: [ability('enh', name, `**^^Officer^^** model only. ${text}`)],
     });
     const enhGroup = {
       name: 'Mechanised Strike Force Enhancements [NFLB]', id: b.id('det:msf:enh'), hidden: false,
       constraints: cons('det:msf:enh', null, 1),
       modifiers: [{ field: 'hidden', type: 'set', value: true, conditions: [{ childId: detId, field: 'selections', includeChildForces: true, includeChildSelections: true, scope: 'roster', shared: true, type: 'lessThan', value: 1 }] }],
       selectionEntries: [
-        enh('Track Commander', 'While the bearer is embarked in a Transport, that Transport\'s ranged weapons are made at BS 3+ (instead of BS 4+), and the Transport\'s unit can re-roll Hit rolls of 1 against the closest visible enemy unit.'),
-        enh('Veteran Crewman', 'While the bearer is embarked in a Transport, that Transport adds 1" to its Move characteristic, and the first failed save (other than against a Mortal Wound) the Transport makes each battle round is automatically passed instead.'),
-        enh('Master Vox (Enhancement)', 'The bearer can issue Orders to any friendly **^^Astra Militarum^^** unit on the battlefield (instead of being limited to range or the normal Order-target restrictions). In addition, the bearer issues 1 additional Order per Command phase.'),
-        enh('Iron-hardened Hull', 'While the bearer is embarked in a Transport, that Transport\'s Toughness characteristic is increased by 1, and the Transport has a 5+ Feel No Pain against Mortal Wounds.'),
+        enh('Track Commander', 15, 'While the bearer\'s unit is embarked within a **^^Transport^^**, improve the Ballistic Skill characteristic of that **^^Transport^^**\'s ranged weapons by 1, and each time that **^^Transport^^** makes an attack that targets the closest eligible target, you can re-roll a Hit roll of 1.'),
+        enh('Veteran Crewman', 20, 'While the bearer\'s unit is embarked within a **^^Transport^^**, add 1" to the Move characteristic of that **^^Transport^^**. In addition, once per battle round, when a saving throw made for that **^^Transport^^** is failed (excluding mortal wounds), you can change the result to a successful save.'),
+        enh('Master Vox', 25, 'Each time the bearer issues an Order, it can issue it to an eligible unit anywhere on the battlefield. In addition, the bearer can issue 1 additional Order in your Command phase.'),
+        enh('Iron-hardened Hull', 15, 'While the bearer\'s unit is embarked within a **^^Transport^^**, add 1 to the Toughness characteristic of that **^^Transport^^**, and that **^^Transport^^** has the Feel No Pain 5+ ability against mortal wounds.'),
       ],
     };
 

@@ -31,13 +31,14 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
 
   // ---------- lookups ----------
   const ptype = name => {
-    const t = gst.profileTypes.find(p => p.name === name);
+    const t = [...gst.profileTypes, ...(lib.profileTypes || [])].find(p => p.name === name);
     if (!t) throw new Error(`No profile type ${name}`);
     const ch = {};
     for (const c of t.characteristicTypes) ch[c.name] = c.id;
     return { id: t.id, name: t.name, ch };
   };
   const UNIT = ptype('Unit'), RANGED = ptype('Ranged Weapons'), MELEE = ptype('Melee Weapons'), ABIL = ptype('Abilities');
+  const ORDERS = (lib.profileTypes || []).some(p => p.name === 'Orders') ? ptype('Orders') : null;
 
   const ownCategories = [];
   const category = name => {
@@ -71,6 +72,13 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     name, id: id(`abil:${key}:${name}`), hidden: false, typeId: ABIL.id, typeName: 'Abilities',
     characteristics: [{ name: 'Description', typeId: ABIL.ch.Description, $text: text }],
   });
+
+  // 11e Officer datasheets carry an "Orders" profile saying how many Orders they issue
+  const orders = (key, text) => {
+    if (!ORDERS) throw new Error('No Orders profile type in faction library');
+    return { name: 'Orders', id: id(`orders:${key}`), hidden: false, typeId: ORDERS.id, typeName: 'Orders',
+      characteristics: [{ name: 'Orders', typeId: ORDERS.ch.Orders, $text: text }] };
+  };
 
   // ---------- weapons ----------
   // stats: [range, A, BS/WS, S, AP, D]; profiles: { suffix: stats } for multi-profile weapons
@@ -190,9 +198,10 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     name: 'Leading', id: id(`${key}:assoc`), action: 'group', childId: 'unit', childName: 'unit',
     includeChildSelections: true, label: 'Leader', max: 1, min: 0, scope: 'force',
     conditionGroups: [{ type: 'or', conditions: unitNames.map(n => {
-      const u = lib.sharedSelectionEntries.find(e => e.name === n);
+      // a name = official unit (looked up upstream); an object = an NFLB unit built in this spec
+      const u = typeof n === 'string' ? lib.sharedSelectionEntries.find(e => e.name === n) : n;
       if (!u) throw new Error(`Leader target not found upstream: ${n}`);
-      return { childId: u.id, childName: n, field: 'selections', scope: 'self', shared: true, type: 'instanceOf', value: 1 };
+      return { childId: u.id, childName: u.name, field: 'selections', scope: 'self', shared: true, type: 'instanceOf', value: 1 };
     }) }],
   });
   const ruleLinks = (key, names) => names.map(n => {
@@ -207,7 +216,7 @@ function createBuilder({ root, catalogueName, factionLibrary }) {
     return { name: e.name, id: id(`${key}:shared:${targetName}`), hidden: false, import: true, targetId: e.id, type: g ? 'selectionEntryGroup' : 'selectionEntry' };
   };
 
-  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, weapon, link, choice, upgrade, model, group,
+  return { id, lib, gst, PTS, DP, ENH, category, rule, unitProfile, ability, orders, weapon, link, choice, upgrade, model, group,
     shrinkFor, catLinks, leadAssociation, ruleLinks, sharedLink, cons, sharedEntries, ownCategories };
 }
 
