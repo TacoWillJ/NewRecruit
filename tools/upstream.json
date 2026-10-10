@@ -79,9 +79,14 @@
       "patch": 1
     },
     "Imperium - Adeptus Mechanicus.json": {
-      "hash": "beb12ec9afe9c95c655969b622a1d5d841e0b054",
+      "hash": "00b7c1b6587728872c45bc599fdd42f89786f851",
       "upstreamRevision": 19,
-      "patch": 4
+      "patch": 5
+    },
+    "Imperium - Adepta Sororitas.json": {
+      "hash": "0d4d12de9a90ea1248b6b30e75f27c443589e64e",
+      "upstreamRevision": 21,
+      "patch": 2
     }
   }
 }

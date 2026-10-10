@@ -1,0 +1,241 @@
+[
+ {
+  "slug": "arch-confessor-kyrinov",
+  "name": "Arch-Confessor Kyrinov",
+  "subtitle": "Bearer of the Icon of Chiros",
+  "factionLine": "Adepta Sororitas • Adeptus Ministorum • Imperium",
+  "points": "80",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "3",
+    "Sv": "5+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Bolt Pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Mace of Valaan",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Bolt Pistol",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Battle Sisters Squad, Dominion Squad, Celestian Sacresants, Repentia Squad."
+   },
+   {
+    "name": "Icon of Chiros",
+    "text": "While a friendly Adeptus Ministorum or Astra Militarum unit is within 6\" of this model, each time you take a Battle-shock test for that unit, you can re-roll the result. In addition, that unit cannot be Battle-shocked while it is wholly within range of an objective marker you control."
+   },
+   {
+    "name": "War Hymns",
+    "text": "While a friendly Adeptus Ministorum Infantry unit is within 6\" of this model, that unit has +1 to the Attacks characteristic of its melee weapons."
+   },
+   {
+    "name": "Word of the Emperor",
+    "text": "Each time a friendly Adeptus Ministorum Infantry model within 6\" of this model would be destroyed, roll one D6: on a 4+, that model is not destroyed, has 1 wound remaining, and any Excess Damage from that attack is not applied to it."
+   },
+   {
+    "name": "Zealot",
+    "text": "Each time this model or a model in its unit makes a melee attack, if the bearer's unit made a Charge move this turn, was charged this turn, or performed a Heroic Intervention this turn, you can re-roll a Hit roll of 1."
+   }
+  ],
+  "composition": "1 Arch-Confessor Kyrinov model. This model is equipped with: 1 Bolt Pistol; 1 Mace of Valaan.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, MINISTORUM PRIEST, ARCH-CONFESSOR KYRINOV",
+  "factionKeywords": "IMPERIUM, ADEPTUS MINISTORUM, ADEPTA SORORITAS"
+ },
+ {
+  "slug": "saint-praxedes",
+  "name": "Saint Praxedes",
+  "subtitle": "Saint of Ophelia VII",
+  "factionLine": "Adepta Sororitas • Order of Our Martyred Lady • Imperium",
+  "points": "130",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "4",
+    "Sv": "3+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Mace of Saint Praxedes",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Bolt pistol",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Mace of Saint Praxedes",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Core",
+    "text": "[LONE OPERATIVE] [FLY] [DEEP STRIKE] [FIGHTS FIRST]"
+   },
+   {
+    "name": "Faction",
+    "text": "Acts of Faith, Sacred Rites."
+   },
+   {
+    "name": "Saint of Ophelia VII [AURA]",
+    "text": "While a friendly Adepta Sororitas unit is within 6\" of this model, that unit can re-roll Battle-shock tests, gains Feel No Pain 6+, and adds 1 to its Hymn rolls (improves from 4+ to 3+)."
+   },
+   {
+    "name": "Living Saint",
+    "text": "When this model is destroyed, do not remove it from play. Roll one D6 at the start of your next Command phase: on a 4+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of enemies, with full Wounds. If it cannot be set up, it is removed permanently. This model can be returned to the battlefield up to twice per battle."
+   },
+   {
+    "name": "Martyrdom of the Mace",
+    "text": "Each time this model fights, before resolving its attacks, you can declare a Martyrdom: this model's Mace of Saint Praxedes attacks are made with WS 1+ and gain [SUSTAINED HITS 2] this fight, but at the end of the Fight phase this model loses D3 wounds (this damage cannot be reduced or prevented)."
+   },
+   {
+    "name": "Halo of the Emperor",
+    "text": "Each time this model is targeted by a Psychic attack, you can roll one D6: on a 4+, that attack is ignored. This model also adds 1 to Battle-shock tests it triggers in enemy units within 12\"."
+   }
+  ],
+  "composition": "1 Saint Praxedes model. This model is equipped with: 1 bolt pistol; 1 Mace of Saint Praxedes.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, LIVING SAINT, FLY, SAINT PRAXEDES",
+  "factionKeywords": "IMPERIUM, ADEPTA SORORITAS, ORDER OF OUR MARTYRED LADY"
+ },
+ {
+  "slug": "uriah-jacobus",
+  "name": "Uriah Jacobus",
+  "subtitle": "Protector of the Faith • Saint-Designate",
+  "factionLine": "Adepta Sororitas • Adeptus Ministorum • Imperium",
+  "points": "85",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "3",
+    "Sv": "6+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "The Redeemer (combat shotgun)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "The Redeemer",
+    "text": "[ASSAULT] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Core",
+    "text": "[LEADER]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Battle Sisters Squad, Dominion Squad, Celestian Sacresants, Repentia Squad."
+   },
+   {
+    "name": "Banner of Sanctity [AURA]",
+    "text": "While a friendly Adeptus Ministorum or Astra Militarum unit is within 6\" of this model, that unit can re-roll Battle-shock tests, and add 1 to the Leadership characteristic of models in that unit."
+   },
+   {
+    "name": "War Hymns [AURA]",
+    "text": "While a friendly Adeptus Ministorum Infantry unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit."
+   },
+   {
+    "name": "Saint-Designate",
+    "text": "Once per battle round, when this model or its unit is selected to attack or to make a Saving throw, you can re-roll one Hit roll, one Wound roll, OR one Saving throw made for that unit."
+   },
+   {
+    "name": "Zealot",
+    "text": "Each time this model makes a melee attack, if its unit made a Charge move this turn, re-roll a Hit roll of 1."
+   }
+  ],
+  "composition": "1 Uriah Jacobus model. This model is equipped with: 1 The Redeemer; 1 bolt pistol; 1 chainsword.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, MINISTORUM PRIEST, URIAH JACOBUS",
+  "factionKeywords": "IMPERIUM, ADEPTUS MINISTORUM, ADEPTA SORORITAS"
+ }
+]

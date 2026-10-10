@@ -843,7 +843,7 @@
     "OC": "2"
    }
   ],
-  "invuln": "",
+  "invuln": "5+",
   "weapons": [
    {
     "name": "Lascannon",
@@ -942,7 +942,7 @@
     "OC": "3"
    }
   ],
-  "invuln": "",
+  "invuln": "5+",
   "weapons": [
    {
     "name": "Bolt gun",
@@ -1035,7 +1035,7 @@
     "OC": "2"
    }
   ],
-  "invuln": "",
+  "invuln": "5+",
   "weapons": [
    {
     "name": "Heavy bolter",
@@ -1120,7 +1120,7 @@
     "OC": "2"
    }
   ],
-  "invuln": "",
+  "invuln": "5+",
   "weapons": [
    {
     "name": "Heavy autocannon",

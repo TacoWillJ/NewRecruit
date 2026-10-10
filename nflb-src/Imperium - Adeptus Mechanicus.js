@@ -10,6 +10,7 @@
 // the official Legends entries are linked in instead.
 
 const cards = require('./data/admech-cards.json');
+const { unitsFromCards, resolveLeaders } = require('../tools/nflb-cards');
 const LEGENDS_LIB = 'Library - Astartes Heresy Legends';
 
 // Model structure for every unit that is not a single model
@@ -46,10 +47,6 @@ const COMP = {
   'vultarax-stratos-automata': { models: [['Vultarax', 1, 1, 'all']], extra: ['Vultarax', 2, 110] },
 };
 
-const PRIMARY = ['Epic Hero', 'Character', 'Battleline', 'Monster', 'Vehicle', 'Mounted', 'Infantry'];
-const CORE_RULE = /^(Deadly Demise|Deep Strike|Scouts|Stealth|Feel No Pain|Infiltrators|Lone Operative|Fights First|Firing Deck|Hover|Leader)/i;
-const title = s => s.toLowerCase().replace(/(^|[\s(\-'/])([a-z])/g, (m, a, b) => a + b.toUpperCase());
-const cleanWeapon = n => n.replace(/\s*\((?:[^)]*\bonly|hull|built-in|defensive|calix|cynis|x\d)\)\s*$/i, '').trim();
 
 module.exports = {
   faction: 'Imperium - Adeptus Mechanicus.json',
@@ -57,9 +54,8 @@ module.exports = {
   inline: true,
 
   build(b) {
-    const { weapon: W, link, model, group, choice, ability, unitProfile, catLinks, ruleLinks, leadAssociation, cons, shrinkFor } = b;
+    const { ability, catLinks, cons } = b;
     const F = 'Imperium - Adeptus Mechanicus.json';
-    const units = [];
 
     // ---------- detachments first (units are gated on their ids) ----------
     const taghId = b.id('det:taghmata'), darkId = b.id('det:darkmech');
@@ -69,120 +65,15 @@ module.exports = {
       : [];
 
     // ---------- units from the cards ----------
-    for (const c of cards) {
-      const key = `admech:${c.slug}`;
-      const robot = /^Adeptus Mechanicus/.test(c.factionLine);
-      const dark = /Dark Mechanicum|Heterodox/.test(c.factionLine) && !/Loyalist or Heterodox/.test(c.factionLine);
-      const gate = robot ? null : dark ? 'dark' : 'hh';
+    const isDark = c => /Dark Mechanicum|Heterodox/.test(c.factionLine) && !/Loyalist or Heterodox/.test(c.factionLine);
+    const isRobot = c => /^Adeptus Mechanicus/.test(c.factionLine);
+    const units = unitsFromCards(b, cards, {
+      prefix: 'admech', comp: COMP, armyRules: ['Doctrina Imperatives'], skipAbility: /^Doctrina Imperatives$/i,
+      keywords: c => ({ kws: isRobot(c) ? [] : ['Horus Heresy'], faction: ['Faction: Adeptus Mechanicus', isDark(c) ? 'Chaos' : 'Imperium'] }),
+      modifiers: c => gateMods(isRobot(c) ? null : isDark(c) ? 'dark' : 'hh'),
+    });
 
-      // weapons (+ keyword lines "Name | [KW] [KW]")
-      const kwFor = name => {
-        const a = c.abilities.find(x => /^(\[[^\]]+\]\s*)+$/.test(x.text) && cleanWeapon(name).toLowerCase().startsWith(cleanWeapon(x.name).toLowerCase().replace(/\s*\(.*$/, '')));
-        return a ? [...a.text.matchAll(/\[([^\]]+)\]/g)].map(m => title(m[1])).join(', ') : '';
-      };
-      const byName = new Map();
-      for (const w of c.weapons) {
-        const n = cleanWeapon(w.name);
-        const base = n.replace(/\s*[–-]\s*(Standard|Supercharge|Frag|Krak)$/i, '');
-        const suffix = (n.match(/[–-]\s*(Standard|Supercharge|Frag|Krak)$/i) || [])[1];
-        if (!byName.has(base)) byName.set(base, { melee: w.melee, rows: [] });
-        byName.get(base).rows.push({ suffix, stats: [w.range, w.a, w.skill, w.s, w.ap, w.d], kw: kwFor(base) });
-      }
-      const weapons = new Map([...byName].map(([n, w]) => {
-        const stats = w.rows.length === 1 ? w.rows[0].stats : Object.fromEntries(w.rows.map(r => [r.suffix.toLowerCase(), r.stats]));
-        return [n.toLowerCase(), W(n, stats, { keywords: w.rows.length === 1 ? w.rows[0].kw : w.rows.map(r => r.kw), melee: w.melee, matchOfficial: true })];
-      }));
-      const wpn = n => {
-        const k = cleanWeapon(n).toLowerCase();
-        const hit = weapons.get(k) || [...weapons].find(([wn]) => wn.startsWith(k) || k.startsWith(wn))?.[1];
-        if (!hit) throw new Error(`${c.slug}: no weapon "${n}" (have: ${[...weapons.keys()].join(', ')})`);
-        return hit;
-      };
-      const allGear = [...weapons.values()];
-
-      // abilities, rules, leader
-      const rules = ['Doctrina Imperatives'];
-      const profiles = [];
-      let leaderText = null;
-      const seen = new Set();
-      for (const a of c.abilities) {
-        if (/^(\[[^\]]+\]\s*)+$/.test(a.text)) { // weapon keyword line, or "Core | [DEADLY DEMISE D3]"
-          if (/^core$/i.test(a.name)) rules.push(...[...a.text.matchAll(/\[([^\]]+)\]/g)].map(m => title(m[1])));
-          continue;
-        }
-        if (/^Doctrina Imperatives$/i.test(a.name)) continue;
-        if (/^Leader \(Core\)$/i.test(a.name)) { rules.push('Leader'); continue; }
-        if (/^CORE:/i.test(a.name)) { rules.push(...a.name.replace(/^CORE:\s*/i, '').split(/,\s*/).map(title)); continue; }
-        if (/^leader$/i.test(a.name)) {
-          if (/attached to (a|the)/i.test(a.text)) { leaderText = a.text; if (!rules.includes('Leader')) rules.push('Leader'); }
-          else if (!seen.has('leader-note')) { seen.add('leader-note'); profiles.push(ability(key, 'Leader', a.text)); }
-          continue;
-        }
-        if (/^Scouts \d+"$|^Stealth$/i.test(a.name)) { rules.push(a.name); continue; }
-        if (seen.has(a.name)) continue;
-        seen.add(a.name);
-        profiles.push(ability(key, a.name, a.text));
-      }
-
-      // keywords
-      const kws = c.keywords.split(/,\s*/).map(title).filter(Boolean);
-      if (!robot) kws.push('Horus Heresy');
-      const fk = ['Faction: Adeptus Mechanicus', dark ? 'Chaos' : 'Imperium'];
-      const primary = PRIMARY.find(p => kws.includes(p)) || kws[0];
-      const pts = parseInt(c.points, 10);
-      const s = c.stats[0];
-      const statProfiles = c.stats.map((st, i) => unitProfile(st.model || c.name, [st.M, st.T, st.Sv, st.W, st.LD, st.OC, c.invuln || '']));
-
-      const base = { name: `${c.name} [NFLB]`, id: b.id(`unit:${c.slug}`), hidden: false, import: true,
-        categoryLinks: catLinks(key, [...kws, ...fk], primary),
-        infoLinks: ruleLinks(key, [...new Set(rules)]),
-        modifiers: gateMods(gate),
-        profiles: [...statProfiles, ...profiles] };
-      const comp = COMP[c.slug];
-      let u;
-      if (!comp) {
-        u = { ...base, type: 'model', costs: [{ name: 'pts', typeId: b.PTS, value: pts }], entryLinks: allGear.map(w => link(key, w)) };
-        if (kws.includes('Epic Hero')) u.constraints = cons(`${key}:roster`, null, 1, 'roster');
-        if (kws.includes('Character') && !kws.includes('Epic Hero')) u.entryLinks.push(b.sharedLink(key, 'Enhancements'));
-      } else {
-        const entries = [], groups = [];
-        const gearOf = (g, who) => (g === 'all' ? allGear : g.map(wpn)).map(w => link(`${key}:${who}:${w.name}`, w));
-        const made = {};
-        for (const [name, min, max, g] of comp.models || []) { made[name] = model(key, name, { min, max, gear: gearOf(g, name) }); entries.push(made[name]); }
-        if (comp.extra) {
-          const [name, n, each] = comp.extra;
-          const src = (comp.models || []).find(m => m[0] === name);
-          entries.push(model(key, `Additional ${name}`, { max: n, pts: each, gear: gearOf(src ? src[3] : 'all', `extra:${name}`) }));
-        }
-        for (const p of comp.pick || []) {
-          const owner = made[p.owner];
-          owner.selectionEntryGroups = [...(owner.selectionEntryGroups || []), choice(`${key}:${p.owner}`, p.name, p.from.map(wpn), { min: p.min ?? 1, max: 1 })];
-        }
-        if (comp.swap) {
-          const sw = comp.swap;
-          const swapModels = sw.from.map(n => model(key, `${sw.owner} w/ ${cleanWeapon(n)}`, { max: sw.max, gear: [wpn(n), ...sw.also.map(wpn)].map(w => link(`${key}:${sw.owner}:${n}:${w.name}`, w)) }));
-          groups.push(group(key, sw.name, swapModels, { max: sw.max }));
-          shrinkFor(made[sw.owner], swapModels.map(m => [m, 1]));
-        }
-        if (comp.perWeapon) {
-          const pw = comp.perWeapon;
-          const [min, max] = Array.isArray(pw.count) ? pw.count : [pw.count, pw.count];
-          const ms = pw.from.map(n => model(key, `${pw.name} w/ ${cleanWeapon(n)}`, { max, pts: pw.ptsEach || 0, gear: [wpn(n), ...pw.also.map(wpn)].map(w => link(`${key}:${pw.name}:${n}:${w.name}`, w)) }));
-          groups.push(group(key, `${pw.name}s`, ms, { min, max, def: ms[0] }));
-        }
-        u = { ...base, type: 'unit', costs: [{ name: 'pts', typeId: b.PTS, value: comp.perWeapon?.ptsEach ? 0 : pts }] };
-        if (entries.length) u.selectionEntries = entries;
-        if (groups.length) u.selectionEntryGroups = groups;
-        if (comp.ptsAbove) {
-          u.modifiers = [...u.modifiers, { field: b.PTS, type: 'set', value: comp.ptsAbove[1],
-            conditions: [{ childId: 'model', field: 'selections', includeChildSelections: true, scope: 'self', shared: true, type: 'greaterThan', value: comp.ptsAbove[0] }] }];
-        }
-      }
-      u.__leader = leaderText;
-      units.push(u);
-    }
-
-    // ---------- leader targets: "a Castellax, Domitar, ... or Myrmidon unit" ----------
+    // ---------- leader targets (official Legends engines can be led too) ----------
     const legendsIds = {};
     const H = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', `${LEGENDS_LIB}.json`), 'utf8')).catalogue;
     for (const n of ['Decimator', 'Blood Slaughterer', 'Greater Brass Scorpion', 'Kytan Ravager', 'Tarantula Sentry Battery']) {
@@ -190,28 +81,7 @@ module.exports = {
       if (!e) throw new Error(`${n} [Legends] not found in ${LEGENDS_LIB}`);
       legendsIds[n] = e;
     }
-    for (const u of units) {
-      const text = u.__leader;
-      delete u.__leader;
-      if (!text) continue;
-      const list = text.replace(/\(.*?\)/g, '').replace(/.*attached to (?:a |the following units?:\s*)/i, '').replace(/\s*units?\.?\s*$/i, '');
-      const tokens = list.split(/,\s*|\s+or\s+/).map(t => t.replace(/^(or|any other|a|an)\s+/i, '').trim()).filter(Boolean);
-      const targets = new Set();
-      for (const t of tokens) {
-        const tl = t.toLowerCase().replace(/[.]/g, '').trim().replace(/\s+units?$/, '');
-        for (const x of units) {
-          const nm = x.name.toLowerCase();
-          const cats = (x.categoryLinks || []).map(l => l.name.toLowerCase());
-          if (x !== u && !cats.includes('character') && (nm.includes(tl) || cats.includes(tl))) targets.add(x);
-        }
-        const leg = Object.entries(legendsIds).find(([n]) => n.toLowerCase().includes(tl));
-        if (leg) targets.add(leg[1]);
-      }
-      if (!targets.size) throw new Error(`${u.name}: no leader targets resolved from "${text}"`);
-      u.associations = [leadAssociation(`lead:${u.id}`, [...targets])];
-      u.profiles.splice(u.profiles.findIndex(p => p.typeName !== 'Unit'), 0,
-        ability(`lead:${u.id}`, 'Leader', `This model can be attached to the following units: ${[...targets].map(x => `**^^${x.name.replace(/ \[NFLB\]$/, '')}^^**`).join(', ')}`));
-    }
+    resolveLeaders(b, units, legendsIds);
 
     // ---------- detachments ----------
     const strat = (det, n, cp, type, when, target, effect) => ({ name: `Stratagem: ${n} (${cp}CP)`, id: b.id(`${det}:strat:${n}`), hidden: false,
