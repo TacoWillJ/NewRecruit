@@ -1,0 +1,3279 @@
+[
+ {
+  "slug": "anacharis-scoria",
+  "name": "Anacharis Scoria",
+  "subtitle": "Heterodox Archmagos — Lord of the Hollow Mountain",
+  "factionLine": "Mechanicum (Horus Heresy) • Dark Mechanicum",
+  "points": "145",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "7",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Volkite Serpenta (Twin)",
+    "melee": false,
+    "range": "18\"",
+    "a": "6",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Gauntlet of the Vox-Daemonic",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "10",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Mechadendrites (Servo-Arm Cluster)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Leader (Core)",
+    "text": ""
+   },
+   {
+    "name": "Volkite Serpenta",
+    "text": "[DEVASTATING WOUNDS] [TWIN-LINKED]"
+   },
+   {
+    "name": "Power Gauntlet of the Vox-Daemonic",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Mechadendrites (Servo-Arm Cluster)",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, Myrmidon, or Decimator unit (Dark Mechanicum detachment only)."
+   },
+   {
+    "name": "Cybertheurgist",
+    "text": "While this model is on the battlefield, once per battle round, you may invoke a Cybertheurgical Rite: choose one friendly Mechanicum unit within 12\" and grant it [SUSTAINED HITS 1] on its next attack action this turn."
+   },
+   {
+    "name": "Heterodox Cybertheurgy",
+    "text": "When this model invokes Cybertheurgist, the granted ability is [DEVASTATING WOUNDS] instead of [SUSTAINED HITS 1]. After resolving, this model suffers 1 mortal wound (warp price)."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, you can repair one friendly Vehicle, Walker, or Battle-Automata model within 3\" of this model: that model regains up to D3 lost wounds, or returns one destroyed model to a Battle-Automata unit (your choice)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Fear (2)",
+    "text": "Each time an enemy unit within 6\" of this model takes a Battle-shock test, subtract 2 from the result."
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, Myrmidon, or Decimator unit (Dark Mechanicum detachment only)."
+   }
+  ],
+  "composition": "1 Anacharis Scoria model. This model is equipped with: 1 Volkite Serpenta (Twin); 1 Power Gauntlet of the Vox-Daemonic; 1 Mechadendrites (Servo-Arm Cluster).",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TECH-PRIEST, CYBERTHEURGIST, HETERODOX, ANACHARIS SCORIA",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "archmagos-draykavac",
+  "name": "Archmagos Draykavac",
+  "subtitle": "Twice-Killed Engineer-Prince",
+  "factionLine": "Mechanicum (HH) • Heterodox • Epic Hero",
+  "points": "130",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "7",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Phased Plasma-fusil",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Power Claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Master of the Battle-Automata",
+    "text": "Each time a friendly Heterodox Battle-Automata unit within 12\" of this model makes a ranged or melee attack, you can re-roll one Hit roll and one Wound roll for that attack."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "In your Command phase, select one friendly Vehicle, Walker, or Battle-Automata unit within 3\" of this model. That unit regains up to D3 lost wounds, or you can return one destroyed model to a Battle-Automata unit instead (your choice)."
+   },
+   {
+    "name": "Twice-Killed",
+    "text": "The first time this model is reduced to 0 wounds, set it to 1 wound instead. It cannot lose any further wounds until the end of the phase."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Phased Plasma-fusil",
+    "text": "[HAZARDOUS] [RAPID FIRE 2]"
+   },
+   {
+    "name": "Power Claws (paired)",
+    "text": "[DEVASTATING WOUNDS] [TWIN-LINKED]"
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to a Castellax, Domitar, Vorax, Vultarax, Thanatar, or any other Battle-Automata unit."
+   }
+  ],
+  "composition": "1 Archmagos Draykavac model. This model is equipped with: 1 Phased Plasma-fusil; 1 Power Claws (paired).",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TECH-PRIEST, DRAYKAVAC",
+  "factionKeywords": "MECHANICUM (HH), HETERODOX"
+ },
+ {
+  "slug": "archmagos-on-abeyant",
+  "name": "Archmagos on Abeyant",
+  "subtitle": "Hover-Throne-Borne Mechanicum Adept",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "135",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "7",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Volkite Culverin (Abeyant-Mounted)",
+    "melee": false,
+    "range": "30\"",
+    "a": "4",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Servo-Arm Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Abeyant Servo-Arms (Paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Leader (Core)",
+    "text": ""
+   },
+   {
+    "name": "Volkite Culverin",
+    "text": "[DEVASTATING WOUNDS] [HEAVY]"
+   },
+   {
+    "name": "Servo-Arm Flamer",
+    "text": "[TORRENT] [IGNORES COVER]"
+   },
+   {
+    "name": "Abeyant Servo-Arms",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, or Myrmidon unit."
+   },
+   {
+    "name": "Repulsor Abeyant",
+    "text": "This model has the [FLY] ability. It can move over terrain and models as if they were not there during its Movement phase."
+   },
+   {
+    "name": "Cybertheurgist",
+    "text": "While this model is on the battlefield, once per battle round, you may invoke a Cybertheurgical Rite: choose one friendly Mechanicum unit within 12\" and grant it [SUSTAINED HITS 1] on its next attack action this turn."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, you can repair one friendly Vehicle, Walker, or Battle-Automata model within 3\" of this model: that model regains up to D3 lost wounds, or returns one destroyed model to a Battle-Automata unit (your choice)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, or Myrmidon unit."
+   }
+  ],
+  "composition": "1 Archmagos on Abeyant model. This model is equipped with: 1 Volkite Culverin; 1 Servo-Arm Flamer; 1 Power Weapon; 1 Abeyant Servo-Arms (Paired).",
+  "keywords": "INFANTRY, MOUNTED, FLY, CHARACTER, TECH-PRIEST, CYBERTHEURGIST, ARCHMAGOS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "archmagos",
+  "name": "Archmagos",
+  "subtitle": "Mechanicum High-Tier Cybertheurgist",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "110",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "4+",
+  "weapons": [
+   {
+    "name": "Volkite Serpenta",
+    "melee": false,
+    "range": "18\"",
+    "a": "3",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Servo-Arm Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power Axe",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Servo-Arm",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "10",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Leader (Core)",
+    "text": ""
+   },
+   {
+    "name": "Volkite Serpenta",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Servo-Arm Flamer",
+    "text": "[TORRENT] [IGNORES COVER]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, or Myrmidon unit."
+   },
+   {
+    "name": "Cybertheurgist",
+    "text": "While this model is on the battlefield, once per battle round, you may invoke a Cybertheurgical Rite: choose one friendly Mechanicum unit within 12\" and grant it [SUSTAINED HITS 1] on its next attack action this turn."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, you can repair one friendly Vehicle, Walker, or Battle-Automata model within 3\" of this model: that model regains up to D3 lost wounds, or returns one destroyed model to a Battle-Automata unit (your choice)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to a Castellax, Domitar, Scyllax, Thallax, or Myrmidon unit."
+   }
+  ],
+  "composition": "1 Archmagos model. This model is equipped with: 1 Volkite Serpenta; 1 Servo-Arm Flamer; 1 Power Axe; 1 Servo-Arm.",
+  "keywords": "INFANTRY, CHARACTER, TECH-PRIEST, CYBERTHEURGIST, ARCHMAGOS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "arcuitor-magisterium",
+  "name": "Arcuitor Magisterium",
+  "subtitle": "Cybertheurgical Specialist Conclave",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "110",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Disruptor Caster",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Cybertheurgical Staves",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Disruptor Caster",
+    "text": "[DEVASTATING WOUNDS] [ANTI-PSYCHIC 3+]"
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Magisterial Cybertheurgy",
+    "text": "At the start of your Command phase, while this unit is on the battlefield, you may invoke one of: Sacred Catechism (one friendly Mechanicum unit within 12\" gains [LETHAL HITS] on all its attacks this turn), or Hexagrammic Litany (one enemy unit within 18\" subtracts 1 from Hit rolls until your next Command phase)."
+   },
+   {
+    "name": "Forbidden Knowledge",
+    "text": "This unit has a 5+ Invulnerable save AND a 5+ Feel No Pain ability against attacks with the [PSYCHIC] ability."
+   }
+  ],
+  "composition": "1 Magister model; 4 Arcuitor models. Every model is equipped with: 1 Disruptor Caster; 1 Cybertheurgical Staff.",
+  "keywords": "INFANTRY, ARCUITOR MAGISTERIUM",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "arlatax-battle-automata",
+  "name": "Arlatax Battle-Automata",
+  "subtitle": "Cybernetica Heavy Assault Robot",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "230",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "8",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Plasma Fusil",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Paired Energy Gauntlets",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Plasma Fusil",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Paired Energy Gauntlets",
+    "text": "[TWIN-LINKED] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Reactor Surge",
+    "text": "Once per battle, in your Command phase, you can activate Reactor Surge on this unit. Until your next Command phase, models in this unit have +2\" Move, +1 Attack on melee weapons, and gain the [LANCE] ability on melee attacks. At the end of that next Command phase, each model in this unit suffers 1 mortal wound."
+   }
+  ],
+  "composition": "3 Arlatax models. Add up to 2 more for +75 pts each. Every model is equipped with: 1 Plasma Fusil; 1 Paired Energy Gauntlets.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, ARLATAX",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "bonepicker-host",
+  "name": "Bonepicker Host",
+  "subtitle": "Mechanicum Scavenger Cult",
+  "factionLine": "Mechanicum (Horus Heresy) • Skitarii Conclaves",
+  "points": "55",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "3",
+    "Sv": "5+",
+    "W": "1",
+    "LD": "8+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Salvaged Stub Gun",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Improvised Cleaver",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Salvaged Stub Gun",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Scavenger Swarm",
+    "text": "After this unit destroys an enemy unit, models in this unit may immediately make a 3\" Normal move."
+   },
+   {
+    "name": "Salvager",
+    "text": "At the end of your Command phase, if this unit is wholly within 6\" of an enemy unit that was destroyed earlier this turn, you can score 1 Victory Point (max 3 per battle)."
+   },
+   {
+    "name": "Scouts 9\"",
+    "text": "After both players have deployed, but before the first turn begins, this unit can make a Normal move of up to 9\"."
+   }
+  ],
+  "composition": "10 Bonepicker models. Add 10 more for +55 pts. Every model is equipped with: 1 Salvaged Stub Gun; 1 Improvised Cleaver.",
+  "keywords": "INFANTRY, BONEPICKER HOST",
+  "factionKeywords": "MECHANICUM (HORUS HERESY), SKITARII CONCLAVES"
+ },
+ {
+  "slug": "castellax-battle-automata",
+  "name": "Castellax Battle-Automata",
+  "subtitle": "Maniple Cybernetica Heavy Combat Robot",
+  "factionLine": "Mechanicum (HH) • Battle-Automata • Loyalist or Heterodox",
+  "points": "180",
+  "pointsNote": "Points\n(+60 per extra model, max 5)",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "9",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Mauler Bolt Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack, re-roll a Hit roll of 1. If that Tech-Priest is a Cybertheurgist, re-roll all Hit rolls of 1 instead."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This unit automatically passes Battle-shock tests and cannot Fall Back."
+   },
+   {
+    "name": "Mauler Bolt Cannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "LEADER",
+    "text": "An Archmagos, Magos, or other Tech-Priest Character with a Leader ability that lists Battle-Automata or Castellax units can be attached to this unit."
+   }
+  ],
+  "composition": "3 Castellax models. Every Castellax is equipped with: 1 Mauler Bolt Cannon; 1 Power Blades. This unit can include up to 2 additional Castellax models, each equipped with 1 Mauler Bolt Cannon and 1 Power Blades, for +60 points per model.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, CASTELLAX",
+  "factionKeywords": "MECHANICUM (HH)"
+ },
+ {
+  "slug": "castellax-destructor-automata",
+  "name": "Castellax Destructor-Automata",
+  "subtitle": "Maniple Cybernetica Heavy Destructor Robot",
+  "factionLine": "Mechanicum (Horus Heresy) • Battle-Automata",
+  "points": "220",
+  "pointsNote": "Points\n(+75 per extra model, max 5)",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "9",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Darkfire Cannon",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6+1"
+   },
+   {
+    "name": "Twin Heavy Bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Darkfire Cannon",
+    "text": "[LANCE] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Twin Heavy Bolter",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   }
+  ],
+  "composition": "3 Castellax models. Every Castellax is equipped with: 1 Darkfire Cannon; 1 Twin Heavy Bolter; 1 Power Blades. This unit can include up to 2 additional Castellax models, each with the same loadout, for +75 points per model.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, CASTELLAX",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "castellax-infernus-maniple",
+  "name": "Castellax Infernus Maniple",
+  "subtitle": "Flame-Pattern Battle-Automata",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "195",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Purge Incinerator",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "6",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power Blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Purge Incinerator",
+    "text": "[TORRENT] [ANTI-INFANTRY 4+] — this weapon auto-hits, which is why it has no BS characteristic."
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 6+ invulnerable save."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Firing Protocols (3)",
+    "text": "Each time this model is selected to shoot, you can split its ranged attacks across up to 3 different enemy units (one weapon per target)."
+   }
+  ],
+  "composition": "3 Castellax models. Every Castellax is equipped with: 1 Purge Incinerator; 1 Power Blades. This unit can include up to 2 additional Castellax models, each with the same loadout, for +65 points per model.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, CASTELLAX, INFERNUS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "cataphract-battle-robot",
+  "name": "Cataphract Battle Robot",
+  "subtitle": "Tri-Spectrum Fire Platform",
+  "factionLine": "Adeptus Mechanicus • Imperium",
+  "points": "145",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "9",
+    "Sv": "2+",
+    "W": "8",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "4+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Bolt gun",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Chassis strike",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Bolt gun",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Flamer",
+    "text": "[TORRENT] [IGNORES COVER]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEADLY DEMISE D3]"
+   },
+   {
+    "name": "Atomantic Cortex Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back or leave the battlefield against its preprogrammed orders."
+   },
+   {
+    "name": "Linked Doctrine",
+    "text": "Each time this model is selected to shoot, if two or more of its ranged weapons target the same enemy unit, all attacks made by this model against that unit until the end of the phase have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Cortex Override Vulnerability",
+    "text": "If there is no friendly Adeptus Mechanicus Character model within 12\" of this model at the start of your Command phase, this model can only move toward the nearest visible enemy unit during its next Movement phase, and must attempt to charge if able."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   }
+  ],
+  "composition": "1 Cataphract Battle Robot model. This model is equipped with: 1 lascannon; 1 bolt gun; 1 flamer.",
+  "keywords": "VEHICLE, WALKER, BATTLE ROBOT, CATAPHRACT",
+  "factionKeywords": "IMPERIUM, ADEPTUS MECHANICUS"
+ },
+ {
+  "slug": "colossus-battle-robot",
+  "name": "Colossus Battle Robot",
+  "subtitle": "Siege-Pattern Battle Automata",
+  "factionLine": "Adeptus Mechanicus • Imperium",
+  "points": "185",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Bolt gun",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Melta-gun",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "4+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Siege hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-3",
+    "d": "D6"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Bolt gun",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Melta-gun",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Siege hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEADLY DEMISE D6]"
+   },
+   {
+    "name": "Atomantic Cortex Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back or leave the battlefield against its preprogrammed orders."
+   },
+   {
+    "name": "Wrecker Protocol",
+    "text": "Each time this model makes an attack (ranged or melee) that targets a Vehicle, Monster, or Fortification unit, you can re-roll a Wound roll of 1, and the Damage characteristic of that attack is increased by 1."
+   },
+   {
+    "name": "Cortex Override Vulnerability",
+    "text": "If there is no friendly Adeptus Mechanicus Character model within 12\" of this model at the start of your Command phase, this model can only move toward the nearest visible enemy unit during its next Movement phase, and must attempt to charge if able."
+   },
+   {
+    "name": "Explodes (6)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 6 each unit within 6\" suffers D6 mortal wounds."
+   }
+  ],
+  "composition": "1 Colossus Battle Robot model. This model is equipped with: 1 bolt gun; 1 melta-gun; 1 siege hammer.",
+  "keywords": "VEHICLE, WALKER, BATTLE ROBOT, COLOSSUS",
+  "factionKeywords": "IMPERIUM, ADEPTUS MECHANICUS"
+ },
+ {
+  "slug": "conqueror-battle-robot",
+  "name": "Conqueror Battle Robot",
+  "subtitle": "Multi-Target Battle Automata",
+  "factionLine": "Adeptus Mechanicus • Imperium",
+  "points": "135",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "8",
+    "Sv": "3+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Autocannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "9",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power glove",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEADLY DEMISE D3]"
+   },
+   {
+    "name": "Atomantic Cortex Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back or leave the battlefield against its preprogrammed orders."
+   },
+   {
+    "name": "Multi-Target Cogitator",
+    "text": "Each time this model is selected to shoot, you can split its ranged attacks: each of its ranged weapons can target a different enemy unit (rather than all weapons being required to target the same unit). This rule does not allow the Conqueror to target units it could not normally see or shoot."
+   },
+   {
+    "name": "Cortex Override Vulnerability",
+    "text": "If there is no friendly Adeptus Mechanicus Character model within 12\" of this model at the start of your Command phase, this model can only move toward the nearest visible enemy unit during its next Movement phase, and must attempt to charge if able."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   }
+  ],
+  "composition": "1 Conqueror Battle Robot model. This model is equipped with: 1 heavy bolter; 1 autocannon; 1 power glove.",
+  "keywords": "VEHICLE, WALKER, BATTLE ROBOT, CONQUEROR",
+  "factionKeywords": "IMPERIUM, ADEPTUS MECHANICUS"
+ },
+ {
+  "slug": "crusader-battle-robot",
+  "name": "Crusader Battle Robot",
+  "subtitle": "Combined-Arms Combat Automata",
+  "factionLine": "Adeptus Mechanicus • Imperium",
+  "points": "120",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "8",
+    "Sv": "3+",
+    "W": "6",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Heavy autocannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "3",
+    "skill": "4+",
+    "s": "9",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Paired power swords",
+    "melee": true,
+    "range": "Melee",
+    "a": "8",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Paired power swords",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Core",
+    "text": "[DEADLY DEMISE D3]"
+   },
+   {
+    "name": "Atomantic Cortex Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back or leave the battlefield against its preprogrammed orders."
+   },
+   {
+    "name": "Crusader Onslaught",
+    "text": "This model can declare a charge in a turn in which it Advanced. In addition, each time this model makes a melee attack that targets a unit it charged this turn, an unmodified Wound roll of 5+ scores a Critical Wound."
+   },
+   {
+    "name": "Cortex Override Vulnerability",
+    "text": "If there is no friendly Adeptus Mechanicus Character model within 12\" of this model at the start of your Command phase, this model can only move toward the nearest visible enemy unit during its next Movement phase, and must attempt to charge if able."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   }
+  ],
+  "composition": "1 Crusader Battle Robot model. This model is equipped with: 1 heavy autocannon; 1 pair of power swords.",
+  "keywords": "VEHICLE, WALKER, BATTLE ROBOT, CRUSADER",
+  "factionKeywords": "IMPERIUM, ADEPTUS MECHANICUS"
+ },
+ {
+  "slug": "domitar-battle-automata",
+  "name": "Domitar Battle-Automata",
+  "subtitle": "Cybernetica Close-Combat Robot",
+  "factionLine": "Mechanicum (Horus Heresy) • Battle-Automata",
+  "points": "195",
+  "pointsNote": "Points\n(+65 per extra model, max 5)",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "9",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Graviton Ram (Built-In)",
+    "melee": false,
+    "range": "18\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-3",
+    "d": "D6+2"
+   },
+   {
+    "name": "Paired Graviton Mauls",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Graviton Ram",
+    "text": "[BLAST] [ONE SHOT]"
+   },
+   {
+    "name": "Paired Graviton Mauls",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Adamantine Tread",
+    "text": "Each time this model makes a charge move, until the end of the turn, melee attacks made by this model have +1 to the Wound roll, and the first model destroyed by this model in melee triggers a D3 mortal wound spillover to other models in the target unit."
+   }
+  ],
+  "composition": "3 Domitar models. Every Domitar is equipped with: 1 Graviton Ram; 1 Paired Graviton Mauls. This unit can include up to 2 additional Domitar models for +65 points per model.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, DOMITAR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "echidnax-servo-maniple",
+  "name": "Echidnax Servo Maniple",
+  "subtitle": "Cybernetica Support Cluster",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "65",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "1",
+    "LD": "8+",
+    "OC": "0"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Cluster-Bolt Module",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Servo-Blades",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Cluster-Bolt Module",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Drone Swarm",
+    "text": "This unit has the [FLY] ability. This unit has the [LONE OPERATIVE] ability."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Scouts 9\"",
+    "text": "After both players have deployed, but before the first turn begins, this unit can make a Normal move of up to 9\"."
+   },
+   {
+    "name": "Targeting Cluster",
+    "text": "While this unit is on the battlefield and within 18\" of an enemy unit, friendly Mechanicum units making ranged attacks against that enemy unit ignore the Benefit of Cover."
+   }
+  ],
+  "composition": "6 Echidnax models. Add 6 more for +60 pts. Every model is equipped with: 1 Cluster-Bolt Module; 1 Servo-Blades.",
+  "keywords": "VEHICLE, FLY, ECHIDNAX SERVO MANIPLE",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "karacnos-assault-tank",
+  "name": "Karacnos Assault Tank",
+  "subtitle": "Mechanicum Mortar-Pattern Assault Vehicle",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "195",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "12",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Karacnos Heavy Mortar Battery",
+    "melee": false,
+    "range": "48\"",
+    "a": "D6+2",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "D3"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "7",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Karacnos Heavy Mortar Battery",
+    "text": "[BLAST] [INDIRECT FIRE]"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Flare Shield",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model and the attacking model is more than 18\" away, that attack has -1 to the Wound roll."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   }
+  ],
+  "composition": "1 Karacnos Assault Tank model. This model is equipped with: 1 Karacnos Heavy Mortar Battery; 1 Twin Mauler Bolt Cannon; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, KARACNOS ASSAULT TANK",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "krios-battle-tank",
+  "name": "Krios Battle Tank",
+  "subtitle": "Mechanicum Lightning Cannon Main Battle Tank",
+  "factionLine": "Mechanicum (HH) • Vehicle",
+  "points": "145",
+  "pointsNote": "Points\n(squadrons of up to 3)",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "11",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Krios Pulsar Lightning Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "D3+3"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon (hull)",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "7",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Flare Shield",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model and the attacking model is more than 18\" away, that attack has -1 to the Wound roll."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Krios Pulsar Lightning Cannon",
+    "text": "[SUSTAINED HITS 2]"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Krios Battle Tank model. This model is equipped with: 1 Krios Pulsar Lightning Cannon; 1 Twin Mauler Bolt Cannon; 1 Armoured Tracks. This unit can include up to 2 additional Krios Battle Tank models, each equipped with the same loadout, at the same points cost per model.",
+  "keywords": "VEHICLE, KRIOS, BATTLE TANK",
+  "factionKeywords": "MECHANICUM (HH)"
+ },
+ {
+  "slug": "krios-venator",
+  "name": "Krios Venator",
+  "subtitle": "Mechanicum Lascannon-Pattern Anti-Tank Variant",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "165",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "11",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Krios Pulsar-Fusil Array (Twin)",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Hull-Mounted Heavy Bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "7",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Krios Pulsar-Fusil Array",
+    "text": "[LANCE] [TWIN-LINKED]"
+   },
+   {
+    "name": "Hull-Mounted Heavy Bolter",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Flare Shield",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model and the attacking model is more than 18\" away, that attack has -1 to the Wound roll."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   }
+  ],
+  "composition": "1 Krios Venator model. Can be taken in squadrons of up to 3. This model is equipped with: 1 Krios Pulsar-Fusil Array (Twin); 1 Hull-Mounted Heavy Bolter; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, KRIOS VENATOR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "magos-on-abeyant",
+  "name": "Magos on Abeyant",
+  "subtitle": "Hover-Throne-Borne Mid-Tier Adept",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "100",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Volkite Culverin (Abeyant-Mounted)",
+    "melee": false,
+    "range": "30\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Servo-Arm",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Leader (Core)",
+    "text": ""
+   },
+   {
+    "name": "Volkite Culverin",
+    "text": "[DEVASTATING WOUNDS] [HEAVY]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Castellax, Scyllax, Thallax, Ursarax, or Myrmidon unit."
+   },
+   {
+    "name": "Repulsor Abeyant",
+    "text": "This model has the [FLY] ability. It can move over terrain and models as if they were not there during its Movement phase."
+   },
+   {
+    "name": "Cybertheurgist",
+    "text": "While this model is on the battlefield, once per battle round, you may invoke a Cybertheurgical Rite: choose one friendly Mechanicum unit within 12\" and grant it [SUSTAINED HITS 1] on its next attack action this turn."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, you can repair one friendly Vehicle, Walker, or Battle-Automata model within 3\" of this model: that model regains up to D3 lost wounds, or returns one destroyed model to a Battle-Automata unit (your choice)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to a Castellax, Scyllax, Thallax, Ursarax, or Myrmidon unit."
+   }
+  ],
+  "composition": "1 Magos on Abeyant model. This model is equipped with: 1 Volkite Culverin; 1 Power Weapon; 1 Servo-Arm.",
+  "keywords": "INFANTRY, MOUNTED, FLY, CHARACTER, TECH-PRIEST, CYBERTHEURGIST, MAGOS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "magos",
+  "name": "Magos",
+  "subtitle": "Mechanicum Mid-Tier Cybertheurgist",
+  "factionLine": "Mechanicum (HH) • Character",
+  "points": "80",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Volkite Serpenta",
+    "melee": false,
+    "range": "18\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Servo-arm",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Cybertheurgist",
+    "text": "Once per battle round, while this model is on the battlefield, you can select one friendly Mechanicum unit within 12\" of this model. Until the end of the turn, ranged and melee attacks made by models in that unit have the [SUSTAINED HITS 1] ability."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "In your Command phase, select one friendly Vehicle, Walker, or Battle-Automata unit within 3\" of this model. That unit regains up to D3 lost wounds, or you can return one destroyed model to a Battle-Automata unit instead (your choice)."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Volkite Serpenta",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "LEADER",
+    "text": "This model can be attached to the following units: CASTELLAX BATTLE-AUTOMATA, SCYLLAX GUARDIAN-AUTOMATA, THALLAX COHORT, URSARAX COHORT, MYRMIDON SECUTOR HOST, MYRMIDON DESTRUCTOR HOST."
+   }
+  ],
+  "composition": "1 Magos model. This model is equipped with: 1 Volkite Serpenta; 1 Power Weapon; 1 Servo-arm.",
+  "keywords": "INFANTRY, CHARACTER, TECH-PRIEST, CYBERTHEURGIST",
+  "factionKeywords": "MECHANICUM (HH)"
+ },
+ {
+  "slug": "mechanicum-macrocarid-explorator",
+  "name": "Mechanicum Macrocarid Explorator",
+  "subtitle": "Super-Heavy Tracked Transport",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "230",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "11",
+    "Sv": "2+",
+    "W": "18",
+    "LD": "7+",
+    "OC": "4"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Hull-Mounted Twin Volkite Culverins",
+    "melee": false,
+    "range": "30\"",
+    "a": "8",
+    "skill": "4+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Multi-Melta Sponsons (x2)",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": ""
+   },
+   {
+    "name": "Hull-Mounted Twin Volkite Culverins",
+    "text": "[DEVASTATING WOUNDS] [TWIN-LINKED]"
+   },
+   {
+    "name": "Multi-Melta Sponsons",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Flare Shield",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model and the attacking model is more than 18\" away, that attack has -1 to the Wound roll."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Heavy Conveyor Capacity",
+    "text": "This model has a transport capacity of 20 Mechanicum Infantry. Tech-Thralls count as 1; Thallax/Myrmidon/Scyllax/Arcuitor as 1; Ursarax as 2; Decimator or Battle-Automata models cannot embark."
+   }
+  ],
+  "composition": "1 Mechanicum Macrocarid Explorator model. This model is equipped with: 1 Hull-Mounted Twin Volkite Culverins; 2 Multi-Melta Sponsons; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, TRANSPORT, MACROCARID EXPLORATOR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "mechanicum-ordinatus-aktaeus",
+  "name": "Mechanicum Ordinatus Aktaeus",
+  "subtitle": "Siege-Drill Super-Heavy",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "475",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "4\"",
+    "T": "13",
+    "Sv": "2+",
+    "W": "26",
+    "LD": "6+",
+    "OC": "5"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Aktaeus Burrowing Array",
+    "melee": false,
+    "range": "24\"",
+    "a": "D6+3",
+    "skill": "4+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6+1"
+   },
+   {
+    "name": "Hull-Mounted Twin Volkite Culverin",
+    "melee": false,
+    "range": "30\"",
+    "a": "8",
+    "skill": "4+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Aktaeus Siege Drill",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "4+",
+    "s": "16",
+    "ap": "-4",
+    "d": "D6+2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": ""
+   },
+   {
+    "name": "Aktaeus Burrowing Array",
+    "text": "[BLAST] [ANTI-VEHICLE 3+] [ANTI-FORTIFICATION 3+]"
+   },
+   {
+    "name": "Hull-Mounted Twin Volkite Culverin",
+    "text": "[DEVASTATING WOUNDS] [TWIN-LINKED]"
+   },
+   {
+    "name": "Aktaeus Siege Drill",
+    "text": "[DEVASTATING WOUNDS] [ANTI-FORTIFICATION 2+]"
+   },
+   {
+    "name": "Void Shield Projector",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model, if it has more than 12 wounds remaining, that attack's Damage characteristic is halved (rounding up)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Subterranean Approach",
+    "text": "This model can be set up in Reserves instead of on the battlefield. If it is, at the end of any of your Movement phases it can be set up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models."
+   }
+  ],
+  "composition": "1 Mechanicum Ordinatus Aktaeus model. This model is equipped with: 1 Aktaeus Burrowing Array; 1 Hull-Mounted Twin Volkite Culverin; 1 Aktaeus Siege Drill.",
+  "keywords": "VEHICLE, TITANIC, SUPER-HEAVY, ORDINATUS, AKTAEUS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "mechanicum-ordinatus-sagittar",
+  "name": "Mechanicum Ordinatus Sagittar",
+  "subtitle": "Beam-Weapon Super-Heavy",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "525",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "4\"",
+    "T": "13",
+    "Sv": "2+",
+    "W": "24",
+    "LD": "6+",
+    "OC": "5"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Sagittar Beam Cannon",
+    "melee": false,
+    "range": "72\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "18",
+    "ap": "-5",
+    "d": "D6+6"
+   },
+   {
+    "name": "Hull-Mounted Twin Volkite Culverin",
+    "melee": false,
+    "range": "30\"",
+    "a": "8",
+    "skill": "4+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "5+",
+    "s": "10",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": ""
+   },
+   {
+    "name": "Sagittar Beam Cannon",
+    "text": "[LANCE] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Hull-Mounted Twin Volkite Culverin",
+    "text": "[DEVASTATING WOUNDS] [TWIN-LINKED]"
+   },
+   {
+    "name": "Void Shield Projector",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model, if it has more than 12 wounds remaining, that attack's Damage characteristic is halved (rounding up)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Beam Convergence",
+    "text": "Each time this model makes a ranged attack with its Sagittar Beam Cannon, the attack ignores the Benefit of Cover, and if the target is more than 36\" away, improve the AP characteristic by 1 (e.g. AP -5 becomes -6)."
+   }
+  ],
+  "composition": "1 Mechanicum Ordinatus Sagittar model. This model is equipped with: 1 Sagittar Beam Cannon; 1 Hull-Mounted Twin Volkite Culverin; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, TITANIC, SUPER-HEAVY, ORDINATUS, SAGITTAR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "mechanicum-ordinatus-ulator",
+  "name": "Mechanicum Ordinatus Ulator",
+  "subtitle": "Sonic Destruction Super-Heavy",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "500",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "4\"",
+    "T": "13",
+    "Sv": "2+",
+    "W": "26",
+    "LD": "6+",
+    "OC": "5"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Sonic Disruptor",
+    "melee": false,
+    "range": "72\"",
+    "a": "D6+3",
+    "skill": "4+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6+1"
+   },
+   {
+    "name": "Hull-Mounted Twin Heavy Bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "5+",
+    "s": "10",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": ""
+   },
+   {
+    "name": "Sonic Disruptor",
+    "text": "[BLAST] [DEVASTATING WOUNDS] [INDIRECT FIRE]"
+   },
+   {
+    "name": "Hull-Mounted Twin Heavy Bolter",
+    "text": "[TWIN-LINKED] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Void Shield Projector",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model, if it has more than 12 wounds remaining, that attack's Damage characteristic is halved (rounding up)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Sonic Annihilation",
+    "text": "Each time this model makes a ranged attack with its Sonic Disruptor that targets a unit within a building or ruin, an unmodified Hit roll of 4+ scores a Critical Hit. If the target unit is destroyed by this attack, the building or ruin it occupied is destroyed at the end of the phase."
+   }
+  ],
+  "composition": "1 Mechanicum Ordinatus Ulator model. This model is equipped with: 1 Sonic Disruptor; 1 Hull-Mounted Twin Heavy Bolter; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, TITANIC, SUPER-HEAVY, ORDINATUS, ULATOR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "myrmidon-destructor-host",
+  "name": "Myrmidon Destructor Host",
+  "subtitle": "Elite Cybernetic Heavy-Weapons Brotherhood",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "175",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Conversion Beamer",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Plasma Fusil",
+    "melee": false,
+    "range": "24\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Twin Volkite Calivers",
+    "melee": false,
+    "range": "30\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Graviton Imploder (Prime only)",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-3",
+    "d": "D6"
+   },
+   {
+    "name": "Power Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Conversion Beamer",
+    "text": "[HEAVY] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Plasma Fusil",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Twin Volkite Calivers",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Graviton Imploder",
+    "text": "[ANTI-VEHICLE 3+]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Firing Protocols (2)",
+    "text": "Each time this model is selected to shoot, you can split its ranged attacks across up to 2 different enemy units (one weapon per target)."
+   },
+   {
+    "name": "Hexagrammic Plate",
+    "text": "This unit has a 5+ Feel No Pain ability against attacks with the [PSYCHIC] ability."
+   }
+  ],
+  "composition": "5 models: 1 Destructor Prime and 4 Destructors. Each model can be equipped with one of: Conversion Beamer; Plasma Fusil; or Twin Volkite Calivers. Mix-and-match is permitted across the unit. The Destructor Prime may also take a Graviton Imploder. Each model is equipped with 1 Power Weapon.",
+  "keywords": "INFANTRY, CYBERNETICA, MYRMIDON, DESTRUCTOR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "myrmidon-secutor-host",
+  "name": "Myrmidon Secutor Host",
+  "subtitle": "Elite Cybernetic Melee Brotherhood",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "165",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Power Axe",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Prime's Power Maul",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Prime's Power Maul",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Killing Doctrine",
+    "text": "Each time a model in this unit makes a melee attack, if the target unit has not yet been attacked by this unit this phase, that attack has +1 to the Wound roll."
+   },
+   {
+    "name": "Hexagrammic Plate",
+    "text": "This unit has a 5+ Feel No Pain ability against attacks with the [PSYCHIC] ability."
+   }
+  ],
+  "composition": "5 models: 1 Secutor Prime and 4 Secutors. Each Secutor is equipped with 1 Power Axe. The Secutor Prime is equipped with 1 Prime's Power Maul.",
+  "keywords": "INFANTRY, CYBERNETICA, MYRMIDON, SECUTOR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "scyllax-guardian-automata",
+  "name": "Scyllax Guardian-Automata",
+  "subtitle": "Cybernetica Escort Maniple",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "90",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "7",
+    "Sv": "3+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Bolt Caster",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power Blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Alpha's Mass-Driver Fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Bolt Caster",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1 instead."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Guardian Protocols",
+    "text": "While this unit is within 3\" of a friendly Mechanicum Character, that Character has the Feel No Pain 5+ ability and ranged attacks against it suffer -1 to the Wound roll."
+   }
+  ],
+  "composition": "5 models: 1 Sub-Construct Alpha and 4 Scyllax. Can include up to 5 additional Scyllax models for +18 pts each. Each Scyllax is equipped with: 1 Bolt Caster; 1 Power Blade. The Sub-Construct Alpha is equipped with: 1 Bolt Caster; 1 Alpha's Mass-Driver Fist.",
+  "keywords": "INFANTRY, BATTLE-AUTOMATA, SCYLLAX, GUARDIAN",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "skitarii-battle-pilgrym-corpus",
+  "name": "Skitarii Battle-Pilgrym Corpus",
+  "subtitle": "Pilgrim Warrior Detachment",
+  "factionLine": "Mechanicum (Horus Heresy) • Skitarii Conclaves",
+  "points": "95",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "3",
+    "Sv": "4+",
+    "W": "1",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Pilgrym's Lasgun",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Sub-Lead's Plasma Pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "4+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Pilgrym Staff",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Pilgrym's Lasgun",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Sub-Lead's Plasma Pistol",
+    "text": "[PISTOL] [HAZARDOUS]"
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Faith of the Pilgrym",
+    "text": "Each time a model in this unit makes a melee attack against a unit that occupies an Objective Marker, that attack has +1 to the Wound roll."
+   },
+   {
+    "name": "Holy Trek",
+    "text": "Once per battle, in your Command phase, this unit can Advance and Charge in the same turn."
+   }
+  ],
+  "composition": "10 models: 1 Pilgrym Sub-Lead and 9 Pilgryms. Each Pilgrym is equipped with: 1 Pilgrym's Lasgun; 1 Pilgrym Staff. The Pilgrym Sub-Lead is equipped with: 1 Sub-Lead's Plasma Pistol; 1 Pilgrym Staff.",
+  "keywords": "INFANTRY, SKITARII CONCLAVES, PILGRYM",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "skitarii-battle-pilgrym-marshal",
+  "name": "Skitarii Battle-Pilgrym Marshal",
+  "subtitle": "Pilgrim Warrior Detachment Leader",
+  "factionLine": "Mechanicum (Horus Heresy) • Character",
+  "points": "60",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "3",
+    "Sv": "4+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Marshal's Bolt Pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Marshal's Power Glaive",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Marshal's Bolt Pistol",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Skitarii Battle-Pilgrym Corpus unit."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Pilgrym's Banner",
+    "text": "While this model is leading a unit, each time a model in that unit takes a Battle-shock test, you can re-roll the result. In addition, that unit's OC characteristic is increased by 1."
+   },
+   {
+    "name": "Faith of the Pilgrym",
+    "text": "Each time this model or a model in its unit makes a melee attack against a unit that occupies an Objective Marker, that attack has +1 to the Wound roll."
+   }
+  ],
+  "composition": "1 Skitarii Battle-Pilgrym Marshal model. Can be attached to a Skitarii Battle-Pilgrym Corpus unit. This model is equipped with: 1 Marshal's Bolt Pistol; 1 Marshal's Power Glaive.",
+  "keywords": "INFANTRY, CHARACTER, SKITARII CONCLAVES, PILGRYM, MARSHAL",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "tech-priest",
+  "name": "Tech-Priest",
+  "subtitle": "Mechanicum Junior Adept",
+  "factionLine": "Mechanicum (Horus Heresy) • Character",
+  "points": "55",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "4",
+    "Sv": "3+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Volkite Serpenta",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Servo-Arm",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "4+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Volkite Serpenta",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a Castellax, Scyllax, Thallax, Tech-Thrall, or Skitarii Battle-Pilgrym unit."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, you can repair one friendly Vehicle, Walker, or Battle-Automata model within 3\" of this model: that model regains up to D3 lost wounds, or returns one destroyed model to a Battle-Automata unit (your choice)."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   }
+  ],
+  "composition": "1 Tech-Priest model. This model is equipped with: 1 Volkite Serpenta; 1 Power Weapon; 1 Servo-Arm.",
+  "keywords": "INFANTRY, CHARACTER, TECH-PRIEST",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "tech-thrall-covenant",
+  "name": "Tech-Thrall Covenant",
+  "subtitle": "Cyborg Conscript Cohort",
+  "factionLine": "Mechanicum (Horus Heresy) • Battleline",
+  "points": "70",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "3",
+    "Sv": "5+",
+    "W": "1",
+    "LD": "8+",
+    "OC": "1"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Las-Lock",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Overseer's Subjugator Staff (Ranged)",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "4+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Close Combat Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Subjugator Staff",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Overseer's Subjugator Staff (Ranged)",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Cyber-Compulsion",
+    "text": "While this unit is within 6\" of a friendly Tech-Priest model, models in this unit have +1 to the Hit roll on ranged attacks."
+   }
+  ],
+  "composition": "20 models: 1 Thrall Overseer and 19 Thralls. Each Thrall is equipped with: 1 Las-Lock; 1 Close Combat Weapon. The Thrall Overseer is equipped with: 1 Overseer's Subjugator Staff (Ranged); 1 Subjugator Staff.",
+  "keywords": "INFANTRY, BATTLELINE, TECH-THRALL",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "tech-thrall-defence-covenant",
+  "name": "Tech-Thrall Defence Covenant",
+  "subtitle": "Cyborg Defensive Garrison",
+  "factionLine": "Mechanicum (Horus Heresy) • Battleline",
+  "points": "85",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "3",
+    "Sv": "4+",
+    "W": "1",
+    "LD": "8+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Photon Thruster (Defensive)",
+    "melee": false,
+    "range": "18\"",
+    "a": "1",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Las-Lock",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Close Combat Weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "5+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Photon Thruster (Defensive)",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Dug In",
+    "text": "If this unit did not move during its preceding Movement phase, models in this unit have the Benefit of Cover, and ranged attacks made by models in this unit have +1 to the Hit roll."
+   },
+   {
+    "name": "Hold the Line",
+    "text": "This unit's OC characteristic is increased to 3 while it is wholly within your deployment zone."
+   }
+  ],
+  "composition": "10 models: 1 Garrison Overseer and 9 Defence Thralls. Each Defence Thrall is equipped with: 1 Photon Thruster (Defensive); 1 Las-Lock; 1 Close Combat Weapon.",
+  "keywords": "INFANTRY, BATTLELINE, TECH-THRALL, DEFENCE",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "thallax-cohort",
+  "name": "Thallax Cohort",
+  "subtitle": "Cybernetic Shock-Trooper Squad",
+  "factionLine": "Mechanicum (HH) • Infantry",
+  "points": "95",
+  "pointsNote": "Points\n(+18 per extra model, max 9)",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "",
+  "weapons": [
+   {
+    "name": "Lightning Gun",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Photon Thruster (up to 2 Thallax only)",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Multi-melta (up to 2 Thallax only)",
+    "melee": false,
+    "range": "18\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Plasma Fusil (up to 2 Thallax only)",
+    "melee": false,
+    "range": "24\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Power Fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Jump Pack",
+    "text": "This unit has the FLY keyword. During deployment, instead of setting up this unit on the battlefield, you can place it into Strategic Reserves; if you do, it arrives via Deep Strike."
+   },
+   {
+    "name": "Cybernetic Resilience",
+    "text": "This unit has the Feel No Pain 5+ ability against attacks that have the [DEVASTATING WOUNDS] or [PRECISION] abilities."
+   },
+   {
+    "name": "Lightning Gun",
+    "text": "[SUSTAINED HITS 2]"
+   },
+   {
+    "name": "Multi-melta",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Plasma Fusil",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Photon Thruster",
+    "text": "[HEAVY]"
+   }
+  ],
+  "composition": "1 Thallarch model; 4 Thallax models. Every model is equipped with: 1 Lightning Gun; 1 Power Fist. Up to 2 Thallax can each replace their Lightning Gun with a Photon Thruster, Multi-melta, or Plasma Fusil. This unit can include up to 4 additional Thallax models, each equipped with 1 Lightning Gun and 1 Power Fist, for +18 points per model.",
+  "keywords": "INFANTRY, FLY, THALLAX",
+  "factionKeywords": "MECHANICUM (HH)"
+ },
+ {
+  "slug": "thanatar-siege-automata",
+  "name": "Thanatar Siege-Automata",
+  "subtitle": "Cybernetica Siege-Caste Heavy Walker",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "285",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "11",
+    "Sv": "2+",
+    "W": "12",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Hellex Plasma Mortar",
+    "melee": false,
+    "range": "48\"",
+    "a": "D6+1",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-3",
+    "d": "D6"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Sollex-Pattern Heavy Lascannon Array (Calix)",
+    "melee": false,
+    "range": "60\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Graviton Ram Battery (Cynis)",
+    "melee": false,
+    "range": "24\"",
+    "a": "D3+1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6"
+   },
+   {
+    "name": "Siege Fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "12",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": ""
+   },
+   {
+    "name": "Hellex Plasma Mortar",
+    "text": "[BLAST] [INDIRECT FIRE]"
+   },
+   {
+    "name": "Twin Mauler Bolt Cannon",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Sollex-Pattern Heavy Lascannon Array",
+    "text": "[LANCE] [HEAVY]"
+   },
+   {
+    "name": "Graviton Ram Battery",
+    "text": "[BLAST] [ANTI-VEHICLE 3+]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1 instead."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Siege Cogitator",
+    "text": "Each time this model makes an attack that targets a Vehicle, Monster, Battle-Automata, or Fortification unit, you can re-roll Wound rolls of 1."
+   }
+  ],
+  "composition": "1 Thanatar Siege-Automata model. Can include 1 additional Thanatar model for +285 pts. Each model is equipped with: 1 Hellex Plasma Mortar (may be replaced with 1 Sollex-Pattern Heavy Lascannon Array for the Thanatar-Calix variant, or 1 Graviton Ram Battery for the Thanatar-Cynis variant); 1 Twin Mauler Bolt Cannon; 1 Siege Fists.",
+  "keywords": "VEHICLE, WALKER, BATTLE-AUTOMATA, THANATAR",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "triaros-armoured-conveyor",
+  "name": "Triaros Armoured Conveyor",
+  "subtitle": "Heavy Tracked Mechanicum Transport",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "155",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "14",
+    "LD": "7+",
+    "OC": "4"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Mauler Bolt Cannon (Twin)",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Flare Shield Projectors",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Armoured Tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": ""
+   },
+   {
+    "name": "Mauler Bolt Cannon",
+    "text": "[SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Flare Shield Projectors",
+    "text": "[TORRENT] — this weapon auto-hits, which is why it has no BS characteristic."
+   },
+   {
+    "name": "Flare Shield",
+    "text": "This model has a 5+ invulnerable save. Each time an attack is allocated to this model and the attacking model is more than 18\" away, that attack has -1 to the Wound roll."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Conveyor Capacity",
+    "text": "This model has a transport capacity of 12 Mechanicum Infantry models. Tech-Thralls count as 1 model. Thallax/Scyllax/Myrmidon/Arcuitor count as 1 model. Ursarax count as 2 models."
+   }
+  ],
+  "composition": "1 Triaros Armoured Conveyor model. This model is equipped with: 1 Mauler Bolt Cannon (Twin); 1 Flare Shield Projectors; 1 Armoured Tracks.",
+  "keywords": "VEHICLE, TRANSPORT, TRIAROS",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "ursarax-cohort",
+  "name": "Ursarax Cohort",
+  "subtitle": "Cybernetic Assault Brotherhood",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "135",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Lightning Claws (Paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Ursarch's Power Maul",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Lightning Claws (Paired)",
+    "text": "[TWIN-LINKED] [LETHAL HITS]"
+   },
+   {
+    "name": "Ursarch's Power Maul",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 6+ invulnerable save."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Jump Pack",
+    "text": "This unit has the FLY keyword. In your Movement phase, this unit can FLY, ignoring terrain. After deploying, you can set up this unit in Reserves; if you do, it arrives via Deep Strike."
+   },
+   {
+    "name": "Cybernetic Onslaught",
+    "text": "Each time this unit makes a charge move, until the end of the turn, models in this unit have +1 to the Wound roll on melee attacks."
+   }
+  ],
+  "composition": "5 models: 1 Ursarch and 4 Ursarax. Each Ursarax is equipped with: 1 Lightning Claws (Paired). The Ursarch is equipped with: 1 Ursarch's Power Maul.",
+  "keywords": "INFANTRY, FLY, URSARAX",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "vorax-attack-automata",
+  "name": "Vorax Attack-Automata",
+  "subtitle": "Cybernetica Light Scout Robot",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "140",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "7",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "6+",
+  "weapons": [
+   {
+    "name": "Rotor Cannon",
+    "melee": false,
+    "range": "24\"",
+    "a": "5",
+    "skill": "4+",
+    "s": "5",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Lightning Claw + Chainfist",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Rotor Cannon",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Lightning Claw + Chainfist",
+    "text": "[ANTI-VEHICLE 4+]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 6+ invulnerable save."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "While this unit is within 12\" of a friendly Tech-Priest model, each time a model in this unit makes an attack you can re-roll a Hit roll of 1. If the friendly Tech-Priest has the Cybertheurgist keyword, re-roll all Hit rolls of 1 instead."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Scouts 9\"",
+    "text": "After both players have deployed, but before the first turn begins, this unit can make a Normal move of up to 9\"."
+   },
+   {
+    "name": "Stealth",
+    "text": "Each time a ranged attack is allocated to this unit and the attacking model is more than 12\" away, subtract 1 from the Hit roll."
+   },
+   {
+    "name": "Hunter-Killer Subroutine",
+    "text": "Each time a model in this unit makes an attack against the closest visible enemy unit, that attack has +1 to the Hit roll."
+   }
+  ],
+  "composition": "3 models: 1 Sub-Construct Alpha and 2 Vorax. Can include up to 3 additional Vorax models for +45 pts each. Each model is equipped with: 1 Rotor Cannon; 1 Lightning Claw + Chainfist.",
+  "keywords": "INFANTRY, BATTLE-AUTOMATA, VORAX, SCOUT",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ },
+ {
+  "slug": "vultarax-stratos-automata",
+  "name": "Vultarax Stratos-Automata",
+  "subtitle": "Cybernetica Aerial Combat Robot",
+  "factionLine": "Mechanicum (Horus Heresy)",
+  "points": "110",
+  "pointsNote": "Points",
+  "stats": [
+   {
+    "model": null,
+    "M": "14\"",
+    "T": "8",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "invuln": "5+",
+  "weapons": [
+   {
+    "name": "Plasma Fusil",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Twin Lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Stratos Talons",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Plasma Fusil",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Twin Lascannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Implacable Programming",
+    "text": "This model automatically passes Battle-shock tests, and is unaffected by rules that would force it to Fall Back against its preprogrammed orders."
+   },
+   {
+    "name": "Doctrina Imperatives",
+    "text": "This model gains the effect of the chosen Doctrina Imperative each Command phase (Conqueror: Hit roll of 6 scores an additional Hit; Protector: enemy Hit rolls suffer -1). See faction ability card."
+   },
+   {
+    "name": "Repulsor Lift",
+    "text": "This model has the FLY keyword. In your Movement phase, this model can FLY, ignoring all terrain and other models when it moves."
+   },
+   {
+    "name": "Aerial Hunter",
+    "text": "Each time this model makes a ranged attack that targets a unit with the FLY keyword, you can re-roll the Hit roll and improve the AP characteristic of that attack by 1."
+   }
+  ],
+  "composition": "1 Vultarax Stratos-Automata model. Can include up to 2 additional Vultarax models for +110 pts each. Each model is equipped with: 1 Plasma Fusil; 1 Twin Lascannon; 1 Stratos Talons.",
+  "keywords": "MOUNTED, FLY, BATTLE-AUTOMATA, VULTARAX",
+  "factionKeywords": "MECHANICUM (HORUS HERESY)"
+ }
+]

@@ -77,6 +77,11 @@
       "hash": "d6c679cce69c7d06856032fe38d4bdfd25419ec6",
       "upstreamRevision": 7,
       "patch": 1
+    },
+    "Imperium - Adeptus Mechanicus.json": {
+      "hash": "beb12ec9afe9c95c655969b622a1d5d841e0b054",
+      "upstreamRevision": 19,
+      "patch": 4
     }
   }
 }

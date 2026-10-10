@@ -151,6 +151,8 @@ for (const f of rootJson().filter(isNflb)) {
 
 // ---------- 4. Attach: catalogueLink into the faction + injections into upstream groups ----------
 const injectedObjects = [];
+const inlineIds = new Set(built.filter(x => x.inline).flatMap(x =>
+  ['categoryEntries', 'entryLinks', 'sharedSelectionEntries', 'sharedSelectionEntryGroups'].flatMap(k => (x.content[k] || []).map(e => e.id))));
 for (const { inline, spec, catId, catName, injections } of built) {
   const fo = readJson(spec.faction);
   if (!inline) {
@@ -171,7 +173,7 @@ for (const { inline, spec, catId, catName, injections } of built) {
     // shared lists (neither). Links are fine only when they point at something injected into
     // the same file.
     const KEYS = { selectionEntry: 'selectionEntries', selectionEntryGroup: 'selectionEntryGroups', entryLink: 'entryLinks' };
-    const ROOT_KEYS = { selectionEntry: 'sharedSelectionEntries', selectionEntryGroup: 'sharedSelectionEntryGroups', entryLink: 'entryLinks' };
+    const ROOT_KEYS = { selectionEntry: 'sharedSelectionEntries', selectionEntryGroup: 'sharedSelectionEntryGroups', entryLink: 'entryLinks', catalogueLink: 'catalogueLinks' };
     const cleaned = new Set();
     for (const inj of list) {
       const isRoot = !inj.groupName && !inj.entryName;
@@ -179,8 +181,8 @@ for (const { inline, spec, catId, catName, injections } of built) {
         : inj.entryName ? (c.sharedSelectionEntries || []).find(x => x.name === inj.entryName) : c;
       if (!g) { problems.push(`Injection target "${inj.groupName || inj.entryName}" not found in ${file} (renamed upstream?)`); continue; }
       const keys = isRoot ? ROOT_KEYS : KEYS;
-      if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh
-        for (const k of Object.values(keys)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-'));
+      if (!cleaned.has(g)) { // drop anything a previous run injected, then re-add fresh (keep this run's inline merge)
+        for (const k of Object.values(keys)) if (g[k]) g[k] = g[k].filter(x => !String(x.id).startsWith('nflb-') || inlineIds.has(x.id));
         cleaned.add(g);
       }
       for (const [kind, key] of Object.entries(keys)) {
