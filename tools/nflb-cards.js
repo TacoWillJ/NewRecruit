@@ -28,7 +28,9 @@ function unitsFromCards(b, cards, opts) {
 
     // weapons (+ keyword lines "Name | [KW] [KW]")
     const kwFor = name => {
-      const a = c.abilities.find(x => isKeywordLine(x.text) && cleanWeapon(name).toLowerCase().startsWith(cleanWeapon(x.name).toLowerCase().replace(/\s*\(.*$/, '')));
+      // an exact-name keyword line wins ("God-splitter (Mighty Strikes)"), else the first line for the base name
+      const a = c.abilities.find(x => isKeywordLine(x.text) && cleanWeapon(x.name).toLowerCase() === cleanWeapon(name).toLowerCase())
+        || c.abilities.find(x => isKeywordLine(x.text) && cleanWeapon(name).toLowerCase().startsWith(cleanWeapon(x.name).toLowerCase().replace(/\s*\(.*$/, '')));
       return a ? [...a.text.matchAll(/\[([^\]]+)\]/g)].map(m => title(m[1])).join(', ') : '';
     };
     const byName = new Map();

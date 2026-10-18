@@ -7,7 +7,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 7001,
+    "revision": 7003,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -117,6 +117,16 @@
       {
         "name": "DCo Weapon Swap",
         "id": "78e1-92d6-d2d8-0509",
+        "hidden": false
+      },
+      {
+        "name": "Adeptus Astartes",
+        "id": "nflb-c52099dcba02",
+        "hidden": false
+      },
+      {
+        "name": "Captain Karlaen",
+        "id": "nflb-af69510d141e",
         "hidden": false
       }
     ],
@@ -335,6 +345,14 @@
         "hidden": false,
         "import": true,
         "targetId": "bcfe-f4fb-5c44-652d",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Captain Karlaen [NFLB]",
+        "id": "nflb-a9e1440a5a8e",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-3a13a71b7c66",
         "type": "selectionEntry"
       }
     ],
@@ -22977,6 +22995,465 @@
                 "typeId": "893f-9000-ccf7-648e"
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Captain Karlaen [NFLB]",
+        "id": "nflb-3a13a71b7c66",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-ce1da89453a8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-f6ccba62dd54",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-6e7bb58d357e",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Captain",
+            "id": "nflb-953a693f95cb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2d7f-1892-2fd0-e29c"
+          },
+          {
+            "name": "Terminator",
+            "id": "nflb-5d5fa8a38d9b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "740a-892c-8958-defa"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-7b1aa3e3aa69",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-1c9db1ad02c5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-c52099dcba02"
+          },
+          {
+            "name": "Captain Karlaen",
+            "id": "nflb-f42adc1d0e14",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-af69510d141e"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-70460b0f775a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Blood Angels",
+            "id": "nflb-6f70acb6c52d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "62ac-ef42-27b4-ae7"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-b5768e2515c5",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-14ee22060d22",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-55fe45611846",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Captain Karlaen",
+            "id": "nflb-14bdd0b4053b",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "5\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "6"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "6"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-302b2c9d2bc0",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Terminator Squad^^**, **^^Terminator Assault Squad^^**, **^^Sanguinary Guard^^**, **^^Bladeguard Veteran Squad^^**"
+              }
+            ]
+          },
+          {
+            "name": "Bloody Toll [AURA]",
+            "id": "nflb-06abce505514",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly Blood Angels unit is within 6\" of this model, each time a model in that unit makes a melee attack, you can re-roll a Wound roll of 1. While this model is leading the unit, the unit also has the Furious Charge ability."
+              }
+            ]
+          },
+          {
+            "name": "Furious Charge",
+            "id": "nflb-a02c71a6b8c7",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a model in this model's unit makes a melee attack, if its unit made a Charge move this turn, add 1 to the Strength and Attacks characteristics of that attack."
+              }
+            ]
+          },
+          {
+            "name": "Master Strategist",
+            "id": "nflb-516c81397e9b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "If this model is your Warlord, you can re-roll Reserves rolls and Strategic Reserves rolls. Additionally, at the start of your first Command phase you gain 1 CP."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 125
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Storm bolter",
+            "id": "nflb-5e51e298b68d",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-49b397fb60c8",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-7597edea90b8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-fda6af26701b",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Hammer of Baal",
+            "id": "nflb-14487dad9e4e",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-34cfce59cb01",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-9a979d7e6cc8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-879ac7ec145f",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-e1aa93024ff7",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-21ef02e84689",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "4808-a80b-309a-7933",
+                    "childName": "Terminator Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ae9a-10e3-8091-20",
+                    "childName": "Terminator Assault Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "25e4-ead-faac-2531",
+                    "childName": "Sanguinary Guard",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7044-bf1-f949-c32d",
+                    "childName": "Bladeguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm bolter",
+        "id": "nflb-49b397fb60c8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Storm bolter",
+            "id": "nflb-ef53e0f88491",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-4af3ff23b1e2",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Hammer of Baal",
+        "id": "nflb-34cfce59cb01",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Hammer of Baal",
+            "id": "nflb-87743d1926b3",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "3"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Devastating Wounds"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-55fc9e4b8537",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
           }
         ]
       }

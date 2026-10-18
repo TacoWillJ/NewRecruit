@@ -1,0 +1,3625 @@
+[
+ {
+  "slug": "chuck",
+  "name": "Contemptor Class Close Assault Dreadnought",
+  "subtitle": "\"Chuck\"",
+  "factionLine": "Adeptus Astartes • Imperium",
+  "points": "190",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "6+",
+    "OC": "4"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Quad-linked synchronised boltguns",
+    "melee": false,
+    "range": "24\"",
+    "a": "8",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Paired Gravis power fists",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Power Field Synchroniser",
+    "text": "An auxiliary atomantic shielding generator wreathes the Dreadnought in a cascading energy field. This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Jump Pack Assault",
+    "text": "During the Movement phase, this model can FLY, ignoring all terrain and other models when it moves. In addition, during deployment you can set up this model in Reserves; if you do, in the Reinforcements step of one of your Movement phases you can set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models."
+   },
+   {
+    "name": "Implacable Advance",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   },
+   {
+    "name": "Bulky (6)",
+    "text": "This model counts as 6 models for the purposes of any Transport capacity."
+   },
+   {
+    "name": "Quad-linked synchronised boltguns",
+    "text": "[RAPID FIRE 4] [TWIN-LINKED]"
+   },
+   {
+    "name": "Paired Gravis power fists",
+    "text": "[TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Contemptor Class Close Assault Dreadnought model.",
+  "keywords": "VEHICLE, WALKER, FLY, SMOKE, IMPERIUM, DREADNOUGHT, CONTEMPTOR",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "fury",
+  "name": "Furibundus Class Destroyer Dreadnought",
+  "subtitle": "\"Fury\"",
+  "factionLine": "Adeptus Astartes • Imperium",
+  "points": "210",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Furibundus conversion beamer – focused",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Furibundus conversion beamer – dispersed",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Twin heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Siege claw",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Atomantic Shielding",
+    "text": "Auxiliary atomantic field generator. This model has a 5+ invulnerable save."
+   },
+   {
+    "name": "Steady Foundation",
+    "text": "If this model did not Advance or Fall Back during its preceding Movement phase, each time it makes a ranged attack you can re-roll a Hit roll of 1, and if the target is more than 24\" away from this model, you can re-roll all Hit rolls of 1."
+   },
+   {
+    "name": "Wrath of the Beam",
+    "text": "Each time this model makes a ranged attack with the dispersed profile of its Furibundus conversion beamer that targets a Monster or Vehicle, you can re-roll the Wound roll."
+   },
+   {
+    "name": "Implacable Advance",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   },
+   {
+    "name": "Furibundus conversion beamer – focused",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Furibundus conversion beamer – dispersed",
+    "text": "[HEAVY] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Twin heavy bolter",
+    "text": "[RAPID FIRE 2] [SUSTAINED HITS 1] [TWIN-LINKED]"
+   },
+   {
+    "name": "Siege claw",
+    "text": "[ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Furibundus Class Destroyer Dreadnought model.",
+  "keywords": "VEHICLE, WALKER, SMOKE, IMPERIUM, DREADNOUGHT, FURIBUNDUS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "eddy",
+  "name": "Deredeo Class Attack Support Dreadnought",
+  "subtitle": "\"Eddy\"",
+  "factionLine": "Adeptus Astartes • Imperium",
+  "points": "220",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "12",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Anvilus autocannon battery",
+    "melee": false,
+    "range": "48\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Aiolos missile launcher",
+    "melee": false,
+    "range": "48\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Twin heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Dreadnought close combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "10",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Greater Atomantic Deflector",
+    "text": "A reinforced atomantic field tuned for sustained barrage. This model has a 5+ invulnerable save, and a 4+ invulnerable save against ranged attacks."
+   },
+   {
+    "name": "Anti-Air Targeting Cogitator",
+    "text": "Each time this model makes a ranged attack that targets a unit with the Fly keyword, re-roll a Hit roll of 1, and improve the Armour Penetration characteristic of that attack by 1 (e.g. AP -1 becomes AP -2)."
+   },
+   {
+    "name": "Linked Cogitator Array",
+    "text": "Each time this model is selected to shoot, if two or more of its ranged weapons target the same enemy unit, until the end of the phase those weapons gain the [SUSTAINED HITS 1] ability if they do not already have it, and weapons that already have [SUSTAINED HITS 1] gain [SUSTAINED HITS 2] instead."
+   },
+   {
+    "name": "Implacable Advance",
+    "text": "This model automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Explodes (5+)",
+    "text": "When this model is destroyed, roll one D6 before removing it from play; on a 5+ each unit within 6\" suffers D3 mortal wounds."
+   },
+   {
+    "name": "Anvilus autocannon battery",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Aiolos missile launcher",
+    "text": "[INDIRECT FIRE] [BLAST]"
+   },
+   {
+    "name": "Twin heavy bolter",
+    "text": "[RAPID FIRE 2] [SUSTAINED HITS 1] [TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Deredeo Class Attack Support Dreadnought model.",
+  "keywords": "VEHICLE, WALKER, SMOKE, IMPERIUM, DREADNOUGHT, DEREDEO",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "lufgt-huron",
+  "name": "Lufgt Huron",
+  "subtitle": "Tyrant of Badab • Chapter Master of the Astral Claws",
+  "factionLine": "Adeptus Astartes • Astral Claws • Imperium",
+  "points": "160",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Artificer flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6+1",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Ghost Razors (paired lightning claws)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deep Strike, Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Phantom Strike [WEAPON]",
+    "text": "Each time an Invulnerable saving throw is made against an attack made with this weapon, the opposing player must re-roll any successful Invulnerable saves."
+   },
+   {
+    "name": "Chapter Master [AURA]",
+    "text": "While a friendly Adeptus Astartes unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Orbital Bombardment",
+    "text": "Once per battle, in your Shooting phase, select one point on the battlefield. Roll one D6 for each unit (friendly or enemy) within 6\" of that point: on a 2+ that unit suffers D3 mortal wounds (a 3+ is required if the unit is a Monster or Vehicle)."
+   },
+   {
+    "name": "Living Legend",
+    "text": "While this model is your Warlord, at the start of your Command phase, you gain 1 CP. This ability can only trigger once per battle round."
+   },
+   {
+    "name": "Shadowed Fate",
+    "text": "The first time this model is destroyed, roll one D6 at the end of the phase: on a 5+, set this model back up as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 1 wound remaining."
+   },
+   {
+    "name": "Teleport Strike",
+    "text": "During deployment, you can set up this model in teleportarium reserves instead of on the battlefield. If you do, in the Reinforcements step of one of your Movement phases you can set it up anywhere on the battlefield more than 9\" horizontally away from all enemy models."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to the following units: Terminator Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Artificer flamer",
+    "text": "[TORRENT] [IGNORES COVER] [CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Ghost Razors (paired lightning claws)",
+    "text": "[TWIN-LINKED] [PHANTOM STRIKE]"
+   }
+  ],
+  "composition": "1 Lufgt Huron model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, CHAPTER MASTER, IMPERIUM, ASTRAL CLAWS, LUFGT HURON",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "armenneus-valthex",
+  "name": "Armenneus Valthex",
+  "subtitle": "Master Artificer of the Astral Claws",
+  "factionLine": "Adeptus Astartes • Astral Claws • Imperium",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Phased conversion beamer",
+    "melee": false,
+    "range": "42\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Indynabula array",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Servo-Frenzy [WEAPON]",
+    "text": "While this model is within Engagement Range of 3 or more enemy models, attacks made with this weapon have an Attacks characteristic of D3+4."
+   },
+   {
+    "name": "Battle Alchemistry [AURA]",
+    "text": "While a friendly Adeptus Astartes unit is within 6\" of this model, add 1 to the Strength characteristic of Bolt weapons (e.g. Bolt pistol, Boltgun, Bolt rifle, Heavy bolter, Storm bolter) equipped by models in that unit."
+   },
+   {
+    "name": "Blessing of the Omnissiah",
+    "text": "At the end of your Command phase, select one friendly Adeptus Astartes Vehicle model within 3\" of this model: that model regains up to D3 lost wounds."
+   },
+   {
+    "name": "Artificer's Wisdom",
+    "text": "Once per battle, in your Command phase, you can select one friendly Adeptus Astartes Infantry unit within 6\" of this model. Until the start of your next Command phase, ranged attacks made by models in that unit have the Lethal Hits ability."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to the following units: Tactical Squad, Intercessor Squad, Hellblaster Squad, Devastator Squad, Sternguard Veteran Squad."
+   },
+   {
+    "name": "Phased conversion beamer",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Indynabula array",
+    "text": "[SERVO-FRENZY]"
+   }
+  ],
+  "composition": "1 Armenneus Valthex model.",
+  "keywords": "INFANTRY, CHARACTER, TECHMARINE, IMPERIUM, ASTRAL CLAWS, ARMENNEUS VALTHEX",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "sevrin-loth",
+  "name": "Sevrin Loth",
+  "subtitle": "Magister of the Red Scorpions",
+  "factionLine": "Adeptus Astartes • Red Scorpions • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Smite (psychic)",
+    "melee": false,
+    "range": "18\"",
+    "a": "D6",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "The Magister's Axe",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Intercessor Squad, Hellblaster Squad, Sternguard Veterans."
+   },
+   {
+    "name": "Chief Librarian",
+    "text": "Each time this model uses a Psychic ability (including Smite), you can re-roll the Hit roll, the Wound roll, or the Damage roll. While this model is on the battlefield, the Magister's Axe is treated as a Psychic weapon and gains the [DEVASTATING WOUNDS] ability when targeting a Psyker unit."
+   },
+   {
+    "name": "Bane of the Damned [AURA]",
+    "text": "In your Command phase, select one friendly Adeptus Astartes unit within 6\" of this model. Until the start of your next Command phase, that unit can re-roll Wound rolls when its weapons target a Psyker unit. Sevrin Loth wages war against the Witch above all other foes."
+   },
+   {
+    "name": "Psychic Hood",
+    "text": "Each time an enemy Psyker attempts a Psychic ability within 18\" of this model, on a roll of 4+ that ability fails. (Equivalent to canonical 10e Psychic Hood / Witch Sense ability.)"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Smite (psychic)",
+    "text": "[PSYCHIC] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "The Magister's Axe",
+    "text": "[PSYCHIC] [ANTI-PSYKER 2+]"
+   }
+  ],
+  "composition": "1 Sevrin Loth model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, PSYKER, LIBRARIUS, CHIEF LIBRARIAN, IMPERIUM, ADEPTUS ASTARTES, SEVRIN LOTH",
+  "factionKeywords": "RED SCORPIONS"
+ },
+ {
+  "slug": "sergeant-centurius",
+  "name": "Sergeant Centurius",
+  "subtitle": "Phantom of the Long Damnation",
+  "factionLine": "Adeptus Astartes • Legion of the Damned • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Damned plasma pistol (standard)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Damned plasma pistol (supercharge)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Damned bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Damned power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment. Phantasmal Astartes (Legion of the Damned detachment rule applies to this model)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to a unit of Damned Legionnaires. While attached, the Damned Legionnaires unit gains +1 to the Hit roll on Charge and [DEVASTATING WOUNDS] on all bolt weapons (in addition to the detachment rule's effects)."
+   },
+   {
+    "name": "Phantasmal Form",
+    "text": "This model has the [FEEL NO PAIN 5+] ability against all attacks, AND each time an attack is allocated to this model, after determining if the attack is successful, your opponent must roll one D6: on a 4+, the attack still resolves; on a 1-3, the attack fizzles harmlessly (treat as a miss). This represents Centurius&apos;s half-real state — sometimes physical, sometimes spectral."
+   },
+   {
+    "name": "Animus Malorum (Wargear — Daemon Skull-Relic)",
+    "text": "The skull-relic in Centurius's off-hand drinks the souls of the dying within its reach, and returns them as the manifested forms of his fallen brothers.\n\nEach time an enemy model is destroyed within 12\" of this model by any cause (friendly attack, ranged or melee), place one Soul counter beside this model. Centurius can hold a maximum of 3 Soul counters at any time. Once per turn, in your Command phase OR at the end of any phase in which a friendly Damned Legionnaires unit lost one or more models, you can spend 1 Soul counter to return one destroyed Damned Legionnaire model to a friendly Damned Legionnaires unit on the battlefield within 9\" of Centurius. The returned model is set up in Unit Coherency, more than 6\" from any enemy unit, with 1 wound remaining. The soul is consumed in the act of manifestation."
+   },
+   {
+    "name": "Vengeful Spectre",
+    "text": "If a friendly Damned Legionnaires unit was destroyed earlier in this battle, each time this model or its attached unit makes an attack against the enemy unit that destroyed the Damned Legionnaires, re-roll all failed Hit rolls AND failed Wound rolls. Centurius hunts the killers of his fallen brothers across the war."
+   },
+   {
+    "name": "Manifestation",
+    "text": "During deployment, instead of setting up this model and its attached unit on the battlefield, you can place it in Strategic Reserves. From battle round 1, this model and its unit can arrive: set up wholly within 6\" of any battlefield edge OR wholly within 6\" of a Damned Legionnaires unit on the battlefield, and more than 6\" from any enemy models. The Damned arrive where they are needed, not where they are expected."
+   },
+   {
+    "name": "Damned plasma pistol (standard)",
+    "text": "[PISTOL, DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Damned plasma pistol (supercharge)",
+    "text": "[PISTOL, DEVASTATING WOUNDS (HAZARDOUS DOES NOT APPLY — THE WIELDER IS ALREADY DAMNED)]"
+   },
+   {
+    "name": "Damned bolt pistol",
+    "text": "[PISTOL, DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Damned power weapon",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Sergeant Centurius model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, SERGEANT, LEGION OF THE DAMNED, IMPERIUM, ADEPTUS ASTARTES, SERGEANT CENTURIUS",
+  "factionKeywords": "SPACE MARINES"
+ },
+ {
+  "slug": "lieutenant-tarentus",
+  "name": "Lieutenant Tarentus",
+  "subtitle": "Master of Tactical Doctrine",
+  "factionLine": "Adeptus Astartes • Ultramarines • Imperium",
+  "points": "80",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Master-crafted boltgun",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power sword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Intercessor Squad, Sternguard Veterans, Hellblasters, Heavy Intercessor Squad."
+   },
+   {
+    "name": "Tactical Precision",
+    "text": "Each time a model in this model's unit makes a ranged attack, you can re-roll one Wound roll of 1 per phase."
+   },
+   {
+    "name": "Combat Doctrines",
+    "text": "At the start of your Command phase, choose one Combat Doctrine to be active for this model's unit until the start of your next Command phase. You cannot select the same Doctrine two turns in a row:\n &middot; Tactical: ranged weapons gain [SUSTAINED HITS 1].\n &middot; Devastator: Heavy weapons fired by models in the unit gain [LETHAL HITS] and the model can shoot Heavy weapons even after Advancing.\n &middot; Assault: the unit can re-roll Charge rolls and melee weapons gain +1 to Wound."
+   },
+   {
+    "name": "Master-crafted boltgun",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Lieutenant Tarentus model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, LIEUTENANT, ULTRAMARINES, IMPERIUM, ADEPTUS ASTARTES, LIEUTENANT TARENTUS",
+  "factionKeywords": "SPACE MARINES"
+ },
+ {
+  "slug": "brayarth-ashmantle",
+  "name": "Bray'arth Ashmantle",
+  "subtitle": "Salamanders Venerable Dreadnought",
+  "factionLine": "Adeptus Astartes • Salamanders • Imperium",
+  "points": "210",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "6+",
+    "OC": "3"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Dreadfire heavy flamer (twin-linked)",
+    "melee": false,
+    "range": "12\"",
+    "a": "2D6",
+    "skill": "N/A",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Burning Wrath (built-in pistol)",
+    "melee": false,
+    "range": "6\"",
+    "a": "2D6",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Twin Dreadfire claws",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "16",
+    "ap": "-4",
+    "d": "D6+1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6, Feel No Pain 4+",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Wrought by Vulkan",
+    "text": "Each time an attack would lose this model a wound, roll one D6: on a 4+ the wound is ignored. (This is in addition to its 5+ Invulnerable Save.)"
+   },
+   {
+    "name": "Ancient Beyond Measure",
+    "text": "This model cannot be your Warlord while any other Character in your army can serve as Warlord. It can still gain a Warlord Trait when fielded in an all-Dreadnought force."
+   },
+   {
+    "name": "Furnace-Forged Fury",
+    "text": "Each time this model destroys an enemy Monster or Vehicle, until the end of the battle Burning Wrath and the Dreadfire heavy flamers gain +1 to the Damage characteristic."
+   },
+   {
+    "name": "Smoke Launchers",
+    "text": "Once per battle, in your Movement phase, this model can activate Smoke. Until the start of your next turn, ranged attacks targeting this model suffer -1 to the Hit roll, and this model cannot be selected to shoot."
+   },
+   {
+    "name": "Dreadfire heavy flamer (twin-linked)",
+    "text": "[IGNORES COVER] [TORRENT] [TWIN-LINKED]"
+   },
+   {
+    "name": "Burning Wrath (built-in pistol)",
+    "text": "[IGNORES COVER] [PISTOL] [TORRENT]"
+   },
+   {
+    "name": "Twin Dreadfire claws",
+    "text": "[TWIN-LINKED] [DEVASTATING WOUNDS] [ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Bray'arth Ashmantle model.",
+  "keywords": "VEHICLE, WALKER, CHARACTER, EPIC HERO, IMPERIUM, SALAMANDERS, BRAY'ARTH ASHMANTLE",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "asterion-moloc",
+  "name": "Lord Asterion Moloc",
+  "subtitle": "Chapter Master of the Minotaurs",
+  "factionLine": "Adeptus Astartes • Minotaurs • Imperium",
+  "points": "165",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "The Black Spear",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Terminator Squad, Terminator Assault Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad."
+   },
+   {
+    "name": "Chapter Master of the Minotaurs [AURA]",
+    "text": "While a friendly Minotaurs unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Fury of the Minotaurs [AURA]",
+    "text": "While a friendly Minotaurs Infantry unit is within 6\" of this model, you can re-roll Charge rolls made for that unit."
+   },
+   {
+    "name": "Undying Spite",
+    "text": "If this model is destroyed in the Fight phase before it has fought that phase, this model may immediately make its melee attacks as if it had fought, then is removed as a casualty. (Pile In and Consolidate moves are not made for this model.)"
+   },
+   {
+    "name": "Living Legend",
+    "text": "While this model is your Warlord, at the start of your Command phase you gain 1 Command Point. This ability triggers only once per battle round."
+   },
+   {
+    "name": "The Black Spear",
+    "text": "[PRECISION] [ANTI-CHARACTER 4+]"
+   }
+  ],
+  "composition": "1 Lord Asterion Moloc model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, CHAPTER MASTER, IMPERIUM, MINOTAURS, ASTERION MOLOC",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "ahazra-redth",
+  "name": "Ahazra Redth",
+  "subtitle": "Librarian of the Mantis Warriors",
+  "factionLine": "Adeptus Astartes • Mantis Warriors • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Smite (psychic)",
+    "melee": false,
+    "range": "18\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "—",
+    "ap": "—",
+    "d": "D3"
+   },
+   {
+    "name": "Force tulwar",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Talisman of Sundered Souls",
+    "text": "This model has a 4+ Invulnerable Save. The first time during the battle that this model is forced to take a Perils of the Warp test (or equivalent self-damage from psychic effects), the test is automatically ignored."
+   },
+   {
+    "name": "Librarius Discipline",
+    "text": "In your Command phase, this model can attempt to manifest one of the following:\n• Veil of Time: Select one friendly Mantis Warriors unit within 18\" — until your next Command phase, that unit can re-roll Advance and Charge rolls.\n• Might of Heroes: Select this model or one friendly Mantis Warriors Character within 12\" — until your next Command phase, melee attacks made by that model have +1 to the Strength characteristic and +1 to the Attacks characteristic."
+   },
+   {
+    "name": "Jungle-Hunter",
+    "text": "This model and any unit it leads can re-roll Charge rolls if charging from terrain (a terrain feature with the Difficult or Defensible trait)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Smite (psychic)",
+    "text": "[PSYCHIC] [AUTO-HITS]"
+   },
+   {
+    "name": "Force tulwar",
+    "text": "[PSYCHIC]"
+   }
+  ],
+  "composition": "1 Ahazra Redth model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, PSYKER, LIBRARIAN, IMPERIUM, MANTIS WARRIORS, AHAZRA REDTH",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "anton-narvaez",
+  "name": "Lieutenant Commander Anton Narvaez",
+  "subtitle": "Master of the Marines Errant 2nd Company",
+  "factionLine": "Adeptus Astartes • Marines Errant • Imperium",
+  "points": "115",
+  "pointsNote": "Points",
+  "invuln": "2+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Thundershock (relic plasma carbine)",
+    "melee": false,
+    "range": "24\"",
+    "a": "D3",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Voidshard power blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad, Vanguard Veteran Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Actinic Halo",
+    "text": "This model starts the battle with a 2+ Invulnerable Save. The first time this model fails an Invulnerable save in any phase, its Invulnerable save is permanently reduced to 6+ for the rest of the battle (the halo overloads)."
+   },
+   {
+    "name": "Rites of Battle (Marines Errant) [AURA]",
+    "text": "While a friendly Marines Errant unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Errant Vigilance",
+    "text": "On a turn this model finishes a Charge move, Thundershock gains the [PISTOL] ability — it can be fired into Engagement Range."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Thundershock (relic plasma carbine)",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Voidshard power blade",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Lieutenant Commander Anton Narvaez model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, LIEUTENANT, IMPERIUM, MARINES ERRANT, ANTON NARVAEZ",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "carnac-commodus",
+  "name": "Arch-Centurion Carnac Commodus",
+  "subtitle": "Master of the Astral Claws 6th Company",
+  "factionLine": "Adeptus Astartes • Astral Claws • Imperium",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Blood Biter (relic chainsword)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Assault Intercessor Squad, Sternguard Veteran Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Cut Them Down! [AURA]",
+    "text": "While a friendly Astral Claws unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Wound roll of 1."
+   },
+   {
+    "name": "Hunt of the Tyrant",
+    "text": "Each time Blood Biter scores a critical Wound roll (an unmodified 6) against an Infantry target, that target suffers 1 mortal wound in addition to normal damage."
+   },
+   {
+    "name": "Void Hardened",
+    "text": "This model has a 5+ Invulnerable Save. While in or partially in a terrain feature with the Difficult or Defensible trait, this model also has the Stealth ability."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Blood Biter (relic chainsword)",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Arch-Centurion Carnac Commodus model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, ASTRAL CLAWS, CARNAC COMMODUS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "casan-sabius",
+  "name": "Casan Sabius",
+  "subtitle": "Senior Captain of the Red Scorpions",
+  "factionLine": "Adeptus Astartes • Red Scorpions • Imperium",
+  "points": "165",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Blade of the Scorpion (relic power blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "D3+1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Bladeguard Veteran Squad, Terminator Squad, Vanguard Veteran Squad, Tactical Squad."
+   },
+   {
+    "name": "Chapter Master (Red Scorpions) [AURA]",
+    "text": "While a friendly Red Scorpions unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+   },
+   {
+    "name": "Purity of Aspect, Action and Intent",
+    "text": "If this model destroys one or more enemy models in the Fight phase, until the end of the phase one friendly Red Scorpions Infantry unit within 6\" of this model gains +1 to the Attacks characteristic for each of its melee weapons."
+   },
+   {
+    "name": "Honour-Bound",
+    "text": "While this model is your Warlord, if this model is destroyed, each remaining friendly Red Scorpions Infantry unit gains +1 to Hit on all attacks until the end of the battle (vengeance for the Captain)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Blade of the Scorpion (relic power blade)",
+    "text": "[ANTI-MONSTER 4+] [ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Casan Sabius model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, RED SCORPIONS, CASAN SABIUS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "corien-sumatris",
+  "name": "Captain Corien Sumatris",
+  "subtitle": "Lord of the Astral Claws 4th Company",
+  "factionLine": "Adeptus Astartes • Astral Claws • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Goldenfang (relic power blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Assault Intercessor Squad, Bladeguard Veteran Squad, Sternguard Veteran Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Rites of Battle (Astral Claws) [AURA]",
+    "text": "While a friendly Astral Claws unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Vicious Charge",
+    "text": "On a turn in which this model made a Charge move, this model makes D3 additional attacks with the Goldenfang that phase."
+   },
+   {
+    "name": "Saint of Slaughter",
+    "text": "Each time this model destroys an enemy Character or Monster in the Fight phase, until the end of the battle the Attacks characteristic of Goldenfang is increased by 1 (cumulative, no maximum)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Goldenfang (relic power blade)",
+    "text": "[PRECISION]"
+   }
+  ],
+  "composition": "1 Captain Corien Sumatris model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, ASTRAL CLAWS, CORIEN SUMATRIS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "elam-courbray",
+  "name": "Knight-Captain Elam Courbray",
+  "subtitle": "Champion-Slayer of the Fire Hawks",
+  "factionLine": "Adeptus Astartes • Fire Hawks • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "The Sword Excellus (relic duelling blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "D3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Assault Intercessor Squad, Vanguard Veteran Squad, Inceptor Squad, Assault Squad with Jump Packs."
+   },
+   {
+    "name": "Rites of Battle (Fire Hawks) [AURA]",
+    "text": "While a friendly Fire Hawks unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Martial Contempt",
+    "text": "Each time this model fights, if any enemy Character models are within Engagement Range of this model, attacks made by this model must be directed against a Character target (you choose which if multiple Characters are in range). On a Charge turn, this model gains the [DEVASTATING WOUNDS] ability against Character targets."
+   },
+   {
+    "name": "Hawk-Strike",
+    "text": "On a turn in which this model finishes a Charge move, attacks made by The Sword Excellus gain +1 to the Strength characteristic AND +1 to the Attacks characteristic."
+   },
+   {
+    "name": "Teleport Strike",
+    "text": "During deployment, you can set this model up in teleportarium reserves instead of on the battlefield. In the Reinforcements step of one of your Movement phases, you can set it up anywhere on the battlefield more than 9\" horizontally from all enemy models."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "The Sword Excellus (relic duelling blade)",
+    "text": "[TWIN-LINKED] [PRECISION]"
+   }
+  ],
+  "composition": "1 Knight-Captain Elam Courbray model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, FLY, JUMP PACK, IMPERIUM, FIRE HAWKS, ELAM COURBRAY",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "gabriel-angelos",
+  "name": "Gabriel Angelos",
+  "subtitle": "Chapter Master of the Blood Ravens",
+  "factionLine": "Adeptus Astartes • Blood Ravens • Imperium",
+  "points": "195",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "God-splitter (Sweeping Blows)",
+    "melee": true,
+    "range": "Melee",
+    "a": "8",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "God-splitter (Mighty Strikes)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Bladeguard Veteran Squad, Terminator Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Chapter Master (Blood Ravens) [AURA]",
+    "text": "While a friendly Blood Ravens unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+   },
+   {
+    "name": "Rites of War (Blood Ravens) [AURA]",
+    "text": "While a friendly Blood Ravens unit is within 6\" of this model, that unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "Leap into the Fray",
+    "text": "On a turn this model finishes a Charge move, select one enemy unit within Engagement Range and roll one D6: on a 4+, that unit suffers D3 mortal wounds."
+   },
+   {
+    "name": "God-splitter's Choice",
+    "text": "When this model is selected to fight, choose Sweeping Blows or Mighty Strikes for the God-splitter. The chosen profile applies for the entire Fight phase. You can choose a different profile in each subsequent Fight phase."
+   },
+   {
+    "name": "Teleport Strike",
+    "text": "During deployment, you can set this model up in teleportarium reserves. In the Reinforcements step of one of your Movement phases, set it up anywhere on the battlefield more than 9\" horizontally from all enemy models."
+   },
+   {
+    "name": "God-splitter (Sweeping Blows)",
+    "text": "[EXTRA ATTACKS]"
+   },
+   {
+    "name": "God-splitter (Mighty Strikes)",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Gabriel Angelos model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, CHAPTER MASTER, IMPERIUM, BLOOD RAVENS, GABRIEL ANGELOS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "harath-shen",
+  "name": "Harath Shen",
+  "subtitle": "Master Apothecary of the Salamanders",
+  "factionLine": "Adeptus Astartes • Salamanders • Imperium",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bloodfire (standard)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-3",
+    "d": "1"
+   },
+   {
+    "name": "Bloodfire (supercharge)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Power sabre",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Intercessor Squad, Assault Intercessor Squad, Tactical Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad."
+   },
+   {
+    "name": "Master of Chirurgery",
+    "text": "At the end of your Movement phase, select one friendly Salamanders Infantry or Salamanders Biker unit within 3\" of this model. One of the following effects (your choice):\n• Heal: One model in that unit regains up to D3+1 lost wounds.\n• Revive: If no model in that unit is wounded but one or more models have been destroyed during the battle, roll one D6: on a 3+, return one destroyed model to the unit with 1 wound remaining.\nIf the Revive roll fails, this model cannot shoot, charge, or fight for the rest of the turn (recovering the gene-seed). A unit can only be the target of this ability once per turn."
+   },
+   {
+    "name": "Promethean Vigil",
+    "text": "Each time a friendly Salamanders model loses a wound while within 3\" of this model, you can roll one D6: on a 6, that wound is not lost."
+   },
+   {
+    "name": "Combat Doctrina",
+    "text": "This model is eligible to declare a charge in a turn it Advanced."
+   },
+   {
+    "name": "Bloodfire (standard)",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Bloodfire (supercharge)",
+    "text": "[PISTOL] [HAZARDOUS]"
+   }
+  ],
+  "composition": "1 Harath Shen model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, APOTHECARY, IMPERIUM, SALAMANDERS, HARATH SHEN",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "hecaton-aiakos",
+  "name": "Hecaton Aiakos",
+  "subtitle": "Contemptor-Mortis Dreadnought of the Minotaurs",
+  "factionLine": "Adeptus Astartes • Minotaurs • Imperium",
+  "points": "195",
+  "pointsNote": "Points",
+  "invuln": "5+",
+  "stats": [
+   {
+    "model": null,
+    "M": "9\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "11",
+    "LD": "6+",
+    "OC": "3"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Heavy plasma cannon (standard)",
+    "melee": false,
+    "range": "36\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Heavy plasma cannon (supercharge)",
+    "melee": false,
+    "range": "36\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Dreadnought combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "12",
+    "ap": "-3",
+    "d": "5"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Battlesworn Warrior",
+    "text": "This model cannot be your Warlord."
+   },
+   {
+    "name": "Augmented Atomantic Shielding",
+    "text": "This model has a 5+ Invulnerable Save. In addition, each time an attack would inflict damage on this model, on an unmodified attack-roll Wound roll of 1, the damage is reduced to 0."
+   },
+   {
+    "name": "Groundstrike",
+    "text": "After this model finishes a Charge move, select one enemy unit within Engagement Range. That unit suffers D3 mortal wounds."
+   },
+   {
+    "name": "Combat Doctrina",
+    "text": "This model is eligible to declare a charge in a turn in which it Advanced (a Mortis-pattern Contemptor moves like a Predator with engines redlined)."
+   },
+   {
+    "name": "Heavy plasma cannon (standard)",
+    "text": "[BLAST]"
+   },
+   {
+    "name": "Heavy plasma cannon (supercharge)",
+    "text": "[BLAST] [HAZARDOUS]"
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Dreadnought combat weapon",
+    "text": "[ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Hecaton Aiakos model.",
+  "keywords": "VEHICLE, WALKER, CHARACTER, EPIC HERO, FLY, JUMP PACK, IMPERIUM, MINOTAURS, HECATON AIAKOS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "ivanus-enkomi",
+  "name": "Chaplain Ivanus Enkomi",
+  "subtitle": "Sword-Hand of the Minotaurs",
+  "factionLine": "Adeptus Astartes • Minotaurs • Imperium",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Grenade discharger (frag)",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Grenade discharger (krak)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-2",
+    "d": "D6"
+   },
+   {
+    "name": "Crozius Arkanos",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Vanguard Veteran Squad, Bladeguard Veteran Squad, Assault Intercessor Squad, Tactical Squad, Terminator Squad."
+   },
+   {
+    "name": "Litanies of Battle [AURA]",
+    "text": "In your Command phase, select one Litany. Until the start of your next Command phase, while a friendly Minotaurs unit is within 6\" of this model, the unit benefits from the selected Litany:\n• Litany of Hate: Re-roll Hit rolls of 1 in melee.\n• Recitation of Focus: Re-roll Wound rolls of 1.\n• Catechism of Fire: Ranged weapons gain [LETHAL HITS]."
+   },
+   {
+    "name": "Spiritual Leader (Minotaurs) [AURA]",
+    "text": "While a friendly Minotaurs unit is within 6\" of this model, that unit can use this model's Leadership characteristic for Battle-shock and Leadership tests."
+   },
+   {
+    "name": "Tribute of Bone",
+    "text": "Once per battle, in your Fight phase, when this model is selected to fight, until the end of the phase, the Damage characteristic of attacks made by Ivanus Enkomi is doubled against any enemy Character target."
+   },
+   {
+    "name": "Grenade discharger (frag)",
+    "text": "[BLAST]"
+   }
+  ],
+  "composition": "1 Chaplain Ivanus Enkomi model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CHAPLAIN, IMPERIUM, MINOTAURS, IVANUS ENKOMI",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "lias-issodon",
+  "name": "Lias Issodon",
+  "subtitle": "Chapter Master of the Raptors",
+  "factionLine": "Adeptus Astartes • Raptors • Imperium",
+  "points": "160",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Malice (master-crafted stalker-pattern rifle)",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-4",
+    "d": "D3"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Raptorclaw",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Lone Operative, Stealth, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Infiltrator Squad, Phobos Strike Team, Reiver Squad, Incursor Squad, Scout Squad."
+   },
+   {
+    "name": "Chapter Master of the Raptors [AURA]",
+    "text": "While a friendly Raptors unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Infiltrate, Isolate, Destroy [AURA]",
+    "text": "While a friendly Raptors Infantry unit is within 6\" of this model, add +1\" to that unit's Move, Advance, and Charge characteristics."
+   },
+   {
+    "name": "Master of Ambush",
+    "text": "During deployment, after both players have deployed all other units, you can set up this model and up to 3 friendly Raptors Infantry units (excluding Terminator and Gravis units) in strategic reserves. They arrive automatically at the start of any of your Movement phases from the second battle round onward, and can be set up anywhere on the battlefield more than 9\" horizontally from all enemy models."
+   },
+   {
+    "name": "Stealth-Modified Armour",
+    "text": "Each time a ranged attack targets this model, if this model is receiving the Benefit of Cover, add 2 to the saving throw instead of 1 (maximum modified save of 2+)."
+   },
+   {
+    "name": "Grim Hunter",
+    "text": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back, but cannot charge that turn (it may still shoot)."
+   },
+   {
+    "name": "Malice (master-crafted stalker-pattern rifle)",
+    "text": "[ASSAULT] [IGNORES COVER] [PRECISION]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Lias Issodon model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CHAPTER MASTER, PHOBOS, IMPERIUM, RAPTORS, LIAS ISSODON",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "malakim-phoros",
+  "name": "Malakim Phoros",
+  "subtitle": "Chapter Master of the Lamenters",
+  "factionLine": "Adeptus Astartes • Lamenters • Imperium",
+  "points": "185",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Catechist (relic plasma pistol)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Glaive of Lamentation",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-4",
+    "d": "D3+2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Bladeguard Veteran Squad, Vanguard Veteran Squad, Terminator Squad, Tactical Squad."
+   },
+   {
+    "name": "Lord of Ruin [AURA]",
+    "text": "While a friendly Lamenters Infantry, Lamenters Dreadnought, or Lamenters Biker unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll the Wound roll."
+   },
+   {
+    "name": "Rage Unto Death",
+    "text": "This model is eligible to declare a charge in a turn it Fell Back. In addition, while this model is below its Starting Wounds total, attacks made by Glaive of Lamentation gain +1 to the Attacks characteristic."
+   },
+   {
+    "name": "Sons of Sanguinius (Cursed) [AURA]",
+    "text": "While a friendly Lamenters unit is within 6\" of this model, that unit has Feel No Pain 6+ against Mortal Wounds — the Chapter's tragic legacy hardens them against fate's cruelties."
+   },
+   {
+    "name": "Vow of Penitence",
+    "text": "While this model is your Warlord, at the start of the first battle round, you can declare the Vow of Penitence. If you do, until the end of the battle this model and its attached unit cannot Fall Back, but each time this model destroys an enemy Character or Monster, your army gains 1 Command Point (max 3 per battle from this ability)."
+   },
+   {
+    "name": "Catechist (relic plasma pistol)",
+    "text": "[PISTOL] [MELTA 2]"
+   },
+   {
+    "name": "Glaive of Lamentation",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Malakim Phoros model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CHAPTER MASTER, IMPERIUM, LAMENTERS, MALAKIM PHOROS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "mordaci-blaylock",
+  "name": "Captain Mordaci Blaylock",
+  "subtitle": "Master of the Novamarines 1st Company",
+  "factionLine": "Adeptus Astartes • Novamarines • Imperium",
+  "points": "140",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Relic storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Foe Ripper (relic dreadnought-pattern claw)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-4",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Terminator Squad, Terminator Assault Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad."
+   },
+   {
+    "name": "Rites of Battle (Novamarines) [AURA]",
+    "text": "While a friendly Novamarines unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Hard as Stone [AURA]",
+    "text": "Each time a model in a friendly Novamarines Infantry unit within 6\" of this model would lose a wound, roll one D6: on a 6, that wound is not lost."
+   },
+   {
+    "name": "Teleport Strike",
+    "text": "During deployment, you can set this model up in teleportarium reserves. In the Reinforcements step of one of your Movement phases, set it up anywhere on the battlefield more than 9\" horizontally from all enemy models."
+   },
+   {
+    "name": "Brace and Strike",
+    "text": "In a turn in which this model Remained Stationary, until the end of the turn the Hit modifier penalty for Foe Ripper is ignored (resolved at BS/WS without the -1 penalty)."
+   },
+   {
+    "name": "Relic storm bolter",
+    "text": "[RAPID FIRE 2] [TWIN-LINKED]"
+   },
+   {
+    "name": "Foe Ripper (relic dreadnought-pattern claw)",
+    "text": "[ANTI-VEHICLE 4+] [DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Captain Mordaci Blaylock model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, TERMINATOR, IMPERIUM, NOVAMARINES, MORDACI BLAYLOCK",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "pellas-mirsan",
+  "name": "Captain Pellas Mir'san",
+  "subtitle": "Master of the 4th Company",
+  "factionLine": "Adeptus Astartes • Salamanders • Imperium",
+  "points": "115",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Combi-flamer (bolt)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Combi-flamer (flame)",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6+1",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Cinder Edge (relic blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Steelsliver (paired sweep blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "X",
+    "skill": "2+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Vanguard Veteran Squad, Bladeguard Veteran Squad, Assault Intercessor Squad, Tactical Squad."
+   },
+   {
+    "name": "Rites of Battle (Salamanders) [AURA]",
+    "text": "While a friendly Salamanders unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Master Duellist",
+    "text": "If this model is within Engagement Range of one or more enemy Character models in the Fight phase, attacks made by this model gain +2 to the Attacks characteristic for the Cinder Edge that phase."
+   },
+   {
+    "name": "Sweep — Steelsliver",
+    "text": "When this model uses the Steelsliver melee profile, instead of selecting a single target, make 1 attack against each enemy model within Engagement Range of this model (to a maximum of 6 attacks). Resolve these against the model's unit normally."
+   },
+   {
+    "name": "Promethean Cult",
+    "text": "Each time this model makes a melee attack with the Cinder Edge against a Monster, Vehicle, or Character target, an unmodified Wound roll of 5+ scores a Critical Wound."
+   },
+   {
+    "name": "Combi-flamer (bolt)",
+    "text": "[ASSAULT] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Combi-flamer (flame)",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Cinder Edge (relic blade)",
+    "text": "[PRECISION]"
+   },
+   {
+    "name": "Steelsliver (paired sweep blade)",
+    "text": "[EXTRA ATTACKS] [SWEEP]"
+   }
+  ],
+  "composition": "1 Captain Pellas Mir'san model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, SALAMANDERS, PELLAS MIR'SAN",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "silas-alberec",
+  "name": "Captain Silas Alberec",
+  "subtitle": "Master of the Exorcists 3rd Company",
+  "factionLine": "Adeptus Astartes • Exorcists • Imperium",
+  "points": "130",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Purgator (pistol)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "6",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Hellslayer (relic power weapon)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "D3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Bladeguard Veteran Squad, Vanguard Veteran Squad, Tactical Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Rites of Battle (Exorcists) [AURA]",
+    "text": "While a friendly Exorcists unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Hexagrammatically Warded Armour",
+    "text": "This model is treated as a Psyker for the purposes of Deny the Witch and similar effects. Once per opponent's Psychic phase, this model can attempt to deny one psychic ability targeting a friendly unit within 18\" — roll 2D6: on an unmodified 7+, the ability is negated."
+   },
+   {
+    "name": "Warp-Hunter",
+    "text": "Each time this model makes a melee attack against an enemy Psyker or Daemon, on an unmodified Wound roll of 4+, the target suffers 1 mortal wound in addition to normal damage."
+   },
+   {
+    "name": "Purgator (pistol)",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Hellslayer (relic power weapon)",
+    "text": "[ANTI-PSYKER 2+] [ANTI-DAEMON 2+] [DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Captain Silas Alberec model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, EXORCISTS, SILAS ALBEREC",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "sirae-karagon",
+  "name": "Sirae Karagon",
+  "subtitle": "Chapter Ancient of the Red Scorpions",
+  "factionLine": "Adeptus Astartes • Red Scorpions • Imperium",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Power sword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Tactical Squad, Bladeguard Veteran Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Astartes Banner (Red Scorpions) [AURA]",
+    "text": "While a friendly Red Scorpions unit is within 6\" of this model, that unit improves its Leadership characteristic by 1, and the unit's OC characteristic increases by 1 while it controls an objective."
+   },
+   {
+    "name": "Last Stand of the Scorpion",
+    "text": "Each time a friendly Red Scorpions Infantry model within 6\" of this model is destroyed by an attack made by an enemy model (and not by a battle-shock or game-effect), before that model is removed, you may roll one D6: on a 4+, that model can either make a single ranged attack with one of its ranged weapons OR make a single melee attack with one of its melee weapons, before being removed as a casualty."
+   },
+   {
+    "name": "Standard Bearer",
+    "text": "While this model is on the battlefield, each time a friendly Red Scorpions unit makes a Battle-shock test, that test is automatically passed."
+   }
+  ],
+  "composition": "1 Sirae Karagon model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, ANCIENT, IMPERIUM, RED SCORPIONS, SIRAE KARAGON",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "tarnus-vale",
+  "name": "Captain Tarnus Vale",
+  "subtitle": "Master of the Fire Angels Armoured Spear",
+  "factionLine": "Adeptus Astartes • Fire Angels • Imperium",
+  "points": "120",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Plasma charger (standard)",
+    "melee": false,
+    "range": "8\"",
+    "a": "3",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "1"
+   },
+   {
+    "name": "Plasma charger (supercharge)",
+    "melee": false,
+    "range": "8\"",
+    "a": "3",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Angel's Teeth (relic bayonet)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Bladeguard Veteran Squad, Assault Intercessor Squad, Tactical Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Rites of Battle (Fire Angels) [AURA]",
+    "text": "While a friendly Fire Angels unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Mechanised Advance [AURA]",
+    "text": "While a friendly Fire Angels Vehicle unit is within 6\" of this model, that unit gains a 6+ Invulnerable Save against ranged attacks."
+   },
+   {
+    "name": "Flame of the Angels",
+    "text": "Once per battle, in your Shooting phase, when this model is selected to shoot, all three Plasma charger attacks score a Critical Hit on an unmodified Hit roll of 4+ (instead of 6) for that phase. Cannot combine with Supercharge mode this phase."
+   },
+   {
+    "name": "Plasma charger (standard)",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Plasma charger (supercharge)",
+    "text": "[PISTOL] [HAZARDOUS]"
+   }
+  ],
+  "composition": "1 Captain Tarnus Vale model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, FIRE ANGELS, TARNUS VALE",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "thulsa-kane",
+  "name": "High Chaplain Thulsa Kane",
+  "subtitle": "Master of Reclamation — Executioners Chapter",
+  "factionLine": "Adeptus Astartes • Executioners • Imperium",
+  "points": "150",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Kane's plasma pistol (standard)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Kane's plasma pistol (supercharge)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Lifetaker (relic crozius)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "D3+2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Terminator Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad, Vanguard Veteran Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Litanies of Hate (Executioners) [AURA]",
+    "text": "While a friendly Executioners unit is within 6\" of this model, each time a model in that unit makes a melee attack, you can re-roll the Hit roll."
+   },
+   {
+    "name": "The Ænigmata Ferrum [AURA]",
+    "text": "While a friendly Executioners unit is within 6\" of this model, each time a model in that unit makes a melee attack, on an unmodified Hit roll of 6, make 1 additional attack against the same target with the same weapon. These bonus attacks cannot themselves generate additional attacks."
+   },
+   {
+    "name": "Grehdalin's Bones",
+    "text": "Each time a melee attack targets this model, your opponent suffers -1 to the Hit roll."
+   },
+   {
+    "name": "Spiritual Leader (Executioners) [AURA]",
+    "text": "While a friendly Executioners unit is within 6\" of this model, that unit can use this model's Leadership characteristic for Battle-shock and Leadership tests."
+   },
+   {
+    "name": "Kane's plasma pistol (standard)",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Kane's plasma pistol (supercharge)",
+    "text": "[PISTOL] [HAZARDOUS]"
+   },
+   {
+    "name": "Lifetaker (relic crozius)",
+    "text": "[PRECISION] [ANTI-CHARACTER 4+]"
+   }
+  ],
+  "composition": "1 High Chaplain Thulsa Kane model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CHAPLAIN, TERMINATOR, IMPERIUM, EXECUTIONERS, THULSA KANE",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "tyberos-red-wake",
+  "name": "Tyberos the Red Wake",
+  "subtitle": "Chapter Master of the Carcharodons",
+  "factionLine": "Adeptus Astartes • Carcharodons • Imperium",
+  "points": "160",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Hunger (paired chainfist + lightning claw)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "3"
+   },
+   {
+    "name": "Slake (chainfist)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Terminator Squad, Terminator Assault Squad, Sternguard Veteran Squad, Vanguard Veteran Squad."
+   },
+   {
+    "name": "Lord Reaper of the Void [AURA]",
+    "text": "While a friendly Carcharodons unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Savagery Beyond Reason [AURA]",
+    "text": "While a friendly Carcharodons unit is within 6\" of this model, melee weapons equipped by models in that unit gain +1 to the Strength characteristic."
+   },
+   {
+    "name": "Pale Wastes Veteran",
+    "text": "Each time this model destroys an enemy Character, Monster, or Vehicle in the Fight phase, until the end of the battle this model has Feel No Pain 5+."
+   },
+   {
+    "name": "Teleport Strike",
+    "text": "During deployment, you can set this model up in teleportarium reserves. In the Reinforcements step of one of your Movement phases, you can set it up anywhere on the battlefield more than 9\" horizontally from all enemy models."
+   },
+   {
+    "name": "Hunger (paired chainfist + lightning claw)",
+    "text": "[TWIN-LINKED] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Slake (chainfist)",
+    "text": "[ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Tyberos the Red Wake model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, CHAPTER MASTER, IMPERIUM, CARCHARODONS, TYBEROS",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "vaylund-cal",
+  "name": "Iron Father Vaylund Cal",
+  "subtitle": "Forge-Master of the Sons of Medusa",
+  "factionLine": "Adeptus Astartes • Sons of Medusa • Imperium",
+  "points": "140",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Servo-harness flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6+1",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Masterwork plasma cutter",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Medusan Hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D3+1"
+   },
+   {
+    "name": "Servo-arm (×2)",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "10",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Tactical Squad, Sternguard Veteran Squad, Bladeguard Veteran Squad, Centurion Devastator Squad, Devastator Squad."
+   },
+   {
+    "name": "Purge the Weak [AURA]",
+    "text": "While a friendly Sons of Medusa unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a failed Hit roll (not just Hit rolls of 1 — full re-roll of failures)."
+   },
+   {
+    "name": "Blessing of the Omnissiah",
+    "text": "At the end of your Movement phase, select one friendly Sons of Medusa Vehicle within 3\" of this model. That model regains up to D3 lost wounds. A Vehicle can only be repaired once per turn."
+   },
+   {
+    "name": "Forge-Master",
+    "text": "Each time this model destroys an enemy Vehicle or Monster, until the end of the battle the Damage characteristic of Medusan Hammer is increased by 1."
+   },
+   {
+    "name": "Iron Discipline",
+    "text": "This model and any unit it leads automatically pass Battle-shock tests."
+   },
+   {
+    "name": "Servo-harness flamer",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Masterwork plasma cutter",
+    "text": "[PISTOL]"
+   },
+   {
+    "name": "Medusan Hammer",
+    "text": "[DEVASTATING WOUNDS] [ANTI-VEHICLE 4+]"
+   },
+   {
+    "name": "Servo-arm (×2)",
+    "text": "[EXTRA ATTACKS]"
+   }
+  ],
+  "composition": "1 Iron Father Vaylund Cal model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, IRON FATHER, IMPERIUM, SONS OF MEDUSA, VAYLUND CAL",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "zhrukhal-androcles",
+  "name": "Captain Zhrukhal Androcles",
+  "subtitle": "Master of the Star Phantoms 2nd Company",
+  "factionLine": "Adeptus Astartes • Star Phantoms • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Combi-melta (bolt)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Combi-melta (melta)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Stonefist (relic power fist)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Sternguard Veteran Squad, Vanguard Veteran Squad, Bladeguard Veteran Squad, Tactical Squad, Assault Intercessor Squad."
+   },
+   {
+    "name": "Rites of Battle (Star Phantoms) [AURA]",
+    "text": "While a friendly Star Phantoms unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+   },
+   {
+    "name": "Death's Vanguard [AURA]",
+    "text": "While a friendly Star Phantoms unit is within 6\" of this model, that unit ignores any modifiers to its Move characteristic (including penalties from Advance or Difficult terrain)."
+   },
+   {
+    "name": "Phantom Strike",
+    "text": "Once per battle, in your Shooting phase or Fight phase, you may declare a Phantom Strike. Until the end of the phase, attacks made by this model gain the [LETHAL HITS] ability. Cannot combine with the Combi-melta's One-Shot mode this phase."
+   },
+   {
+    "name": "Combi-melta (bolt)",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Combi-melta (melta)",
+    "text": "[MELTA 2] [ONE-SHOT]"
+   },
+   {
+    "name": "Stonefist (relic power fist)",
+    "text": "[ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Captain Zhrukhal Androcles model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, IMPERIUM, STAR PHANTOMS, ZHRUKHAL ANDROCLES",
+  "factionKeywords": "ADEPTUS ASTARTES"
+ },
+ {
+  "slug": "captain-karlaen",
+  "name": "Captain Karlaen",
+  "subtitle": "Brother-Captain of the Archangels • Bearer of the Hammer of Baal",
+  "factionLine": "Adeptus Astartes • Blood Angels • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Hammer of Baal",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Terminator Squad, Terminator Assault Squad, Sanguinary Guard, Bladeguard Veterans."
+   },
+   {
+    "name": "Bloody Toll [AURA]",
+    "text": "While a friendly Blood Angels unit is within 6\" of this model, each time a model in that unit makes a melee attack, you can re-roll a Wound roll of 1. While this model is leading the unit, the unit also has the Furious Charge ability."
+   },
+   {
+    "name": "Furious Charge",
+    "text": "Each time a model in this model's unit makes a melee attack, if its unit made a Charge move this turn, add 1 to the Strength and Attacks characteristics of that attack."
+   },
+   {
+    "name": "Master Strategist",
+    "text": "If this model is your Warlord, you can re-roll Reserves rolls and Strategic Reserves rolls. Additionally, at the start of your first Command phase you gain 1 CP."
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Hammer of Baal",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Captain Karlaen model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, CAPTAIN, TERMINATOR, IMPERIUM, ADEPTUS ASTARTES, CAPTAIN KARLAEN",
+  "factionKeywords": "BLOOD ANGELS"
+ },
+ {
+  "slug": "sergeant-naaman",
+  "name": "Sergeant Naaman",
+  "subtitle": "Master of Recon, Ravenwing Scouts",
+  "factionLine": "Adeptus Astartes • Dark Angels • Imperium",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "4+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Stalker bolt rifle (Naaman's signature)",
+    "melee": false,
+    "range": "36\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combat blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Stealth, Infiltrators",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Master of Recon",
+    "text": "While Sergeant Naaman is leading a Scouts Squad, that unit's Scout move increases from 6\" to 9\", and the unit gains the Stealth ability. Additionally, models in that unit re-roll Hit rolls of 1 with ranged attacks."
+   },
+   {
+    "name": "Hunter's Mark",
+    "text": "At the start of the first battle round, after deployment, select one enemy Character model. For the rest of the battle, each time Sergeant Naaman makes a ranged or melee attack against that Character, he re-rolls the Hit roll and the Wound roll."
+   },
+   {
+    "name": "Silent Stalker",
+    "text": "Enemy units cannot benefit from the Stealth ability or the Cover rule against this model's ranged attacks. Naaman has hunted them since the deployment line."
+   },
+   {
+    "name": "Stalker bolt rifle (Naaman's signature)",
+    "text": "[HEAVY] [PRECISION] [LETHAL HITS]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Sergeant Naaman model.",
+  "keywords": "INFANTRY, CHARACTER, SCOUT, SCOUT SERGEANT, LONE OPERATIVE, IMPERIUM, ADEPTUS ASTARTES, SERGEANT NAAMAN",
+  "factionKeywords": "DARK ANGELS"
+ },
+ {
+  "slug": "lone-wolf-power-armour",
+  "name": "Lone Wolf (Power Armour)",
+  "subtitle": "Death-Sworn of Fenris",
+  "factionLine": "Adeptus Astartes • Space Wolves • Imperium",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol – standard",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol – supercharge",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Frost axe / Frost sword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Wolf claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Chainfist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "composition": "1 Lone Wolf model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, IMPERIUM, ADEPTUS ASTARTES, LONE WOLF",
+  "factionKeywords": "SPACE WOLVES",
+  "variant": "Power Armour",
+  "abilities": [
+   {
+    "name": "CORE: Lone Operative",
+    "text": ""
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "A Glorious Death",
+    "text": "The first time this model is destroyed, roll one D6: on a 4+, set this model back up as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 1 wound remaining. The model can only be revived once per battle."
+   },
+   {
+    "name": "Worthy of a Saga",
+    "text": "Each time this model makes a melee attack against a Character or Monster unit, you can re-roll the Wound roll."
+   },
+   {
+    "name": "An Army of One",
+    "text": "This model can never be your Warlord and cannot take Enhancements. It cannot join other units (it is always a Lone Operative — solo)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Wolf claws (paired)",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Chainfist",
+    "text": "[ANTI-VEHICLE 3+]"
+   }
+  ]
+ },
+ {
+  "slug": "lone-wolf-terminator-armour",
+  "name": "Lone Wolf (Terminator Armour)",
+  "subtitle": "Death-Sworn of Fenris",
+  "factionLine": "Adeptus Astartes • Space Wolves • Imperium",
+  "points": "130",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol – standard",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol – supercharge",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Frost axe / Frost sword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Wolf claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Chainfist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "composition": "1 Lone Wolf model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, IMPERIUM, ADEPTUS ASTARTES, LONE WOLF",
+  "factionKeywords": "SPACE WOLVES",
+  "variant": "Terminator Armour",
+  "abilities": [
+   {
+    "name": "CORE: Lone Operative, Deep Strike",
+    "text": ""
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "A Glorious Death",
+    "text": "The first time this model is destroyed, roll one D6: on a 4+, set this model back up as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 1 wound remaining. The model can only be revived once per battle."
+   },
+   {
+    "name": "Worthy of a Saga",
+    "text": "Each time this model makes a melee attack against a Character or Monster unit, you can re-roll the Wound roll."
+   },
+   {
+    "name": "An Army of One",
+    "text": "This model can never be your Warlord and cannot take Enhancements. It cannot join other units (it is always a Lone Operative — solo)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Wolf claws (paired)",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Chainfist",
+    "text": "[ANTI-VEHICLE 3+]"
+   }
+  ]
+ },
+ {
+  "slug": "njal-stormcaller-pre-rubicon",
+  "name": "Njal Stormcaller",
+  "subtitle": "In Runic Terminator Armour • Pre-Rubicon Primaris",
+  "factionLine": "Adeptus Astartes • Space Wolves • Imperium",
+  "points": "105",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Nightwing (familiar)",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "2+",
+    "s": "3",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Lord of Tempests (psychic)",
+    "melee": false,
+    "range": "18\"",
+    "a": "D6",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Staff of the Stormcaller",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-1",
+    "d": "D3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader, Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to one of the following units: Wolf Guard Terminator Squad, Wolf Guard Pack, Grey Hunters, Blood Claws."
+   },
+   {
+    "name": "Lord of Storms [AURA]",
+    "text": "While a friendly Space Wolves unit is within 6\" of this model, that unit can re-roll Battle-shock tests. In addition, while this model is leading a unit, the unit's ranged weapons gain the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Psychic Hood",
+    "text": "Each time an enemy Psyker attempts a Psychic ability within 18\" of this model, on a roll of 4+ that ability fails. (Equivalent to the canonical 10e Psychic Hood / Witch Sense ability.)"
+   },
+   {
+    "name": "Tempests of the Wolf",
+    "text": "At the start of each Battle round (after the first), roll one D6: on a 4+, select one enemy unit visible to and within 18\" of this model — that unit suffers D3 mortal wounds. This represents Njal's wild storm-summoning abilities (8th Ed: Living Lightning power)."
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Nightwing (familiar)",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Lord of Tempests (psychic)",
+    "text": "[PSYCHIC] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Staff of the Stormcaller",
+    "text": "[PSYCHIC]"
+   }
+  ],
+  "composition": "1 Njal Stormcaller model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, RUNE PRIEST, PSYKER, IMPERIUM, ADEPTUS ASTARTES, NJAL STORMCALLER",
+  "factionKeywords": "SPACE WOLVES"
+ },
+ {
+  "slug": "svangir-ulfgir",
+  "name": "Svangir & Ulfgir",
+  "subtitle": "The Hounds of Redmaw",
+  "factionLine": "Adeptus Astartes • Space Wolves • Imperium",
+  "points": "80",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "5",
+    "Sv": "5+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Tearing fangs",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Inseparable Pair",
+    "text": "While both models in this unit are on the battlefield, this unit re-rolls Charge rolls, and re-rolls Wound rolls of 1 in the Fight phase."
+   },
+   {
+    "name": "Hounds of Redmaw",
+    "text": "Each time a friendly Bran Redmaw unit makes an Advance, Charge, or Fall Back move, this unit (if within 9\" of him at the start of that move) may immediately make a Normal move up to 6\" that ends within 9\" of Bran Redmaw — they refuse to leave his side. Cannot end within Engagement Range of an enemy."
+   },
+   {
+    "name": "Rage of the Bereaved",
+    "text": "The first time one of the models in this unit is destroyed, the surviving model gains +1 Attack and its melee attacks gain [DEVASTATING WOUNDS] for the remainder of the battle. Additionally, the surviving model gains the Lone Operative ability for the rest of the battle."
+   },
+   {
+    "name": "Pack Hunters",
+    "text": "This unit is eligible to declare a Charge in a turn in which it Advanced."
+   }
+  ],
+  "composition": "1 Svangir & Ulfgir model.",
+  "keywords": "BEAST, FENRISIAN WOLVES, IMPERIUM, ADEPTUS ASTARTES, SVANGIR & ULFGIR",
+  "factionKeywords": "SPACE WOLVES"
+ },
+ {
+  "slug": "bran-redmaw",
+  "name": "Bran Redmaw",
+  "subtitle": "Wolf Lord, Curse-bearer of the Redmaw",
+  "factionLine": "Adeptus Astartes • Space Wolves • Imperium",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": "Bran Redmaw",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "6",
+    "LD": "5+",
+    "OC": "1"
+   },
+   {
+    "model": "Bran Redmaw 2",
+    "M": "8\"",
+    "T": "5",
+    "Sv": "4+",
+    "W": "6",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol Wolf Lord form only",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Paired frost claws Wolf Lord form",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Beast-form rending claws Wulfen-Shape",
+    "melee": true,
+    "range": "Melee",
+    "a": "8",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction",
+    "text": "Oath of Moment."
+   },
+   {
+    "name": "Saga of the Wolfkin (Wulfen-Shape only)",
+    "text": "Once per battle, at the start of the Fight phase while in Wulfen-Shape, Bran can Fight Twice: after his attacks resolve, he can be selected to fight again before any other model."
+   },
+   {
+    "name": "Sire of Redmaw",
+    "text": "[AURA] While in Wolf Lord form: friendly Adeptus Astartes — Space Wolves units within 6\" can re-roll Battle-shock tests, and re-roll Hit rolls of 1 in melee. The aura is lost when Bran enters Wulfen-Shape (he is no longer leading; he is hunting)."
+   },
+   {
+    "name": "Bolt pistol Wolf Lord form only",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Paired frost claws Wolf Lord form",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Beast-form rending claws Wulfen-Shape",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Bran Redmaw model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, WOLF LORD, WULFEN (WHILE IN WULFEN-SHAPE)",
+  "factionKeywords": ""
+ }
+]

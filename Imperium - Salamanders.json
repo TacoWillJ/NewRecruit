@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 6001,
+    "revision": 6003,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -36,6 +36,31 @@
         "name": "Adrax Agatone",
         "id": "fca1-9ff0-bf21-b99f",
         "hidden": false
+      },
+      {
+        "name": "Salamanders",
+        "id": "nflb-9cb8b1350b9b",
+        "hidden": false
+      },
+      {
+        "name": "Bray'Arth Ashmantle",
+        "id": "nflb-352b6a8b933e",
+        "hidden": false
+      },
+      {
+        "name": "Apothecary",
+        "id": "nflb-54adc9c3438d",
+        "hidden": false
+      },
+      {
+        "name": "Harath Shen",
+        "id": "nflb-385ab41f300e",
+        "hidden": false
+      },
+      {
+        "name": "Pellas Mir'San",
+        "id": "nflb-b55c6d30c251",
+        "hidden": false
       }
     ],
     "entryLinks": [
@@ -53,6 +78,30 @@
         "hidden": false,
         "import": true,
         "targetId": "b351-fccc-2121-1e1e",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Bray'arth Ashmantle [NFLB]",
+        "id": "nflb-bae79a534f07",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-c886a7cfb7c6",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Harath Shen [NFLB]",
+        "id": "nflb-da6f467b0713",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-19738fbc2c92",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Captain Pellas Mir'san [NFLB]",
+        "id": "nflb-73d8b5620ebf",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-2ae3fd6893c9",
         "type": "selectionEntry"
       }
     ],
@@ -1182,7 +1231,1738 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Bray'arth Ashmantle [NFLB]",
+        "id": "nflb-c886a7cfb7c6",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Vehicle",
+            "id": "nflb-078311b13c6c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "dbd4-63-af05-998"
+          },
+          {
+            "name": "Walker",
+            "id": "nflb-d1bf8c32c91c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6dda-e157-334d-e93a"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-5f61c08febd8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-482c4e8e629e",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-8935f835e180",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Salamanders",
+            "id": "nflb-94119a9969f3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-9cb8b1350b9b"
+          },
+          {
+            "name": "Bray'Arth Ashmantle",
+            "id": "nflb-c574e05354f5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-352b6a8b933e"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-015533a0ddd2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Salamanders",
+            "id": "nflb-99774ae011d0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "65e4-13-4fa8-b36c"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "nflb-f026f007ad46",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "name",
+                "type": "append",
+                "value": "D6"
+              }
+            ]
+          },
+          {
+            "name": "Feel No Pain 4+",
+            "id": "nflb-b931c8ac48e9",
+            "hidden": false,
+            "targetId": "eed0-ef83-b6cf-dddf",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-d3d89b588543",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Bray'arth Ashmantle",
+            "id": "nflb-692545df5fc9",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "10"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "3"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "5+"
+              }
+            ]
+          },
+          {
+            "name": "Wrought by Vulkan",
+            "id": "nflb-f841e6a60d28",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time an attack would lose this model a wound, roll one D6: on a 4+ the wound is ignored. (This is in addition to its 5+ Invulnerable Save.)"
+              }
+            ]
+          },
+          {
+            "name": "Ancient Beyond Measure",
+            "id": "nflb-f592fa47d3e5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model cannot be your Warlord while any other Character in your army can serve as Warlord. It can still gain a Warlord Trait when fielded in an all-Dreadnought force."
+              }
+            ]
+          },
+          {
+            "name": "Furnace-Forged Fury",
+            "id": "nflb-395932b2dde3",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model destroys an enemy Monster or Vehicle, until the end of the battle Burning Wrath and the Dreadfire heavy flamers gain +1 to the Damage characteristic."
+              }
+            ]
+          },
+          {
+            "name": "Smoke Launchers",
+            "id": "nflb-8dc3ced44b41",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Once per battle, in your Movement phase, this model can activate Smoke. Until the start of your next turn, ranged attacks targeting this model suffer -1 to the Hit roll, and this model cannot be selected to shoot."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 210
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Dreadfire heavy flamer (twin-linked)",
+            "id": "nflb-75e84529d062",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-256ab613b028",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-8c99a68ac83a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-988da62ac3ca",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Burning Wrath (built-in pistol)",
+            "id": "nflb-08be9f93f3c8",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-d54e89e54dca",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-5f3efeeee599",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-750f656f753a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Twin Dreadfire claws",
+            "id": "nflb-c3fda501b0cf",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-4025bca8be20",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-433396317b6a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-a4d12378a341",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-781ab689373b",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ]
+      },
+      {
+        "name": "Harath Shen [NFLB]",
+        "id": "nflb-19738fbc2c92",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-e01cc92349ce",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-076582cd5646",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-a503e50727e4",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Apothecary",
+            "id": "nflb-889f3f24c0fa",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-54adc9c3438d"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-4908c7db252d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Salamanders",
+            "id": "nflb-81b163e74898",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-9cb8b1350b9b"
+          },
+          {
+            "name": "Harath Shen",
+            "id": "nflb-b05d6b4f3b3b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-385ab41f300e"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-17b001e482b3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Salamanders",
+            "id": "nflb-866b28e76fa1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "65e4-13-4fa8-b36c"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-83af95b94fcf",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-260446bbb942",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-a4b78ef100ea",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Harath Shen",
+            "id": "nflb-fe0bbd42be56",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-bc1e02b99c97",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Intercessor Squad^^**, **^^Assault Intercessor Squad^^**, **^^Tactical Squad^^**, **^^Sternguard Veteran Squad^^**, **^^Bladeguard Veteran Squad^^**"
+              }
+            ]
+          },
+          {
+            "name": "Master of Chirurgery",
+            "id": "nflb-6a47bb6e44fc",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the end of your Movement phase, select one friendly Salamanders Infantry or Salamanders Biker unit within 3\" of this model. One of the following effects (your choice):\n• Heal: One model in that unit regains up to D3+1 lost wounds.\n• Revive: If no model in that unit is wounded but one or more models have been destroyed during the battle, roll one D6: on a 3+, return one destroyed model to the unit with 1 wound remaining.\nIf the Revive roll fails, this model cannot shoot, charge, or fight for the rest of the turn (recovering the gene-seed). A unit can only be the target of this ability once per turn."
+              }
+            ]
+          },
+          {
+            "name": "Promethean Vigil",
+            "id": "nflb-8f7543451d86",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a friendly Salamanders model loses a wound while within 3\" of this model, you can roll one D6: on a 6, that wound is not lost."
+              }
+            ]
+          },
+          {
+            "name": "Combat Doctrina",
+            "id": "nflb-d753d3dad537",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model is eligible to declare a charge in a turn it Advanced."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 90
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Bloodfire (standard)",
+            "id": "nflb-c70c791448b0",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-a2ee44a2e6a6",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-3305a4b0809a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ea55ed1d0216",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Bloodfire (supercharge)",
+            "id": "nflb-460f5172265a",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-34e2add51851",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-e763721508d8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-84bfffaecd78",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Power sabre",
+            "id": "nflb-d480cfd0ff5b",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-65a205cdeca6",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-c954562cf31a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-c676e303a19c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-131f7ae64b59",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-c62ab9ba93d6",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "8da0-4570-c3c-819f",
+                    "childName": "Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "a10b-fbfe-b1fa-6f0c",
+                    "childName": "Assault Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c09a-6504-d25f-477",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "907f-11-c4d1-ec21",
+                    "childName": "Sternguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7044-bf1-f949-c32d",
+                    "childName": "Bladeguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Captain Pellas Mir'san [NFLB]",
+        "id": "nflb-2ae3fd6893c9",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-4f1423b7c576",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-ee9cd157b38e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-3b4576d152a1",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Captain",
+            "id": "nflb-632cf31ec3d8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2d7f-1892-2fd0-e29c"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-08aaf27823e4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Salamanders",
+            "id": "nflb-eb8983ad7f65",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-9cb8b1350b9b"
+          },
+          {
+            "name": "Pellas Mir'San",
+            "id": "nflb-21d1e92fdbae",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-b55c6d30c251"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-96ba5145fd5c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Salamanders",
+            "id": "nflb-23f5fb258195",
+            "hidden": false,
+            "primary": false,
+            "targetId": "65e4-13-4fa8-b36c"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-0b8501df7097",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-4c50e969f722",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-9b9de9c57871",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Captain Pellas Mir'san",
+            "id": "nflb-774938dbdb3b",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-56ee2caac860",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Sternguard Veteran Squad^^**, **^^Vanguard Veteran Squad with Jump Packs^^**, **^^Bladeguard Veteran Squad^^**, **^^Assault Intercessor Squad^^**, **^^Tactical Squad^^**"
+              }
+            ]
+          },
+          {
+            "name": "Rites of Battle (Salamanders) [AURA]",
+            "id": "nflb-1489885296cd",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly Salamanders unit is within 6\" of this model, each time a model in that unit makes an attack, you can re-roll a Hit roll of 1."
+              }
+            ]
+          },
+          {
+            "name": "Master Duellist",
+            "id": "nflb-b8e42048c6b3",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "If this model is within Engagement Range of one or more enemy Character models in the Fight phase, attacks made by this model gain +2 to the Attacks characteristic for the Cinder Edge that phase."
+              }
+            ]
+          },
+          {
+            "name": "Sweep — Steelsliver",
+            "id": "nflb-2c6117366a81",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "When this model uses the Steelsliver melee profile, instead of selecting a single target, make 1 attack against each enemy model within Engagement Range of this model (to a maximum of 6 attacks). Resolve these against the model's unit normally."
+              }
+            ]
+          },
+          {
+            "name": "Promethean Cult",
+            "id": "nflb-a846d474c49e",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model makes a melee attack with the Cinder Edge against a Monster, Vehicle, or Character target, an unmodified Wound roll of 5+ scores a Critical Wound."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 115
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Combi-flamer (bolt)",
+            "id": "nflb-3be413a432c4",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-dab60ad222ab",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-f15f6b8e1295",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-5e0c4cdee0ac",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Combi-flamer (flame)",
+            "id": "nflb-523ad0747d76",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-ab6cad647687",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-7b3d4f59a706",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-615f02d64137",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Cinder Edge (relic blade)",
+            "id": "nflb-6d715f2b47cb",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-83c87a79de0d",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-59bafa380cc1",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-4f50dd9bd8fa",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Steelsliver (paired sweep blade)",
+            "id": "nflb-52c4fd227bc1",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-661d4d5c5a14",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-00b872161600",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-1b8b810c60fe",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-d39b0da8e7d9",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-3db39d2b32ef",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "907f-11-c4d1-ec21",
+                    "childName": "Sternguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "9e9c-bf4d-2d40-be82",
+                    "childName": "Vanguard Veteran Squad with Jump Packs",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7044-bf1-f949-c32d",
+                    "childName": "Bladeguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "a10b-fbfe-b1fa-6f0c",
+                    "childName": "Assault Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c09a-6504-d25f-477",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dreadfire heavy flamer (twin-linked)",
+        "id": "nflb-256ab613b028",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Dreadfire heavy flamer (twin-linked)",
+            "id": "nflb-0a9e00ecd263",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2D6"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "N/A"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Ignores Cover, Torrent, Twin-Linked"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Ignores Cover",
+            "id": "nflb-3ce38626af12",
+            "hidden": false,
+            "targetId": "4640-43e7-30b-215a",
+            "type": "rule"
+          },
+          {
+            "name": "Torrent",
+            "id": "nflb-64aca7b23761",
+            "hidden": false,
+            "targetId": "5edf-d619-23e0-9b56",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Burning Wrath (built-in pistol)",
+        "id": "nflb-d54e89e54dca",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Burning Wrath (built-in pistol)",
+            "id": "nflb-fe19e882352b",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "6\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2D6"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "N/A"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Ignores Cover, Pistol, Torrent"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Ignores Cover",
+            "id": "nflb-c9321f7ca956",
+            "hidden": false,
+            "targetId": "4640-43e7-30b-215a",
+            "type": "rule"
+          },
+          {
+            "name": "Pistol",
+            "id": "nflb-31ed50125d80",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Torrent",
+            "id": "nflb-c8c0cc7a9d8e",
+            "hidden": false,
+            "targetId": "5edf-d619-23e0-9b56",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Twin Dreadfire claws",
+        "id": "nflb-4025bca8be20",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Twin Dreadfire claws",
+            "id": "nflb-3d876597b4e6",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "16"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-4"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "D6+1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Twin-Linked, Devastating Wounds, Anti-Vehicle 4+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-bdb65e7c25ca",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          },
+          {
+            "name": "Anti",
+            "id": "nflb-b9abbe34046f",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Bloodfire (standard)",
+        "id": "nflb-a2ee44a2e6a6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bloodfire (standard)",
+            "id": "nflb-57a49e5c3ec0",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-231445248f3c",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Bloodfire (supercharge)",
+        "id": "nflb-34e2add51851",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bloodfire (supercharge)",
+            "id": "nflb-ae43135ad9ad",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Pistol, Hazardous"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pistol",
+            "id": "nflb-2d4264b17dc0",
+            "hidden": false,
+            "targetId": "8bf7-8812-923d-29e4",
+            "type": "rule"
+          },
+          {
+            "name": "Hazardous",
+            "id": "nflb-116e861d6b03",
+            "hidden": false,
+            "targetId": "8367-374c-f87-c627",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Power sabre",
+        "id": "nflb-65a205cdeca6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power sabre",
+            "id": "nflb-6088aecf1897",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combi-flamer (bolt)",
+        "id": "nflb-dab60ad222ab",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi-flamer (bolt)",
+            "id": "nflb-cc4b05dd0f26",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Assault, Rapid Fire 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault",
+            "id": "nflb-b2853d244b3d",
+            "hidden": false,
+            "targetId": "fc8a-8c24-bae9-cc1c",
+            "type": "rule"
+          },
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-78ff1c6c66c4",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Combi-flamer (flame)",
+        "id": "nflb-ab6cad647687",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Combi-flamer (flame)",
+            "id": "nflb-6d94d9367711",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "D6+1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "N/A"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Ignores Cover, Torrent"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Ignores Cover",
+            "id": "nflb-90809273bab8",
+            "hidden": false,
+            "targetId": "4640-43e7-30b-215a",
+            "type": "rule"
+          },
+          {
+            "name": "Torrent",
+            "id": "nflb-8c9b0562d021",
+            "hidden": false,
+            "targetId": "5edf-d619-23e0-9b56",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Cinder Edge (relic blade)",
+        "id": "nflb-83c87a79de0d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Cinder Edge (relic blade)",
+            "id": "nflb-a60cc71efe46",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Precision",
+            "id": "nflb-230791d721bf",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Steelsliver (paired sweep blade)",
+        "id": "nflb-661d4d5c5a14",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Steelsliver (paired sweep blade)",
+            "id": "nflb-e51c32499b63",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "X"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Extra Attacks, Sweep"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Extra Attacks",
+            "id": "nflb-6c952213902a",
+            "hidden": false,
+            "targetId": "115b-79dc-f723-d761",
+            "type": "rule"
+          }
+        ]
       }
-    ]
+    ],
+    "sharedSelectionEntryGroups": []
   }
 }

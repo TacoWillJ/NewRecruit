@@ -84,9 +84,9 @@
       "patch": 1
     },
     "T'au Empire.json": {
-      "hash": "a9445a8213e73ffbcecb5ddfcaa3b45a362eea31",
+      "hash": "7c58a9eb554ed69a41c8f241e3e88a9d9d14c905",
       "upstreamRevision": 6,
-      "patch": 1
+      "patch": 2
     },
     "Imperium - Astra Militarum.json": {
       "hash": "d4091826bc70947b283182050d9b12afc70196a9",
@@ -189,14 +189,14 @@
       "patch": 1
     },
     "Imperium - Blood Angels.json": {
-      "hash": "2d562bc5cbb4e72a2f93204f9ced3e8ccae01f3f",
+      "hash": "062744a6a7ab4db32392a3dfe73b60c58943779b",
       "upstreamRevision": 7,
-      "patch": 1
+      "patch": 3
     },
     "Imperium - Dark Angels.json": {
-      "hash": "979ccf7783a24cb2fb685bc34546c30f33e6b822",
+      "hash": "3d93c44d6423cf36b37d597e7d1643a363d2aef1",
       "upstreamRevision": 9,
-      "patch": 1
+      "patch": 2
     },
     "Imperium - Deathwatch.json": {
       "hash": "63847796261601180c58f12e27ccb1b82f265472",
@@ -234,24 +234,24 @@
       "patch": 1
     },
     "Imperium - Salamanders.json": {
-      "hash": "e49c95b6aa95484a9a6c4e4969e9f965dd22b528",
+      "hash": "c8e0aef6d93ed0dc4248e53870e2173bd5730b28",
       "upstreamRevision": 6,
-      "patch": 1
+      "patch": 3
     },
     "Imperium - Space Marines.json": {
-      "hash": "5b2cfa27b530ed24a4734bc27311790e9b1a8bbb",
+      "hash": "0d97fd9e3d9edfd5d18bb1ace6d382fcce28da7b",
       "upstreamRevision": 19,
-      "patch": 2
+      "patch": 4
     },
     "Imperium - Space Wolves.json": {
-      "hash": "0a93e16866863efdfa8c2c64dfa353a3e617db4c",
+      "hash": "0eba94e402563365739c7bdda4a814cda13dadd3",
       "upstreamRevision": 14,
-      "patch": 1
+      "patch": 2
     },
     "Imperium - Ultramarines.json": {
-      "hash": "b9fccc3c0f4f0a9c2c0ac26ade4697fad543b926",
+      "hash": "1f75c390a8e71ed41a8fa4060853f0b60518e421",
       "upstreamRevision": 7,
-      "patch": 2
+      "patch": 3
     },
     "Imperium - White Scars.json": {
       "hash": "ebdf261568f484103704769239df5e82f319306c",

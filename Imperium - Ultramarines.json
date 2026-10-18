@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 7002,
+    "revision": 7003,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -140,6 +140,26 @@
         "name": "Character",
         "id": "5618-37c5-2431-ea30",
         "comment": "Kaius Konorius",
+        "hidden": false
+      },
+      {
+        "name": "Lieutenant",
+        "id": "nflb-60b4b0718950",
+        "hidden": false
+      },
+      {
+        "name": "Ultramarines",
+        "id": "nflb-5e4e4a5962a7",
+        "hidden": false
+      },
+      {
+        "name": "Adeptus Astartes",
+        "id": "nflb-6383bbc12db2",
+        "hidden": false
+      },
+      {
+        "name": "Lieutenant Tarentus",
+        "id": "nflb-cf9188bf05f7",
         "hidden": false
       }
     ],
@@ -294,6 +314,14 @@
         "hidden": false,
         "import": true,
         "targetId": "nflb-4472c5233fd7",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Lieutenant Tarentus [NFLB]",
+        "id": "nflb-6c4687dc3554",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-d40f8cfa12d8",
         "type": "selectionEntry"
       }
     ],
@@ -12481,6 +12509,523 @@
                 "import": true,
                 "targetId": "f842-6e90-bc5a-80f1",
                 "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lieutenant Tarentus [NFLB]",
+        "id": "nflb-d40f8cfa12d8",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-e971f0cf6b61",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-9698a488f9f9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-5791bf845de4",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Lieutenant",
+            "id": "nflb-4a9d8aa7fa3d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-60b4b0718950"
+          },
+          {
+            "name": "Ultramarines",
+            "id": "nflb-aa968b966b62",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-5e4e4a5962a7"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-1c8c71962165",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-29b66d4f9c88",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-6383bbc12db2"
+          },
+          {
+            "name": "Lieutenant Tarentus",
+            "id": "nflb-b01e45c4d0dd",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-cf9188bf05f7"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-0ceb1e1c5c90",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Ultramarines",
+            "id": "nflb-d3ab86f5c0fb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1a2d-2f00-c054-4dcb"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-d36754692cf5",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-095ef3d212d6",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Lieutenant Tarentus",
+            "id": "nflb-b5589111bb90",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-d3e0716c399c",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Tactical Squad^^**, **^^Intercessor Squad^^**, **^^Sternguard Veteran Squad^^**, **^^Hellblaster Squad^^**, **^^Heavy Intercessor Squad^^**"
+              }
+            ]
+          },
+          {
+            "name": "Tactical Precision",
+            "id": "nflb-0e7ca8ac9e31",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a model in this model's unit makes a ranged attack, you can re-roll one Wound roll of 1 per phase."
+              }
+            ]
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-f80b7d065c38",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the start of your Command phase, choose one Combat Doctrine to be active for this model's unit until the start of your next Command phase. You cannot select the same Doctrine two turns in a row:\n &middot; Tactical: ranged weapons gain [SUSTAINED HITS 1].\n &middot; Devastator: Heavy weapons fired by models in the unit gain [LETHAL HITS] and the model can shoot Heavy weapons even after Advancing.\n &middot; Assault: the unit can re-roll Charge rolls and melee weapons gain +1 to Wound."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 80
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Master-crafted boltgun",
+            "id": "nflb-86ea0e96fb73",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-caf6098ef51e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-0a50f3a6d990",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-2e0e4c0620ba",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Bolt pistol",
+            "id": "nflb-661973ed5fe8",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-5b4c9ae72008",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-0594ae341843",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-eb7a67586a63",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Power sword",
+            "id": "nflb-a3607f7651c6",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-1414f0b5d98b",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-725a50a29fea",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-7ce0d1caceed",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-49f62cab6674",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-8bc1c9826bc4",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "c09a-6504-d25f-477",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "8da0-4570-c3c-819f",
+                    "childName": "Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "907f-11-c4d1-ec21",
+                    "childName": "Sternguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7102-b3a4-9bfc-1b84",
+                    "childName": "Hellblaster Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "7324-e591-939b-b675",
+                    "childName": "Heavy Intercessor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Master-crafted boltgun",
+        "id": "nflb-caf6098ef51e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Master-crafted boltgun",
+            "id": "nflb-902d8d8124b9",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 1"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-273de0c7457e",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Bolt pistol",
+        "id": "nflb-5b4c9ae72008",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bolt pistol",
+            "id": "nflb-2255a2af773b",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power sword",
+        "id": "nflb-1414f0b5d98b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power sword",
+            "id": "nflb-b14fe66b92ec",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
               }
             ]
           }

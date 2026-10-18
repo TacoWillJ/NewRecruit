@@ -7,7 +7,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 14001,
+    "revision": 14002,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -804,6 +804,41 @@
         "name": "Wulfen with Storm Shields",
         "id": "5e41-161b-7d74-8c8e",
         "hidden": false
+      },
+      {
+        "name": "Lone Operative",
+        "id": "nflb-b272d95e8c7c",
+        "hidden": false
+      },
+      {
+        "name": "Adeptus Astartes",
+        "id": "nflb-70fa36258b3c",
+        "hidden": false
+      },
+      {
+        "name": "Lone Wolf",
+        "id": "nflb-93006b34e506",
+        "hidden": false
+      },
+      {
+        "name": "Rune Priest",
+        "id": "nflb-8178d6ee59d9",
+        "hidden": false
+      },
+      {
+        "name": "Svangir & Ulfgir",
+        "id": "nflb-32c11cad9fad",
+        "hidden": false
+      },
+      {
+        "name": "Wolf Lord",
+        "id": "nflb-22b71b0d0cd7",
+        "hidden": false
+      },
+      {
+        "name": "Wulfen (While In Wulfen-Shape)",
+        "id": "nflb-3ba34359846a",
+        "hidden": false
       }
     ],
     "entryLinks": [
@@ -1142,6 +1177,46 @@
         "hidden": false,
         "import": true,
         "targetId": "ee6b-3815-3a1a-6458",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Lone Wolf (Power Armour) [NFLB]",
+        "id": "nflb-1168008b6234",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-6efdcc63635f",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Lone Wolf (Terminator Armour) [NFLB]",
+        "id": "nflb-6dd1a34cbaec",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-45f6faed966d",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Njal Stormcaller [NFLB]",
+        "id": "nflb-e7919dc06543",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-1d82adb4f62b",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Svangir & Ulfgir [NFLB]",
+        "id": "nflb-d309897b1ab8",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-6fb94f8fc7ce",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Bran Redmaw [NFLB]",
+        "id": "nflb-8f52f08d1d19",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-4b8c4a30fbdd",
         "type": "selectionEntry"
       }
     ],
@@ -42435,7 +42510,2619 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Lone Wolf (Power Armour) [NFLB]",
+        "id": "nflb-6efdcc63635f",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-531821a4c754",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-6814debdf28a",
+            "hidden": false,
+            "primary": true,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Lone Operative",
+            "id": "nflb-7acedd6f1d73",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-b272d95e8c7c"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-452ebf7b7611",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-ba3ee18fb2a9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-70fa36258b3c"
+          },
+          {
+            "name": "Lone Wolf",
+            "id": "nflb-ef54ddf197ad",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-93006b34e506"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-bf3394708982",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Space Wolves",
+            "id": "nflb-f7622f0bf7e5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0d9-c115-2a-8330"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Lone Operative",
+            "id": "nflb-dcb5539d381e",
+            "hidden": false,
+            "targetId": "a8a0-8fe7-898-e0f3",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-7752f51680c1",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Lone Wolf (Power Armour)",
+            "id": "nflb-b9f2add4d8ed",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "A Glorious Death",
+            "id": "nflb-fe180296f372",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The first time this model is destroyed, roll one D6: on a 4+, set this model back up as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 1 wound remaining. The model can only be revived once per battle."
+              }
+            ]
+          },
+          {
+            "name": "Worthy of a Saga",
+            "id": "nflb-af345ae15e86",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model makes a melee attack against a Character or Monster unit, you can re-roll the Wound roll."
+              }
+            ]
+          },
+          {
+            "name": "An Army of One",
+            "id": "nflb-98cc8122ed47",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can never be your Warlord and cannot take Enhancements. It cannot join other units (it is always a Lone Operative — solo)."
+              }
+            ]
+          }
+        ],
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 85
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Lone Wolf",
+            "id": "nflb-7189cb7d4629",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-7d06ffe5a735",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-fbe5231640f5",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged weapon",
+                "id": "nflb-cb44f78b7797",
+                "hidden": false,
+                "defaultSelectionEntryId": "nflb-be1b56a1fcd4",
+                "constraints": [
+                  {
+                    "id": "nflb-aa0ea9966667",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-3af10585dd42",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Bolt pistol",
+                    "id": "nflb-be1b56a1fcd4",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-f109bc32451d",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Plasma pistol",
+                    "id": "nflb-38974ff3928a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-2af4031fa066",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Combi-weapon",
+                    "id": "nflb-65b20683d0ed",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f553-646-12ad-e9c4",
+                    "type": "selectionEntry"
+                  }
+                ]
+              },
+              {
+                "name": "Melee weapon",
+                "id": "nflb-452d2d311495",
+                "hidden": false,
+                "defaultSelectionEntryId": "nflb-c6f3d8e8f12d",
+                "constraints": [
+                  {
+                    "id": "nflb-ca59f3f11b6c",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-dc6acc47cf2f",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Chainsword",
+                    "id": "nflb-c6f3d8e8f12d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-2e7ddae703af",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Power weapon",
+                    "id": "nflb-efdcad017164",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4c25-8015-9ae1-fbed",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Frost axe / Frost sword",
+                    "id": "nflb-d96a95161605",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-956f8b5c6607",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Wolf claws (paired)",
+                    "id": "nflb-64938f582710",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-6bb0298ba46f",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Power fist",
+                    "id": "nflb-7b6e66c7ccab",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "eb70-5918-e9a-5a3f",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Thunder hammer",
+                    "id": "nflb-1f231a91fb41",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-206eaf9361ec",
+                    "type": "selectionEntry"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lone Wolf (Terminator Armour) [NFLB]",
+        "id": "nflb-45f6faed966d",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-f2fa3aedfa0f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-dcd4a2f52e24",
+            "hidden": false,
+            "primary": true,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Lone Operative",
+            "id": "nflb-a798af9f8f99",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-b272d95e8c7c"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-0c55caec3382",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-5bfd676c94d4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-70fa36258b3c"
+          },
+          {
+            "name": "Lone Wolf",
+            "id": "nflb-af8ccbf0d7ee",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-93006b34e506"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-c2513b45aa94",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Space Wolves",
+            "id": "nflb-c691517549b4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0d9-c115-2a-8330"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Lone Operative",
+            "id": "nflb-8e3b4ae9ea66",
+            "hidden": false,
+            "targetId": "a8a0-8fe7-898-e0f3",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-b29191202c13",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-c18c7d3fe740",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Lone Wolf (Terminator Armour)",
+            "id": "nflb-ab49ac80efa4",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "5\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "A Glorious Death",
+            "id": "nflb-43950a8347ed",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The first time this model is destroyed, roll one D6: on a 4+, set this model back up as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with 1 wound remaining. The model can only be revived once per battle."
+              }
+            ]
+          },
+          {
+            "name": "Worthy of a Saga",
+            "id": "nflb-87a196952395",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time this model makes a melee attack against a Character or Monster unit, you can re-roll the Wound roll."
+              }
+            ]
+          },
+          {
+            "name": "An Army of One",
+            "id": "nflb-6d953c377b70",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can never be your Warlord and cannot take Enhancements. It cannot join other units (it is always a Lone Operative — solo)."
+              }
+            ]
+          }
+        ],
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 130
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Lone Wolf",
+            "id": "nflb-768a934c44e5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-fca946edcd5c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-fee07742520c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged weapon",
+                "id": "nflb-2709343d857c",
+                "hidden": false,
+                "defaultSelectionEntryId": "nflb-b223e20cc24a",
+                "constraints": [
+                  {
+                    "id": "nflb-02b3c8d99b30",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-dcd7196a20e2",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Storm bolter",
+                    "id": "nflb-b223e20cc24a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-2336343fe5af",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Combi-weapon",
+                    "id": "nflb-7bbc69d7173c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f553-646-12ad-e9c4",
+                    "type": "selectionEntry"
+                  }
+                ]
+              },
+              {
+                "name": "Melee weapon",
+                "id": "nflb-9f80a9279af5",
+                "hidden": false,
+                "defaultSelectionEntryId": "nflb-5141f81f2147",
+                "constraints": [
+                  {
+                    "id": "nflb-387e87d3aac7",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-e8273b30e225",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Power weapon",
+                    "id": "nflb-5141f81f2147",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "4c25-8015-9ae1-fbed",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Frost axe / Frost sword",
+                    "id": "nflb-9f55087d0f1c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-956f8b5c6607",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Wolf claws (paired)",
+                    "id": "nflb-892bd0fc09cf",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-6bb0298ba46f",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Power fist",
+                    "id": "nflb-2a8afeebc7ca",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "eb70-5918-e9a-5a3f",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Thunder hammer",
+                    "id": "nflb-3b0a0f4191bb",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-206eaf9361ec",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Chainfist",
+                    "id": "nflb-03470b289386",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "nflb-9edb564d399e",
+                    "type": "selectionEntry"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Njal Stormcaller [NFLB]",
+        "id": "nflb-1d82adb4f62b",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-76361e480bd3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-361a1e040885",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-dda2a2a9563d",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Terminator",
+            "id": "nflb-f80904862d1f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "740a-892c-8958-defa"
+          },
+          {
+            "name": "Rune Priest",
+            "id": "nflb-6c944059054c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-8178d6ee59d9"
+          },
+          {
+            "name": "Psyker",
+            "id": "nflb-4a65123b373f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "13bf-2bee-3ae0-b414"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-df73e7c11607",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-ed0a3f490bd7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-70fa36258b3c"
+          },
+          {
+            "name": "Njal Stormcaller",
+            "id": "nflb-38186784d496",
+            "hidden": false,
+            "primary": false,
+            "targetId": "23d4-b393-5b92-2445"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-828d85ee6b07",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Space Wolves",
+            "id": "nflb-ead95a57176c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0d9-c115-2a-8330"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-36def977561b",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-9af1a0cc4148",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-9e04d1e2f0c4",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Njal Stormcaller",
+            "id": "nflb-e4400e87f136",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "5\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "6"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "6"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-ba5c81f49154",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Grey Hunters^^**, **^^Blood Claws^^**"
+              }
+            ]
+          },
+          {
+            "name": "Lord of Storms [AURA]",
+            "id": "nflb-545cf5fe572b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While a friendly Space Wolves unit is within 6\" of this model, that unit can re-roll Battle-shock tests. In addition, while this model is leading a unit, the unit's ranged weapons gain the [LETHAL HITS] ability."
+              }
+            ]
+          },
+          {
+            "name": "Psychic Hood",
+            "id": "nflb-4de3cbe3d5f4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time an enemy Psyker attempts a Psychic ability within 18\" of this model, on a roll of 4+ that ability fails. (Equivalent to the canonical 10e Psychic Hood / Witch Sense ability.)"
+              }
+            ]
+          },
+          {
+            "name": "Tempests of the Wolf",
+            "id": "nflb-19780b4a97ff",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the start of each Battle round (after the first), roll one D6: on a 4+, select one enemy unit visible to and within 18\" of this model — that unit suffers D3 mortal wounds. This represents Njal's wild storm-summoning abilities (8th Ed: Living Lightning power)."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 105
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Storm bolter",
+            "id": "nflb-f0ac69ab5f5f",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-4434046bcaba",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-849cd79ea620",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-fc5d9842295a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Nightwing (familiar)",
+            "id": "nflb-11ae7b462325",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-c01d27060798",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-acbabc6cf9cb",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-c52d0377f695",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Lord of Tempests (psychic)",
+            "id": "nflb-17b8a6ccebed",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-767f9a656634",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-bfb947db3aba",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-c7c2bad895af",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Staff of the Stormcaller",
+            "id": "nflb-f49e455e4722",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-919196f0409a",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-4e33078b84c9",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-fd54795b8416",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-f8725edb2308",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-717d026d6cfa",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "60ce-47ea-50fa-53f2",
+                    "childName": "Grey Hunters",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "fa8f-f5a2-993-bdbb",
+                    "childName": "Blood Claws",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Svangir & Ulfgir [NFLB]",
+        "id": "nflb-6fb94f8fc7ce",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Beast",
+            "id": "nflb-57bcfceb14ee",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4c3e-9310-a516-3590"
+          },
+          {
+            "name": "Fenrisian Wolves",
+            "id": "nflb-e9b9267f338b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e6ab-86d6-b11f-b2ec"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-8a9ffae99639",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Adeptus Astartes",
+            "id": "nflb-bdbb6a5b487f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-70fa36258b3c"
+          },
+          {
+            "name": "Svangir & Ulfgir",
+            "id": "nflb-2e79c02b5d15",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-32c11cad9fad"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-d086bd4dee72",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Space Wolves",
+            "id": "nflb-0093a3e06533",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0d9-c115-2a-8330"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-d102ff951cdc",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Svangir & Ulfgir",
+            "id": "nflb-f272aec567ac",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "10\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "5+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "4"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "6+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Inseparable Pair",
+            "id": "nflb-d0e54bbfd902",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "While both models in this unit are on the battlefield, this unit re-rolls Charge rolls, and re-rolls Wound rolls of 1 in the Fight phase."
+              }
+            ]
+          },
+          {
+            "name": "Hounds of Redmaw",
+            "id": "nflb-f961053c4ad9",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Each time a friendly Bran Redmaw unit makes an Advance, Charge, or Fall Back move, this unit (if within 9\" of him at the start of that move) may immediately make a Normal move up to 6\" that ends within 9\" of Bran Redmaw — they refuse to leave his side. Cannot end within Engagement Range of an enemy."
+              }
+            ]
+          },
+          {
+            "name": "Rage of the Bereaved",
+            "id": "nflb-d08729a01fe8",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "The first time one of the models in this unit is destroyed, the surviving model gains +1 Attack and its melee attacks gain [DEVASTATING WOUNDS] for the remainder of the battle. Additionally, the surviving model gains the Lone Operative ability for the rest of the battle."
+              }
+            ]
+          },
+          {
+            "name": "Pack Hunters",
+            "id": "nflb-45205a9803f4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This unit is eligible to declare a Charge in a turn in which it Advanced."
+              }
+            ]
+          }
+        ],
+        "type": "unit",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 80
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Svangir",
+            "id": "nflb-4552ed09666b",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-8cb34cac7d5b",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-2058376b60ff",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Tearing fangs",
+                "id": "nflb-e035bbeb0cef",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-21517e104287",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-50fa64b21663",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-2d24e3532a33",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ulfgir",
+            "id": "nflb-799ffc6432e5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {
+                "id": "nflb-c468e6efbfab",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-60e90074cda8",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "51b2-306e-1021-d207",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Tearing fangs",
+                "id": "nflb-d9986695a9e8",
+                "hidden": false,
+                "import": true,
+                "targetId": "nflb-21517e104287",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "nflb-41ace11f35a8",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "nflb-d65932db2d51",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bran Redmaw [NFLB]",
+        "id": "nflb-4b8c4a30fbdd",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-5e8e416353c3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-083e4c625188",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-df86f777701e",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Wolf Lord",
+            "id": "nflb-61508dd8b0ef",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-22b71b0d0cd7"
+          },
+          {
+            "name": "Wulfen (While In Wulfen-Shape)",
+            "id": "nflb-18a005a71d4b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-3ba34359846a"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-a07933a9407b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-b17682cf15fd",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Faction: Space Wolves",
+            "id": "nflb-e4c822d9b342",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0d9-c115-2a-8330"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-0dd08f33679e",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Bran Redmaw",
+            "id": "nflb-240d43eb9a4c",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "6\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "6"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "5+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Bran Redmaw 2",
+            "id": "nflb-467ea9c2e95d",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "8\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "5"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "4+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "6"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "5+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Saga of the Wolfkin (Wulfen-Shape only)",
+            "id": "nflb-6ee5284a2751",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Once per battle, at the start of the Fight phase while in Wulfen-Shape, Bran can Fight Twice: after his attacks resolve, he can be selected to fight again before any other model."
+              }
+            ]
+          },
+          {
+            "name": "Sire of Redmaw",
+            "id": "nflb-48f0aa4e453f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "[AURA] While in Wolf Lord form: friendly Adeptus Astartes — Space Wolves units within 6\" can re-roll Battle-shock tests, and re-roll Hit rolls of 1 in melee. The aura is lost when Bran enters Wulfen-Shape (he is no longer leading; he is hunting)."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 125
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Bolt pistol Wolf Lord form only",
+            "id": "nflb-b78a9711a6bf",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-d1d25a1c327f",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-27cfc1497d3a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-f58a7d59cc89",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Paired frost claws Wolf Lord form",
+            "id": "nflb-765bf728793f",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-2ee2bf2ba1cc",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-08af450e2e3a",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-98a002ff6602",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Beast-form rending claws Wulfen-Shape",
+            "id": "nflb-1f68872ebcfc",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-89aefb288c89",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-9f7f3d0eee82",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-9e9bbef94d43",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-a42f215db2fb",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ]
+      },
+      {
+        "name": "Bolt pistol",
+        "id": "nflb-f109bc32451d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bolt pistol",
+            "id": "nflb-f971f7d77cef",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm bolter",
+        "id": "nflb-2336343fe5af",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Storm bolter",
+            "id": "nflb-8502e0c10829",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-41a2a0e92a67",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Plasma pistol",
+        "id": "nflb-2af4031fa066",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "➤ Plasma pistol - standard",
+            "id": "nflb-442c41eefade",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          },
+          {
+            "name": "➤ Plasma pistol - supercharge",
+            "id": "nflb-661b982b0389",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "nflb-2e7ddae703af",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Chainsword",
+            "id": "nflb-40fe85aadecc",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frost axe / Frost sword",
+        "id": "nflb-956f8b5c6607",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Frost axe / Frost sword",
+            "id": "nflb-513720bb8fd6",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wolf claws (paired)",
+        "id": "nflb-6bb0298ba46f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Wolf claws (paired)",
+            "id": "nflb-75dd6c53b1fd",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "5"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Twin-Linked"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thunder hammer",
+        "id": "nflb-206eaf9361ec",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Thunder hammer",
+            "id": "nflb-4233799cf0ef",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "4+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "3"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Devastating Wounds"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-146bea18ffcc",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Chainfist",
+        "id": "nflb-9edb564d399e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Chainfist",
+            "id": "nflb-b182d20b20de",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "3"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Anti-Vehicle 3+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-9898587de786",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Storm bolter",
+        "id": "nflb-4434046bcaba",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Storm bolter",
+            "id": "nflb-7ad7a363081a",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "24\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-d930c2d5d11e",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Nightwing (familiar)",
+        "id": "nflb-c01d27060798",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Nightwing (familiar)",
+            "id": "nflb-3e5086d1049a",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "D6"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Assault"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault",
+            "id": "nflb-3be7ab37b12d",
+            "hidden": false,
+            "targetId": "fc8a-8c24-bae9-cc1c",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Lord of Tempests (psychic)",
+        "id": "nflb-767f9a656634",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Lord of Tempests (psychic)",
+            "id": "nflb-6a1c19d0d1db",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "18\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "D6"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Psychic, Devastating Wounds"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Psychic",
+            "id": "nflb-b3e82695ff10",
+            "hidden": false,
+            "targetId": "e9c4-2bb8-12ee-cd1b",
+            "type": "rule"
+          },
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-a0a5d523b09b",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Staff of the Stormcaller",
+        "id": "nflb-919196f0409a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Staff of the Stormcaller",
+            "id": "nflb-38fd0d99f8eb",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "D3"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Psychic"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Psychic",
+            "id": "nflb-2d49758fe785",
+            "hidden": false,
+            "targetId": "e9c4-2bb8-12ee-cd1b",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Tearing fangs",
+        "id": "nflb-21517e104287",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Tearing fangs",
+            "id": "nflb-b6d9020dc3e9",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "4"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-1"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt pistol Wolf Lord form only",
+        "id": "nflb-d1d25a1c327f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bolt pistol Wolf Lord form only",
+            "id": "nflb-dda6b06e8761",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "0"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "1"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paired frost claws Wolf Lord form",
+        "id": "nflb-2ee2bf2ba1cc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Paired frost claws Wolf Lord form",
+            "id": "nflb-9df0fea18ac0",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Twin-Linked"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beast-form rending claws Wulfen-Shape",
+        "id": "nflb-89aefb288c89",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Beast-form rending claws Wulfen-Shape",
+            "id": "nflb-1f62a52af142",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "8"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "3+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Devastating Wounds"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-63967d25d544",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          }
+        ]
       }
-    ]
+    ],
+    "sharedSelectionEntryGroups": []
   }
 }
