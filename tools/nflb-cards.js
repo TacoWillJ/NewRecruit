@@ -38,12 +38,15 @@ function unitsFromCards(b, cards, opts) {
       const n = cleanWeapon(w.name);
       const base = n.replace(/\s*[–-]\s*(Standard|Supercharge|Frag|Krak)$/i, '');
       const suffix = (n.match(/[–-]\s*(Standard|Supercharge|Frag|Krak)$/i) || [])[1];
-      if (!byName.has(base)) byName.set(base, { melee: w.melee, rows: [] });
-      byName.get(base).rows.push({ suffix, stats: [w.range, w.a, w.skill, w.s, w.ap, w.d], kw: kwFor(base) });
+      // a weapon with both a ranged and a melee profile under one name (Guardian Spear style) is two weapons
+      const k = c.weapons.some(x => x !== w && cleanWeapon(x.name) === n && x.melee !== w.melee) && w.melee ? `${base}\u0000melee` : base;
+      if (!byName.has(k)) byName.set(k, { melee: w.melee, rows: [] });
+      byName.get(k).rows.push({ suffix, stats: [w.range, w.a, w.skill, w.s, w.ap, w.d], kw: kwFor(base) });
     }
-    const weapons = new Map([...byName].map(([n, w]) => {
+    const weapons = new Map([...byName].map(([key, w]) => {
+      const n = key.replace(/\u0000melee$/, '');
       const stats = w.rows.length === 1 ? w.rows[0].stats : Object.fromEntries(w.rows.map(r => [r.suffix.toLowerCase(), r.stats]));
-      return [n.toLowerCase(), W(n, stats, { keywords: w.rows.length === 1 ? w.rows[0].kw : w.rows.map(r => r.kw), melee: w.melee, matchOfficial: true })];
+      return [key.toLowerCase(), W(n, stats, { keywords: w.rows.length === 1 ? w.rows[0].kw : w.rows.map(r => r.kw), melee: w.melee, matchOfficial: true })];
     }));
     const wpn = n => {
       const k = cleanWeapon(n).toLowerCase();
@@ -96,7 +99,7 @@ function unitsFromCards(b, cards, opts) {
     const comp = COMP[c.slug];
     let u;
     if (!comp) {
-      u = { ...base, type: 'model', costs: [{ name: 'pts', typeId: b.PTS, value: pts }], entryLinks: allGear.map(w => link(key, w)) };
+      u = { ...base, type: 'model', costs: [{ name: 'pts', typeId: b.PTS, value: pts }], entryLinks: allGear.map((w, i, all) => link(all.findIndex(x => x.name === w.name) === i ? key : `${key}:${i}`, w)) };
       if (kws.includes('Epic Hero')) u.constraints = cons(`${key}:roster`, null, 1, 'roster');
       if (kws.includes('Character') && !kws.includes('Epic Hero')) u.entryLinks.push(b.sharedLink(key, 'Enhancements'));
     } else {

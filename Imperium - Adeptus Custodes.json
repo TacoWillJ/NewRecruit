@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 19001,
+    "revision": 19002,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -321,6 +321,16 @@
       {
         "name": "Custodian Guard Sodality with Pyrithite Spears",
         "id": "5b8c-706a-2e20-78d2",
+        "hidden": false
+      },
+      {
+        "name": "Constantin Valdor",
+        "id": "nflb-153ed2f2cff7",
+        "hidden": false
+      },
+      {
+        "name": "Jenetia Krole",
+        "id": "nflb-23a1a768ee52",
         "hidden": false
       }
     ],
@@ -759,6 +769,30 @@
         "hidden": false,
         "import": true,
         "targetId": "50dc-1775-467d-be20",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Valerian [NFLB-L]",
+        "id": "nflb-3ceca5459541",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-b59f1fd09135",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Constantin Valdor [NFLB]",
+        "id": "nflb-3010f9dde32c",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-f4bca6fb45ea",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Jenetia Krole [NFLB]",
+        "id": "nflb-a96f517ad69a",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-265c1feb5397",
         "type": "selectionEntry"
       }
     ],
@@ -10606,6 +10640,12 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
           }
         ],
         "profiles": [
@@ -34531,6 +34571,1441 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Valerian [NFLB-L]",
+        "id": "nflb-b59f1fd09135",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-62637296aea0",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "sortIndex": 3,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "c4f-4c5f-3507-e4bc",
+                    "childName": "Custodian Guard",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 4,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5eaa-f0a-44fa-d1ae",
+                    "childName": "Custodian Wardens",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 7,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "48b1-935f-d394-5370",
+                    "childName": "Sagittarum Custodians",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 8,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ac6c-9861-5dd8-f6f9",
+                    "childName": "Custodian Guard Sodality with Adrasite Spears",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 5,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "5b8c-706a-2e20-78d2",
+                    "childName": "Custodian Guard Sodality with Pyrithite Spears",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 6,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ef86-875c-d111-78f6",
+                    "childName": "Sentinel Guard Sodality",
+                    "field": "selections",
+                    "queryFromSelf": false,
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 9,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Valerian",
+            "id": "nflb-84bb0ecafad3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "54c0-dc92-7373-55fc"
+          },
+          {
+            "name": "Faction: Adeptus Custodes",
+            "id": "nflb-3da188dc5f00",
+            "hidden": false,
+            "primary": false,
+            "targetId": "eea5-aeaf-bbf0-d5ee"
+          },
+          {
+            "name": "Infantry",
+            "id": "nflb-e3f8856ed7a6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-97946f610deb",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-12e45c81011e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Shield-Captain",
+            "id": "nflb-fe729cf92352",
+            "hidden": false,
+            "primary": false,
+            "targetId": "6bfb-3b18-fd53-9ff1"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-a48057974efa",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-a14eeed0b98f",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1556-9b56-fba6-4370"
+          },
+          {
+            "name": "Emissaries",
+            "id": "nflb-396a19c76e11",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1070-413c-cf8f-338f"
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-824f34e73c39",
+            "field": "selections",
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 195
+          },
+          {
+            "name": "Crusade Points",
+            "typeId": "b03b-c239-15a5-da55",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Battle Honours",
+            "typeId": "75bb-ded1-c86d-bdf0",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Experience",
+            "typeId": "a623-fe74-1d33-cddf",
+            "value": 0
+          },
+          {
+            "name": "Crusade: Weapon Modifications",
+            "typeId": "716d-91b7-d55a-1022",
+            "value": 0
+          },
+          {
+            "name": "Blackstone Fragments",
+            "typeId": "ac6b-ced3-9b5e-9a6e",
+            "value": 0
+          },
+          {
+            "name": "Detachment Points",
+            "typeId": "82ae-1066-5107-6ae0",
+            "value": 0
+          },
+          {
+            "name": "Enhancements",
+            "typeId": "f759-1bc4-cb3a-f0d2",
+            "value": 0
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "nflb-b16636dde533",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "0574-f558-2957-584f",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Feel No Pain 6+",
+            "id": "nflb-5e7a24e6e85a",
+            "hidden": false,
+            "targetId": "676c-ecb5-d24d-3540",
+            "type": "rule"
+          },
+          {
+            "name": "Martial Ka'tah",
+            "id": "nflb-8b10b1aa6f5a",
+            "hidden": false,
+            "targetId": "e348-7090-3aff-ee2c",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-bac6ccab33b9",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "nflb-fd6ea6a5ebcd",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Aegis of the Emperor",
+            "id": "nflb-6ee30758edb0",
+            "hidden": false,
+            "targetId": "a398-0a1d-ef92-162b",
+            "type": "rule"
+          },
+          {
+            "name": "Feel No Pain 5+*",
+            "id": "nflb-6a062f14528b",
+            "hidden": false,
+            "targetId": "faec-8b1b-5a21-0087",
+            "type": "rule"
+          },
+          {
+            "name": "Aquila Commander",
+            "id": "nflb-f1257ee6383d",
+            "hidden": false,
+            "targetId": "957d-bd08-23ed-70be",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Valerian",
+            "id": "nflb-16dd407e3e16",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "$text": "8\"",
+                "typeId": "e703-ecb6-5ce7-aec1"
+              },
+              {
+                "name": "T",
+                "$text": "7",
+                "typeId": "d29d-cf75-fc2d-34a4"
+              },
+              {
+                "name": "Sv",
+                "$text": "2+",
+                "typeId": "450-a17e-9d5e-29da"
+              },
+              {
+                "name": "W",
+                "$text": "8",
+                "typeId": "750a-a2ec-90d3-21fe"
+              },
+              {
+                "name": "LD",
+                "$text": "5+",
+                "typeId": "58d2-b879-49c7-43bc"
+              },
+              {
+                "name": "OC",
+                "$text": "2",
+                "typeId": "bef7-942a-1a23-59f8"
+              },
+              {
+                "name": "InSv",
+                "$text": "4+",
+                "typeId": "55a7-5b54-c60d-11dc"
+              },
+              {
+                "name": "Base",
+                "$text": "40mm",
+                "typeId": "nr-base-size"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-7e952f7c57ed",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This model can be attached to the following units: CUSTODIAN GUARD, CUSTODIAN GUARD WITH ADRASITE AND PYRITHITE SPEARS, CUSTODIAN WARDENS, SAGITTARUM CUSTODIANS",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Golden Laurels",
+            "id": "nflb-a8e1c201c6d1",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Attacks that target this unit have -1 AP.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Hero of Lion's Gate",
+            "id": "nflb-cbf3d9f38ec7",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "(Once per battle, per unit)\nAfter making a hit roll, wound roll or save roll for this model, you can change the result to an unmodified 6.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "NFLB-L Rebalance",
+            "id": "nflb-9f1bf63b0e16",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "GW's Valerian [Legends] datasheet already uses the 11e Adeptus Custodes codex rules, but his points stayed at 120 while the Shield-Captain (same 8\" T7 2+ W8 statline) went 110 -> 180. Points only: 120 -> 195 (Shield-Captain 180 x his 10e premium 120/110). Replaces the official Legends entry."
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Gnosis",
+            "id": "nflb-ca64909323fb",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "nflb-4121209474e6",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-696cb2086377",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Assault",
+                "id": "nflb-7b0d1e9389ca",
+                "hidden": false,
+                "targetId": "fc8a-8c24-bae9-cc1c",
+                "type": "rule"
+              },
+              {
+                "name": "Rapid Fire",
+                "id": "nflb-93998ad8e78a",
+                "hidden": false,
+                "targetId": "c5c8-8b58-b8b6-7786",
+                "type": "rule"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Gnosis",
+                "id": "nflb-457f95ee0a83",
+                "hidden": false,
+                "typeId": "f77d-b953-8fa4-b762",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "$text": "24\"",
+                    "typeId": "9896-9419-16a1-92fc"
+                  },
+                  {
+                    "name": "A",
+                    "$text": "3",
+                    "typeId": "3bb-c35f-f54-fb08"
+                  },
+                  {
+                    "name": "BS",
+                    "$text": "2+",
+                    "typeId": "94d-8a98-cf90-183e"
+                  },
+                  {
+                    "name": "S",
+                    "$text": "6",
+                    "typeId": "2229-f494-25db-c5d3"
+                  },
+                  {
+                    "name": "AP",
+                    "$text": "-1",
+                    "typeId": "9ead-8a10-520-de15"
+                  },
+                  {
+                    "name": "D",
+                    "$text": "2",
+                    "typeId": "a354-c1c8-a745-f9e3"
+                  },
+                  {
+                    "name": "Keywords",
+                    "$text": "Assault, Rapid Fire 2",
+                    "typeId": "7f1b-8591-2fcf-d01c"
+                  }
+                ]
+              },
+              {
+                "name": "Gnosis",
+                "id": "nflb-9a4323073d46",
+                "hidden": false,
+                "typeId": "8a40-4aaa-c780-9046",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "$text": "Melee",
+                    "typeId": "914c-b413-91e3-a132"
+                  },
+                  {
+                    "name": "A",
+                    "$text": "7",
+                    "typeId": "2337-daa1-6682-b110"
+                  },
+                  {
+                    "name": "WS",
+                    "$text": "2+",
+                    "typeId": "95d1-95f-45b4-11d6"
+                  },
+                  {
+                    "name": "S",
+                    "$text": "8",
+                    "typeId": "ab33-d393-96ce-ccba"
+                  },
+                  {
+                    "name": "AP",
+                    "$text": "-3",
+                    "typeId": "41a0-1301-112a-e2f2"
+                  },
+                  {
+                    "name": "D",
+                    "$text": "3",
+                    "typeId": "3254-9fe6-d824-513e"
+                  },
+                  {
+                    "name": "Keywords",
+                    "$text": "",
+                    "typeId": "893f-9000-ccf7-648e"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Crusade",
+            "id": "nflb-b8e635efe8cd",
+            "hidden": false,
+            "sortIndex": 1,
+            "entryLinks": [
+              {
+                "name": "Mighty Champions",
+                "id": "nflb-71d3be83fe3a",
+                "hidden": false,
+                "import": true,
+                "targetId": "f842-6e90-bc5a-80f1",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Constantin Valdor [NFLB]",
+        "id": "nflb-f4bca6fb45ea",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-c85a98285bf6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-7d21ff77cd18",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-11cb9f5a91ee",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-52970a68d93d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-08c58b1cb094",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1556-9b56-fba6-4370"
+          },
+          {
+            "name": "Constantin Valdor",
+            "id": "nflb-de23261483b3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-153ed2f2cff7"
+          },
+          {
+            "name": "Faction: Adeptus Custodes",
+            "id": "nflb-f5a160f10263",
+            "hidden": false,
+            "primary": false,
+            "targetId": "eea5-aeaf-bbf0-d5ee"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "nflb-35ab253a17f2",
+            "hidden": false,
+            "targetId": "7cb5-dd6b-dd87-ad3b",
+            "type": "rule"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-9bce87ebe172",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Martial Ka'tah",
+            "id": "nflb-e12aa2db3574",
+            "hidden": false,
+            "targetId": "e348-7090-3aff-ee2c",
+            "type": "rule"
+          },
+          {
+            "name": "Aegis of the Emperor",
+            "id": "nflb-36365cf4c321",
+            "hidden": false,
+            "targetId": "a398-0a1d-ef92-162b",
+            "type": "rule"
+          },
+          {
+            "name": "Feel No Pain 5+*",
+            "id": "nflb-bfc15c284769",
+            "hidden": false,
+            "targetId": "faec-8b1b-5a21-0087",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Constantin Valdor",
+            "id": "nflb-516a0cac2d9d",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "8\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "7"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "2+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "10"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "5+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "2"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-f630f27f8fd5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Custodian Guard Sodality^^**, **^^Sentinel Guard Sodality^^**, **^^Custodian Wardens^^**"
+              }
+            ]
+          },
+          {
+            "name": "Master of the Golden Legion",
+            "id": "nflb-89a9c786b164",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In the first battle round, enemy units within 12\" of one or more friendly ADEPTUS CUSTODES INFANTRY or MOUNTED units have -1 to battle-shock rolls. Once per battle, in your first Movement phase, one friendly ADEPTUS CUSTODES unit with Deep Strike that is in strategic reserves can make an ingress move."
+              }
+            ]
+          },
+          {
+            "name": "Golden Exemplar",
+            "id": "nflb-252e7ecf9bb4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the start of the battle round, if this model is your WARLORD, gain 1CP."
+              }
+            ]
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "nflb-4bab552d0e01",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "Attacks allocated to this model have -1 D."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 265
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "The Apollonian Spear",
+            "id": "nflb-a134765c365d",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-8336094922e8",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-18f4f33530da",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-ccf8f43d5d4c",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "The Apollonian Spear",
+            "id": "nflb-afc44c8b0368",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-14a35a505ce2",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-6e24246c09ab",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-9cee1a8fa9e5",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-19b997c2d942",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-8feef490cedf",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "91b3-2e1c-e642-d213",
+                    "childName": "Custodian Guard Sodality",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "df80-bbdc-bd0a-3428",
+                    "childName": "Sentinel Guard Sodality",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "9610-b148-8433-93b8",
+                    "childName": "Custodian Wardens",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jenetia Krole [NFLB]",
+        "id": "nflb-265c1feb5397",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "id": "nflb-fa20c4c80fac",
+            "hidden": false,
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-c492a74baf27",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Epic Hero",
+            "id": "nflb-848ed97612fd",
+            "hidden": false,
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-e58d626a08a1",
+            "hidden": false,
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Anathema Psykana",
+            "id": "nflb-b1b2a9d4d0a0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9177-5477-63dd-38d"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-2b5387956fca",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1556-9b56-fba6-4370"
+          },
+          {
+            "name": "Jenetia Krole",
+            "id": "nflb-56df46272d16",
+            "hidden": false,
+            "primary": false,
+            "targetId": "nflb-23a1a768ee52"
+          },
+          {
+            "name": "Faction: Anathema Psykana",
+            "id": "nflb-648dee58a35e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "4f3d-28de-bd99-14ef"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-c91ce15e195f",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Daughters of the Abyss",
+            "id": "nflb-dde3693c80a9",
+            "hidden": false,
+            "targetId": "20d7-959d-9ddd-0c14",
+            "type": "rule"
+          },
+          {
+            "name": "Feel No Pain 3+*",
+            "id": "nflb-024a09445a76",
+            "hidden": false,
+            "targetId": "8ef2-30ad-3fc1-f7e4",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Jenetia Krole",
+            "id": "nflb-f717a4e68bc2",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "e703-ecb6-5ce7-aec1",
+                "$text": "7\""
+              },
+              {
+                "name": "T",
+                "typeId": "d29d-cf75-fc2d-34a4",
+                "$text": "3"
+              },
+              {
+                "name": "Sv",
+                "typeId": "450-a17e-9d5e-29da",
+                "$text": "3+"
+              },
+              {
+                "name": "W",
+                "typeId": "750a-a2ec-90d3-21fe",
+                "$text": "5"
+              },
+              {
+                "name": "LD",
+                "typeId": "58d2-b879-49c7-43bc",
+                "$text": "5+"
+              },
+              {
+                "name": "OC",
+                "typeId": "bef7-942a-1a23-59f8",
+                "$text": "1"
+              },
+              {
+                "name": "InSv",
+                "typeId": "55a7-5b54-c60d-11dc",
+                "$text": "4+"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-2c5736f1eb28",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model can be attached to the following units: **^^Prosecutor Squad^^**, **^^Vigilator Squad^^**, **^^Witchseeker Squad^^**"
+              }
+            ]
+          },
+          {
+            "name": "Creeping Dread (Aura)",
+            "id": "nflb-19eadf318ee8",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "In the Battle-shock step of your opponent's Command phase, each enemy unit within 12\" of this unit that is a PSYKER unit or is below its starting strength makes a battle-shock roll, with -1 to that battle-shock roll."
+              }
+            ]
+          },
+          {
+            "name": "The Soulless Queen",
+            "id": "nflb-220bd013da2a",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "This model's melee attacks that target a PSYKER or CHARACTER unit have +1 to wound rolls."
+              }
+            ]
+          },
+          {
+            "name": "Ex Oblivio",
+            "id": "nflb-994ef89110ef",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "At the end of the Fight phase, roll one D6 for each enemy PSYKER unit engaged with this model's unit: on a 2+, that unit suffers D3 mortal wounds."
+              }
+            ]
+          }
+        ],
+        "type": "model",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 90
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Archeotech pistol",
+            "id": "nflb-7c61d486984c",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-40fe1178a347",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-861350a3ec46",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-7f14f3f36e11",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "The Sword of Oblivion",
+            "id": "nflb-370b0af2ad86",
+            "hidden": false,
+            "import": true,
+            "targetId": "nflb-3912b4db5176",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "nflb-332f32a8f585",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-574c6aae4fbe",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-757a841b4717",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-0369a628bb28",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Leader",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "3ec3-a4df-fdbf-5507",
+                    "childName": "Prosecutor Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "dd2d-568a-9c56-1b6e",
+                    "childName": "Vigilator Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "503b-f7be-eeeb-9e31",
+                    "childName": "Witchseeker Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Apollonian Spear",
+        "id": "nflb-8336094922e8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "The Apollonian Spear",
+            "id": "nflb-16770017c58e",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "18\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "2"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Assault, Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault",
+            "id": "nflb-a280dc69595c",
+            "hidden": false,
+            "targetId": "fc8a-8c24-bae9-cc1c",
+            "type": "rule"
+          },
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-7561288998f1",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "The Apollonian Spear",
+        "id": "nflb-14a35a505ce2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "The Apollonian Spear",
+            "id": "nflb-0915257bc539",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "3"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Assault, Rapid Fire 2"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault",
+            "id": "nflb-ed8d34376c5c",
+            "hidden": false,
+            "targetId": "fc8a-8c24-bae9-cc1c",
+            "type": "rule"
+          },
+          {
+            "name": "Rapid Fire",
+            "id": "nflb-67de63acf6f2",
+            "hidden": false,
+            "targetId": "c5c8-8b58-b8b6-7786",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Archeotech pistol",
+        "id": "nflb-40fe1178a347",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Archeotech pistol",
+            "id": "nflb-e41eb75dc4f5",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "9896-9419-16a1-92fc",
+                "$text": "12\""
+              },
+              {
+                "name": "A",
+                "typeId": "3bb-c35f-f54-fb08",
+                "$text": "1"
+              },
+              {
+                "name": "BS",
+                "typeId": "94d-8a98-cf90-183e",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "2229-f494-25db-c5d3",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "9ead-8a10-520-de15",
+                "$text": "-2"
+              },
+              {
+                "name": "D",
+                "typeId": "a354-c1c8-a745-f9e3",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "7f1b-8591-2fcf-d01c",
+                "$text": "Close-Quarters"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Sword of Oblivion",
+        "id": "nflb-3912b4db5176",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "The Sword of Oblivion",
+            "id": "nflb-87cc9d8a823e",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "914c-b413-91e3-a132",
+                "$text": "Melee"
+              },
+              {
+                "name": "A",
+                "typeId": "2337-daa1-6682-b110",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "95d1-95f-45b4-11d6",
+                "$text": "2+"
+              },
+              {
+                "name": "S",
+                "typeId": "ab33-d393-96ce-ccba",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "41a0-1301-112a-e2f2",
+                "$text": "-3"
+              },
+              {
+                "name": "D",
+                "typeId": "3254-9fe6-d824-513e",
+                "$text": "2"
+              },
+              {
+                "name": "Keywords",
+                "typeId": "893f-9000-ccf7-648e",
+                "$text": "Anti-Psyker 4+, Devastating Wounds, Precision"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Anti",
+            "id": "nflb-09eb04701ca8",
+            "hidden": false,
+            "targetId": "4111-82e3-9444-e942",
+            "type": "rule"
+          },
+          {
+            "name": "Devastating Wounds",
+            "id": "nflb-e91581efd368",
+            "hidden": false,
+            "targetId": "be1e-ac8e-1e2c-3528",
+            "type": "rule"
+          },
+          {
+            "name": "Precision",
+            "id": "nflb-67753eb6be9d",
+            "hidden": false,
+            "targetId": "9143-31ae-e0a6-6007",
+            "type": "rule"
           }
         ]
       }

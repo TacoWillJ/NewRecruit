@@ -1,0 +1,164 @@
+[
+ {
+  "slug": "hh-constantin-valdor",
+  "name": "Constantin Valdor",
+  "subtitle": "Captain-General of the Legio Custodes",
+  "factionLine": "Adeptus Custodes • Legio Custodes • Horus Heresy",
+  "points": "265",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "7",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "5+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "The Apollonian Spear",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "The Apollonian Spear",
+    "melee": true,
+    "range": "Melee",
+    "a": "7",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Deep Strike, Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction — Martial Ka'tah",
+    "text": "At the start of your Command phase, this unit is readied. While it is readied, you can select one ka'tah ability for it to use; it is then no longer readied."
+   },
+   {
+    "name": "Faction — Aegis of the Emperor",
+    "text": "This unit has Feel No Pain 5+ against mortal wounds."
+   },
+   {
+    "name": "Master of the Golden Legion",
+    "text": "In the first battle round, enemy units within 12\" of one or more friendly ADEPTUS CUSTODES INFANTRY or MOUNTED units have -1 to battle-shock rolls. Once per battle, in your first Movement phase, one friendly ADEPTUS CUSTODES unit with Deep Strike that is in strategic reserves can make an ingress move."
+   },
+   {
+    "name": "Golden Exemplar",
+    "text": "At the start of the battle round, if this model is your WARLORD, gain 1CP."
+   },
+   {
+    "name": "Eternal Warrior",
+    "text": "Attacks allocated to this model have -1 D."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to the following units: Custodian Guard Sodality, Sentinel Guard Sodality, Custodian Wardens."
+   },
+   {
+    "name": "The Apollonian Spear",
+    "text": "[ASSAULT] [RAPID FIRE 2]"
+   }
+  ],
+  "composition": "1 Constantin Valdor model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, IMPERIUM, LEADER, CONSTANTIN VALDOR",
+  "factionKeywords": "ADEPTUS CUSTODES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-jenetia-krole",
+  "name": "Jenetia Krole",
+  "subtitle": "The Soulless Queen — Oblivion Knight-Centura",
+  "factionLine": "Anathema Psykana • Talons of the Emperor • Horus Heresy",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "4+",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "3",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Archeotech pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "The Sword of Oblivion",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "CORE: Leader",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Faction — Daughters of the Abyss",
+    "text": "This unit has Feel No Pain 3+ against psychic attacks. Psychic Null (Aura): friendly ADEPTUS CUSTODES units within 6\" of this unit have Feel No Pain 5+ against psychic attacks."
+   },
+   {
+    "name": "Creeping Dread (Aura)",
+    "text": "In the Battle-shock step of your opponent's Command phase, each enemy unit within 12\" of this unit that is a PSYKER unit or is below its starting strength makes a battle-shock roll, with -1 to that battle-shock roll."
+   },
+   {
+    "name": "The Soulless Queen",
+    "text": "This model's melee attacks that target a PSYKER or CHARACTER unit have +1 to wound rolls."
+   },
+   {
+    "name": "Ex Oblivio",
+    "text": "At the end of the Fight phase, roll one D6 for each enemy PSYKER unit engaged with this model's unit: on a 2+, that unit suffers D3 mortal wounds."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can be attached to the following units: Prosecutor Squad, Vigilator Squad, Witchseeker Squad."
+   },
+   {
+    "name": "Archeotech pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "The Sword of Oblivion",
+    "text": "[ANTI-PSYKER 4+] [DEVASTATING WOUNDS] [PRECISION]"
+   }
+  ],
+  "composition": "1 Jenetia Krole model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, IMPERIUM, ANATHEMA PSYKANA, LEADER, JENETIA KROLE",
+  "factionKeywords": "ANATHEMA PSYKANA",
+  "armourVariants": []
+ }
+]

@@ -139,7 +139,7 @@ for (const sf of specs) {
     built.push({ outFile, spec, catId, catName: name, injections: out.injections || [] });
     notes.push(`Built ${outFile} (rev ${revision}): ${out.rootUnits.length} units, ${b.sharedEntries.length} NFLB-only weapons`);
   } catch (e) {
-    problems.push(`${sf}: ${e.message}`);
+    problems.push(`${sf}: ${e.message}${process.env.NFLB_STACK ? `\n${e.stack}` : ''}`);
   }
 }
 // Stale generated files whose spec was deleted
