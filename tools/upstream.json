@@ -1,8 +1,8 @@
 {
   "upstream": "https://github.com/BSData/wh40k-11e.git",
-  "commit": "3988a8bdd210f9d31ea5b6782d0016688ccb6815",
-  "commitInfo": "2026-10-10 17:39:58 +0100 Add warning message",
-  "syncedAt": "2026-10-10T22:01:06.625Z",
+  "commit": "db61485a7193b11f9eabe12912ddba971c7062f5",
+  "commitInfo": "2026-10-18 10:42:55 -0400 sm bugs",
+  "syncedAt": "2026-10-18T18:05:07.551Z",
   "files": [
     "Aeldari - Aeldari Library.json",
     "Aeldari - Craftworlds.json",
@@ -53,30 +53,30 @@
   ],
   "nflb": {
     "NFLB - Imperium - Astra Militarum.json": {
-      "hash": "96174d1ae1331fba2d288a6c710118e436f930a7",
-      "revision": 11
+      "hash": "b6cbe35119de61ad4090cb0c8afeb405402e9d4b",
+      "revision": 12
     }
   },
   "patched": {
     "Warhammer 40,000.json": {
-      "hash": "397ddeefa115afbed0f86bd07ba4e592c07347f2",
-      "upstreamRevision": 16,
+      "hash": "ea4d8dfe4f53d6875a9b4929e8a4496a1bb49897",
+      "upstreamRevision": 17,
       "patch": 1
     },
     "Orks.json": {
-      "hash": "076447bee1e1f10238d15b81ad3167f03271e603",
-      "upstreamRevision": 7,
-      "patch": 7
+      "hash": "f9a9aa18359d8a3c6806cd5beef0d8dba1507ece",
+      "upstreamRevision": 8,
+      "patch": 2
     },
     "Imperium - Adeptus Mechanicus.json": {
-      "hash": "216d05f8a0ea85b7f54d4172aa31c922edc42ef4",
-      "upstreamRevision": 19,
-      "patch": 6
+      "hash": "e042a21ecdbf232d745ba96f681dbba9765f270a",
+      "upstreamRevision": 20,
+      "patch": 1
     },
     "Imperium - Adepta Sororitas.json": {
-      "hash": "27c0f7b10c6853efacab57726ee13186499d9ff4",
-      "upstreamRevision": 21,
-      "patch": 3
+      "hash": "9754705919a8ea565dbe317fe9d2fdaa4e5bbaf0",
+      "upstreamRevision": 23,
+      "patch": 1
     },
     "Aeldari - Drukhari.json": {
       "hash": "31af2af11da64ece8b77233b7d20e3c58366a10d",
@@ -84,8 +84,8 @@
       "patch": 1
     },
     "T'au Empire.json": {
-      "hash": "c9965ce0c585ad69e8100f1a57d2424f69281505",
-      "upstreamRevision": 5,
+      "hash": "a9445a8213e73ffbcecb5ddfcaa3b45a362eea31",
+      "upstreamRevision": 6,
       "patch": 1
     },
     "Imperium - Astra Militarum.json": {
@@ -94,23 +94,198 @@
       "patch": 1
     },
     "Imperium - Astra Militarum - Library.json": {
-      "hash": "d3cb52916eab162a2c073bff8a762a0c0a2bae6e",
-      "upstreamRevision": 5,
-      "patch": 3
+      "hash": "5f9877de60504e062672ae79415292ba88ab7023",
+      "upstreamRevision": 6,
+      "patch": 1
     },
     "Chaos - Chaos Space Marines.json": {
-      "hash": "81060ddbaf61c230ef8bf6efb56e9c96e2d1dd89",
+      "hash": "4fb8ee6a6ef16d02ad6d05c99e07d6ea94e858d0",
       "upstreamRevision": 26,
-      "patch": 2
+      "patch": 4
     },
     "Chaos - Death Guard.json": {
-      "hash": "406169a873f0363ad7862425087d03ff045da716",
-      "upstreamRevision": 18,
+      "hash": "6c7d39bab51392ba9fa17a73dfe3d6502c25820c",
+      "upstreamRevision": 19,
       "patch": 2
     },
     "Leagues of Votann.json": {
-      "hash": "4f9757723e384b839f7c7c30f5eb0907e3599ce5",
+      "hash": "4abaeec489f8667f1cd57d2fd7a58b7ffd9107ce",
       "upstreamRevision": 8,
+      "patch": 2
+    },
+    "Aeldari - Aeldari Library.json": {
+      "hash": "8189486a5c1213257bdb6642c6fbe66ca971fca3",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Aeldari - Craftworlds.json": {
+      "hash": "32fb59dc72762c20a59faa501cd287b3158f42d7",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Chaos - Chaos Daemons Library.json": {
+      "hash": "576fa9ebc9fd7005238d5022dfa2e3203c818b54",
+      "upstreamRevision": 21,
+      "patch": 1
+    },
+    "Chaos - Chaos Daemons.json": {
+      "hash": "9e19c110879ca9391d0d3b088847a953c3a17532",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Chaos - Chaos Knights Library.json": {
+      "hash": "f6ba94eeaccb8515320f31358a58b9c302f7ce5c",
+      "upstreamRevision": 10,
+      "patch": 1
+    },
+    "Chaos - Chaos Knights.json": {
+      "hash": "137fced0f67ee6a3bd839eeacd7df9517b57453e",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Chaos - Emperor's Children.json": {
+      "hash": "6ae766116f011c3302e6fc27155ec98d445e1b0f",
+      "upstreamRevision": 14,
+      "patch": 1
+    },
+    "Chaos - Thousand Sons.json": {
+      "hash": "724a7d5b48a405fe012797b7c483fa0b15f3b339",
+      "upstreamRevision": 17,
+      "patch": 1
+    },
+    "Chaos - Titanicus Traitoris.json": {
+      "hash": "459138580bc68fc49018db8d92111654f4a9fc08",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Chaos - World Eaters.json": {
+      "hash": "251bb335c446acecbf9aadbaf33be82eb40a74db",
+      "upstreamRevision": 15,
+      "patch": 1
+    },
+    "Genestealer Cults.json": {
+      "hash": "0e33e855ef9ac513e875cc682d0199003e48bcac",
+      "upstreamRevision": 4,
+      "patch": 1
+    },
+    "Imperium - Adeptus Custodes.json": {
+      "hash": "6b9f09a1148b02a05b8ab3b1344519ad0a510da4",
+      "upstreamRevision": 19,
+      "patch": 1
+    },
+    "Imperium - Adeptus Titanicus.json": {
+      "hash": "5b175d9bdc0f059d62084ad77db88c280ced1dfe",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Imperium - Agents of the Imperium.json": {
+      "hash": "cbe1ca96be18030785056793d6fbd331ba83c899",
+      "upstreamRevision": 20,
+      "patch": 1
+    },
+    "Imperium - Black Templars.json": {
+      "hash": "829c4847b3d5bbf0f06c9265bbb686307d450079",
+      "upstreamRevision": 6,
+      "patch": 1
+    },
+    "Imperium - Blood Angels.json": {
+      "hash": "2d562bc5cbb4e72a2f93204f9ced3e8ccae01f3f",
+      "upstreamRevision": 7,
+      "patch": 1
+    },
+    "Imperium - Dark Angels.json": {
+      "hash": "979ccf7783a24cb2fb685bc34546c30f33e6b822",
+      "upstreamRevision": 9,
+      "patch": 1
+    },
+    "Imperium - Deathwatch.json": {
+      "hash": "63847796261601180c58f12e27ccb1b82f265472",
+      "upstreamRevision": 11,
+      "patch": 1
+    },
+    "Imperium - Grey Knights.json": {
+      "hash": "350e5f2a6b490e3f5e0856f2893fa337f8219bde",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Imperium - Imperial Fists.json": {
+      "hash": "adffde807bd76757013221512a9dc39c4bee5867",
+      "upstreamRevision": 4,
+      "patch": 1
+    },
+    "Imperium - Imperial Knights - Library.json": {
+      "hash": "5818ebbd48eb4f498c0c20666eda8d3d537aae14",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Imperium - Imperial Knights.json": {
+      "hash": "65a5760b230ff22d473f0de12e2984d05a8c6e00",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Imperium - Iron Hands.json": {
+      "hash": "46d83410ec004b17624f0ee6dbeb83ce48cd6dc2",
+      "upstreamRevision": 4,
+      "patch": 1
+    },
+    "Imperium - Raven Guard.json": {
+      "hash": "ef9e9bd0deb0726c2afd1bc70a2eff62bc9ef4e4",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Imperium - Salamanders.json": {
+      "hash": "e49c95b6aa95484a9a6c4e4969e9f965dd22b528",
+      "upstreamRevision": 6,
+      "patch": 1
+    },
+    "Imperium - Space Marines.json": {
+      "hash": "e7f5d2f799724486e5d650a0aa15d051bbe90283",
+      "upstreamRevision": 19,
+      "patch": 1
+    },
+    "Imperium - Space Wolves.json": {
+      "hash": "0a93e16866863efdfa8c2c64dfa353a3e617db4c",
+      "upstreamRevision": 14,
+      "patch": 1
+    },
+    "Imperium - Ultramarines.json": {
+      "hash": "e5a84f3036e1b19798015c1be0f202fe8dd46f85",
+      "upstreamRevision": 7,
+      "patch": 1
+    },
+    "Imperium - White Scars.json": {
+      "hash": "ebdf261568f484103704769239df5e82f319306c",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Library - Astartes Heresy Legends.json": {
+      "hash": "696afe34de65c347cb9207870a18b100c7007308",
+      "upstreamRevision": 4,
+      "patch": 1
+    },
+    "Library - Titans.json": {
+      "hash": "b616670ace363ce8d78f29245d328e758d564db1",
+      "upstreamRevision": 2,
+      "patch": 1
+    },
+    "Library - Tyranids.json": {
+      "hash": "6775e26e1acd005c8b2530196c2c36b300d13501",
+      "upstreamRevision": 5,
+      "patch": 1
+    },
+    "Necrons.json": {
+      "hash": "71cdb15269c87d058a56ee405c783f15ab150670",
+      "upstreamRevision": 27,
+      "patch": 1
+    },
+    "Tyranids.json": {
+      "hash": "62ab4bfcb10c3610a17b649f7d16dff5b03cf426",
+      "upstreamRevision": 3,
+      "patch": 1
+    },
+    "Unaligned Forces.json": {
+      "hash": "311acefff2f8721c2c448b3ed428cc5e4de8c8a6",
+      "upstreamRevision": 2,
       "patch": 1
     }
   }

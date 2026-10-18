@@ -214,7 +214,9 @@ for (const { inline, spec, catId, catName, injections } of built) {
 // unless their revision is higher than the official one, the app keeps using the official
 // copy it already has and our injections never show. revision = upstream * 1000 + patch.
 manifest.patched = manifest.patched || {};
-const touched = new Set([gstFile, ...built.map(x => x.spec.faction), ...built.flatMap(x => x.injections.map(i => i.file))]);
+// Every upstream file, not just the ones NFLB edits: BSData sometimes changes a file's content
+// without raising its revision (e.g. 14 Oct 2026 MFM), and the app would keep its cached copy.
+const touched = new Set([gstFile, ...manifest.files, ...built.map(x => x.spec.faction), ...built.flatMap(x => x.injections.map(i => i.file))]);
 for (const f of touched) {
   const o = readJson(f);
   const c = o.catalogue || o.gameSystem;
