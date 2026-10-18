@@ -1,0 +1,1550 @@
+[
+ {
+  "legion": "Alpha Legion",
+  "name": "Smoke and Mirrors",
+  "file": "alpha-legion-hh-detachment.html",
+  "disposition": "Disruption",
+  "armyRule": {
+   "name": "Lies And Obfuscation",
+   "text": "Nothing about their position is ever quite where it seems. Each time the range from an enemy model to a friendly Alpha Legion model is measured for the purposes of a ranged attack, a Charge move, or a Reaction, treat that range as being 2\" greater than it actually is."
+  },
+  "rule": {
+   "name": "Smoke And Mirrors",
+   "text": "Once per battle, when an enemy unit shoots a friendly Alpha Legion unit that includes an attached Character model, you can select that unit: until that attack is resolved, wounds from that attack must be allocated to non-Character models in that unit while any remain."
+  },
+  "enhancements": [
+   {
+    "name": "Mask Of Deception",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Relic Of The Hydra",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of The Coiled Serpent",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, each time a model in that unit is destroyed, roll one D6: on a 6, that model is not destroyed and instead is returned to the unit with 1 wound remaining."
+   },
+   {
+    "name": "Unknown Quantity",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit takes a Battle-shock test, that test is automatically passed."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "I Am Alpharius",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before an enemy Character unit is chosen to fight.",
+    "target": "That unit.",
+    "effect": "That unit fights last in the Fight phase this turn, even if it has an ability that would let it fight first."
+   },
+   {
+    "name": "Forge Anew",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Alpha Legion unit.",
+    "effect": "Until your next Command phase, that unit is not Battle-shocked while it is below its Starting Strength."
+   },
+   {
+    "name": "Sever The Head",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Alpha Legion unit destroys an enemy Character unit.",
+    "target": "Your army.",
+    "effect": "You gain 1 Command Point. This Stratagem can only be used once per battle."
+   },
+   {
+    "name": "Merciless Retaliation",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Alpha Legion unit is destroyed.",
+    "target": "The enemy unit that destroyed it.",
+    "effect": "That enemy unit suffers 3 mortal wounds."
+   },
+   {
+    "name": "Hydra'S Bite",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Charge phase, just after a friendly Alpha Legion unit ends a Charge move.",
+    "target": "That unit.",
+    "effect": "Until the end of the turn, that unit's melee weapons have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Salvage The Fallen",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Alpha Legion Vehicle unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Blood Angels",
+  "name": "Wrath of Angels",
+  "file": "blood-angels-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Encarmine Fury",
+   "text": "A Blood Angel who has just closed the distance hits harder than the plan called for. Each time a friendly Blood Angels unit fights, if it made a Charge move this turn, add 1 to the Strength characteristic of that unit's melee weapons."
+  },
+  "rule": {
+   "name": "Wrath Of Angels",
+   "text": "Shooting at the sons of Sanguinius from a distance only shortens the distance they have to close. Once per battle, after an enemy unit shoots a friendly Blood Angels unit, if that Blood Angels unit was not destroyed, you can select it to use this Detachment Rule. If you do, it can make a Normal Move of up to 6\", moving as close as possible to the enemy unit that shot it (it cannot be moved within Engagement Range of any enemy units as a result of this move). If, after this move, that Blood Angels unit is within 6\" of the enemy unit that shot it, that enemy unit must take a Battle-shock test."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of The Angels",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit fights, that unit's melee weapons have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Standard Of The Red Thirst",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, if the bearer's unit is below its Starting Strength, add 1 to the bearer's Attacks characteristic."
+   },
+   {
+    "name": "Wings Of Sanguinius",
+    "restriction": "Character model with the [FLY] ability only",
+    "text": "Add 3\" to the bearer's Movement characteristic."
+   },
+   {
+    "name": "Angel'S Mercy",
+    "restriction": "Character model only",
+    "text": "The first time the bearer would be destroyed, roll one D6: on a 4+, it is not destroyed and instead has 1 wound remaining."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Thrall Of The Red Thirst",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Blood Angels Character unit fights.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, add 1 to the Damage characteristic of that unit's melee weapons, but that unit cannot benefit from any other friendly unit's aura abilities this phase."
+   },
+   {
+    "name": "Descent Of Angels",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Movement phase.",
+    "target": "One friendly Blood Angels unit with the [DEEP STRIKE] ability that is set up on the battlefield this phase.",
+    "effect": "That unit is eligible to declare a charge this turn."
+   },
+   {
+    "name": "The Red Thirst",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just after a friendly Blood Angels unit destroys the last model in an enemy unit.",
+    "target": "That Blood Angels unit.",
+    "effect": "That unit can fight again, but only if it has not already fought twice this phase."
+   },
+   {
+    "name": "Grief Unending",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Any phase, just after a friendly Blood Angels Character model is destroyed.",
+    "target": "Friendly Blood Angels units within 6\" of that model.",
+    "effect": "Until the end of the battle, each time a targeted unit fights, add 1 to the Attacks characteristic of that unit's melee weapons."
+   },
+   {
+    "name": "Mercy Of The Angel",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Blood Angels unit.",
+    "effect": "Until your next Command phase, each time a model in that unit is destroyed, roll one D6: on a 6, that model is not destroyed and instead is returned to the unit with 1 wound remaining."
+   },
+   {
+    "name": "Crimson Reckoning",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just before a friendly Blood Angels unit that is below its Starting Strength fights.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [DEVASTATING WOUNDS] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Dark Angels",
+  "name": "Vengeance of the First Legion",
+  "file": "dark-angels-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "The Angel Of Death",
+   "text": "Friendly Dark Angels units cannot have their Leadership characteristic modified to be worse than 6+. Each time an ability would inflict a penalty on a friendly Dark Angels unit's Leadership characteristic, that penalty is capped at -1, regardless of the ability's own stated value."
+  },
+  "rule": {
+   "name": "Vengeance Of The First Legion",
+   "text": "The Order does not settle for the first outcome of a fight if the first outcome was not the right one."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of The Order",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer that have the Sword of the Order trait gain the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Unbroken Oath",
+    "restriction": "Character model only",
+    "text": "The bearer automatically passes Battle-shock tests, and the unit it is leading (if any) can re-roll failed Battle-shock tests."
+   },
+   {
+    "name": "Hidden Vigil",
+    "restriction": "Unit only",
+    "text": "Once per battle, this unit can be set up in Strategic Reserves instead of on the battlefield, even if it would not normally be eligible to do so."
+   },
+   {
+    "name": "The Long Memory",
+    "restriction": "Character model only",
+    "text": "Each time the bearer destroys an enemy Character model, until the end of the battle, add 1 to the Attacks characteristic of the bearer's melee weapons (cumulative, no upper limit)."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Sword Of The Order",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Dark Angels Character model equipped with a melee weapon that has the Sword of the Order trait is selected to fight.",
+    "target": "That model.",
+    "effect": "Until the end of the phase, that weapon has the [LETHAL HITS] ability, but subtract 1 from its Attacks characteristic."
+   },
+   {
+    "name": "Duellist'S Discipline",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just after a friendly Dark Angels Character model's melee attack targets an enemy Character model.",
+    "target": "That attack.",
+    "effect": "You can re-roll the Hit roll and the Wound roll for that attack."
+   },
+   {
+    "name": "Silent Vigil",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Dark Angels unit.",
+    "effect": "Until your next Command phase, that unit has the Stealth ability."
+   },
+   {
+    "name": "The Order Stands",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "End of any phase, if a friendly Dark Angels unit lost one or more models earlier this phase.",
+    "target": "That unit.",
+    "effect": "That unit automatically passes Battle-shock tests until the end of the battle round."
+   },
+   {
+    "name": "Secret Of The Inner Circle",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Start of your opponent's Charge phase.",
+    "target": "One friendly Dark Angels Infantry unit.",
+    "effect": "Until the end of the phase, that unit has a 4+ invulnerable save. If it already has an invulnerable save, use whichever is better."
+   },
+   {
+    "name": "No Oath Unkept",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Dark Angels Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ },
+ {
+  "legion": "Death Guard",
+  "name": "Grim Endurance",
+  "file": "death-guard-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "Remorseless Advance",
+   "text": "A Death Guard company does not need to choose between moving and shooting straight. Each time a model in a friendly Death Guard unit makes a ranged attack with a weapon that has the [HEAVY] ability, that attack still gains the benefit of [HEAVY] even if the unit made a Normal Move this turn (instead of only if it Remained Stationary)."
+  },
+  "rule": {
+   "name": "Grim Endurance",
+   "text": "Something in Barbaran flesh simply refuses to stop working, long after any reasonable body would have given out. Friendly Death Guard Infantry units have the [FEEL NO PAIN 6+] ability."
+  },
+  "enhancements": [
+   {
+    "name": "Barbaran Hide",
+    "restriction": "Character model only",
+    "text": "Skin toughened by a world that tried to kill everything born on it. The bearer has the [FEEL NO PAIN 5+] ability (instead of the detachment's 6+)."
+   },
+   {
+    "name": "Chem-Treated Wargear",
+    "restriction": "Character model only",
+    "text": "Every blade and barrel in the bearer's kit has been soaked in something the Apothecarion would rather not name. Ranged and melee weapons equipped by the bearer have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Unbreakable March",
+    "restriction": "Unit only",
+    "text": "The bearer's unit cannot be selected to Fall Back, and ignores modifiers to its Movement characteristic. In addition, the bearer's unit automatically passes Battle-shock tests."
+   },
+   {
+    "name": "The Long Patience",
+    "restriction": "Unit only",
+    "text": "Once per battle, at the start of any phase, the bearer's unit regains up to D3+3 lost wounds, or one destroyed model is returned to the unit with 1 wound remaining."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Barbaran Endurance",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Shooting phase, just after they select a friendly Death Guard Infantry unit (that is not a Vehicle) as the target of a ranged attack.",
+    "target": "That unit.",
+    "effect": "Remove that unit from Battle-shock if it is currently under that effect. Until the end of the phase, that unit has the [FEEL NO PAIN 5+] ability and automatically passes Battle-shock tests. Use this Stratagem only once per battle."
+   },
+   {
+    "name": "Toughened By The March",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Death Guard unit is selected to fight.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, add 2 to the Toughness characteristic of models in that unit."
+   },
+   {
+    "name": "Chemical Payload",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Death Guard unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, each time a model in that unit makes a ranged attack, an unmodified Wound roll of 3+ always scores a wound, regardless of the target's Toughness characteristic."
+   },
+   {
+    "name": "Grave Discipline",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "End of any phase, if a friendly Death Guard unit lost one or more models earlier this phase.",
+    "target": "That unit.",
+    "effect": "That unit automatically passes Battle-shock tests until the end of the battle round."
+   },
+   {
+    "name": "The Long March",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Movement phase, just before a friendly Death Guard unit moves.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit is treated as not moving through Difficult Terrain for any purpose."
+   },
+   {
+    "name": "No Body Left Behind",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Death Guard Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ },
+ {
+  "legion": "Emperor's Children",
+  "name": "Perfect Counter",
+  "file": "emperors-children-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Flawless Execution",
+   "text": "A charge is only as good as the strike that ends it, and no Legion in the galaxy lands that strike more cleanly. Each time a friendly Emperor's Children unit that made a Charge move this turn is chosen to fight, that unit has the [FIGHTS FIRST] ability (this does not stack with Core)."
+  },
+  "rule": {
+   "name": "Perfect Counter",
+   "text": "There is no clumsier compliment than a charge that fails to kill you. Once per battle, each time an enemy unit declares a charge that targets a friendly Emperor's Children unit, you can select that Emperor's Children unit to immediately make a Charge move against the charging unit, as if it were your Charge phase (this does not use up your unit's normal Charge move this turn, and the enemy unit's Charge move still proceeds as normal afterwards)."
+  },
+  "enhancements": [
+   {
+    "name": "Duellist Supreme",
+    "restriction": "Character model only",
+    "text": "Each time the bearer makes a melee attack that targets a Character unit, add 1 to the Wound roll."
+   },
+   {
+    "name": "Mirror-Polished Plate",
+    "restriction": "Character model only",
+    "text": "The bearer has a 4+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Relic Of Chemos",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of Perfection",
+    "restriction": "Character model only",
+    "text": "While the bearer is on the battlefield, each time a friendly Emperor's Children unit within 6\" of the bearer takes a Battle-shock test, roll two dice and discard the lowest."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Paragon Of Excellence",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, when a friendly Emperor's Children Character unit is chosen to fight.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Nothing Less Than Perfect",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Emperor's Children unit.",
+    "effect": "Until your next Command phase, each time a model in that unit makes an attack, you can re-roll the Hit roll, but if you do, you must also re-roll a successful Hit roll for that attack."
+   },
+   {
+    "name": "Rapture Of The Kill",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Emperor's Children Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   },
+   {
+    "name": "Adoring Audience",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just after a friendly Emperor's Children unit destroys the last model in an enemy unit.",
+    "target": "One other friendly Emperor's Children unit within 6\" of that Fight.",
+    "effect": "Until the end of the turn, that unit's Leadership characteristic cannot be modified to be worse than 6+."
+   },
+   {
+    "name": "No Substitute For Victory",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Charge phase.",
+    "target": "One friendly Emperor's Children unit.",
+    "effect": "That unit can declare a charge even if it Advanced or Fell Back this turn."
+   },
+   {
+    "name": "Exquisite Cruelty",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Fight phase, when a friendly Emperor's Children unit is chosen to fight.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [PRECISION] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Imperial Fists",
+  "name": "Bastion of Fire",
+  "file": "imperial-fists-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "Fire Discipline",
+   "text": "No shot is wasted, and no volley is undisciplined. Each time a unit with this ability shoots, if it makes 6 or more attacks with Bolt weapons as part of that Shooting Attack, add 1 to the Hit roll for those attacks."
+  },
+  "rule": {
+   "name": "Bastion Of Fire",
+   "text": "Nothing crosses open ground in front of an Imperial Fists gun line without being seen, and nothing seen goes unanswered. Once per battle, each time an enemy unit ends a Move within 10\" of and visible to a friendly Imperial Fists unit (excluding Vehicles) that has not already shot this turn, you can select that Imperial Fists unit: it can immediately shoot at the enemy unit that just moved, as though it were your Shooting phase. If it does, it cannot be selected to shoot again later this turn."
+  },
+  "enhancements": [
+   {
+    "name": "Mantle Of The Praetorian",
+    "restriction": "Character model only",
+    "text": "The bearer has a 4+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Standard Of The Unbroken Line",
+    "restriction": "Character model only",
+    "text": "While the bearer is on the battlefield, each time a friendly Imperial Fists unit within 6\" of the bearer takes a Battle-shock test, that test is automatically passed."
+   },
+   {
+    "name": "Siege-Master'S Auspex",
+    "restriction": "Character model only",
+    "text": "Each time a friendly Imperial Fists unit within 6\" of the bearer shoots a Vehicle or Building unit, that unit's ranged weapons have the [ANTI-VEHICLE 4+] ability."
+   },
+   {
+    "name": "Relic Of The Phalanx",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "A Wall Unyielding",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just before a friendly Imperial Fists Character unit fights.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, each time damage is allocated to a model in that unit, that damage is reduced by 1, to a minimum of 1 — but that unit does not have the [FIGHTS FIRST] ability this phase, even if it would otherwise."
+   },
+   {
+    "name": "Hold The Line",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your opponent's Charge phase, just after an enemy unit ends a Charge move within Engagement Range of a friendly Imperial Fists unit that Remained Stationary this turn.",
+    "target": "That Imperial Fists unit.",
+    "effect": "Until the end of the turn, that unit has the Benefit of Cover and its melee weapons have the [SUSTAINED HITS 1] ability."
+   },
+   {
+    "name": "No Ground Surrendered",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your opponent's Shooting phase, just after a friendly Imperial Fists unit is destroyed.",
+    "target": "That unit's controlling player.",
+    "effect": "Until the end of the battle, once per battle round, when a friendly Imperial Fists unit is set up on the battlefield within your own deployment zone, it can be set up as though it were the start of the battle."
+   },
+   {
+    "name": "Precision Fire",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Imperial Fists unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [PRECISION] ability."
+   },
+   {
+    "name": "Siege Discipline",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Imperial Fists unit.",
+    "effect": "Until your next Command phase, each time that unit is targeted by an attack made with a weapon that has the [BLAST] ability, subtract 1 from the number of attacks made by that weapon."
+   },
+   {
+    "name": "Terran Resolve",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Imperial Fists unit destroys the last model in an enemy unit.",
+    "target": "That Imperial Fists unit.",
+    "effect": "Until the end of the turn, that unit's Objective Control characteristic is doubled."
+   }
+  ]
+ },
+ {
+  "legion": "Iron Hands",
+  "name": "Spite of the Gorgon",
+  "file": "iron-hands-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "The Gorgon'S Scales",
+   "text": "Flesh gives way. What replaces it does not. Each time an attack targets a friendly Iron Hands unit, worsen the Strength characteristic of that attack by 1."
+  },
+  "rule": {
+   "name": "Spite Of The Gorgon",
+   "text": "Every charge into an Iron Hands line is paid for before it lands. Once per battle, when an enemy unit declares a charge that targets a friendly Iron Hands unit, before Charge moves are made, you can select that Iron Hands unit: it can shoot the charging enemy unit, as though it were your Shooting phase. Until that attack is resolved, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+  },
+  "enhancements": [
+   {
+    "name": "Flesh Metal Soul",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Relic Of The Forge",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of The Clan Company",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, each time a model in that unit is destroyed, roll one D6: on a 6, that model is not destroyed and instead is returned to the unit with 1 wound remaining."
+   },
+   {
+    "name": "Unflinching Logic",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit takes a Battle-shock test, that test is automatically passed."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Legion Of One",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Iron Hands Character unit fights, or Shooting phase, just before it shoots.",
+    "target": "That unit, if it is not within 6\" of any other friendly unit.",
+    "effect": "Until the end of the phase, add 1 to Hit rolls for that unit's attacks."
+   },
+   {
+    "name": "Replace The Weak",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Any phase, just after a model in a friendly Iron Hands unit is destroyed.",
+    "target": "That unit.",
+    "effect": "Until the end of the turn, that unit's Toughness characteristic is increased by 1."
+   },
+   {
+    "name": "Grim Determination",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Iron Hands unit.",
+    "effect": "Until your next Command phase, that unit is not Battle-shocked while it is below its Starting Strength."
+   },
+   {
+    "name": "Merciless Retaliation",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Iron Hands unit is destroyed.",
+    "target": "The enemy unit that destroyed it.",
+    "effect": "That enemy unit suffers 3 mortal wounds."
+   },
+   {
+    "name": "Forge Anew",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Iron Hands Vehicle unit.",
+    "effect": "Until your next Command phase, each time that unit is destroyed, before removing it from play, it can shoot or fight one more time."
+   },
+   {
+    "name": "Cold Logic",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Iron Hands unit that Remained Stationary this turn is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Iron Warriors",
+  "name": "Bitter Fury",
+  "file": "iron-warriors-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "The Bitter End",
+   "text": "A company that has survived every siege it was ever sent to does not break because the enemy wants it to. Each time a friendly Iron Warriors unit takes a Battle-shock test, ignore any modifiers that would worsen that test."
+  },
+  "rule": {
+   "name": "Bitter Fury",
+   "text": "Every gun in an Iron Warriors company keeps firing for exactly as long as there is a hand left to hold it. Once per battle, after a friendly Iron Warriors unit (excluding Vehicles) is selected as the target of a ranged attack and that attack has been resolved, that unit can shoot as if it were your Shooting phase, using its characteristics as they were before that attack was resolved (including any models destroyed by it). Ranged weapons used this way have the [SUSTAINED HITS 1] ability."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of Olympia",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [ANTI-VEHICLE 4+] ability."
+   },
+   {
+    "name": "Master Of The Fortification",
+    "restriction": "Character model only",
+    "text": "While the bearer is on the battlefield, friendly Iron Warriors units within 6\" of the bearer have the Benefit of Cover while they are within your own deployment zone."
+   },
+   {
+    "name": "Unbroken Line",
+    "restriction": "Character model only",
+    "text": "The bearer's unit does not need to take a Battle-shock test while the bearer is on the battlefield."
+   },
+   {
+    "name": "Siege-Breaker'S Mark",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit destroys an enemy Vehicle or Monster, you gain 1 Command Point. This Enhancement can only trigger once per battle."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Spiteful Demise",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Iron Warriors Character model is destroyed.",
+    "target": "The enemy model that destroyed it.",
+    "effect": "That enemy model's unit suffers 2 mortal wounds."
+   },
+   {
+    "name": "Grind Them Down",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Iron Warriors unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, each time a model in that unit makes a ranged attack that targets a unit within half range of that weapon, an unmodified Wound roll of 6 inflicts 1 additional mortal wound on the target after all other damage has been resolved."
+   },
+   {
+    "name": "Hold The Line",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Charge phase.",
+    "target": "One friendly Iron Warriors unit that is within your own deployment zone.",
+    "effect": "Until the end of the phase, that unit has a 4+ invulnerable save. If it already has an invulnerable save, use whichever is better."
+   },
+   {
+    "name": "No Retreat",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "End of any phase, if a friendly Iron Warriors unit lost one or more models earlier this phase.",
+    "target": "That unit.",
+    "effect": "That unit automatically passes Battle-shock tests until the end of the battle round."
+   },
+   {
+    "name": "Siege Engineers",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Iron Warriors Vehicle unit.",
+    "effect": "That unit regains up to D3 lost wounds."
+   },
+   {
+    "name": "The Wall Does Not Fall",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Iron Warriors Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ },
+ {
+  "legion": "Night Lords",
+  "name": "Better Part of Valour",
+  "file": "night-lords-hh-detachment.html",
+  "disposition": "Disruption",
+  "armyRule": {
+   "name": "A Talent For Murder",
+   "text": "The VIII Legion was built for one purpose: to find the weakness terror leaves behind, and open it wider. Each time a model in a friendly Night Lords unit makes a melee attack that targets a Battle-shocked unit, add 1 to the Hit roll."
+  },
+  "rule": {
+   "name": "Better Part Of Valour",
+   "text": "No Night Lords captain ever mistook cowardice for the tactical retreat, and no Night Lords captain was ever ashamed to order one. Each time an enemy unit declares a charge that targets a friendly Night Lords unit, you can select that Night Lords unit to immediately make a Fall Back move, as if it were your Movement phase. If you do, that Night Lords unit is removed as an eligible target of that Charge move (any other targets of the same Charge move are unaffected), and that Night Lords unit does not suffer any of the normal penalties for having Fallen Back this turn."
+  },
+  "enhancements": [
+   {
+    "name": "Terror Tactician",
+    "restriction": "Character model only",
+    "text": "Each time an enemy unit within 6\" of the bearer takes a Battle-shock test, subtract 1 from that test (in addition to any other modifiers)."
+   },
+   {
+    "name": "Night-Stalker'S Cloak",
+    "restriction": "Character model only",
+    "text": "The bearer has the [STEALTH] ability."
+   },
+   {
+    "name": "Relic Of Nostramo",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Master Of The First Wave",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit is set up on the battlefield using the Deep Strike ability, until the end of that phase, models in that unit have the [FEEL NO PAIN 5+] ability."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Nostraman Courage",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, after an enemy unit selects a friendly Night Lords Character model as the target of one or more of its attacks.",
+    "target": "That Character model's unit.",
+    "effect": "You can select a different, non-Character model in that unit to be allocated those attacks instead, provided that model is within Engagement Range of the attacking model."
+   },
+   {
+    "name": "First To The Kill",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Charge phase.",
+    "target": "One friendly Night Lords unit that made a Charge move this phase.",
+    "effect": "Until the end of the turn, that unit has the [FIGHTS FIRST] ability."
+   },
+   {
+    "name": "Merciless Spite",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Night Lords Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   },
+   {
+    "name": "Hunt The Broken",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your opponent's Command phase, just after an enemy unit fails a Battle-shock test.",
+    "target": "One friendly Night Lords unit within 12\" of that enemy unit.",
+    "effect": "Until the start of your next turn, ranged weapons equipped by models in that Night Lords unit have the [LETHAL HITS] ability when targeting that enemy unit."
+   },
+   {
+    "name": "Vanish Into The Dark",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Shooting phase, just after a friendly Night Lords unit is selected as the target of a ranged attack.",
+    "target": "That Night Lords unit.",
+    "effect": "Until the end of the phase, that unit has the Benefit of Cover, and any ability that ignores the Benefit of Cover does not apply to it."
+   },
+   {
+    "name": "Decapitation Strike",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Fight phase, when a friendly Night Lords unit is chosen to fight.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [PRECISION] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Raven Guard",
+  "name": "Shadow Veil",
+  "file": "raven-guard-hh-detachment.html",
+  "disposition": "Disruption",
+  "armyRule": {
+   "name": "Shadow Walkers",
+   "text": "By the time the shot lands, they were never really there. Each time a ranged attack targets a friendly Raven Guard unit from a distance of 18\" or greater, subtract 1 from that attack's Hit roll."
+  },
+  "rule": {
+   "name": "Shadow Veil",
+   "text": "Once per battle, when an enemy unit targets a friendly Raven Guard unit (excluding Vehicles) with a ranged attack, before that attack is resolved, you can select that unit: it can make a Normal Move of up to its Movement characteristic, and until the end of the phase, subtract 1 from Hit rolls for attacks that target it. If this movement takes that unit out of range or Line of Sight of every model in the attacking unit, the attacking unit cannot select a new target this phase."
+  },
+  "enhancements": [
+   {
+    "name": "Cloak Of Deliverance",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Relic Of Deliverance",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of The Shattered Legion",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, each time a model in that unit is destroyed, roll one D6: on a 6, that model is not destroyed and instead is returned to the unit with 1 wound remaining."
+   },
+   {
+    "name": "Unseen Strike",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit takes a Battle-shock test, that test is automatically passed."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Decapitation Strike",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Raven Guard Character model fights.",
+    "target": "That model.",
+    "effect": "That model makes a single melee attack first, resolved before its other attacks. If that attack scores a wound, this model can then make its remaining attacks as normal. If it does not, this model makes no further attacks this phase."
+   },
+   {
+    "name": "Forge Anew",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Raven Guard unit.",
+    "effect": "Until your next Command phase, that unit is not Battle-shocked while it is below its Starting Strength."
+   },
+   {
+    "name": "Ghosts In The Dark",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Movement phase, just before a friendly Raven Guard unit is selected to move.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit can move across models and terrain features as if they were not there."
+   },
+   {
+    "name": "Merciless Retaliation",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Raven Guard unit is destroyed.",
+    "target": "The enemy unit that destroyed it.",
+    "effect": "That enemy unit suffers 3 mortal wounds."
+   },
+   {
+    "name": "Strike From Shadow",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Charge phase.",
+    "target": "One friendly Raven Guard unit that made a Charge move this phase.",
+    "effect": "Until the end of the turn, that unit's melee weapons have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Salvage The Fallen",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Raven Guard Vehicle unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Salamanders",
+  "name": "Selfless Burden",
+  "file": "salamanders-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Promethean Endurance & Blood Of Fire",
+   "text": "The forge tempers what fire cannot break. Each time an attack targets a friendly Salamanders unit, that attack's Wound roll cannot succeed on an unmodified roll of 1 or 2. In addition, friendly Salamanders units are unaffected by the Battle-shock tests triggered by attacks made by Flamer-type weapons."
+  },
+  "rule": {
+   "name": "Selfless Burden",
+   "text": "There is always one more of them willing to be the wall. Once per battle, when an enemy unit declares a charge that targets a friendly Salamanders unit (excluding Vehicles), you can select that unit: until the end of the Fight phase, improve the Weapon Skill characteristic of melee weapons equipped by models in that unit by 1, and add 1 to the Attacks and Strength characteristics of those weapons. Then, for each model in that unit that fights this phase, roll one D6: on a 1, that model's unit suffers 1 mortal wound."
+  },
+  "enhancements": [
+   {
+    "name": "Drakenscale Armour",
+    "restriction": "Character model only",
+    "text": "Each time a wound is allocated to the bearer from an attack made by a Flamer, Melta, Plasma, or Volkite weapon, that attack's Damage characteristic is treated as being 1."
+   },
+   {
+    "name": "Relic Of The Forge",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of Nocturne",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, each time a model in that unit is destroyed, roll one D6: on a 6, that model is not destroyed and instead is returned to the unit with 1 wound remaining."
+   },
+   {
+    "name": "Unyielding Promethean",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit takes a Battle-shock test, that test is automatically passed."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Duty Is Sacrifice",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase or Shooting phase, just before a friendly Salamanders Character model is chosen to fight or shoot.",
+    "target": "That model.",
+    "effect": "Select a number from 1-3. That model suffers that many mortal wounds. Until the end of the phase, add that number to Hit rolls for that model's attacks."
+   },
+   {
+    "name": "Forge Anew",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Salamanders unit.",
+    "effect": "Until your next Command phase, that unit is not Battle-shocked while it is below its Starting Strength."
+   },
+   {
+    "name": "Cleansing Flame",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just before a friendly Salamanders unit shoots.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit that have the [TORRENT] ability have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Merciless Retaliation",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Salamanders unit is destroyed.",
+    "target": "The enemy unit that destroyed it.",
+    "effect": "That enemy unit suffers 3 mortal wounds."
+   },
+   {
+    "name": "Grim Determination",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Salamanders unit.",
+    "effect": "Until your next Command phase, each time a model in that unit makes an attack, an unmodified Wound roll of 1 or 2 still fails, but a Critical Wound is scored on an unmodified Wound roll of 5+ (instead of 6+)."
+   },
+   {
+    "name": "Salvage The Fallen",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Salamanders Vehicle unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Sons of Horus",
+  "name": "Masters of the Legion",
+  "file": "sons-of-horus-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Death Dealers",
+   "text": "The Sons of Horus never fire a wasted shot, and never a rushed one either. Each time a model in a friendly Sons of Horus unit makes a ranged attack with a weapon that has the [RAPID FIRE X] or [HEAVY] ability, that attack does not lose the benefit of that ability, even if the unit Advanced this turn."
+  },
+  "rule": {
+   "name": "Masters Of The Legion",
+   "text": "Every commander in this Legion was placed there personally by the Warmaster, and every one of them fights with his authority behind them. Each time a friendly Sons of Horus unit that is within 6\" of a friendly Sons of Horus Character model is selected to fight, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+  },
+  "enhancements": [
+   {
+    "name": "Trophy Of Isstvan",
+    "restriction": "Character model only",
+    "text": "Each time the bearer destroys an enemy Character model, until the end of the battle, add 1 to the bearer's Objective Control characteristic."
+   },
+   {
+    "name": "Warmaster'S Favour",
+    "restriction": "Character model only",
+    "text": "The bearer's unit does not need to take a Battle-shock test while the bearer is on the battlefield."
+   },
+   {
+    "name": "Cthonian Cunning",
+    "restriction": "Character model only",
+    "text": "Once per battle, in your Movement phase, the bearer's unit can be redeployed as if it had the Scouts X\" ability, where X is equal to the bearer's Movement characteristic."
+   },
+   {
+    "name": "Relic Of The First Company",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [ANTI-VEHICLE 4+] ability."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Merciless Strike",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Sons of Horus Character model is selected to fight.",
+    "target": "That model.",
+    "effect": "Until the end of the phase, each time a melee attack is made with a weapon equipped by that model, an unmodified Wound roll of 4+ always scores a wound, regardless of the target's Toughness characteristic."
+   },
+   {
+    "name": "Warrior Pride",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Charge phase, just after an enemy unit ends a Charge move within Engagement Range of a friendly Sons of Horus unit.",
+    "target": "That friendly unit.",
+    "effect": "Until the end of the turn, that unit has the [FIGHTS FIRST] ability."
+   },
+   {
+    "name": "The First To Strike",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Sons of Horus unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, each time a model in that unit makes a ranged attack that targets the closest eligible enemy unit, an unmodified Hit roll of 6 scores 1 additional hit."
+   },
+   {
+    "name": "No Retreat",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "End of any phase, if a friendly Sons of Horus unit lost one or more models earlier this phase.",
+    "target": "That unit.",
+    "effect": "That unit automatically passes Battle-shock tests until the end of the battle round."
+   },
+   {
+    "name": "Cthonian Gambit",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Sons of Horus unit.",
+    "effect": "Until your next Command phase, each time that unit Advances, it can move as if it had rolled a 6 on the Advance roll."
+   },
+   {
+    "name": "The Warmaster Demands It",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Sons of Horus Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ },
+ {
+  "legion": "Space Wolves",
+  "name": "Bestial Savagery",
+  "file": "space-wolves-hh-detachment.html",
+  "disposition": "Reconnaissance",
+  "armyRule": {
+   "name": "The Hunter'S Strike",
+   "text": "The pack does not wait for the horn before it moves. Each time a unit with this ability is set up on the battlefield from Strategic Reserves or as part of a Deep Strike ability, it can be set up as though the relevant minimum distance from enemy models were 2\" less than normal (to a minimum of 3\")."
+  },
+  "rule": {
+   "name": "Bestial Savagery",
+   "text": "Wound them, and they only close the distance faster. Once per battle, each time an enemy unit is selected to shoot a friendly Space Wolves unit, after that attack has been resolved, if that Space Wolves unit was not destroyed you can select it to use this Detachment Rule. If you do, until the end of the phase that unit has the [FEEL NO PAIN 5+] ability, and it can then make a Normal Move of up to 6\", to as close as possible to the closest enemy unit (it cannot be moved within Engagement Range of any enemy units as a result of this move). If, after this move, that Space Wolves unit is within Engagement Range of one or more enemy units, in your following Charge phase it can be selected to declare a charge against those units without needing to make a Charge move or Charge roll."
+  },
+  "enhancements": [
+   {
+    "name": "Pelt Of The Fenrisian Wolf",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Rune-Etched Wargear",
+    "restriction": "Character model only",
+    "text": "Each time an attack targets the bearer's unit, worsen the Armour Penetration characteristic of that attack by 1."
+   },
+   {
+    "name": "Howl Of The Pack",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, each time a model in that unit is destroyed in the Fight phase, until the end of the phase, add 1 to the Attacks characteristic of the bearer's melee weapons."
+   },
+   {
+    "name": "Trophy Of The Hunt",
+    "restriction": "Character model only",
+    "text": "Each time the bearer destroys the last model in an enemy unit in the Fight phase, until the end of the battle, add 1 to the bearer's Attacks characteristic (to a maximum of +3)."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "A Saga Woven Of Glory",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Space Wolves Character unit destroys the last model in an enemy unit.",
+    "target": "That Character's unit.",
+    "effect": "Until the end of the Fight phase, add 1 to the Attacks characteristic of models in that unit."
+   },
+   {
+    "name": "Rush The Line",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Movement phase.",
+    "target": "One friendly Space Wolves unit.",
+    "effect": "That unit is eligible to declare a charge this turn even though it Advanced."
+   },
+   {
+    "name": "Runic Ward",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Any phase, just after a friendly Space Wolves Psyker unit is selected as the target of an attack, a Psychic Action, or a Stratagem used by your opponent.",
+    "target": "That unit.",
+    "effect": "Roll one D6, adding 1 to the result if that unit is within 6\" of a friendly Space Wolves Caster of Runes model: on a 4+, that attack, Psychic Action, or Stratagem has no effect."
+   },
+   {
+    "name": "No Prey Escapes",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Space Wolves Character unit fights.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [LETHAL HITS] ability, and that unit cannot be destroyed as a result of a Fall Back or similar effect until it has made all of its attacks."
+   },
+   {
+    "name": "Saga Of The Wulfen",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Your Command phase.",
+    "target": "One friendly Space Wolves unit below its Starting Strength.",
+    "effect": "Until your next Command phase, each time a model in that unit makes a melee attack, an unmodified Hit roll of 6 automatically wounds the target, regardless of that attack's Strength and the target's Toughness characteristics."
+   },
+   {
+    "name": "Feast Of The Fallen",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Space Wolves unit.",
+    "effect": "Until your next Command phase, each time a model in that unit is destroyed, roll one D6: on a 5+, that unit's Objective Control characteristic is increased by 1 until the end of the battle round."
+   }
+  ]
+ },
+ {
+  "legion": "Thousand Sons",
+  "name": "Fortress of the Mind",
+  "file": "thousand-sons-hh-detachment.html",
+  "disposition": "Priority Assets",
+  "armyRule": {
+   "name": "Cult Arcana",
+   "text": "Every warrior of the Fifteenth Legion is touched by the warp, whether they have been tested for it yet or not. All friendly Thousand Sons Infantry models have the [PSYKER] ability."
+  },
+  "rule": {
+   "name": "Fortress Of The Mind",
+   "text": "A mind trained on Prospero can turn aside a bolt round the same way it turns aside a lesser sorcerer's hex. Once per battle, when a friendly Thousand Sons unit (excluding Vehicles) is selected as the target of a ranged attack, you can activate this rule. If you do, roll one D6: on a 4+, that unit has a 3+ invulnerable save against that attack; on a 1-3, that unit has a 5+ invulnerable save against that attack instead, and after the attack is resolved, that unit and the attacking unit each suffer 1 mortal wound."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of Prospero",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Warded Sarcophagus",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If it already has an invulnerable save, use whichever is better."
+   },
+   {
+    "name": "Foreseen Threat",
+    "restriction": "Character model only",
+    "text": "Once per battle, in your opponent's Charge phase, before an enemy unit declares a charge, you can reveal that this model has this Enhancement; if you do, that enemy unit must target a different eligible unit with that charge, if able."
+   },
+   {
+    "name": "Sigil Of The Athanaean",
+    "restriction": "Character model only",
+    "text": "Each time a friendly Thousand Sons Psyker unit within 6\" of the bearer would lose a wound to a Mortal Wound, roll one D6: on a 5+, that wound is not lost."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Prophetic Duellist",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Thousand Sons Character model is selected to fight.",
+    "target": "That model.",
+    "effect": "Until the end of the phase, each unmodified Hit roll of 4+ made for that model's attacks is treated as a Critical Hit."
+   },
+   {
+    "name": "ætheric Shield",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Shooting phase, just after a friendly Thousand Sons unit is selected as the target of a ranged attack.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that unit has the Benefit of Cover."
+   },
+   {
+    "name": "Rune Of Warding",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Command phase.",
+    "target": "One friendly Thousand Sons Psyker unit.",
+    "effect": "Until your next Command phase, each time that unit would suffer a mortal wound, roll one D6: on a 5+, that mortal wound is not suffered."
+   },
+   {
+    "name": "No Retreat",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "End of any phase, if a friendly Thousand Sons unit lost one or more models earlier this phase.",
+    "target": "That unit.",
+    "effect": "That unit automatically passes Battle-shock tests until the end of the battle round."
+   },
+   {
+    "name": "Corvidae Foresight",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "After both players have deployed their armies, before the first turn begins.",
+    "target": "N/A.",
+    "effect": "You can redeploy up to one friendly Thousand Sons unit, following the normal rules for deployment."
+   },
+   {
+    "name": "The Rite Is Unbroken",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Thousand Sons Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ },
+ {
+  "legion": "Ultramarines",
+  "name": "Retribution Strike",
+  "file": "ultramarines-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "Tactical Flexibility",
+   "text": "No Ultramarines commander wastes resources on a plan that has already worked. Once per battle round, the first time you use a Stratagem that targets a friendly Ultramarines unit, you can subtract 1CP from that Stratagem's cost, to a minimum of 0CP."
+  },
+  "rule": {
+   "name": "Retribution Strike",
+   "text": "A shot fired at one company is a shot answered by another. Once per battle, each time an enemy unit shoots a friendly Ultramarines unit, you can select a different friendly Ultramarines unit that has not been selected to shoot this phase, is within range of and has visibility to the enemy unit that made that attack, and is entirely composed of Ultramarines models: that unit can be selected to shoot the attacking enemy unit immediately, as though it were your Shooting phase."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of Macragge",
+    "restriction": "Character model only",
+    "text": "Each time the bearer fights, that model's melee weapons have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Standard Of The Thirteenth",
+    "restriction": "Character model only",
+    "text": "While the bearer is leading a unit, that unit's Objective Control characteristic is increased by 1."
+   },
+   {
+    "name": "Tactical Primarch'S Favour",
+    "restriction": "Character model only",
+    "text": "Once per battle, at the start of your Command phase, this model's Controlling Player can gain 1 Command Point."
+   },
+   {
+    "name": "Shield Of Doctrine",
+    "restriction": "Character model only",
+    "text": "The bearer has a 5+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Aegis Of Wisdom",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just before a friendly Ultramarines Character unit fights.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, add 1 to that unit's Attacks characteristic for each other friendly Ultramarines Character unit on the battlefield, to a maximum of +3."
+   },
+   {
+    "name": "By The Book",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Ultramarines unit.",
+    "effect": "Until your next Command phase, each time that unit is Battle-shocked, at the start of your next Command phase it automatically recovers from Battle-shock."
+   },
+   {
+    "name": "Disciplined Fire",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly Ultramarines unit that Remained Stationary this turn is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+   },
+   {
+    "name": "Doctrines Of War",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Ultramarines unit.",
+    "effect": "Until your next Command phase, that unit's Objective Control characteristic is increased by 1."
+   },
+   {
+    "name": "Counter-Offensive",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Ultramarines unit is destroyed.",
+    "target": "The enemy unit that destroyed it.",
+    "effect": "That enemy unit suffers 3 mortal wounds."
+   },
+   {
+    "name": "The Ultima Founding",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Ultramarines Infantry unit.",
+    "effect": "Until your next Command phase, that unit can perform actions and use its Objective Control characteristic to control objectives even while Battle-shocked."
+   }
+  ]
+ },
+ {
+  "legion": "White Scars",
+  "name": "Chasing the Wind",
+  "file": "white-scars-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Swift Of Action",
+   "text": "No enemy plans for a Legion that can simply choose to be somewhere else, faster than the plan accounted for. Each time a friendly White Scars unit is selected to move in the Movement phase, you can add 2\" to its Move characteristic for that move."
+  },
+  "rule": {
+   "name": "Chasing The Wind",
+   "text": "The White Scars do not wait to see where the enemy goes — they are already moving to meet them there. Each time an enemy unit ends a Normal, Advance, or Fall Back move within 12\" and visible to a friendly White Scars unit that has not moved this phase, that White Scars unit can immediately make a Normal Move of up to its Movement characteristic. A unit that moves this way cannot declare a charge later this turn."
+  },
+  "enhancements": [
+   {
+    "name": "Master Horseman",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit is selected to Advance or declares a charge, add 3\" to the Advance or Charge roll."
+   },
+   {
+    "name": "Relic Of Chogoris",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Warden Of The Steppe",
+    "restriction": "Character model only",
+    "text": "Each time an attack targets the bearer's unit, if that unit is more than 6\" from your Warlord, worsen the Hit roll for that attack by 1."
+   },
+   {
+    "name": "Banner Of The Hunt",
+    "restriction": "Character model only",
+    "text": "While the bearer is on the battlefield, friendly White Scars units within 6\" of the bearer have the [SCOUTS 6\"] ability."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Path Of The Warrior",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, when a friendly White Scars unit is chosen to fight.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+   },
+   {
+    "name": "Hit And Away",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Fight phase, just after a friendly White Scars unit fights.",
+    "target": "That unit.",
+    "effect": "That unit can immediately make a Normal Move of up to 3\", even though it is within Engagement Range of one or more enemy units. Each time that unit's Move takes it out of Engagement Range of all enemy units, it does not count as having Fallen Back this turn."
+   },
+   {
+    "name": "Circling The Prey",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Shooting phase, just after a friendly White Scars unit is selected to shoot.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, ranged attacks made by that unit do not suffer the penalty to their Hit roll for the target having the Benefit of Cover."
+   },
+   {
+    "name": "The Hunt Never Ends",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly White Scars Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   },
+   {
+    "name": "Scatter To The Wind",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Shooting phase, just after a friendly White Scars unit is selected as the target of a ranged attack.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, that attack's Armour Penetration characteristic is improved by 1 (to a minimum of 0), making it less effective against this unit's saves."
+   },
+   {
+    "name": "Fall Upon Them",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Your Charge phase.",
+    "target": "One friendly White Scars unit that made a Charge move this phase.",
+    "effect": "Until the end of the phase, that unit's melee weapons have the [DEVASTATING WOUNDS] ability."
+   }
+  ]
+ },
+ {
+  "legion": "Word Bearers",
+  "name": "Glorious Martyrdom",
+  "file": "word-bearers-hh-detachment.html",
+  "disposition": "Take and Hold",
+  "armyRule": {
+   "name": "Zealotry Of The Faithful",
+   "text": "Faith does not care whether the guns are still firing. Each time a friendly Word Bearers unit is Battle-shocked, that unit's Objective Control characteristic is not reduced to 0."
+  },
+  "rule": {
+   "name": "Glorious Martyrdom",
+   "text": "Every company keeps at least one believer willing to stand in the way of the bullet meant for someone else. Once per battle, each time an enemy unit is selected to shoot a friendly Word Bearers unit, before any Hit rolls are made, you can select one model in that Word Bearers unit: until that attack has been fully resolved, all wounds allocated by that attack must be allocated to the selected model."
+  },
+  "enhancements": [
+   {
+    "name": "Relic Of The Unspeakable Covenant",
+    "restriction": "Character model only",
+    "text": "Melee weapons equipped by the bearer have the [DEVASTATING WOUNDS] ability."
+   },
+   {
+    "name": "Mark Of The Anointed",
+    "restriction": "Character model only",
+    "text": "The bearer has a 4+ invulnerable save. If the bearer already has an invulnerable save, add 1 to its Invulnerable Save characteristic instead (to a maximum of a 3+ invulnerable save)."
+   },
+   {
+    "name": "Choir Of The Damned",
+    "restriction": "Character model only",
+    "text": "While the bearer is on the battlefield, each time an enemy unit within 6\" of the bearer takes a Battle-shock test, subtract 1 from that test."
+   },
+   {
+    "name": "Crozius Of The Faithful",
+    "restriction": "Character model only",
+    "text": "Each time the bearer's unit is chosen to fight, that unit has the [FIGHTS FIRST] ability."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Beseech The Gods",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, before a friendly Word Bearers Character unit fights.",
+    "target": "That unit.",
+    "effect": "Roll one D6: on a 4+, until the end of the phase, add 1 to that model's Strength and Attacks characteristics. On a 1-3, that model suffers 1 mortal wound."
+   },
+   {
+    "name": "The Word Made Flesh",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Word Bearers unit.",
+    "effect": "Until your next Command phase, each time that unit takes a Battle-shock test, that test is automatically passed."
+   },
+   {
+    "name": "A Death That Serves",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly Word Bearers Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   },
+   {
+    "name": "Rite Of Defilement",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your opponent's Command phase, just after an enemy unit fails a Battle-shock test.",
+    "target": "One friendly Word Bearers unit within 12\" of that enemy unit.",
+    "effect": "Until the start of your next turn, ranged weapons equipped by models in that Word Bearers unit have the [LETHAL HITS] ability when targeting that enemy unit."
+   },
+   {
+    "name": "Bound In Faith",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly Word Bearers Daemon unit.",
+    "effect": "Until your next Command phase, that unit has a 4+ invulnerable save. If it already has an invulnerable save, use whichever is better."
+   },
+   {
+    "name": "The Cathedral Of Blood",
+    "cp": 2,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just after a friendly Word Bearers unit destroys the last model in an enemy unit.",
+    "target": "That Word Bearers unit.",
+    "effect": "Until the end of the turn, that unit's melee weapons have the [DEVASTATING WOUNDS] ability."
+   }
+  ]
+ },
+ {
+  "legion": "World Eaters",
+  "name": "Lost to the Nails",
+  "file": "world-eaters-hh-detachment.html",
+  "disposition": "Purge the Foe",
+  "armyRule": {
+   "name": "Violence Incarnate",
+   "text": "The World Eaters need no tactical genius to fight well — only a target within reach. Each time a model in a friendly World Eaters unit makes a melee attack on a turn in which that unit made a Charge move, add 1 to that attack's Attacks characteristic."
+  },
+  "rule": {
+   "name": "Lost To The Nails",
+   "text": "When the Legion's discipline fails, the Nails do not. Each time a friendly World Eaters unit is selected to take a Battle-shock test, you can choose for that unit to become Lost to the Nails instead of taking that test. While a unit is Lost to the Nails:\n\nA unit stops being Lost to the Nails at the start of any Charge phase in which no enemy unit is within 12\" of it."
+  },
+  "enhancements": [
+   {
+    "name": "Crimson Rictus",
+    "restriction": "Character model only",
+    "text": "A grin carved by the Nails, permanent, the same on every face that wears it. Melee weapons equipped by the bearer have the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Blood-Slick Plate",
+    "restriction": "Character model only",
+    "text": "Armour that has stopped more blows than its wearer can remember taking. The bearer has the [FEEL NO PAIN 5+] ability against melee attacks."
+   },
+   {
+    "name": "Skull-Taker'S Blade",
+    "restriction": "Character model only",
+    "text": "Every notch on the haft was once a name. Melee weapons equipped by the bearer have the [DEVASTATING WOUNDS] ability. Each time the bearer destroys an enemy Character model, the bearer regains D3 lost wounds."
+   },
+   {
+    "name": "The Butcher'S Mark",
+    "restriction": "Character model only",
+    "text": "Once per battle, at the start of any Fight phase, the bearer's unit can become Lost to the Nails without needing to take a Battle-shock test, and while it remains Lost to the Nails from this effect, add 2 to the Attacks characteristic of its melee weapons (instead of 1)."
+   }
+  ],
+  "stratagems": [
+   {
+    "name": "Violent Overkill",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Fight phase, just after a friendly World Eaters Character model's melee attack destroys the last model in the unit it targeted.",
+    "target": "That Character model.",
+    "effect": "That model can make one additional melee attack with the same weapon, which must target a different enemy unit within Engagement Range."
+   },
+   {
+    "name": "Brutal Dismemberment",
+    "cp": 1,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly World Eaters Character model's melee attack destroys an enemy Character model.",
+    "target": "N/A.",
+    "effect": "If the destroyed model was your opponent's Warlord, you immediately gain 1 Command Point."
+   },
+   {
+    "name": "Brutal Tide",
+    "cp": 2,
+    "type": "Strategic Ploy",
+    "when": "Your opponent's Shooting phase, just after they select a friendly World Eaters Infantry unit as the target of a ranged attack.",
+    "target": "That unit.",
+    "effect": "Until the end of the phase, your unit has the [FEEL NO PAIN 6+] ability. If it is not destroyed, at the end of the phase it can declare a charge against the unit that targeted it, resolved immediately as if it were your Charge phase. Use this Stratagem only once per battle."
+   },
+   {
+    "name": "Feral Momentum",
+    "cp": 1,
+    "type": "Battle Tactic",
+    "when": "Your Charge phase, just after a friendly World Eaters unit that is Lost to the Nails finishes a Charge move.",
+    "target": "That unit.",
+    "effect": "Until the end of the turn, that unit has the [FIGHTS FIRST] ability."
+   },
+   {
+    "name": "Skulls For The Skull Throne",
+    "cp": 1,
+    "type": "Strategic Ploy",
+    "when": "Your Command phase.",
+    "target": "One friendly World Eaters unit that is within range of an objective marker.",
+    "effect": "Until your next Command phase, add 1 to the Wound roll for melee attacks made by models in that unit."
+   },
+   {
+    "name": "Unstoppable Butchery",
+    "cp": 2,
+    "type": "Epic Deed",
+    "when": "Fight phase, just after a friendly World Eaters Character model is destroyed, before it is removed from play.",
+    "target": "That model.",
+    "effect": "If that model has not already fought this phase, it can fight once, using its normal characteristics, before being removed as a casualty."
+   }
+  ]
+ }
+]

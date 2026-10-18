@@ -1,0 +1,4846 @@
+[
+ {
+  "slug": "hh-arquitor-bombard",
+  "name": "Arquitor Bombard",
+  "subtitle": "Heavy Indirect Bombard",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "7",
+    "Sv": "4+",
+    "W": "6",
+    "LD": "8+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Arquitor mortar",
+    "melee": false,
+    "range": "72\"",
+    "a": "D6+1",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Indirect Bombardment",
+    "text": "This model can shoot at targets it cannot see. When this model targets a unit that none of its weapons have line of sight to, the attacks gain the [INDIRECT FIRE] ability — and on a Hit roll of 6+, that hit auto-Wounds."
+   },
+   {
+    "name": "Heavy Mortar Doctrine",
+    "text": "Each time this model makes a ranged attack with the Arquitor mortar against a unit with 6 or more models, you re-roll Wound rolls of 1."
+   },
+   {
+    "name": "Arquitor mortar",
+    "text": "[HEAVY] [BLAST] [INDIRECT FIRE]"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Arquitor Bombard model.",
+  "keywords": "VEHICLE, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, ARQUITOR BOMBARD",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-breacher-squad",
+  "name": "Breacher Squad",
+  "subtitle": "Boarding Specialists",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "115 / 225",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Legion bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Meltagun",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Graviton gun",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Close combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "Wall of Bronze (Boarding Shield)",
+    "text": "Each time an attack targets this unit with a ranged weapon, this unit has a 4+ invulnerable save against that attack. In the Fight phase, this unit improves its Save characteristic by 1 against incoming melee attacks (e.g., 3+ → 2+); no save can ever improve past 2+."
+   },
+   {
+    "name": "Implacable Advance",
+    "text": "While this unit is within range of an objective marker, each time a model in it would lose a wound from a Battle-shock test's effects, ignore that wound. This unit also re-rolls Battle-shock tests while within range of an objective marker."
+   },
+   {
+    "name": "Boarding Operations",
+    "text": "Each time this unit makes a Charge move in the same turn it disembarked from a Drop Pod, Caestus Assault Ram, Kharybdis Assault Claw, or Boarding Torpedo, you can re-roll the Charge roll, and on a turn in which it charges, models in this unit gain [LETHAL HITS] on melee attacks."
+   },
+   {
+    "name": "Legion bolter",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Meltagun",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Flamer",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Graviton gun",
+    "text": "[ANTI-VEHICLE 2+]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Breacher Sergeant + 4-9 Breacher Legionaries (5 or 10 model unit). All models carry boarding shields. 1 in 5 models may replace their bolter with a meltagun, flamer, or graviton gun. The Sergeant may take a power weapon or thunder hammer.",
+  "keywords": "INFANTRY, BATTLELINE, GRENADES, BOARDING SHIELD, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-castra-ferrum-dreadnought",
+  "name": "Castra Ferrum Dreadnought",
+  "subtitle": "MK I Pattern Dreadnought",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "9",
+    "Sv": "2+",
+    "W": "8",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Twin lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Multi-melta",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Plasma cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "D3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Storm bolter (built-in)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Castra Ferrum power fist (right arm)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Dreadnought close combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Honoured Ancient",
+    "text": "This Dreadnought interred a Pre-Heresy Legionary of significant honour. Each time this model fights, it can re-roll all failed Hit rolls in melee against a single enemy unit per battle (the Ancient remembers)."
+   },
+   {
+    "name": "Legacy Plating",
+    "text": "Each time an attack with Damage 1 is allocated to this model, on a 6+ that attack's Damage is reduced to 0."
+   },
+   {
+    "name": "Twin lascannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Multi-melta",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Plasma cannon",
+    "text": "[HEAVY] [BLAST]"
+   },
+   {
+    "name": "Storm bolter (built-in)",
+    "text": "[RAPID FIRE 2]"
+   }
+  ],
+  "composition": "1 Castra Ferrum Dreadnought model.",
+  "keywords": "VEHICLE, WALKER, DREADNOUGHT, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, CASTRA FERRUM DREADNOUGHT",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-centurion",
+  "name": "Centurion",
+  "subtitle": "Junior Legion Officer",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Leader (Outrider variant)",
+    "text": "While in the Outrider/Bike variant, this model can join an Outrider Squadron or a Scimitar Jetbike Squadron instead of foot-units."
+   },
+   {
+    "name": "Honour the Legion",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 3\" of this model, that unit re-rolls Hit rolls of 1 in melee."
+   },
+   {
+    "name": "Tactical Acumen",
+    "text": "Once per battle in your Command phase, this model can issue a Tactical Imperative to a friendly Legiones Astartes unit within 12\": choose one — that unit re-rolls Wound rolls of 1 this turn, OR that unit ignores modifiers to Hit rolls this turn."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Centurion model.",
+  "keywords": "INFANTRY, CHARACTER, CENTURION, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Saturnine Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "inv": "4+ (3+ Psy)",
+    "pts": "+50",
+    "note": "Damage 1 attacks become Damage 0. FNP 6+. Cannot Fall Back."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   },
+   {
+    "name": "Outrider (Bike)",
+    "M": "12\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+20",
+    "note": "Twin-linked bolters on bike. Jink (re-roll Cover save). Mounted keyword."
+   }
+  ]
+ },
+ {
+  "slug": "hh-damocles-command-rhino",
+  "name": "Damocles Command Rhino",
+  "subtitle": "Mobile Command Platform",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "100",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "11",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Damocles missile launcher",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "D3"
+   },
+   {
+    "name": "Storm bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3, Firing Deck 2",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Transport",
+    "text": "This model has a Transport capacity of 6 Legiones Astartes models (no Terminator, no Bulky, no Beast)."
+   },
+   {
+    "name": "Scanner Array",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 12\" of this model, that unit re-rolls Hit rolls of 1 with ranged attacks. (The Damocles's sensor suite shares targeting data across the Legion vox.)"
+   },
+   {
+    "name": "Strategic Reserves Comms",
+    "text": "While this model is on the battlefield, your Strategic Reserves rolls succeed on a 2+ (instead of 3+ on turns 2-3)."
+   },
+   {
+    "name": "Mobile Command",
+    "text": "If a Legiones Astartes Character with a Leader ability is embarked in this Damocles, that Character's Aura abilities measure from this model instead of from the embarked Character's base."
+   },
+   {
+    "name": "Damocles missile launcher",
+    "text": "[HEAVY] [BLAST]"
+   },
+   {
+    "name": "Storm bolter",
+    "text": "[RAPID FIRE 2]"
+   }
+  ],
+  "composition": "1 Damocles Command Rhino model.",
+  "keywords": "VEHICLE, TANK, TRANSPORT, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, DAMOCLES COMMAND RHINO",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-delegatus",
+  "name": "Delegatus",
+  "subtitle": "Independent Operator",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "105",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Master-crafted bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Paragon blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Lone Operative",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Self-Sufficient",
+    "text": "This model auto-passes Battle-shock tests and ignores wound-allocation modifiers from enemy abilities."
+   },
+   {
+    "name": "Detached Authority",
+    "text": "This model can declare itself the Warlord at the start of the battle (instead of the Praetor) and grants any friendly Legiones Astartes unit within 6\" the Stealth ability while that unit is below half-strength."
+   },
+   {
+    "name": "Strike of the Independent",
+    "text": "Once per battle in the Fight phase, after this model fights, it can immediately make a Normal move of up to 6\" — even within Engagement Range of an enemy. The Delegatus operates outside the Legion's ordinary chain of command."
+   },
+   {
+    "name": "Master-crafted bolter",
+    "text": "[ASSAULT] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "text": "[TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Delegatus model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, DELEGATUS, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   },
+   {
+    "name": "Outrider (Bike)",
+    "M": "12\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+20",
+    "note": "Twin-linked bolters on bike. Jink (re-roll Cover save). Mounted keyword."
+   }
+  ]
+ },
+ {
+  "slug": "hh-despoiler-squad",
+  "name": "Despoiler Squad",
+  "subtitle": "Close-Assault Tactical Variant",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95 / 190",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Hand flamer",
+    "melee": false,
+    "range": "9\"",
+    "a": "3",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "Berserk Assault",
+    "text": "Each time a model in this unit makes a melee attack, if this unit made a Charge move this turn, add 1 to the Attack characteristic of the attacker's melee weapon (resolved before any other modifiers)."
+   },
+   {
+    "name": "Carve Through The Line",
+    "text": "On a turn in which this unit completes a Charge move, each melee attack made by a model in this unit gains the [LETHAL HITS] ability."
+   },
+   {
+    "name": "Brothers of the Hunt",
+    "text": "This unit is eligible to declare a Charge in a turn in which it Advanced."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Hand flamer",
+    "text": "[CLOSE-QUARTERS] [TORRENT]"
+   },
+   {
+    "name": "Flamer",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Despoiler Sergeant + 4-9 Despoiler Legionaries. All models replace bolters with chainswords + bolt pistols. 1 in 5 may take a flamer or hand-flamer. The Sergeant may take a power weapon, power fist, or thunder hammer.",
+  "keywords": "INFANTRY, BATTLELINE, GRENADES, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-destroyer-squad",
+  "name": "Destroyer Squad",
+  "subtitle": "Outcast Anti-Personnel Specialists",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "125 / 250",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Hand flamer",
+    "melee": false,
+    "range": "9\"",
+    "a": "3",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Volkite serpenta",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Phosphex bomb-thrower",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "Rad Grenades",
+    "text": "In the Fight phase, before this unit makes its attacks, select one enemy unit within Engagement Range of it. Until the end of the turn, that enemy unit's Toughness characteristic is reduced by 1 (to a minimum of 1)."
+   },
+   {
+    "name": "Phosphex Munitions",
+    "text": "Each time a model in this unit makes a ranged attack with a phosphex weapon, on a Hit roll of 5+ the attack scores 1 mortal wound in addition to any normal damage. Phosphex attacks cannot be allocated to Vehicle models with a Toughness of 10 or higher."
+   },
+   {
+    "name": "Outcast",
+    "text": "This unit cannot be your Warlord, cannot take Enhancements, and cannot be the target of friendly Faction ability effects that grant Battle-shock immunity (the Legion treats them as pariahs even in victory)."
+   },
+   {
+    "name": "Jump Pack Assault (Assault Destroyer variant only)",
+    "text": "If the Assault Destroyer variant was selected, this unit gains Deep Strike and is eligible to charge in a turn in which it arrived from Reserves."
+   },
+   {
+    "name": "Hand flamer",
+    "text": "[CLOSE-QUARTERS] [TORRENT]"
+   },
+   {
+    "name": "Volkite serpenta",
+    "text": "[CLOSE-QUARTERS] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Phosphex bomb-thrower",
+    "text": "[BLAST] [ANTI-INFANTRY 2+] [IGNORES COVER]"
+   }
+  ],
+  "composition": "1 Destroyer Sergeant + 4-9 Destroyer Legionaries. All models carry rad grenades, hand flamers (or volkite serpentas), and chainswords. 1 in 5 may replace their hand flamer with a phosphex bomb-thrower. The Sergeant may take a power weapon. Assault Destroyer variant: the entire squad gains jump packs, M increases to 12\", costs +25 pts per 5 models.",
+  "keywords": "INFANTRY, GRENADES, OUTCAST, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-esoterist",
+  "name": "Esoterist",
+  "subtitle": "Legion Librarian (HH Pattern)",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Force weapon (default – sword)",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "D3+1"
+   },
+   {
+    "name": "Force stave",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Psyker",
+    "text": "This model is a Psyker. In your Shooting phase, instead of making ranged attacks, this model can manifest ONE psychic power. Choose one from the list below."
+   },
+   {
+    "name": "Power 1: Smite",
+    "text": "Range 18\". Select one enemy unit visible to the Esoterist. That unit takes D3 mortal wounds (D6 if it has Toughness 7 or higher — Psychic Surge)."
+   },
+   {
+    "name": "Power 2: Veil of Time",
+    "text": "Select one friendly Legiones Astartes unit within 12\". Until the end of the turn, that unit re-rolls Hit rolls and Charge rolls."
+   },
+   {
+    "name": "Power 3: Warp Shield",
+    "text": "Select one friendly Legiones Astartes unit within 6\". Until the start of your next Command phase, that unit has a 4+ invulnerable save."
+   },
+   {
+    "name": "Psychic Hood",
+    "text": "Each time an enemy Psyker manifests a psychic power within 18\" of this model, on a D6 roll of 5+ the power is denied (no effect)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Force weapon (default – sword)",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Force stave",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Esoterist model.",
+  "keywords": "INFANTRY, CHARACTER, PSYKER, ESOTERIST, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-fire-raptor",
+  "name": "Fire Raptor",
+  "subtitle": "Gunship",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "215",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "20\"",
+    "T": "11",
+    "Sv": "3+",
+    "W": "14",
+    "LD": "7+",
+    "OC": "0"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Quad heavy bolters (wing, paired turrets)",
+    "melee": false,
+    "range": "36\"",
+    "a": "16",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Avenger bolt cannon (chin)",
+    "melee": false,
+    "range": "36\"",
+    "a": "8",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Hellstrike missile (×4, single-use)",
+    "melee": false,
+    "range": "72\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D6, Hover",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Strafing Doctrine",
+    "text": "Each time this model makes a ranged attack with a weapon that has the [HEAVY] keyword, the move-penalty does not apply (the Fire Raptor's gun-mounts are stabilised for high-speed strafing)."
+   },
+   {
+    "name": "Hard-Kill Anti-Infantry",
+    "text": "Each time this model makes a ranged attack with the quad heavy bolters against an enemy Infantry unit, that attack gains [SUSTAINED HITS 1] and re-rolls Wound rolls of 1."
+   },
+   {
+    "name": "Quad heavy bolters (wing, paired turrets)",
+    "text": "[HEAVY] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Avenger bolt cannon (chin)",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Hellstrike missile (×4, single-use)",
+    "text": "[ONE SHOT] [ANTI-VEHICLE 3+]"
+   }
+  ],
+  "composition": "1 Fire Raptor model.",
+  "keywords": "VEHICLE, AIRCRAFT, FLY, HOVER, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, FIRE RAPTOR",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-forge-lord",
+  "name": "Forge Lord",
+  "subtitle": "Master Technologist",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma cutter (one shot per Shooting phase)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power axe",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Servo-arm (built-in)",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Battlesmith",
+    "text": "At the start of your Command phase, select one friendly Legiones Astartes Vehicle or Dreadnought unit within 3\" of this model. That unit regains D3 lost wounds."
+   },
+   {
+    "name": "Master of the Forge",
+    "text": "[AURA] While a friendly Legiones Astartes Vehicle or Dreadnought is within 6\" of this model, that unit re-rolls Hit rolls of 1 with ranged attacks."
+   },
+   {
+    "name": "Bolster Defences",
+    "text": "Once per battle in your Command phase, you can target one terrain feature within 6\" of this model. Until the end of the battle, friendly units wholly within that terrain gain +1 to Save rolls (max 2+)."
+   },
+   {
+    "name": "Plasma Cutter (Cybertheurgy)",
+    "text": "This model is equipped with a built-in plasma cutter (servo-tool). It counts as a power weapon in melee AND can be fired as a ranged weapon at 12\" S7 AP-2 D2 once per Shooting phase."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Plasma cutter (one shot per Shooting phase)",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   }
+  ],
+  "composition": "1 Forge Lord model.",
+  "keywords": "INFANTRY, CHARACTER, TECHMARINE, FORGE LORD, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   }
+  ]
+ },
+ {
+  "slug": "hh-herald",
+  "name": "Herald",
+  "subtitle": "Banner-Bearer of the Legion",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "85",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Banner-pole (Legion Standard, melee)",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Banner of the Legion",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 6\" of this model, that unit auto-passes Battle-shock tests AND adds 1 to its OC characteristic."
+   },
+   {
+    "name": "Rally to the Banner",
+    "text": "Once per battle, in your Command phase, you can select one friendly Legiones Astartes unit within 12\" of this model. That unit can immediately make a Normal move (overriding the standard Movement phase order) and is eligible to declare a Charge in the following Charge phase."
+   },
+   {
+    "name": "Heroic Death",
+    "text": "If this model is destroyed, before it is removed from the battlefield, each friendly Legiones Astartes unit within 6\" gains +1 Attack on its melee weapons until the end of the next Fight phase. The banner is taken up by another Astartes nearby."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Herald model.",
+  "keywords": "INFANTRY, CHARACTER, HERALD, BANNER, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-hyperios-missile-tank",
+  "name": "Hyperios Missile Tank",
+  "subtitle": "Anti-Aircraft Defence Platform",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "145",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "10",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Hyperios missile launcher",
+    "melee": false,
+    "range": "60\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Skyspear Targeting",
+    "text": "Each time this model makes a ranged attack with its Hyperios missile launcher against a target with the Fly keyword OR an Aircraft keyword, the attack gains [SUSTAINED HITS 2] and [LETHAL HITS], and you re-roll Hit rolls of 1."
+   },
+   {
+    "name": "Hard-Kill Interceptor",
+    "text": "In your opponent's Movement phase, when an enemy Aircraft unit moves within 36\" of this model, you can declare this model attempts an Interception. Roll one D6: on a 4+, this model can immediately make a ranged attack with its Hyperios missile launcher against that Aircraft (using its normal profile, BS 3+)."
+   },
+   {
+    "name": "Hyperios missile launcher",
+    "text": "[HEAVY] [ANTI-FLY 2+] [SKYFIRE]"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Hyperios Missile Tank model.",
+  "keywords": "VEHICLE, TANK, SMOKE, ANTI-AIR, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, HYPERIOS MISSILE TANK",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-javelin-speeder-squadron",
+  "name": "Javelin Speeder Squadron",
+  "subtitle": "Heavy Anti-Tank Skimmers",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "105 / 315",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "14\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "7",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Twin lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Twin multi-melta",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Twin volkite culverin",
+    "melee": false,
+    "range": "36\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Hunter-killer missile (built-in, 1 per Javelin)",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+2"
+   },
+   {
+    "name": "Sponson heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise 1, Hover",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Skimmer Strike",
+    "text": "This unit can Advance and Shoot without the Heavy-fire penalty. On a turn it moved 10\" or more, its weapons gain [SUSTAINED HITS 1]."
+   },
+   {
+    "name": "Tank Hunter",
+    "text": "Each time a model in this unit makes a ranged attack against an enemy Vehicle or Monster unit, you re-roll the Wound roll."
+   },
+   {
+    "name": "Hunter-Killer Missile (single-use)",
+    "text": "Each Javelin carries 1 hunter-killer missile. Each missile may be fired ONCE per battle (per model). Profile: 48\" A 1, BS 3+, S 12, AP -3, D D6+2, [Heavy, One Shot, Anti-Vehicle 3+]."
+   },
+   {
+    "name": "Twin lascannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Twin multi-melta",
+    "text": "[MELTA 2] [TWIN-LINKED]"
+   },
+   {
+    "name": "Twin volkite culverin",
+    "text": "[DEVASTATING WOUNDS] [HEAVY] [TWIN-LINKED]"
+   },
+   {
+    "name": "Hunter-killer missile (built-in, 1 per Javelin)",
+    "text": "[HEAVY] [ONE SHOT] [ANTI-VEHICLE 3+]"
+   },
+   {
+    "name": "Sponson heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1-3 Javelin Speeders per unit (each a single-model Vehicle). Each Javelin carries a twin lascannon (default) AND a hunter-killer missile launcher (single-use). Optional swap: replace the twin lascannon with twin multi-melta (-15 pts per model) or twin volkite culverin (-10 pts per model). 1 in 3 may add a sponson heavy bolter (+10 pts).",
+  "keywords": "VEHICLE, AIRCRAFT, FLY, HOVER, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, JAVELIN SPEEDER",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-kratos-assault-tank",
+  "name": "Kratos Assault Tank",
+  "subtitle": "NEW HH3e Heavy Battle Tank",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "390",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "10\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "14",
+    "LD": "7+",
+    "OC": "4"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Kratos battle cannon",
+    "melee": false,
+    "range": "72\"",
+    "a": "D6+3",
+    "skill": "3+",
+    "s": "10",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Kratos melta blastgun",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Hull-mounted lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Sponson: heavy bolters",
+    "melee": false,
+    "range": "36\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Sponson: multi-meltas (paired)",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Sponson: lascannons",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Armoured tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "4+",
+    "s": "8",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Heavy Armoured Plating",
+    "text": "Each time a ranged attack with Strength less than the Kratos's Toughness is allocated to this model, on the controlling player's choice, you can roll one D6: on a 4+, that attack's Damage is reduced by 1 (to a minimum of 1)."
+   },
+   {
+    "name": "Battle Tank Doctrine",
+    "text": "Each time this model makes a ranged attack against an enemy Vehicle or Monster unit, that attack's AP characteristic is improved by 1."
+   },
+   {
+    "name": "Mounted Sponsons",
+    "text": "This tank may be equipped with two side sponsons. Choose ONE matched pair: heavy bolters (default), multi-meltas, or lascannons. The pair fires every Shooting phase in addition to the turret."
+   },
+   {
+    "name": "Kratos battle cannon",
+    "text": "[HEAVY] [BLAST]"
+   },
+   {
+    "name": "Kratos melta blastgun",
+    "text": "[HEAVY] [MELTA 3]"
+   },
+   {
+    "name": "Sponson: heavy bolters",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Sponson: multi-meltas (paired)",
+    "text": "[MELTA 2]"
+   }
+  ],
+  "composition": "1 Kratos Assault Tank model.",
+  "keywords": "VEHICLE, TANK, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, KRATOS ASSAULT TANK",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-legion-champion",
+  "name": "Legion Champion",
+  "subtitle": "Duellist of the Honour Roll",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Master-crafted power sword (Honour Blade)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Honour Duel",
+    "text": "Each time this model is selected to Fight, if there is an enemy Character model within Engagement Range, this model must direct all attacks against that Character (it cannot strike any other model that turn). In exchange, against that Character target, this model's attacks gain +1 Strength and +1 to Wound rolls."
+   },
+   {
+    "name": "Fight First",
+    "text": "This model has the Fights First ability."
+   },
+   {
+    "name": "Indomitable Will",
+    "text": "Each time an attack is allocated to this model, on an unmodified Save roll of 6 that attack's Damage is reduced to 0."
+   },
+   {
+    "name": "Master Duellist",
+    "text": "Once per battle, in the Fight phase before this model fights, you can declare a \"Mort-Strike\" — until the end of this Fight phase, this model's melee weapons gain [DEVASTATING WOUNDS] and re-roll Hit rolls."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Legion Champion model.",
+  "keywords": "INFANTRY, CHARACTER, FIGHTS FIRST, LEGION CHAMPION, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-legion-medusa",
+  "name": "Legion Medusa",
+  "subtitle": "Heavy Direct-Fire Artillery",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "165",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "8\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "10",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Medusa siege gun (direct-fire)",
+    "melee": false,
+    "range": "48\"",
+    "a": "D3+1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+2"
+   },
+   {
+    "name": "Medusa siege gun",
+    "melee": false,
+    "range": "72\"",
+    "a": "D3+1",
+    "skill": "4+",
+    "s": "12",
+    "ap": "-2",
+    "d": "D6+2"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Direct-Fire Siege Doctrine",
+    "text": "Each time this model's Medusa siege gun makes a ranged attack against a target visible to this model, the attack gains [SUSTAINED HITS 1] and re-rolls Hit rolls."
+   },
+   {
+    "name": "Indirect Bombardment (alternate)",
+    "text": "Alternatively, this model can shoot its Medusa siege gun at targets it cannot see. In this mode, the attack gains the [INDIRECT FIRE] ability but the AP is worsened by 1 and the unit cannot benefit from Direct-Fire Siege Doctrine that turn."
+   },
+   {
+    "name": "Medusa siege gun (direct-fire)",
+    "text": "[HEAVY] [BLAST]"
+   },
+   {
+    "name": "Medusa siege gun",
+    "text": "[HEAVY] [BLAST] [INDIRECT FIRE]"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Legion Medusa model.",
+  "keywords": "VEHICLE, TANK, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, LEGION MEDUSA",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-master-of-descent",
+  "name": "Master of Descent",
+  "subtitle": "Drop Pod Assault Specialist",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combi-melta",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Stoop of Vengeance",
+    "text": "Friendly Drop Pods (and Dreadclaw Drop Pods, Kharybdis Assault Claws, Caestus Assault Rams, and Termite Assault Drills) arriving from Reserves do not scatter — place them exactly where deployed. Additionally, units disembarking from these transports this turn ignore the Move-penalty to Heavy weapons fired this turn."
+   },
+   {
+    "name": "Drop Sight Augur",
+    "text": "At the start of the first battle round, you can re-deploy up to 3 of your Drop Pod transports (and any units embarked in them) before the first player turn begins."
+   },
+   {
+    "name": "Charge from Above",
+    "text": "On a turn in which this model arrived via Deep Strike from a Drop Pod, friendly units that also arrived from a Drop Pod within 6\" of this model are eligible to declare a Charge that turn (overriding the standard same-turn-Reserves restriction)."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-melta",
+    "text": "[MELTA 2]"
+   }
+  ],
+  "composition": "1 Master of Descent model.",
+  "keywords": "INFANTRY, CHARACTER, MASTER OF DESCENT, DEEP STRIKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-master-of-signals",
+  "name": "Master of Signals",
+  "subtitle": "Vox-Officer Specialist",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Master-crafted bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Servo-arm (built-in)",
+    "melee": true,
+    "range": "Melee",
+    "a": "1",
+    "skill": "4+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Vox-Coordination",
+    "text": "At the start of your Command phase, select one friendly Legiones Astartes unit within 24\" of this model. Until the start of your next Command phase, that unit re-rolls Hit rolls of 1 with ranged attacks, and ignores Move-modifier penalties to its Heavy weapons."
+   },
+   {
+    "name": "Comms Network",
+    "text": "Once per battle in your Command phase, you can call in a single Off-Table Bombardment: nominate a point on the battlefield more than 6\" from any friendly model. All units within 6\" of that point each suffer D3 mortal wounds (allocated by the controlling player). The bombardment cannot be called if this model is in Engagement Range of an enemy unit."
+   },
+   {
+    "name": "Strategic Reserves",
+    "text": "While this model is on the battlefield, friendly Legiones Astartes units in Strategic Reserves arrive on a 2+ instead of the standard Reserves roll."
+   },
+   {
+    "name": "Master-crafted bolter",
+    "text": "[ASSAULT] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Master of Signals model.",
+  "keywords": "INFANTRY, CHARACTER, MASTER OF SIGNALS, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-moritat",
+  "name": "Moritat",
+  "subtitle": "Gunslinger Outcast",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "105",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Plasma pistol (×2 – paired)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Hand flamer",
+    "melee": false,
+    "range": "9\"",
+    "a": "3",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Volkite serpenta",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Inferno pistol",
+    "melee": false,
+    "range": "6\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-4",
+    "d": "D3+2"
+   },
+   {
+    "name": "Archeotech pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Combat blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Lone Operative",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Chain Fire",
+    "text": "Each time this model shoots in the Shooting phase, after resolving all of its pistol attacks, it may immediately fire one of its pistols a second time at -1 to Hit. If this second shot scores a hit, it may fire one additional time at -2 to Hit (recursing to a maximum of 4 total shots from that pistol). The chain fire ends when a shot misses."
+   },
+   {
+    "name": "Walker (Shooting phase mobility)",
+    "text": "In your Shooting phase, after this model has fired all its weapons, it can immediately make a Normal move of up to 6\". This move can take it out of LOS of enemies it shot at this turn."
+   },
+   {
+    "name": "Outcast",
+    "text": "This model cannot be your Warlord and cannot take Enhancements. The Legion considers Moritats damned by their methods."
+   },
+   {
+    "name": "Plasma pistol (×2 – paired)",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Hand flamer",
+    "text": "[CLOSE-QUARTERS] [TORRENT]"
+   },
+   {
+    "name": "Volkite serpenta",
+    "text": "[CLOSE-QUARTERS] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Inferno pistol",
+    "text": "[CLOSE-QUARTERS] [MELTA 1]"
+   },
+   {
+    "name": "Archeotech pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Moritat model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, OUTCAST, MORITAT, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-mortificator",
+  "name": "Mortificator",
+  "subtitle": "Legion Assassin",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "7\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Silenced bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combi-melta",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Master-crafted power sword",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Lone Operative, Stealth, Infiltrators",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Assassin's Strike",
+    "text": "Each time this model makes a melee attack against an enemy Character unit, you re-roll the Hit roll and re-roll the Wound roll. Additionally, melee attacks made by this model against Characters gain [PRECISION]."
+   },
+   {
+    "name": "Mark of Vendetta",
+    "text": "At the start of the first battle round, select one enemy Character unit. For the rest of the battle, this model can ignore Look Out, Sir! when targeting that Character."
+   },
+   {
+    "name": "Silent Strike",
+    "text": "Once per battle, in the Fight phase before this model fights, you can declare a Silent Strike: until the end of the phase, this model's melee attacks deal D3 mortal wounds in addition to any normal damage when they hit a Character. The Mortificator pours decades of training into a single killing blow."
+   },
+   {
+    "name": "Smoke Grenades (defensive)",
+    "text": "Once per battle in your Movement phase, this model can deploy smoke. Until your next Movement phase, attacks against this model suffer -1 to Hit, and this model gains the Benefit of Cover."
+   },
+   {
+    "name": "Silenced bolt pistol",
+    "text": "[CLOSE-QUARTERS] [PRECISION]"
+   },
+   {
+    "name": "Combi-melta",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Master-crafted power sword",
+    "text": "[PRECISION]"
+   }
+  ],
+  "composition": "1 Mortificator model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, MORTIFICATOR, ASSASSIN, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-outrider-squadron",
+  "name": "Outrider Squadron",
+  "subtitle": "Legion Assault Bikes",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "105 / 310",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "14\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Twin bolter (handlebar-mounted)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Meltagun",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Volkite charger",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Scouts 9\"",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Mounted",
+    "text": "This unit has the Mounted keyword. It can move over obstacles up to 2\" tall without penalty."
+   },
+   {
+    "name": "Hammer of the Legion",
+    "text": "On a turn in which this unit completes a Charge move, each model in this unit makes 1 additional melee attack with each of its melee weapons (in addition to any other modifiers)."
+   },
+   {
+    "name": "Outflank",
+    "text": "When deploying this unit, instead of placing it on the battlefield, you can place it in Strategic Reserves. If you do, it can arrive on or after turn 2, anywhere on the battlefield more than 9\" from enemy models."
+   },
+   {
+    "name": "Twin bolter (handlebar-mounted)",
+    "text": "[RAPID FIRE 2] [TWIN-LINKED]"
+   },
+   {
+    "name": "Meltagun",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Flamer",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Volkite charger",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Outrider Sergeant + 2-8 Outrider Legionaries (3 to 9 model unit). All models are mounted on legion assault bikes equipped with twin bolters and combat chainswords. The Sergeant may upgrade to a power weapon or power fist. 1 in 3 models may exchange the twin bolter for a meltagun, flamer, or volkite charger.",
+  "keywords": "MOUNTED, BIKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, OUTRIDER SQUADRON",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-praetor",
+  "name": "Praetor",
+  "subtitle": "Legion Commander",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "125",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Master-crafted bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Paragon blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "2+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "7",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Leader (Outrider variant)",
+    "text": "While in the Outrider/Bike variant, this model can join an Outrider Squadron or a Scimitar Jetbike Squadron instead of foot-units."
+   },
+   {
+    "name": "Master of the Legion",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 6\" of this model, that unit re-rolls Hit rolls of 1 (ranged and melee), and re-rolls Battle-shock tests."
+   },
+   {
+    "name": "Warlord",
+    "text": "If this model is your Warlord, once per battle in your Command phase you can gain 1 Command Point."
+   },
+   {
+    "name": "Master-crafted bolter",
+    "text": "[ASSAULT] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "text": "[TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Praetor model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, PRAETOR, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Saturnine Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "inv": "4+ (3+ Psy)",
+    "pts": "+50",
+    "note": "Damage 1 attacks become Damage 0. FNP 6+. Cannot Fall Back."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   },
+   {
+    "name": "Outrider (Bike)",
+    "M": "12\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+20",
+    "note": "Twin-linked bolters on bike. Jink (re-roll Cover save). Mounted keyword."
+   }
+  ]
+ },
+ {
+  "slug": "hh-praevian",
+  "name": "Praevian",
+  "subtitle": "Battle-Automata Controller",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Volkite serpenta",
+    "melee": false,
+    "range": "12\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Cortex-tendril (mechadendrite)",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-1",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Cortex Controller",
+    "text": "[AURA] While a friendly Mechanicum Battle-Automata unit (Castellax, Domitar, Arlatax, Vorax, Scyllax, Vultarax, Thanatar) is within 12\" of this model, that unit auto-passes Battle-shock tests and re-rolls Hit rolls of 1 with ranged attacks."
+   },
+   {
+    "name": "Master of Cortex Code",
+    "text": "Once per battle in your Command phase, this model can issue a \"Cortex Override\" to one friendly Battle-Automata unit within 12\": until the end of the turn, that unit re-rolls all failed Hit rolls and all failed Wound rolls."
+   },
+   {
+    "name": "Mechanicum Liaison",
+    "text": "A Legion list that includes a Praevian as Warlord may include up to 2 Mechanicum Battle-Automata units (with appropriate Battleforged constraints) as allied units. Treat them as Legiones Astartes for faction purposes."
+   },
+   {
+    "name": "Volkite serpenta",
+    "text": "[CLOSE-QUARTERS] [DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Cortex-tendril (mechadendrite)",
+    "text": "[ANTI-VEHICLE 4+]"
+   }
+  ],
+  "composition": "1 Praevian model.",
+  "keywords": "INFANTRY, CHARACTER, PRAEVIAN, MECHANICUM LIAISON, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   }
+  ]
+ },
+ {
+  "slug": "hh-primus-medicae",
+  "name": "Primus Medicae",
+  "subtitle": "Senior Apothecary",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Narthecium (medical close combat)",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Master of the Apothecarion",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 6\" of this model, that unit has the Feel No Pain 5+ ability. (The Aura does NOT stack with the Apothecary's own narthecium — units within both ranges use the better one.)"
+   },
+   {
+    "name": "Master Reductor",
+    "text": "Once per battle, at the start of your Movement phase, you can select one friendly Legiones Astartes unit within 6\" of this model that has had a model destroyed earlier this battle. Return one of those destroyed models to that unit, set up wholly within the unit and within Engagement Range of no enemy."
+   },
+   {
+    "name": "Narthecium",
+    "text": "In your Command phase, this model heals 1 wound on itself OR on any friendly Legiones Astartes Character within 3\"."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Primus Medicae model.",
+  "keywords": "INFANTRY, CHARACTER, APOTHECARY, PRIMUS MEDICAE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-recon-squad",
+  "name": "Recon Squad",
+  "subtitle": "Disruption-Camo Scouts (HH Pattern)",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "85 / 170",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "4+",
+    "W": "1",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Legion bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Legion bolter (Kraken rounds)",
+    "melee": false,
+    "range": "30\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Scout sniper rifle",
+    "melee": false,
+    "range": "36\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Combat shotgun",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combat blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "CORE: Scouts 9\", Stealth, Infiltrators",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Reconnaissance Sweep",
+    "text": "At the start of the first battle round, before any units make Reserves rolls or Scout moves, select one enemy unit on the battlefield. For the rest of the battle, friendly Legiones Astartes units re-roll Hit rolls of 1 with ranged attacks against that enemy unit. The mark is the Recon Squad's spotting."
+   },
+   {
+    "name": "Nuncio-Vox Beacon",
+    "text": "If this unit contains a model with a nuncio-vox, once per battle in your Command phase you can call in a Reserves arrival to anywhere within 6\" of this unit (including within 9\" of an enemy unit) instead of the standard Reserves placement rules."
+   },
+   {
+    "name": "Legion bolter",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Legion bolter (Kraken rounds)",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Scout sniper rifle",
+    "text": "[HEAVY] [PRECISION]"
+   },
+   {
+    "name": "Combat shotgun",
+    "text": "[ASSAULT]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Recon Sergeant + 4-9 Recon Legionaries in disruption camo and scout-pattern armour (lighter than full Mk IV plate). All models carry legion bolters (with optional Kraken rounds) OR may swap to scout sniper rifles or combat shotguns. 1 in 5 may take a nuncio-vox. The Sergeant may take a chainsword and bolt pistol, or a power weapon.",
+  "keywords": "INFANTRY, BATTLELINE, GRENADES, SCOUT, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-sabre-strike-tank",
+  "name": "Sabre Strike Tank",
+  "subtitle": "Light Strike Tank",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "145",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "9",
+    "Sv": "3+",
+    "W": "10",
+    "LD": "7+",
+    "OC": "3"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Quad lascannon array",
+    "melee": false,
+    "range": "48\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Neutron blaster",
+    "melee": false,
+    "range": "36\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-4",
+    "d": "6"
+   },
+   {
+    "name": "Volkite culverin",
+    "melee": false,
+    "range": "36\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Armoured tracks",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "4+",
+    "s": "7",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D3",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Strike Doctrine",
+    "text": "Each time this model makes a ranged attack, if it Remained Stationary this turn, that attack gains [LETHAL HITS]. If it moved, attacks instead gain [SUSTAINED HITS 1]."
+   },
+   {
+    "name": "Light Chassis",
+    "text": "This model is eligible to Advance and Shoot (its weapons may be fired even after Advancing) without the standard penalty."
+   },
+   {
+    "name": "Neutron blaster",
+    "text": "[ANTI-VEHICLE 3+]"
+   },
+   {
+    "name": "Volkite culverin",
+    "text": "[DEVASTATING WOUNDS] [HEAVY]"
+   },
+   {
+    "name": "Hull-mounted heavy bolter",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Sabre Strike Tank model.",
+  "keywords": "VEHICLE, TANK, SMOKE, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, SABRE STRIKE TANK",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-saturnine-dreadnought",
+  "name": "Saturnine Dreadnought",
+  "subtitle": "NEW HH3e Heaviest Dreadnought",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "250",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "10",
+    "Sv": "2+",
+    "W": "10",
+    "LD": "6+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Saturnine assault cannon",
+    "melee": false,
+    "range": "24\"",
+    "a": "6",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Heavy plasma cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "D3",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Twin lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Storm bolter (built-in)",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Saturnine power fists (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "4"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D6",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Saturnine Pattern Shielding",
+    "text": "Each time an attack is allocated to this model with a Damage characteristic of 3 or less, the Damage of that attack is reduced by 1 (to a minimum of 1). Combined with the 4+ invulnerable atomantic field, this is the most resilient Dreadnought ever fielded."
+   },
+   {
+    "name": "Atomantic Backlash",
+    "text": "Each time this model loses its last wound, before it is destroyed, roll one D6 for each unit within 6\": on a 4+, that unit takes D3 mortal wounds (this replaces Deadly Demise D6 if the Atomantic Backlash triggers)."
+   },
+   {
+    "name": "Implacable",
+    "text": "This model cannot Fall Back, cannot be moved off objectives by enemy abilities, and ignores modifiers to its Movement characteristic."
+   },
+   {
+    "name": "Saturnine assault cannon",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Heavy plasma cannon",
+    "text": "[HEAVY] [HAZARDOUS]"
+   },
+   {
+    "name": "Twin lascannon",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Storm bolter (built-in)",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Saturnine power fists (paired)",
+    "text": "[TWIN-LINKED]"
+   }
+  ],
+  "composition": "1 Saturnine Dreadnought model.",
+  "keywords": "VEHICLE, WALKER, DREADNOUGHT, DEEP STRIKE, SATURNINE PATTERN, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, SATURNINE DREADNOUGHT",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-saturnine-terminator-squad",
+  "name": "Saturnine Terminator Squad",
+  "subtitle": "Heaviest Pattern Terminator Plate (HH3e)",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "295 / 570",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "3",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Combi-bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Saturnine combi-flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "5",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Saturnine combi-melta",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6+2"
+   },
+   {
+    "name": "Saturnine combi-plasma",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Saturnine power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Saturnine chainfist",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-3",
+    "d": "3"
+   },
+   {
+    "name": "Saturnine grav-fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "CORE: Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Saturnine Pattern Plate",
+    "text": "This is the heaviest pattern of Terminator armour ever produced. While this unit is targeted by an attack with a Damage characteristic of 1, the attack's Damage characteristic is reduced to 0. (This affects only D 1 attacks, not D2+ attacks — Devastating Wounds and similar bypass.) Additionally, this unit has the Feel No Pain 6+ ability."
+   },
+   {
+    "name": "Implacable Advance",
+    "text": "This unit cannot be selected to make a Fall Back move and ignores modifiers to its Movement characteristic. The Saturnine plate does not retreat."
+   },
+   {
+    "name": "Atomantic Field",
+    "text": "The 4+ invulnerable save listed above is the Saturnine armour's integral atomantic stabiliser. Each time this unit is targeted by a Psychic attack, the invulnerable save improves to 3+ for that attack."
+   },
+   {
+    "name": "Combi-bolter",
+    "text": "[RAPID FIRE 2]"
+   },
+   {
+    "name": "Saturnine combi-flamer",
+    "text": "[TORRENT] [IGNORES COVER]"
+   },
+   {
+    "name": "Saturnine combi-melta",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Saturnine combi-plasma",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Saturnine chainfist",
+    "text": "[ANTI-VEHICLE 3+]"
+   },
+   {
+    "name": "Saturnine grav-fist",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Saturnine Sergeant + 4-9 Saturnine Terminators in Saturnine-pattern Terminator armour (the heaviest plate ever produced). All models carry combi-bolters and Saturnine power weapons. Up to 2 models may replace their combi-bolter with a Saturnine combi-flamer, combi-melta, or combi-plasma. The Sergeant may take a Saturnine chainfist or grav-fist in place of his power weapon.",
+  "keywords": "INFANTRY, TERMINATOR, GRENADES, DEEP STRIKE, SATURNINE PATTERN, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-scimitar-jetbike-squadron",
+  "name": "Scimitar Jetbike Squadron",
+  "subtitle": "Anti-Grav Strike Bikes",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "135 / 410",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "16\"",
+    "T": "6",
+    "Sv": "3+",
+    "W": "4",
+    "LD": "7+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Twin legion bolters",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Volkite culverin",
+    "melee": false,
+    "range": "36\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "6",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Multi-melta",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Lascannon",
+    "melee": false,
+    "range": "48\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Bolt pistol (sidearm)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Combat blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Hover, Scouts 9\"",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Mounted",
+    "text": "This unit has the Mounted keyword. The anti-grav engines allow it to ignore Difficult Terrain and to move freely over obstacles."
+   },
+   {
+    "name": "Jetbike Strike Doctrine",
+    "text": "This unit can Advance and Shoot without the Heavy-fire penalty. Additionally, on a turn it moved 10\" or more, ranged attacks made by this unit gain [LETHAL HITS]."
+   },
+   {
+    "name": "Scimitar Hunter Variant",
+    "text": "Models with the Scimitar Hunter loadout (heavy bolter / volkite culverin / multi-melta / lascannon) re-roll Hit rolls of 1 with their special weapons against enemy Vehicles, Monsters, and Walkers."
+   },
+   {
+    "name": "Twin legion bolters",
+    "text": "[RAPID FIRE 2] [TWIN-LINKED]"
+   },
+   {
+    "name": "Heavy bolter",
+    "text": "[HEAVY] [RAPID FIRE 2] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Volkite culverin",
+    "text": "[DEVASTATING WOUNDS] [HEAVY]"
+   },
+   {
+    "name": "Multi-melta",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Lascannon",
+    "text": "[HEAVY]"
+   },
+   {
+    "name": "Bolt pistol (sidearm)",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Scimitar Sergeant + 2-8 Scimitar Riders mounted on anti-grav jetbikes. All models carry twin-linked legion bolters as standard. Up to 3 models may swap to a Scimitar Hunter loadout — replacing the twin bolters with a heavy bolter, volkite culverin, multi-melta, or lascannon (anti-tank specialists). The Sergeant may take a power weapon, power fist, or thunder hammer in melee.",
+  "keywords": "MOUNTED, JETBIKE, FLY, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, SCIMITAR JETBIKE",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-seeker-squad",
+  "name": "Seeker Squad",
+  "subtitle": "Veteran Marksmen, Anti-Character",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "115 / 220",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "6+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Scoped legion bolter",
+    "melee": false,
+    "range": "30\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Combi-weapon",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Close combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "Mark of the Hunter",
+    "text": "At the start of your Command phase, you can select one enemy Character unit on the battlefield to be the squad's Mark. Until the start of your next Command phase, each time a model in this unit makes a ranged attack against the marked Character's unit, you can re-roll the Hit roll and re-roll the Wound roll."
+   },
+   {
+    "name": "Specialist Ammunition",
+    "text": "At the start of each of your Shooting phases, select one of the following ammunition types for this unit's bolter attacks until the end of that phase: Banestrike (gain [ANTI-INFANTRY 4+]), Tempest (gain [DEVASTATING WOUNDS]), or Vengeance (gain [ANTI-VEHICLE 4+] and AP improves by 1, but Range halves to 12\")."
+   },
+   {
+    "name": "Stalkers",
+    "text": "This unit has the Infiltrators ability and the Stealth ability."
+   },
+   {
+    "name": "Scoped legion bolter",
+    "text": "[HEAVY] [PRECISION]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Combi-weapon",
+    "text": "[ANTI-INFANTRY 4+] [DEVASTATING WOUNDS] [RAPID FIRE 1]"
+   }
+  ],
+  "composition": "1 Seeker Sergeant + 4-9 Seeker Legionaries (veterans). All models carry scoped legion bolters, bolt pistols, and ammunition selectors. The Sergeant may take a power weapon, plasma pistol, or combi-weapon.",
+  "keywords": "INFANTRY, GRENADES, VETERAN, INFILTRATORS, STEALTH, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-siege-breaker",
+  "name": "Siege Breaker",
+  "subtitle": "Siege Doctrine Specialist",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "95",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Kraken bolter",
+    "melee": false,
+    "range": "30\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power maul",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Leader (Jump Pack variant)",
+    "text": "While in the Jump Pack variant, this model can join a Veteran Assault Squad or any other Jump-Pack-equipped unit instead of foot-units."
+   },
+   {
+    "name": "Siegemaster",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 6\" of this model, that unit re-rolls Wound rolls of 1 against enemy Vehicle and Fortification models, AND against enemy Infantry units containing 6 or more models."
+   },
+   {
+    "name": "Wreck and Ruin",
+    "text": "At the start of your Movement phase, you can choose for this model to focus on one enemy Vehicle or Fortification unit on the battlefield. Until the end of the turn, each ranged attack made by friendly Legiones Astartes units within 6\" of this model against that target benefits from +1 to Wound rolls."
+   },
+   {
+    "name": "Melta Bombs",
+    "text": "This model is equipped with melta bombs. In the Fight phase, once per turn, this model can replace its standard melee attacks with a single melta-bomb attack: A 1, WS 3+, S 8, AP -3, D 3 (Anti-Vehicle 3+)."
+   },
+   {
+    "name": "Kraken bolter",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Siege Breaker model.",
+  "keywords": "INFANTRY, CHARACTER, SIEGE BREAKER, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Jump Pack",
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "+15",
+    "note": "Deep Strike. Eligible to charge on the turn of arrival."
+   }
+  ]
+ },
+ {
+  "slug": "hh-sokar-stormbird",
+  "name": "Sokar Stormbird",
+  "subtitle": "Super-Heavy Assault Flyer",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "605",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "20\"",
+    "T": "13",
+    "Sv": "2+",
+    "W": "26",
+    "LD": "7+",
+    "OC": "0"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Twin macro-cannon (hull, paired)",
+    "melee": false,
+    "range": "72\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "14",
+    "ap": "-3",
+    "d": "D6+3"
+   },
+   {
+    "name": "Hull-mounted lascannons (×4)",
+    "melee": false,
+    "range": "48\"",
+    "a": "4",
+    "skill": "3+",
+    "s": "12",
+    "ap": "-3",
+    "d": "D6+1"
+   },
+   {
+    "name": "Wing-mounted heavy bolters (×4)",
+    "melee": false,
+    "range": "36\"",
+    "a": "12",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Deadly Demise D6+3, Hover",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Transport (super-heavy)",
+    "text": "Transport capacity of 30 Legiones Astartes models. Cataphractii/Tartaros Terminators count as 2 each. Saturnine Terminators count as 3. May also carry 2 Dreadnoughts (of any pattern) in addition to 10 Marines."
+   },
+   {
+    "name": "Hard to Kill",
+    "text": "Each time an attack is allocated to this model with Strength less than 12, that attack's Damage is reduced by 2 (to a minimum of 1). The Stormbird's ablative armour bands shrug off small-arms."
+   },
+   {
+    "name": "Macro-Cannon Strafing Run",
+    "text": "On a turn in which this model moved 12\" or more, its hull weapons fire at full BS without any Heavy-fire penalty. Additionally, ranged attacks made by this model in that turn gain [SUSTAINED HITS 2]."
+   },
+   {
+    "name": "Assault Drop",
+    "text": "Embarked units may disembark from this model after it has moved its full Movement and are eligible to declare a Charge."
+   },
+   {
+    "name": "Twin macro-cannon (hull, paired)",
+    "text": "[HEAVY] [TWIN-LINKED]"
+   },
+   {
+    "name": "Wing-mounted heavy bolters (×4)",
+    "text": "[SUSTAINED HITS 1]"
+   }
+  ],
+  "composition": "1 Sokar Stormbird model.",
+  "keywords": "VEHICLE, AIRCRAFT, SUPER-HEAVY, TRANSPORT, FLY, HOVER, IMPERIUM OR CHAOS, ADEPTUS ASTARTES, SOKAR STORMBIRD",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-tactical-support-squad",
+  "name": "Tactical Support Squad",
+  "subtitle": "Mass Special-Weapon Doctrine",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "140 / 255",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "7+",
+    "OC": "2"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Meltagun (default loadout)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "9",
+    "ap": "-4",
+    "d": "D6"
+   },
+   {
+    "name": "Plasma gun (standard)",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Plasma gun (supercharge)",
+    "melee": false,
+    "range": "24\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Flamer",
+    "melee": false,
+    "range": "12\"",
+    "a": "D6",
+    "skill": "N/A",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Volkite charger",
+    "melee": false,
+    "range": "18\"",
+    "a": "2",
+    "skill": "3+",
+    "s": "5",
+    "ap": "0",
+    "d": "2"
+   },
+   {
+    "name": "Rotor cannon",
+    "melee": false,
+    "range": "24\"",
+    "a": "4",
+    "skill": "4+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Plasma cannon",
+    "melee": false,
+    "range": "36\"",
+    "a": "D3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Heavy bolter",
+    "melee": false,
+    "range": "36\"",
+    "a": "3",
+    "skill": "4+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol (sidearm, all models)",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Close combat weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "2",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "Specialist Doctrine",
+    "text": "Each time a model in this unit makes a ranged attack with the chosen squad weapon, you can re-roll one Hit roll and one Wound roll. The whole squad is drilled in the use of a single weapon-type to lethal expertise."
+   },
+   {
+    "name": "Coordinated Volley",
+    "text": "If every model in this unit fires its squad weapon in the same Shooting phase, until the end of that phase the squad weapons gain [SUSTAINED HITS 1]."
+   },
+   {
+    "name": "Meltagun (default loadout)",
+    "text": "[MELTA 2]"
+   },
+   {
+    "name": "Plasma gun (standard)",
+    "text": "[RAPID FIRE 1]"
+   },
+   {
+    "name": "Plasma gun (supercharge)",
+    "text": "[RAPID FIRE 1] [HAZARDOUS]"
+   },
+   {
+    "name": "Flamer",
+    "text": "[IGNORES COVER] [TORRENT]"
+   },
+   {
+    "name": "Volkite charger",
+    "text": "[DEVASTATING WOUNDS]"
+   },
+   {
+    "name": "Rotor cannon",
+    "text": "[SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Plasma cannon",
+    "text": "[HEAVY] [BLAST]"
+   },
+   {
+    "name": "Heavy bolter",
+    "text": "[HEAVY] [RAPID FIRE 2] [SUSTAINED HITS 1]"
+   },
+   {
+    "name": "Bolt pistol (sidearm, all models)",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Sergeant + 4-9 Legionaries. All models in the squad carry the same special weapon — choose ONE of: meltaguns, plasma guns, flamers, volkite chargers, rotor cannons, plasma cannons, or heavy bolters at squad creation. The Sergeant carries the same weapon as the squad OR may take a power weapon + the squad weapon. Points reflect meltagun loadout; see footnote.",
+  "keywords": "INFANTRY, BATTLELINE, GRENADES, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-veteran-assault-squad",
+  "name": "Veteran Assault Squad",
+  "subtitle": "Jump-Pack Veterans",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "135 / 270",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "12\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "2",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Chainsword",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "4",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Power fist",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "4+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "This unit is a generic Legiones Astartes (Horus Heresy era) datasheet usable by any of the 18 Legions. Detachment buffs and Legion-specific stratagems apply per the Legion this unit is fielded as (Loyalist or Traitor). When fielded in a 40K list, treat as having the Oath of Moment faction ability if Loyalist; Dark Pact if Traitor."
+   },
+   {
+    "name": "CORE: Deep Strike",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Hammer of the Legion",
+    "text": "On a turn in which this unit completed a Charge move, each melee attack made by a model in this unit gains [SUSTAINED HITS 1]. Models attacking with a power fist or thunder hammer additionally gain [LETHAL HITS] on that turn."
+   },
+   {
+    "name": "Sons of the Legion (Veterans)",
+    "text": "Once per battle, in the Fight phase before this unit fights, you can declare it is \"Fighting on Glory\" — until the end of the phase, this unit re-rolls Wound rolls of 1 in melee and ignores modifiers to its Battle-shock tests."
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Lightning claws (paired)",
+    "text": "[TWIN-LINKED]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Veteran Assault Sergeant + 4-9 Veteran Assault Legionaries with jump packs. All models carry chainswords + bolt pistols. Up to 4 models may replace their chainsword with a power weapon, lightning claw, or thunder hammer (one weapon type per model). The Sergeant may take a power fist or thunder hammer.",
+  "keywords": "INFANTRY, GRENADES, VETERAN, JUMP PACK, DEEP STRIKE, IMPERIUM OR",
+  "factionKeywords": "",
+  "armourVariants": []
+ },
+ {
+  "slug": "hh-vigilator",
+  "name": "Vigilator",
+  "subtitle": "Master of Reconnaissance",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "90",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "4+",
+    "W": "4",
+    "LD": "6+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Scout sniper rifle",
+    "melee": false,
+    "range": "36\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "4",
+    "ap": "-2",
+    "d": "2"
+   },
+   {
+    "name": "Bolt pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-1",
+    "d": "1"
+   },
+   {
+    "name": "Power weapon",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "5",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Combat blade",
+    "melee": true,
+    "range": "Melee",
+    "a": "3",
+    "skill": "3+",
+    "s": "4",
+    "ap": "0",
+    "d": "1"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "CORE: Lone Operative, Stealth, Infiltrators, Scouts 9\"",
+    "text": "",
+    "variantRules": []
+   },
+   {
+    "name": "Leader (Recon Squad)",
+    "text": "This model can join a Recon Squad (HH variant) and grants that unit the Hunter's Mark and Stealth+ bonuses below."
+   },
+   {
+    "name": "Mark Targets",
+    "text": "At the start of the first battle round, select one enemy unit on the battlefield. For the rest of the battle, friendly Legiones Astartes units re-roll Hit rolls of 1 with ranged attacks against that enemy unit. (The Vigilator's spotting is broadcast to the whole Legion.)"
+   },
+   {
+    "name": "Disruption Camo",
+    "text": "Each time an attack is allocated to this model, the attacking unit subtracts 1 from its Hit roll. Additionally, this model always counts as having the Benefit of Cover."
+   },
+   {
+    "name": "Silent Killer",
+    "text": "Once per battle in the Fight phase, this model's melee attacks gain [PRECISION] and [DEVASTATING WOUNDS] until the end of the phase."
+   },
+   {
+    "name": "Scout sniper rifle",
+    "text": "[HEAVY] [PRECISION]"
+   },
+   {
+    "name": "Bolt pistol",
+    "text": "[CLOSE-QUARTERS]"
+   }
+  ],
+  "composition": "1 Vigilator model.",
+  "keywords": "INFANTRY, CHARACTER, LONE OPERATIVE, SCOUT, VIGILATOR, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   }
+  ]
+ },
+ {
+  "slug": "hh-warmonger",
+  "name": "Warmonger",
+  "subtitle": "Ancient Veteran Warlord",
+  "factionLine": "Adeptus Astartes • Legiones Astartes • Horus Heresy",
+  "points": "115",
+  "pointsNote": "Points",
+  "invuln": "",
+  "stats": [
+   {
+    "model": null,
+    "M": "6\"",
+    "T": "5",
+    "Sv": "2+",
+    "W": "6",
+    "LD": "5+",
+    "OC": "1"
+   }
+  ],
+  "weapons": [
+   {
+    "name": "Master-crafted bolter",
+    "melee": false,
+    "range": "24\"",
+    "a": "2",
+    "skill": "2+",
+    "s": "5",
+    "ap": "-1",
+    "d": "2"
+   },
+   {
+    "name": "Plasma pistol",
+    "melee": false,
+    "range": "12\"",
+    "a": "1",
+    "skill": "2+",
+    "s": "7",
+    "ap": "-2",
+    "d": "1"
+   },
+   {
+    "name": "Ancient power weapon (master-crafted)",
+    "melee": true,
+    "range": "Melee",
+    "a": "6",
+    "skill": "2+",
+    "s": "6",
+    "ap": "-3",
+    "d": "2"
+   },
+   {
+    "name": "Thunder hammer",
+    "melee": true,
+    "range": "Melee",
+    "a": "5",
+    "skill": "3+",
+    "s": "8",
+    "ap": "-2",
+    "d": "3"
+   }
+  ],
+  "abilities": [
+   {
+    "name": "Faction — Sons of the Legions",
+    "text": "Generic Legiones Astartes (HH) datasheet usable by any of the 18 Legions. Treats as Oath of Moment (Loyalist) or Dark Pact (Traitor) for 40K interop."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join one of the following units: Tactical Squad, Veteran Tactical Squad, Breacher Squad, Despoiler Squad, Tactical Support Squad, Seeker Squad, Heavy Support Squad, Recon Squad, Veteran Assault Squad (PA-armour Marines only)."
+   },
+   {
+    "name": "Leader",
+    "text": "This model can join a Cataphractii / Tartaros / Saturnine Terminator Squad (matching armour type) OR a Praetorian Command Squad."
+   },
+   {
+    "name": "Ancient of the Legion",
+    "text": "[AURA] While a friendly Legiones Astartes unit is within 6\" of this model, that unit re-rolls Hit rolls and Wound rolls of 1 in melee against enemy Character and Monster units."
+   },
+   {
+    "name": "Battle-Hardened",
+    "text": "This model auto-passes Battle-shock tests and ignores modifiers to its Attack characteristic and Movement characteristic (it has weathered worse)."
+   },
+   {
+    "name": "Last Stand",
+    "text": "While this model has 2 or fewer wounds remaining, it has the Fights First ability AND adds 2 to its Attacks characteristic on all melee weapons (an old warrior makes his last moments count)."
+   },
+   {
+    "name": "Saga of Wars Past",
+    "text": "Once per battle in the Fight phase, before this model fights, the Warmonger can declare \"I have seen this before\" — until the end of the phase, this model's melee attacks gain [LETHAL HITS] AND [DEVASTATING WOUNDS], and this model can fight twice this turn."
+   },
+   {
+    "name": "Master-crafted bolter",
+    "text": "[ASSAULT] [RAPID FIRE 1]"
+   },
+   {
+    "name": "Plasma pistol",
+    "text": "[CLOSE-QUARTERS]"
+   },
+   {
+    "name": "Thunder hammer",
+    "text": "[DEVASTATING WOUNDS]"
+   }
+  ],
+  "composition": "1 Warmonger model.",
+  "keywords": "INFANTRY, CHARACTER, EPIC HERO, WARMONGER, VETERAN, IMPERIUM OR CHAOS, ADEPTUS ASTARTES",
+  "factionKeywords": "LEGIONES ASTARTES",
+  "armourVariants": [
+   {
+    "name": "Power Armour (default)",
+    "M": "6\"",
+    "T": "5",
+    "Sv": "3+",
+    "W": "5",
+    "inv": "4+",
+    "pts": "base",
+    "note": "Default loadout. Mk II / IV / VI Astartes plate."
+   },
+   {
+    "name": "Cataphractii Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+30",
+    "note": "Heaviest pre-Saturnine plate. Re-roll Charge rolls. Heavy weapons fire at full BS."
+   },
+   {
+    "name": "Tartaros Terminator",
+    "M": "6\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "6",
+    "inv": "4+",
+    "pts": "+35",
+    "note": "Balanced. Deep Strike. Sweeping Advance bonus."
+   },
+   {
+    "name": "Saturnine Terminator",
+    "M": "5\"",
+    "T": "6",
+    "Sv": "2+",
+    "W": "7",
+    "inv": "4+ (3+ Psy)",
+    "pts": "+50",
+    "note": "Damage 1 attacks become Damage 0. FNP 6+. Cannot Fall Back."
+   }
+  ]
+ }
+]
