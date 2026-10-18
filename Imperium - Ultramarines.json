@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352e-adc2-7639-d610",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 7001,
+    "revision": 7002,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -286,6 +286,14 @@
         "hidden": false,
         "import": true,
         "targetId": "3a3c-2481-fcc6-41cb",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Chaplain Cassius [NFLB-L]",
+        "id": "nflb-6b63112603b2",
+        "hidden": false,
+        "import": true,
+        "targetId": "nflb-4472c5233fd7",
         "type": "selectionEntry"
       }
     ],
@@ -882,6 +890,12 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "comment": "NFLB-L replacement"
           }
         ],
         "profiles": [
@@ -11994,7 +12008,485 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Chaplain Cassius [NFLB-L]",
+        "id": "nflb-4472c5233fd7",
+        "hidden": true,
+        "import": true,
+        "type": "model",
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "nflb-d0c1b534bb66",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Led by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "e05e-b4e4-6db0-5d42",
+                    "childName": "Sternguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ebce-cb56-76a4-afe1",
+                    "childName": "Assault Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "d81a-37b7-7183-9d4",
+                    "childName": "Command Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7d2-a98d-4ad2-c426",
+                    "childName": "Vanguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "2740-ec68-77ee-2830",
+                    "childName": "Tactical Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "db3-6ff3-87c4-ac33",
+                    "childName": "Tyrannic War Veterans",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Epic Hero",
+            "id": "nflb-0f64a6667cdf",
+            "primary": true,
+            "targetId": "4f3a-f0f7-6647-348d"
+          },
+          {
+            "name": "Character",
+            "id": "nflb-49e6681f54e2",
+            "primary": false,
+            "targetId": "9cfd-1c32-585f-7d5c"
+          },
+          {
+            "name": "Infantry",
+            "id": "nflb-a569ad8fefab",
+            "primary": false,
+            "targetId": "cf47-a0d7-7207-29dc"
+          },
+          {
+            "name": "Chaplain Cassius",
+            "id": "nflb-2e71da0202d0",
+            "primary": false,
+            "targetId": "feca-2b5b-3c14-547f"
+          },
+          {
+            "name": "Imperium",
+            "id": "nflb-84f35cdefd3a",
+            "primary": false,
+            "targetId": "aff3-d6a3-2a95-9dc"
+          },
+          {
+            "name": "Faction: Adeptus Astartes",
+            "id": "nflb-af0243170789",
+            "primary": false,
+            "targetId": "6e7-40c-58d9-e402"
+          },
+          {
+            "name": "Faction: Ultramarines",
+            "id": "nflb-de4d6251e701",
+            "primary": false,
+            "targetId": "1a2d-2f00-c054-4dcb"
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-899ffc2d3109",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1556-9b56-fba6-4370"
+          }
+        ],
+        "constraints": [
+          {
+            "id": "nflb-c352ee51847f",
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "51b2-306e-1021-d207",
+            "value": 80
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "nflb-94984695cdf0",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "caa-f869-3cbd-b48e",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Leader",
+            "id": "nflb-74c69ce6c2ea",
+            "hidden": false,
+            "targetId": "b4dd-3e1f-41cb-218f",
+            "type": "rule"
+          },
+          {
+            "name": "Combat Doctrines",
+            "id": "nflb-20622f02e060",
+            "hidden": false,
+            "targetId": "3b76-4053-ece9-6e7d",
+            "type": "rule"
+          }
+        ],
+        "modifiers": [],
+        "profiles": [
+          {
+            "name": "Chaplain Cassius",
+            "id": "nflb-438cd43a966f",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "M",
+                "$text": "6\"",
+                "typeId": "e703-ecb6-5ce7-aec1"
+              },
+              {
+                "name": "T",
+                "$text": "5",
+                "typeId": "d29d-cf75-fc2d-34a4"
+              },
+              {
+                "name": "Sv",
+                "$text": "3+",
+                "typeId": "450-a17e-9d5e-29da"
+              },
+              {
+                "name": "W",
+                "$text": "4",
+                "typeId": "750a-a2ec-90d3-21fe"
+              },
+              {
+                "name": "LD",
+                "$text": "5+",
+                "typeId": "58d2-b879-49c7-43bc"
+              },
+              {
+                "name": "OC",
+                "$text": "1",
+                "typeId": "bef7-942a-1a23-59f8"
+              },
+              {
+                "name": "InSv",
+                "$text": "4+",
+                "typeId": "55a7-5b54-c60d-11dc"
+              },
+              {
+                "name": "Base",
+                "$text": "~40mm",
+                "typeId": "nr-base-size"
+              }
+            ]
+          },
+          {
+            "name": "Catechism of Death",
+            "id": "nflb-c750b6f3d26e",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Inspired Retribution",
+            "id": "nflb-db6af18ce61c",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Leader",
+            "id": "nflb-ba1515f28471",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Tyrannic War Veterans\n■ Vanguard Veteran Squad",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "NFLB-L Rebalance",
+            "id": "nflb-eaa6138026d5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "9b8f-694b-e5e-b573",
+                "$text": "GW's Chaplain Cassius [Legends] datasheet brought in step with the 11e Space Marine codex: T4 → T5 (power armour, like the codex Chaplain); Artificer Crozius: + [CLEAVE 1] (codex crozius arcanum). Replaces the official Legends entry; points follow GW's Legends points."
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Infernus",
+            "id": "nflb-d1eee07c4659",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "nflb-fe1ca98e8b19",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-862e3c9991d5",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Anti",
+                "id": "nflb-01bed71c033f",
+                "hidden": false,
+                "targetId": "4111-82e3-9444-e942",
+                "type": "rule"
+              },
+              {
+                "name": "Devastating Wounds",
+                "id": "nflb-9bb65c2368c6",
+                "hidden": false,
+                "targetId": "be1e-ac8e-1e2c-3528",
+                "type": "rule"
+              },
+              {
+                "name": "Ignores Cover",
+                "id": "nflb-b8f4fc60ce9f",
+                "hidden": false,
+                "targetId": "4640-43e7-30b-215a",
+                "type": "rule"
+              },
+              {
+                "name": "Torrent",
+                "id": "nflb-7e959fded339",
+                "hidden": false,
+                "targetId": "5edf-d619-23e0-9b56",
+                "type": "rule"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Infernus",
+                "id": "nflb-aa96d18322d0",
+                "hidden": false,
+                "typeId": "f77d-b953-8fa4-b762",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "$text": "12\"",
+                    "typeId": "9896-9419-16a1-92fc"
+                  },
+                  {
+                    "name": "A",
+                    "$text": "D6",
+                    "typeId": "3bb-c35f-f54-fb08"
+                  },
+                  {
+                    "name": "BS",
+                    "$text": "N/A",
+                    "typeId": "94d-8a98-cf90-183e"
+                  },
+                  {
+                    "name": "S",
+                    "$text": "4",
+                    "typeId": "2229-f494-25db-c5d3"
+                  },
+                  {
+                    "name": "AP",
+                    "$text": "-1",
+                    "typeId": "9ead-8a10-520-de15"
+                  },
+                  {
+                    "name": "D",
+                    "$text": "1",
+                    "typeId": "a354-c1c8-a745-f9e3"
+                  },
+                  {
+                    "name": "Keywords",
+                    "$text": "Anti-Infantry 4+, Devastating Wounds, Ignores Cover, Torrent",
+                    "typeId": "7f1b-8591-2fcf-d01c"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Artificer Crozius",
+            "id": "nflb-0814dcae9746",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "nflb-1dd761323b95",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "nflb-11da708a9574",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Artificer Crozius",
+                "id": "nflb-150c61f410e4",
+                "hidden": false,
+                "typeId": "8a40-4aaa-c780-9046",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "$text": "Melee",
+                    "typeId": "914c-b413-91e3-a132"
+                  },
+                  {
+                    "name": "A",
+                    "$text": "5",
+                    "typeId": "2337-daa1-6682-b110"
+                  },
+                  {
+                    "name": "WS",
+                    "$text": "2+",
+                    "typeId": "95d1-95f-45b4-11d6"
+                  },
+                  {
+                    "name": "S",
+                    "$text": "6",
+                    "typeId": "ab33-d393-96ce-ccba"
+                  },
+                  {
+                    "name": "AP",
+                    "$text": "-1",
+                    "typeId": "41a0-1301-112a-e2f2"
+                  },
+                  {
+                    "name": "D",
+                    "$text": "2",
+                    "typeId": "3254-9fe6-d824-513e"
+                  },
+                  {
+                    "name": "Keywords",
+                    "typeId": "893f-9000-ccf7-648e",
+                    "$text": "Cleave 1"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Crusade",
+            "id": "nflb-c84702e105cc",
+            "hidden": false,
+            "sortIndex": 1,
+            "entryLinks": [
+              {
+                "name": "Mighty Champions",
+                "id": "nflb-7b9930e13dba",
+                "hidden": false,
+                "import": true,
+                "targetId": "f842-6e90-bc5a-80f1",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "sharedSelectionEntryGroups": []
   }
 }

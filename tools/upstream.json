@@ -239,9 +239,9 @@
       "patch": 1
     },
     "Imperium - Space Marines.json": {
-      "hash": "e7f5d2f799724486e5d650a0aa15d051bbe90283",
+      "hash": "5b2cfa27b530ed24a4734bc27311790e9b1a8bbb",
       "upstreamRevision": 19,
-      "patch": 1
+      "patch": 2
     },
     "Imperium - Space Wolves.json": {
       "hash": "0a93e16866863efdfa8c2c64dfa353a3e617db4c",
@@ -249,9 +249,9 @@
       "patch": 1
     },
     "Imperium - Ultramarines.json": {
-      "hash": "e5a84f3036e1b19798015c1be0f202fe8dd46f85",
+      "hash": "b9fccc3c0f4f0a9c2c0ac26ade4697fad543b926",
       "upstreamRevision": 7,
-      "patch": 1
+      "patch": 2
     },
     "Imperium - White Scars.json": {
       "hash": "ebdf261568f484103704769239df5e82f319306c",
@@ -259,9 +259,9 @@
       "patch": 1
     },
     "Library - Astartes Heresy Legends.json": {
-      "hash": "696afe34de65c347cb9207870a18b100c7007308",
+      "hash": "00c4d178a63a71308d912521955c3aa69e4f3a08",
       "upstreamRevision": 4,
-      "patch": 1
+      "patch": 2
     },
     "Library - Titans.json": {
       "hash": "b616670ace363ce8d78f29245d328e758d564db1",
